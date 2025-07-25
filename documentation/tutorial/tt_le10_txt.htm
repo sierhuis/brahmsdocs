@@ -1,0 +1,330 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Agent iSolutions - Tutorial - Lesson X - Text</title>
+<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
+<script type="text/javascript" src="../doctree.jsc"></script>
+<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+</head>
+
+<body onload="openTree('OUT10t,OUT13t,OUT24t,DT81');">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
+  <tr>
+    <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" WIDTH="168" HEIGHT="78"></td>
+    <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
+  </tr>
+  <tr>
+    <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../index.htm">Home</a></td>
+    <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
+    <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a href="../index.htm">Documentation</a></td>
+    <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
+    <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
+    <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"></td>
+  </tr>
+</table>
+<div align="left">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td height="10" width="100%"></td>
+  </tr>
+</table>
+</div><div align="left">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
+  <tr>
+    <td width="164" valign="top" bgcolor="#6C69F7" height="1%"><p class="TOCHeader">Documentation</td>
+    <td width="12" rowspan="7" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="1000" hspace="3"> </td>
+    <td width="100%" valign="top" align="justify" height="1" colspan="5"><p class="aisheader1">Tutorial
+    - Lesson X - Text</td>
+  </tr>
+  <tr>
+    <td width="167" rowspan="6" valign="top" height="200"><script language="javascript">
+      	 <!--
+      	 	createDocumentTree("../");
+      	 -->
+      	 </script>
+    </td>
+    <td width="100%" valign="top" align="left" height="1" colspan="5"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="12%" valign="top" align="left" height="1"><p class="ls_nav_text_l"><a href="tt_le9_txt.htm">Prev</a> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><font color="#808080">Text</font> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><a href="tt_le10_cod.htm">Code</a> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><a href="tt_le10_syn.htm">Syntax</a> </td>
+    <td width="12%" valign="top" align="left" height="1"><p class="ls_nav_text_r" align="left"><a href="tt_le11_txt.htm">Next</a> </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top" align="justify" height="1" colspan="5"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top" align="justify" height="400" colspan="5"><p class="aisheader2">Introduction
+    </p>
+    <p class="aisparagraph">This chapter will teach you how to use multiple agents and random
+    elements in Brahms models. It will also increase the complexity of the Atm scenario by
+    explicitly modeling the interaction between the Atm and the agent.
+    </p>
+    <p class="aisheader2">Task
+    </p>
+    <p class="aisparagraph">There are three goals in this Lesson. The first goal is to include
+    another agent in the model - Kim. She is member of the student group, like Alex, but she
+    has different tastes, habits, time schedules. For example, Kim and Alex feel hungriness in
+    different ways. The second goal is to randomize some of the elements of the simulation:
+    for example, when an agent hears the campanile signal, she might or might not get
+    hungrier; in front of the Atm, she might or might not remember the proper pin; and so on.
+    The third and more complex step is that of modeling the interaction between the Atm and
+    the agent. This description will still be rough - no interaction with the bank, no
+    checking of the balance, etc. - but will add some more realism to the simulation. One
+    note: this and the next Lesson will be more challenging than the previous ones - you will
+    be expected to reorganize the concepts you have been learning and reassemble the code of
+    your scenario.
+    </p>
+    <p class="aisheader2">Description
+    </p>
+    <p class="aisparagraph">We do not need a new formal description of the concepts related to
+    the use of multiple agents, because there is nothing new here: we simply need to 'throw'
+    other agents into the simulation. Similarly, the basic concepts related to randomness have
+    been already discussed: agents conclude beliefs or facts with certainty (bc and/or fc
+    values set to 100) or uncertainty. The interesting thing here is to see the long-term
+    effects of making these changes. We will discuss them in the tutorial subsection below.
+    </p>
+    <p class="aisparagraph">However, there is more to say about how the simulation engine decides
+    to 'direct' the staging of your simulation. Since the more activities we model, the more
+    complex the simulation becomes, we need to be very clear about the steps the engine
+    follows to decide what to do at every specific step of the model.<br>
+    In what follows, therefore, we discuss the model of execution for a Brahms model. The
+    model of execution defines how a Brahms model is executed, and thus describes a simulation
+    of a model of work practice. As a multiagent system, a Brahms model consists of a number
+    of independent agents and objects that operate independently, but interact with each
+    other. Wooldridge (Wooldridge, 1992) describes two possible execution models for
+    multiagent systems, synchronous execution, and interleaved execution. In both cases the
+    execution of a multiagent system is defined by a state st of the system at time t, and a
+    state st+1 of the system at time t+1 caused by a state-transition tt at time t. Keeping
+    track of the state changes of the system over time the history of an executing system can
+    be considered a sequence of state and state-transitions.
+    </p>
+    <p class="aisparagraph"><i>Synchronous execution</i>
+    </p>
+    <p class="aisparagraph">
+    In a synchronous execution system each agent and object has an initial state defined as
+    its initial belief set, closed under its deduction rules. This amounts to an initial state
+    of the system as a collection of initial belief sets for each agent, each set closed under
+    the agent's own deduction rules.
+    </p>
+    <p class="aisparagraph">
+    Agents are able to change their state by performing a move. A move is defined as a tuple
+    of actions. A transition is a collection of moves, specifically, one for each agent. In
+    other words, a move is a state-transition for an individual agent, whereas a transition is
+    the global state-transition for the whole system (i.e. all the agents and objects and
+    facts). In Brahms we use the synchronous execution model. The reason for this is simply
+    the fact that we simulating and not running in real-time. In our simulation model our
+    agents and objects need to be synchronized according to a unique global clock.
+    </p>
+    <p class="aisparagraph">A world is the situation-specific model (SSM) of the simulation, at a
+    specific moment in the execution of the system (Clancey, 1992). A state is defined of as
+    just the belief-set of an individual agent, at a specific moment in the execution of the
+    system. And, a situation-specific model for an agent is defined by all the existing global
+    facts, and all the agent's beliefs at the moment of inquiry, as well as the current-,
+    available-, and interrupted workframe and thoughtframe instantiations, and the current
+    activities.
+    </p>
+    <p class="aisparagraph">A state-transition occurs when an agent, performing a work- or
+    thoughtframe, executes a consequence that creates a new belief or fact. A state-transition
+    can also occur when an agent receives a new belief as a result of a) a communication, b)
+    the detection of a fact, c) a move to a new location, or d) receiving time and date
+    beliefs from the simulation engine. During the state-transition the simulation engine
+    determines the effects of the transition on the agent's internal state, which can result
+    in more transitions.
+    </p>
+    <p class="aisparagraph"><i>Frame execution</i>
+    </p>
+    <p class="aisparagraph">
+    An order of testing and execution must be imposed in any simulation tool on conditions and
+    operations that in principle apply or occur simultaneously. The following paragraphs
+    describe the order in which the parts of a workframe are evaluated and executed in an
+    implementation of Brahms.
+    </p>
+    <p class="aisparagraph">For each agent the preconditions are the first things checked in a
+    frame (workframes and thoughtframes). They are checked in the order in which they are
+    declared within the frame. When all of its preconditions match (i.e., are satisfied), a
+    frame becomes available. When a frame becomes available frame instantiations are created
+    for each set of variable bindings from the precondition matching. If a frame has multiple
+    variables that can be bound, there will be a frame instantiation created for each valid
+    combination of variable-bindings. Each frame instantiation is executed in sequence (i.e.
+    one after another). There can only be one frame instantiation executed at a time (in one
+    clock-tick). The order of the sequence is undetermined.
+    </p>
+    <p class="aisparagraph">After the preconditions match and a workframe is selected it will
+    start to work (one frame instantiation for each set of valid variable-bindings). The
+    working time will be specified in the workframe; or, if the workframe contains any
+    composite activities, the working time will be the cumulative time of the executed
+    composite activities. At any time during this working time, a variety of things may
+    happen. Consequences may be asserted, facts may be detected, and communications may occur,
+    depending on their ordering in the do-part of the workframe. If the do-part includes one
+    or more move activities, the agent will go to the specified locations as the moves are
+    executed.
+    </p>
+    <p class="aisparagraph">Within a detectable, the modeler can specify when the agent or object
+    can detect a fact. When a workframe contains a composite activity, the modeler must
+    specify the time to be &quot;whenever&quot;, because the engine cannot calculate the total
+    working time for the frame in advance.
+    </p>
+    <p class="aisparagraph">When multiple detectables are declared within a workframe, they are
+    checked in the order in which they are declared. When two detectables are specified to be
+    executed at the same time, and the first states that the frame should be interrupted and
+    the second states that the frame should be aborted, the frame will be interrupted.
+    </p>
+    <p class="aisparagraph">The do-part of a frame is ordered, and the simulation engine
+    evaluates the do-part components in the order in which they appear from top-to-bottom and
+    left-to-right. The do-part may include activities and composite activities for workframes,
+    and consequences that will be asserted as beliefs and/or facts for workframes and
+    thoughtframes.
+    </p>
+    <p class="aisparagraph"><i>Frame states and transitions</i></p>
+    <p class="aisparagraph">
+    As described above, frames are stateless and serve as declarative definitions, whereas
+    frame instantiations are dynamically created, associated with a particular agent or
+    object, have state, and have a related context (cfr. <a href="tt_files.htm">Tutorial Full</a>).</p>
+    <p class="aisparagraph">To decide for each agent what to work on next, the simulation engine
+    executes a number of steps. At each clock tick, the simulation engine determines which
+    workframe should be selected to work on next. This selection is based on the priorities of
+    available, current and interrupted workframe instantiations. A current workframe
+    instantiation is selected in preference to interrupted or available workframe
+    instantiations of equal priority, so that an agent tends to continue doing what it was
+    doing.
+    </p>
+    <p class="aisparagraph">The selected workframe is then executed, leading to the agent detect
+    things in the world (through detectables) and possibly begin a subactivity. When a
+    workframe instantiation is interrupted, it is reexamined on subsequent clock-ticks to see
+    whether it should be considered for selection. When a composite activity is terminated,
+    because its end-condition is satisfied, the workframe instantiations below it are also
+    terminated. When an activity is interrupted, Brahms saves the workframe/activity-hierarchy
+    so the context can be reestablished after an interruption.
+    </p>
+    <p class="aisparagraph">The questions remain; 1) How does a workframe get selected to become
+    instantiated, and 2) When multiple workframes are instantiated, how does the engine
+    determine the priority of a workframe instantiation?
+    </p>
+    <p class="aisparagraph">The answer to the first question is that at every clock-tick the
+    simulation engine checks if any of the preconditions of the agent's frames are satisfied
+    (i.e. match with beliefs in the agent's belief-set) . When all preconditions in a frame
+    match, the frame is instantiated and each frame instantiation is set to the available
+    state. At that moment, the engine includes the frame instantiation in its decision to
+    determine what frame instantiation to work on next.
+    </p>
+    <p class="aisparagraph">The answer to the second question, from above, tells us how this is
+    done. Each workframe instantiation has a priority. The priority of each workframe
+    instantiation is set based on the priorities of the primitive activities in the workframe.
+    The priority of a workframe is the priority of its highest priority primitive activity.
+    </p>
+    <p class="aisparagraph">Thus, all in all, the emergent behavior of agents during a simulation
+    depends on two independent things. First, it depends on when preconditions of frames match
+    on the belief-set of the agent. Of course, the belief-set of an agent depends on many
+    factors during a simulation, such as detection of facts, moving to locations,
+    communication with others, etc. This means that the behavior of an agent is first and
+    foremost dependent on the behavior of other agents and objects in its environment, as well
+    as the state of the environment itself. Secondly, the behavior of an agent depends on
+    which frames are instantiated together at any moment in time. This is because each
+    instantiated frame has a specific priority, and it will depend on the priority of the
+    other frame instantiations whether a frame instantiation is picked as the next work to be
+    done.
+    </p>
+    <p class="aisparagraph"><i>Multi-tasking agents</i>
+    </p>
+    <p class="aisparagraph">
+    In a Brahms simulation, an agent may engage in multiple activities at any given time, but
+    only one workframe is active at any one time. At each clock-tick, the simulation engine
+    determines which workframe should be selected, based on the priorities of available,
+    current and interrupted work (see previous section). Current work is selected in
+    preference to interrupted or available work of equal priority, so that an agent tends to
+    continue doing what it was doing. The selected workframe is then executed, leading the
+    agent to act in the world and possibly begin a subactivity. When a workframe is
+    interrupted, it is reexamined on subsequent clock-ticks to see whether it should be
+    considered for selection. When a composite activity is terminated because its end
+    condition is satisfied, the workframes below it are also terminated. When an activity is
+    interrupted, Brahms saves the line of activities and workframes so context can be
+    reestablished after an interruption.
+    </p>
+    <p class="aisparagraph">An important consequence and benefit of this combined modeling and
+    programming paradigm is that all of the workframes of a model are simultaneously competing
+    and active, and the selection of a workframe to execute is made without reference to a
+    stack or tree of workframe execution history. This paradigm is a major difference from
+    most other goal-oriented problem-solving systems, such as Soar (Laird et al., 1987).
+    </p>
+    <p class="aisheader2">Tutorial
+    </p>
+    <p class="aisparagraph">The sketch of the coding will be the following. <br>
+    For what refers to multiagent, you can create a new agent - Kim_Agent.b - and give her the
+    same attributes (with different values) that we have been giving to
+    Alex_Agent.
+    </p>
+    <p class="aisparagraph">For the randomization, you simply need to change things here and
+    there. For example, the agents will only detect with probably 50% that the Campanile has
+    signaled a new hour and will get hungrier only 50% of times (the two distributions are
+    independent in the example below):
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">conclude((current.perceivedtime =
+    Campanile_Clock.time), bc: 50);<br>
+    conclude((current.howHungry = current.howHungry + 3.00), bc: 50); </font></p>
+      </blockquote>
+    <p class="aisparagraph">Recall that the property belief-certainty is the probability (with
+    also a default value of 100%) that the belief will be changed or created, conditional on
+    the fact being true. That is, if the fact-certainty and the belief-certainty are each 50%,
+    then 1 in 2 times the fact will be created and 1 in 4 times the belief will be created. If
+    the fact-certainty is zero, then no fact will be created but the belief-certainty
+    determines how often a belief is created.
+    </p>
+    <p class="aisparagraph">If you have not done so already, you should create a Wells Fargo Bank
+    (WF_Bank) and its Atm (WF_Atm). Then, you should write down accordingly the relations
+    between Kim, her account and the bank/Atm. Do not forget Kim's initial beliefs about these
+    relations!
+    </p>
+    <p class="aisparagraph">Thereafter, you must start modeling the Bank and the Atm themselves
+    and the interaction between the student and the Atm. Most of the activities needed for the
+    student have already been coded. You will probably need some changes and a new 'wait'
+    activity for the moments when the student is waiting for replies from the Atm. You should
+    also add the stochastic possibility that the student makes error when trying to remember
+    or digit the pin. It will be likely that you will have to revise and update older parts of
+    your model to achieve these goals.
+    </p>
+    <p class="aisparagraph">For the Atm, you will probably need activities to: get the account
+    associated to the bankcard; get the pin; pass the pin and the account to the bank; receive
+    back the authorization (or lack thereof) from the bank, dispense or not dispense the cash.
+    Similarly, the Bank will need activities to make it receive Pins and account numbers,
+    verify them with the information that it is stored in the bank computers, and authorize or
+    not authorize the payment. For the moment, just one possibility of error will suffice, and
+    no question to the student about how much money she wants to take out (we can assume it is
+    a fixed amount). We will complete these details in the next section, where we will also
+    present the complete files of the scenario.</td>
+  </tr>
+</table>
+</div><div align="left">
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="100%"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" align="center"><font size="1" face="Arial">Questions or problems
+    regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
+    Copyright © 2001 NASA Ames Research Center. All rights reserved.<br>
+    Last modified: 
+	<!--webbot bot="TimeStamp" S-Type="EDITED" S-Format="%A %B %d, %Y" startspan -->Monday April 30, 2007<!--webbot bot="TimeStamp" i-checksum="31391" endspan -->.</font></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

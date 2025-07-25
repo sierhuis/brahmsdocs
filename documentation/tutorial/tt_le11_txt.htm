@@ -1,0 +1,404 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Agent iSolutions - Tutorial - Lesson XI - Text</title>
+<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
+<script type="text/javascript" src="../doctree.jsc"></script>
+<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+</head>
+
+<body onload="openTree('OUT10t,OUT13t,OUT25t,DT84');">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
+  <tr>
+    <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" WIDTH="168" HEIGHT="78"></td>
+    <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
+  </tr>
+  <tr>
+    <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../index.htm">Home</a></td>
+    <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
+    <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a href="../index.htm">Documentation</a></td>
+    <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
+    <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
+    <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"></td>
+  </tr>
+</table>
+<div align="left">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td height="10" width="100%"></td>
+  </tr>
+</table>
+</div><div align="left">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
+  <tr>
+    <td width="164" valign="top" bgcolor="#6C69F7" height="1%"><p class="TOCHeader">Documentation</td>
+    <td width="12" rowspan="7" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="1000" hspace="3"> </td>
+    <td width="100%" valign="top" align="justify" height="1" colspan="5"><p class="aisheader1">Tutorial
+    - Lesson XI - Text</td>
+  </tr>
+  <tr>
+    <td width="167" rowspan="6" valign="top" height="200"><script language="javascript">
+      	 <!--
+      	 	createDocumentTree("../");
+      	 -->
+      	 </script>
+    </td>
+    <td width="100%" valign="top" align="left" height="1" colspan="5"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="12%" valign="top" align="left" height="1"><p class="ls_nav_text_l"><a href="tt_le10_txt.htm">Prev</a> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><font color="#808080">Text</font> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><a href="tt_le11_cod.htm">Code</a> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><a href="tt_le11_syn.htm">Syntax</a> </td>
+    <td width="12%" valign="top" align="left" height="1"><p class="ls_nav_text_r" align="left"><a href="tt_concl.htm">Next</a> </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top" align="justify" height="1" colspan="5"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top" align="justify" height="400" colspan="5"><p class="aisheader2">Introduction
+    </p>
+    <p class="aisparagraph">This chapter will tell you about detectables and priorities in Brahms
+    models, and will bring you to the completion of the Atm scenario.
+    </p>
+    <p class="aisheader2">Task
+    </p>
+    <p class="aisparagraph">Use detectables to interrupt, abort or then continue activities. The
+    Atm machine will be waiting for inputs until keys are pressed on its pad or replies are
+    received by the Bank computers. The student will be waiting for replies from the Atm. Use
+    priorities: workframes that might be triggered under the same conditions will follow the
+    traditional top/down, left/right order. To modify that order, you can use priorities.</p>
+    <p class="aisparagraph">
+    Then, use these concepts to complete your Atm scenario! A scenario will be considered
+    complete when it will reproduce the following:</p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">Model a day in the life of a student. Students
+    spend most of their time studying, but get hungrier as the time goes by (signaled by a
+    clock). When they are particularly hungry (the threshold level varying with the student),
+    they decide to move to one of the restaurants in town. Students choose the restaurant
+    according to how much money they are carrying. If a student does not have enough money
+    even for the cheapest restaurant, she will decide to pass first by the Atm of the bank
+    where she has her account. </font></p>
+    <p class="aisparagraph"><font face="Courier">
+    When she arrives at the Atm, the student inserts her bankcard and tries to remember the
+    PIN associated to her account. The Atm allows its users 3 attempts to digit the correct
+    PIN, before refusing the card altogether. The Atm communicates with the central bank
+    computer to verify the correctness of the information provided by the user. If the bank
+    computer communicates to the Atm that the PIN is correct and that the user has enough
+    balance in her account, the Atm will dispense the cash and will print an invoice with the
+    account number and the remaining balance.</font></p>
+    <p class="aisparagraph"><font face="Courier">
+    Students need to have enough balance in their accounts to take out cash: if they attempt
+    to take out more money than they have, the bank computer will notify the students (through
+    the Atm) of the remaining amount of dollars in the account. The student will modify her
+    approach accordingly, and take out just exactly the remaining dollars.
+    </font></p>
+    <p class="aisparagraph"><font face="Courier">THE CAST (AGENTS and OBJECTS)<br>
+    Students: Kim, Alex<br>
+    Bank computers: Bank of America, Wells Fargo<br>
+    Restaurants: Blakes, Raleighs<br>
+    Studying Places: South Hall, Spraul Hall<br>
+    Clock: the Campanile<br>
+    Atms: one Atm for each bank</font>
+    </p>
+      </blockquote>
+    <p class="aisheader2">Description
+    </p>
+    <p class="aisparagraph"><i>Detectables</i>
+    </p>
+    <p class="aisparagraph">
+    A detectable is a mechanism by which, whenever a particular fact occurs in the world, an
+    agent or object may notice it. The noticing of the fact may cause the agent or object to
+    stop or to finish the workframe.
+    </p>
+    <p class="aisparagraph">Two things occur in a detectable. First, the agent or object detects
+    the fact and the fact becomes a belief of the agent or object. Second, only in the case of
+    an agent, the beliefs of the agent are matched with the condition used in the detectable,
+    and if there is a match the then-part of the detectable is executed, which may abort or
+    interrupt the workframe. For objects, in the second step the facts in the world are
+    matched with the detectable condition and if there is a match, the then-part is executed.
+    These two steps are independent: Whether or not the fact is present in the world, the
+    condition in the second step is tested. For example, if &quot;the color of the telephone-1
+    is blue&quot; is a fact, and a workframe contains the following detectable condition,
+    &quot;the color of the telephone-1 is red&quot;, in the first step an agent will obtain
+    the belief &quot;the color of telephone-1 is blue&quot;. In the second step,
+    &quot;red&quot; would be compared with &quot;blue&quot; and the condition will fail, so
+    the then-part of the detectable would not be executed.
+    </p>
+    <p class="aisparagraph">The action or then-part of a detectable defines the detectable type
+    and is one of five keywords: continue, abort, complete, impasse, and
+    end_activity.
+    Continue is the default: the agent or object detects conditions, but the workframe
+    proceeds unaffected. With abort, a condition causes the agent or object to stop executing
+    the workframe. With complete, a condition allows the agent or object to only perform the
+    remaining consequences of the workframe, without doing the rest of the workframe's
+    activities. With impasse, the condition prevents the continuation of the workframe until
+    the condition is removed. In this case, the workframe goes into the
+    interrupted-with-impasse state End-activity is only meaningful when the detectable is in a
+    composite activity: It does not detect facts, but causes the activity to be terminated
+    immediately, based on matching the beliefs of the agent or object to the detectable
+    condition. This allows an agent or object to abort working on composite-activities.
+    </p>
+    <p class="aisparagraph">It is worth emphasizing that the detectable mechanism is operative
+    for all workframes on the execution path of the agent or object's workframe-activity
+    hierarchy (see Figure 19). This even holds for workframes that are in an interrupted or
+    impasse state, so that a &quot;whenever&quot; detectable in any of those frames can detect
+    a fact at any time.
+    </p>
+    <p class="aisparagraph">Detectables can also be used to model impasses. A common example of
+    an impasse is the case of inaccurate or missing information. Workframes may be written to
+    handle impasses. For example, if a supervisor is ready for a technician but does not know
+    the technician's telephone number, another workframe may lead the supervisor to look up
+    the number.
+    </p>
+    <p class="aisparagraph">With a detectable, an agent may notice passive observables, as when
+    someone shouts, a fax machine beeps, or an agent is present vying for attention. Passive
+    observables fall into two general classes: sounds and visual states. Objects that cause a
+    sound--fax or phone--create the fact that represent the sound, which can then be detected.
+    Sounds may persist over many simulation clock-ticks. Propagation into the surrounding
+    space will recur as long as the object is making a sound. Propagation may be affected by geography. </p>
+    <p class="aisparagraph"><i>When</i>
+    </p>
+    <p class="aisparagraph">
+    For each detectable needs to be specified when the agent or object can detect a certain
+    fact. There are two options:
+    </p>
+      <blockquote>
+    <p class="aisparagraph">whenever:<br>
+    This means that the detectable is checked every time a new fact is asserted in the world
+    and for an agent also every time a new belief is asserted.
+    </p>
+    <p class="aisparagraph">at a specified time:<br>
+    For the detectable needs to be specified exactly when the detectable needs to be checked
+    by specifying the time relative to the workframe instantiation's start the detectable
+    needs to check the fact set and belief set.
+    </p>
+      </blockquote>
+    <p class="aisparagraph"><i>Detect-certainty</i>
+    </p>
+    <p class="aisparagraph">The detect-certainty is a number ranging from 0 to 100 and represents the percentage of
+    chance that a fact will be detected based on the detectable. A detect-certainty of 0%
+    means that the fact will never be detected and basically means that the detectable is
+    switched off. A detect-certainty of 100% means that a fact will always be detected based
+    on the detectable.
+    </p>
+    <p class="aisparagraph"><i>Detectable action</i>
+    </p>
+    <p class="aisparagraph">
+    There are 5 different detectable actions possible:
+    </p>
+      <blockquote>
+    <p class="aisparagraph">continue:<br>
+    Has no effect, only used for having agents or object detect facts and turn them into
+    beliefs.
+    </p>
+    <p class="aisparagraph">impasse:<br>
+    Impasses the workframe on which the agent or object is working until the impasse is
+    resolved.
+    </p>
+    <p class="aisparagraph">abort:<br>
+    Terminates the workframe on which the agent or object is working immediately.
+    </p>
+    <p class="aisparagraph">complete:<br>
+    Terminates the workframe on which the agent or object is working immediately, but still
+    executes all remaining consequences defined in the workframe. All remaining activities are
+    skipped.
+    </p>
+    <p class="aisparagraph">end_activity:<br>
+    This action type is only meaning full when used with composite activities. Causes the
+    composite activity on which the agent or object is working to be ended.
+    </p>
+      </blockquote>
+    <p class="aisparagraph"><i>Priorities</i>
+    </p>
+    <p class="aisparagraph">
+    Activities can be assigned a priority. For example:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">move moveToLocation() {<br>
+    &nbsp; priority: 2;<br>
+    }
+    </font></p>
+      </blockquote>
+    <p class="aisparagraph">The priorities of activities in a workframe are used to define the
+    priority of a workframe. The workframe will get the priority of the activity with the
+    highest priority defined in the workframe.
+    </p>
+    <p class="aisparagraph">There are some interesting things to say about priorities and frames.
+    Let us start with thoughtframes. When thoughtframes have no priority, the engine consider
+    them as having priority 0. If more the one thoughtframe was available at the same time
+    then it was up to the engine to decide which one wouldbe fired first, as a modeler you
+    would have no control over that. The engine maintains a list of available thoughtframes
+    ordered by priority. Whichever thoughtframe becomes available first will be fired first.
+    Now that we have priorities you can control the execution sequence of thoughtframes if
+    more then one thoughtframeis available at the same time. Whenever a thoughtframe becomes
+    available the engine will retrieve the priority of the thoughtframe,if no priority is set,
+    0 wil be used. The engine will then add the thoughtframe to the list of available
+    thoughtframes and keep the list sorted, highest priority first. Theoretically all
+    available thoughtframes are fired at the same time. Since no 'at the same time' exists in
+    the engine the engine will work through the list of available thoughtframes starting with
+    the highest priority thoughtframe. It fires it and processes any concluded beliefs.
+    Processing these beliefs could make some of the available thoughtframes unavailable and
+    could make unavailable thoughtframes become available. The newly available thoughtframes
+    are added to the list of available thoughtframes sorted on priority. The engine will keep
+    getting the highest priority available thoughtframe and process it until all available
+    thoughtframes are processed.Once all thoughtframes are processed the engine will start
+    checking the workframes again. The priority of workframes can be set in one of two ways.
+    One is to set the priority on the workframe directly using the 'priority' attribute. The
+    other method is what we had in the past is to have the engine determine the priority of
+    the workframe by checking the priority of the activities. The engine will first check if
+    the priority is set directly on the workframe, if sothat priority will be used. If no
+    priority is set the workframe will get the priorities of the activities and use the
+    priority of the activity with the highest priority in the workframe. If no activities are
+    used in a workframe and no priority is set for the workframe then the priority 0 is used.
+    Available workframes are also placed in a list sorted by priority. We also have the
+    interrupted workframes list sorted by priority. The work selection algorithm determines
+    what workframeis to be worked on next. The work selection algorithm retrieves the highest
+    priority available workframe, the highest priority interrupted workframe and the workframe
+    currently active (if one is active). Out of those three workframes the workframe with the
+    highest priority will be selected to work on. If all three have the same priority, then
+    the current work is selected. If both the interrupted work and available work have the
+    same higher priority then the current work then the interrupted work will be selected (one
+    tends to continue with the work that was started before starting new work). If the
+    availablworkframe has the highest priority of all three then that workframe will be
+    selected to work on.</p>
+    <p class="aisheader2">
+    Tutorial
+    </p>
+    <p class="aisparagraph">Since you have done it till here, you should be able to complete this
+    Lesson and the Atm scenario by yourself. A few hints will be provided about detectables
+    and priorities and some new activities. More detailed information will have to be
+    extraxted from the online language specifications. You can of course check the provided
+    code for comparison. However, try to find alternative and interesting ways to model the
+    interaction between the student, the bank, and the Atm. Furthermore, now you should have
+    the student go straight to the restaurant after getting cash out of the Atm.
+    </p>
+    <p class="aisparagraph">Let us assume that you have modeled a wait workframe for the student,
+    when he is waiting the reply from the Atm to know whether it will receive cash or not. You
+    might have written something like the following:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">workframe wf_waitAtmReply {<br>
+    &nbsp; repeat: true; <br>
+    &nbsp; variables:<br>
+    &nbsp; detectables:<br>
+    &nbsp;&nbsp;&nbsp; detectable AtmRepliesYes {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; when(whenever)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; detect((at4.cashCanBeDispensed = true), dc:100)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; then abort;<br>
+    &nbsp;&nbsp;&nbsp; }<br>
+    &nbsp;&nbsp;&nbsp; detectable AtmRepliesNo {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; when(whenever)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; detect((at4.cashCanBeDispensed = false), dc:100)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; then abort;<br>
+    &nbsp;&nbsp;&nbsp; }<br>
+    &nbsp; when( )<br>
+    &nbsp; do {&nbsp;<br>
+    &nbsp;&nbsp;&nbsp; waitAtmReply();<br>
+    &nbsp; } <br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">This 'wait', even if the waitAtmReply is allowed to last for hours,
+    will halt when an answer from the Atm is received. This is an example of how detectables
+    can be used.
+    </p>
+    <p class="aisparagraph">Be careful about detectables and objects. When an object detects a
+    fact, it also creates a belief and then triggers the conclusions based on that belief.
+    However, the detectable can also be triggered by a belief.
+    </p>
+    <p class="aisparagraph">Note that objects react on facts and not beliefs. This raises an
+    issue regarding when objects should react to things that are communicated to them. It
+    might happen that a fact takes place and is communicated between objects - but the object
+    receiving the communication has already 'known' about this change in the facts of the
+    world (this will probably happen when you model the communications between the bank and
+    the Atm). Using beliefs here is no solution, cause objects do not react on beliefs. This
+    is one of those examples where different approaches are possible, depending very much on
+    the interpretation you give to the model and its way of representing reality. You could
+    decide, for example, to transform the objects into agents given their high degree of
+    complexity and interaction with other agents. Or, you might want to adapt the code to take
+    into consideration these situations (as it has been done in the files we provide as a
+    'solution' to the scenario). Or you might use dataframes, a new language construct
+    recently added to the language (for more on this, as usual refer to the online language
+    specifications).
+    </p>
+    <p class="aisparagraph">
+    For what relates to priorities, a possible way to use them is by inserting a parameter -
+    say, pri - in the activity being considered, for example:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">moveToLocation(Building loc, int
+    pri) {<br>
+    &nbsp; priority: pri;<br>
+    &nbsp; location: loc;<br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">so that you can modify those priorities as the simulation goes on,
+    when you call the activities from a workframe.
+    </p>
+    <p class="aisparagraph">However, be careful when using priorities to control the sequence of
+    activities. The sequence of activities is emergent in work practice and depends on the
+    belief state of an agent. Priorities can be used in situations where one activity clearly
+    has a higher priority then another activity, for example picking up a phone when it rings
+    might get a higher priority than reading a document. In other case, priorities might be
+    less appropriate. Priorities are probably best used when there exist some activities that
+    can be performed at the same time, and you do not want to tie those workframes together
+    artificially.
+    </p>
+    <p class="aisparagraph">For what concerns the receipt that the Atm prints after the
+    transaction has been completed, one way to model this would be through a create_object
+    activity. Details about this activities can be found from the online language
+    specifications (http://www.agentisolutions.com/documentation/language/ls_coa_stx.htm). We
+    will note here that when the activity is used to create a 'copy' of an object, the source
+    of the copy will be the object, and the destination would be an unassigned attribute,
+    whose class will be the class of the newly created object. When the create_object activity
+    creates a new object, the source will be a class and the new object will be an instance of
+    that class. The destination will be an unassigned variable, that you can immediately use
+    in the rest of the workframe. Note furthermore that you can assign a destination name to
+    the newobject, or just let the engine call it 'no_name_1', 'no_name_2', etc.</p>
+    <p class="aisparagraph">
+    As for the rest, you are on your own now! This section will be probably quite challenging
+    and require more time than any of the previous sections. It will force you to review parts
+    of the scenario you had already modeled, and assemble all the concepts you have met in
+    these Lessons together. Remember to use the AgentViewer (and its explanation facility)
+    often: it will help you a lot! Your complete scenario might look like the following two
+    pictures:</p>
+    <p class="aisparagraph">
+    You can also check and compare the final code for this scenario in the code section.
+    Recall that the one provided is just one of the many ways you could code your model, and
+    enjoy the completion of the Atm tutorial!</p>
+    </td>
+  </tr>
+</table>
+</div><div align="left">
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="100%"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" align="center"><font size="1" face="Arial">Questions or problems
+    regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
+    Copyright © 2001 NASA Ames Research Center. All rights reserved.<br>
+    Last modified: 
+	<!--webbot bot="TimeStamp" S-Type="EDITED" S-Format="%A %B %d, %Y" startspan -->Monday April 30, 2007<!--webbot bot="TimeStamp" i-checksum="31391" endspan -->.</font></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

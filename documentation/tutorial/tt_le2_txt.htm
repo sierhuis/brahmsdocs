@@ -1,0 +1,323 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Agent iSolutions - Tutorial - Lesson II - Text</title>
+<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
+<script type="text/javascript" src="../doctree.jsc"></script>
+<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+</head>
+
+<body onload="openTree('OUT10t,OUT13t,OUT16t,DT58');">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
+  <tr>
+    <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" WIDTH="168" HEIGHT="78"></td>
+    <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
+  </tr>
+  <tr>
+    <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../index.htm">Home</a></td>
+    <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
+    <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a href="../index.htm">Documentation</a></td>
+    <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
+    <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
+    <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"></td>
+  </tr>
+</table>
+<div align="left">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td height="10" width="100%"></td>
+  </tr>
+</table>
+</div><div align="left">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
+  <tr>
+    <td width="164" valign="top" bgcolor="#6C69F7" height="1%"><p class="TOCHeader">Documentation</td>
+    <td width="12" rowspan="9" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="492" hspace="3"> </td>
+    <td width="100%" valign="top" align="justify" height="1" colspan="5"><p class="aisheader1">Tutorial
+    - Lesson II - Text</td>
+  </tr>
+  <tr>
+    <td width="167" rowspan="8" valign="top" height="200"><script language="javascript">
+         <!--
+            createDocumentTree("../");
+         -->
+         </script>
+    </td>
+    <td width="100%" valign="top" align="left" height="1" colspan="5"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="12%" valign="top" align="left" height="1"><p class="ls_nav_text_l"><a href="tt_le1_txt.htm">Prev</a> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><font color="#808080">Text</font> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><a href="tt_le2_cod.htm">Code</a> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><a href="tt_le2_syn.htm">Syntax</a> </td>
+    <td width="12%" valign="top" align="left" height="1"><p class="ls_nav_text_r" align="left"><a href="tt_le3_txt.htm">Next</a> </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top" align="justify" height="1" colspan="5"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top" align="justify" height="400" colspan="5"><p style="margin-left:0in;text-indent:0in" class="aisnormal">&nbsp;</p>
+    <p class="aisheader2">Introduction</p>
+    <p class="aisnormal"><br>
+    This chapter will teach you how to create the geography of a Brahms model.</p>
+    <p class="aisheader2"><br>
+    Task</p>
+    <p class="aisnormal"><br>
+    Create the geography of the Atm model. The action takes place in Berkeley: there are
+    streets and buildings, like restaurants and bank branches with their Atms. You will model
+    at least two different Atm locations (one for each Bank: Bank of America and Wells Fargo)
+    and two restaurants (Blakes, and Raleighs). You will also have to describe the distances
+    between these locations.</p>
+    <p class="aisnormal">&nbsp;</p>
+    <p class="aisheader2">Description</p>
+    <p class="aisnormal"><br>
+    The geography of a Brahms model is described through areas, area_definitions and paths.
+    Mind you: this is not a Cartesian geography, it's an abstraction based on concepts (such
+    as areas) and the way those concepts are connected (with paths).</p>
+    <p class="aisnormal"><br>
+    An area_definition is used for defining types of area instances used for representing
+    geographical locations in a model. Area definitions are similar to classes in their use.
+    Examples of area definitions that are already built in the language are 'World',
+    'Building', and 'City'. Through area definitions, the modeler can create new area types or
+    extends those already existing - for example, by creating the area definition for
+    Restaurant, that extends Building.</p>
+    <p class="aisnormal"><br>
+    An area is an instance of an area definition. An example is the area 'Berkeley', instance
+    of City. Areas can be decomposed into sub-areas. For example, a building can be decomposed
+    into one or more floors, or a city into streets, using the part-of relation to other areas
+    that is available in each area.</p>
+    <p class="aisnormal"><br>
+    A path connects two areas and represents a route that can be taken by an agent or object
+    to travel from one area to another. The modeler specifies distance as the time it takes to
+    move from area1 to area2, over the path. The automatic generation of location facts and
+    beliefs for agents and objects moving from one area to another is also implemented. This
+    means that when an object or agent changes location the simulation engine automatically
+    generates a new location fact about the new location of the agent or object that moved,
+    and also add the location fact as a belief to the belief-set of the agent or object. At
+    the same time, the simulation engine will add the location belief to all agents in the
+    location. When an agent moves, the simulation engine will also add a location belief for
+    all the other agents and objects in the location to the belief-set of the moving agent. In
+    other words, objects and agents always &quot;know&quot; where they are, and agents will
+    always notice (we use the term &quot;detect&quot;) other agents and objects in its
+    location. However, moving agents and objects do not notice other agents or objects on
+    their path, even though The move activity can be interrupted by a communicate activity in
+    a workframe triggered by a detectable or a belief communicated by another agent (more on
+    this later&#133;). Agents and objects can move through the entire geography. </p>
+    <p class="aisnormal"><br>
+    An agent or object has the functionality of a container artifact and can carry other
+    agents or objects (cf. the contains relation in the next section). The geography may be
+    implemented to limit the generation of beliefs to other agents in the immediate
+    environment of the specific agent. When an agent or object moves from one location to
+    another location the simulation engine calculates the shortest route between the two
+    locations, based on the available paths between the areas in the model. It should be noted
+    that when an agent or object moves between two areas that do not have a path between them,
+    the simulation engine assumes that the moving time is zero. However, if there is a route
+    (i.e. a path between the areas) the simulation engine will ignore the zero-time distance
+    without a path (otherwise, it would always take the zero-time distance).</p>
+    <p class="aisnormal"><br>
+    Note that areas can have relations and attributes. An area_definition can inherit from
+    more than one area definition, so multiple inheritance is supported. When an area
+    definition is a subclass of another area definition the subclass will 'inherit' the
+    attributes, relations, and initial-facts from its parent area definitions. Attributes and
+    relations will be explained in the next sections. </p>
+    <p class="aisheader2"><br>
+    Tutorial</p>
+    <p class="aisnormal"><br>
+    Create a new file with the .b extension and call it AtmGeography.b</p>
+    <p class="aisnormal"><br>
+    You will have to insert into this file the following elements: 1) a package declaration
+    (to state that this file belongs to your Atm project); 2) definitions of new areas
+    (areadef: such as world, city, buildings, streets, etc.) and instances of these areas; 3)
+    paths describing the distance (in terms of the time necessary for movement) from one
+    location to another.</p>
+    <p class="aisnormal"><br>
+    Hence, start writing: </p>
+    <p class="aisnormal"><br>
+    <font face="Courier">package projects.Atm;</font></p>
+    <p class="aisnormal"><br>
+    to establish that this geography belongs to the AtmModel. Then, you can create the
+    instances of two area definitions already defined by default in the language (World, and
+    City): </p>
+    <p class="aisnormal"><br>
+    <font face="Courier">area AtmGeography instanceof World { }<br>
+    area Berkeley instanceof City partof AtmGeography { }</font></p>
+    <p class="aisnormal"><br>
+    What we are saying is that the action will take place in the AtmGeography 'world', and in
+    particular in Berkeley. 
+    <p class="aisnormal"><br>Please note that you can also use the Brahms Composer to create Brahms files quickly and smoothly. The Composer will take care of the necessary import or package statements: just open your Atm model from the Composer and click on the "Geography Model" tab at the bottom of the screen to access the Geography graphic interface. Then, click on the menu-button with the letters "are" on it and the icon of a filled green shape. This will create a new "Area_1" concept whose name you will change into "AtmGeography" by simply clicking on the icon of the concept on the screen. Remember to save your model! 
+<p class="aisnormal"><br>That said, we warn the reader that we will not keep on presenting both approaches - the text editor and the Composer - for each concept that we will meet in the Tutorial. The Composer manual will tell you how to create concepts via the graphic interface. In this tutorial, instead, we will focus on the language concepts. Just remember that whenever we refer to files being created or edited, this can be done both with an external text editor such as Notepad, or, much more quickly and smoothly, inside the Composer, which offers you advanced features to create and modify concepts and files.
+    
+    <p class="aisnormal"><br>A complete geography will need other components, such as a
+    University (namely the University of California Berkeley), University Halls, Streets,
+    Restaurants, and Bank Branches. Given that BaseAreaDef and Building are standard area
+    definitions already defined in the language, you can write:</p>
+    <p class="aisnormal"><br>
+    <font face="Courier">areadef University extends BaseAreaDef { }<br>
+    areadef UniversityHall extends Building { }<br>
+    areadef BankBranch extends Building { }<br>
+    areadef Restaurant extends Building { }</font></p>
+    <p class="aisnormal"><br>
+    By using the terms extends and partof you have just drafted an area type schema for the
+    geography in which the actions of agents and objects of the Atm model will take place.
+    extends is used to create a new area definition which inherits characteristics from
+    another area definition. partof is used to represent the hierarchy or geographical
+    relations between areas. For example, Wall Street might be partof New York, which is
+    partof the United States. The next step is to populate this schema with specific instances
+    of the area definitions you have just created, to create a hierarchical geography
+    description of the locations in which agents and objects can be placed. You will need a
+    university, some restaurants, some banks, and some university halls where your student
+    agents will study. Note that comments, in Brahms, can be expressed either by preceding
+    them with '//', or by containing them within:</p>
+    <p class="aisnormal"><br>
+    <font face="Courier">/* <br>
+    comment<br>
+    */</font></p>
+    <p class="aisnormal"><br>
+    Hence, if we imagine that Berkeley campus (UCB) is inside the city of Berkeley and that it
+    contains several University Halls, while the banks and the restaurants are in Berkeley but
+    outside the campus, we will write:</p>
+    <p class="aisnormal"><font face="Courier"><br>
+    // inside Berkeley<br>
+    area UCB instanceof University partof Berkeley { }<br>
+    area SouthHall instanceof UniversityHall partof UCB { }<br>
+    area Telegraph_Av_113 instanceof BankBranch partof Berkeley { }<br>
+    area SpraulHall instanceof UniversityHall partof UCB { }<br>
+    area Bancroft_Av_77 instanceof BankBranch partof Berkeley { }<br>
+    area Telegraph_Av_2405 instanceof Restaurant partof Berkeley { }<br>
+    area Telegraph_Av_2134 instanceof Restaurant partof Berkeley { }</font></p>
+    <p class="aisnormal"><br>
+    Almost there: The final step consists of connecting together these different areas to
+    allow agents and objects to move between areas. When agents move between areas, you can
+    either state (each time moving between locations makes it necessary) what the distance is
+    between the two areas the agent has to move (expressed as time needed for the move
+    activity); or define this once with the path statement in the geography file. We will use
+    this second option here:</p>
+    <p class="aisnormal"><br>
+    <font face="Courier">//paths to and from banks from spraul and south halls<br>
+    path StH_to_from_BOA {<br>
+    area1: SouthHall;<br>
+    area2: Telegraph_Av_113;<br>
+    distance: 240;<br>
+    }<br>
+    path SpH_to_from_BOA {<br>
+    area1: SpraulHall;<br>
+    area2: Telegraph_Av_113;<br>
+    distance: 240;<br>
+    }<br>
+    path StH_to_from_WF {<br>
+    area1: SouthHall;<br>
+    area2: Bancroft_Av_77;<br>
+    distance: 200;<br>
+    } </font></p>
+    <p class="aisnormal"><font face="Courier">path SpH_to_from_WF {<br>
+    area1: SpraulHall;<br>
+    area2: Bancroft_Av_77;<br>
+    distance: 200;<br>
+    }<br>
+    //paths to and from restaurants from and to spraul and south halls<br>
+    path StH_to_from_BB {<br>
+    area1: SouthHall;<br>
+    area2: Telegraph_Av_2134;<br>
+    distance: 360;<br>
+    }<br>
+    path SpH_to_from_BB {<br>
+    area1: SpraulHall;<br>
+    area2: Telegraph_Av_2134;<br>
+    distance: 280;<br>
+    }<br>
+    path StH_to_from_RB {<br>
+    area1: SouthHall;<br>
+    area2: Telegraph_Av_2405;<br>
+    distance: 400;<br>
+    }<br>
+    path SpH_to_from_RB {<br>
+    area1: SpraulHall;<br>
+    area2: Telegraph_Av_2405;<br>
+    distance: 320;<br>
+    } </font></p>
+    <p class="aisnormal"><font face="Courier">//paths to and from restaurants and banks<br>
+    path BOA_to_from_BB {<br>
+    area1: Telegraph_Av_113;<br>
+    area2: Telegraph_Av_2134;<br>
+    distance: 60;<br>
+    }<br>
+    path WF_to_from_BB {<br>
+    area1: Bancroft_Av_77;<br>
+    area2: Telegraph_Av_2134;<br>
+    distance: 80;<br>
+    }<br>
+    path BOA_to_from_RB {<br>
+    area1: Telegraph_Av_113;<br>
+    area2: Telegraph_Av_2405;<br>
+    distance: 80;<br>
+    }<br>
+    path WF_to_from_RB {<br>
+    area1: Bancroft_Av_77;<br>
+    area2: Telegraph_Av_2405;<br>
+    distance: 100;</font><br>
+    }</p>
+    <p class="aisnormal"><br>
+    Note that if you model paths from a to b and from b to c but not from a to c, when you
+    issue a move command from a to c the compiler will automatically calculate the total
+    travel time for you. </p>
+    <p class="aisnormal"><br>
+    Agents do not notice anything or do other things on their way to a location. If you want
+    something like that to happen, then you have to explicitly code it. For example, if you
+    want to model the possibility that a student can meet another student on the street while
+    on his road from area A to area B, you might split his movement into 2 steps: from A to
+    the street (modeled as an area), and from the street to B. The student agents can now meet
+    eachother in the street area. This would definitely be a more advanced Brahms model, and
+    thus we do not expect that you are able to create such a more complex model at this stage.</p>
+    <p class="aisnormal"><br>
+    As hinted above, there are at least 3 ways to model distances and movements in Brahms: 1)
+    not using paths at all, but using the move activity instead (see section 4.7) and defining
+    each time how long a certain move activity should take; 2) defining all the paths between
+    places, as done in this section (if you forget to define the path and also the move-time,
+    the compiler will interpret that as it taking zero time); 3) have travel times that change
+    according to the conditions-for example, if there is a path from a to b requiring 10
+    seconds that has been coded in a geography file, you might override that within the move
+    action; you might even code the time as a belief of the agent (so that the agent modifies
+    this belief according to factors like weather conditions or transportation means being
+    used). An additional way to move something in a Brahms model is to have an object-say, a
+    motorcycle, that contains another agent or object: the motorcycle will actually do the
+    move activity, and the total travel time will depend on it rather than the speed of the
+    agent. Containment of agents and/or objects is realized with a contains relation. We will
+    discuss the contains relation in section 4.8.<br>
+    <p class="aisnormal"><br>Now you are ready to try and compile your Atm model for the first time. Follow the steps described in the previous sections: remember to run the bc.bat file on the AtmModel.b file, which will import all the other files in the Atm folder (which currently only includes the AtmGeography.b file), or simply to choose the "Build Model" menu option in the Composer once your Atm model is open. If everything goes well, the xml code will be produced. If something goes wrong, either in the command line interface or in the Composer some error messages will appear. In particular, the Composer will give you information about possible syntactical and semantic errors in your code, with the exact line and column where they have been found.
+     <p class="aisnormal"><br>Some final notes: as you will soon see in the next sections, an agent needs an initial
+    belief about the location of an object (say, an Atm machine) to move there. Remember that
+    area definitions can have attributes, and agents can have beliefs about them-this might
+    turn useful in your models. </td>
+  </tr>
+</table>
+</div><div align="left">
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="100%"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" align="center"><font size="1" face="Arial">Questions or problems
+    regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
+    Copyright © 2000 NASA Ames Research Center. All rights reserved.<br>
+    Last modified: 
+	<!--webbot bot="TimeStamp" S-Type="EDITED" S-Format="%A %B %d, %Y" startspan -->Monday April 30, 2007<!--webbot bot="TimeStamp" i-checksum="31391" endspan -->.</font></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

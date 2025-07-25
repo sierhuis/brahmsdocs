@@ -1,0 +1,523 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Agent iSolutions - Tutorial - Lesson VIII - Text</title>
+<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
+<script type="text/javascript" src="../doctree.jsc"></script>
+<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+</head>
+
+<body onload="openTree('OUT10t,OUT13t,OUT22t,DT76');">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
+  <tr>
+    <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" WIDTH="168" HEIGHT="78"></td>
+    <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
+  </tr>
+  <tr>
+    <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../index.htm">Home</a></td>
+    <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
+    <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a href="../index.htm">Documentation</a></td>
+    <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
+    <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
+    <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"></td>
+  </tr>
+</table>
+<div align="left">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td height="10" width="100%"></td>
+  </tr>
+</table>
+</div><div align="left">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
+  <tr>
+    <td width="164" valign="top" bgcolor="#6C69F7" height="1%"><p class="TOCHeader">Documentation</td>
+    <td width="12" rowspan="7" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="1000" hspace="3"> </td>
+    <td width="100%" valign="top" align="justify" height="1" colspan="5"><p class="aisheader1">Tutorial
+    - Lesson VIII - Text</td>
+  </tr>
+  <tr>
+    <td width="167" rowspan="6" valign="top" height="200"><script language="javascript">
+      	 <!--
+      	 	createDocumentTree("../");
+      	 -->
+      	 </script>
+    </td>
+    <td width="100%" valign="top" align="left" height="1" colspan="5"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="12%" valign="top" align="left" height="1"><p class="ls_nav_text_l"><a href="tt_le7_txt.htm">Prev</a> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><font color="#808080">Text</font> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><a href="tt_le8_cod.htm">Code</a> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><a href="tt_le8_syn.htm">Syntax</a> </td>
+    <td width="12%" valign="top" align="left" height="1"><p class="ls_nav_text_r" align="left"><a href="tt_le9_txt.htm">Next</a> </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top" align="justify" height="1" colspan="5"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top" align="justify" height="400" colspan="5"><p class="aisheader2">Introduction
+    </p>
+    <p class="aisparagraph">This chapter will teach you how to use variables in Brahms models.
+    </p>
+    <p class="aisheader2">Task
+    </p>
+    <p class="aisparagraph">Until now we have been using groups almost as if they were specific
+    agents: referencing specific objects such as Alex_BankCard, and sacrificing generality to
+    simplicity. The task in this lesson is to make the activities we have already created more
+    general by using variables: for example, the cash that the Student uses will not be
+    Alex_Cash, but a 'generic' cash that is bound as Alex only at run time. This way the same
+    construct can be used for any other agent. The same reasoning must hold for restaurants,
+    banks, bank cards, and so on, given that there is more than one restaurant, more than one
+    bank, etc.
+    </p>
+    <p class="aisheader2">Description
+    </p>
+    <p class="aisparagraph">Variables can be used in a workframe or thoughtframe to write more
+    generic work- and thoughtframes. Before a variable can be used it has to be declared. The
+    scope of the variable is bound to the frame it is declared in. A variable that is not
+    declared within the workframe it is used in, must be declared higher up in the
+    activity-tree the workframe is part of. (The activity tree is created through composite
+    activities.)
+    </p>
+    <p class="aisparagraph">
+    Variables in a frame make the frame a template for activities (workframe) or reasoning
+    (thoughtframe) that agents and objects may perform. Variables may have quantifiers, as we
+    will describe below. Brahms supports three quantifiers for variables: foreach, forone, and
+    collectall. Variables can be used in preconditions, consequences, detectables, and as
+    parameters for activities. The quantifier affects the way a variable is bound to a
+    specific instance of the defined type (group or object class) of the variable.
+    </p>
+    <p class="aisparagraph"><i>For-each</i>
+    </p>
+    <p class="aisparagraph">
+    A for-each variable is bound to only one instance, but for each instance that can be bound
+    to the variable, a separate workframe instantiation is created. Consider, for example, a
+    precondition and workframe indicating:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">workframe doWork {<br>
+    &nbsp; variables:<br>
+    &nbsp;&nbsp;&nbsp; foreach(Order) order;<br>
+    &nbsp; when (knownval(order is-assigned-to Allen)) <br>
+    &nbsp; do {<br>
+    &nbsp;&nbsp;&nbsp; workOn(order);<br>
+    &nbsp; }<br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">If three Orders are assigned to agent Allen and agent Allen has
+    beliefs for all three of the orders matching the precondition, Brahms creates three
+    workframe instantiations (wfi's) for agent Allen, and in each wfi the for-each variable is
+    bound to one of the three orders. This means that Allen works on all three the orders, one
+    order at a time. The order in which Allen works on the three orders is
+    underfined.
+    </p>
+    <p class="aisparagraph"><i>Collect-all</i>
+    </p>
+    <p class="aisparagraph">
+    A collect-all variable can be bound to more than one instance. The variable is bound to
+    all matching belief-instances, and only one wfi is created. Consider the previous example
+    with a different variable declaration:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">variables:<br>
+    &nbsp; collectall(Order) order;
+    </font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">In this situation the simulation engine creates one wfi and binds the
+    collectall variable to a list of all three orders. This means that Allen works on all
+    three orders at the same time, cutting the actual activity duration in three.
+    </p>
+    <p class="aisparagraph"><i>For-one</i></p>
+    <p class="aisparagraph">A for-one variable can be bound to only one belief-instance, and only
+    one wfi is created. A for-one variable binds to the first belief-instance found and
+    ignores other possible matches. As far as the modeler is concerned, the selection is
+    random, meaning it in the case of multiple matches it is undefined which order is
+    selected. In the previous example workframe, the variable declaration would look like:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">variables:<br>
+    &nbsp; forone(Order) order;
+    </font></p>
+      </blockquote>
+    <p class="aisparagraph">In this situation, one wfi gets created, and only one of the three
+    orders gets bound. This means that Allen randomly works on just one of the orders, cutting
+    the actual activity duration in three as in the collectall case.
+    </p>
+    <p class="aisparagraph"><i>Pre-, Post-, and unassigned variables</i>
+    </p>
+    <p class="aisparagraph">
+    The simulation engine makes a distinction in how variables are bound in a frame. The three
+    types of value assignments are pre-assigned, post-assigned and unassigned.
+    </p>
+    <p class="aisparagraph">Unassigned variables are variables not used in any preconditions but
+    that get their binding in an activity. unassigned variable is unbound (that is, it does
+    not get a value) when a frame instantiation is created; an unassigned variable gets a
+    value through a communicated belief or object creation activity, which binds the variable
+    to a newly created object.
+    </p>
+    <p class="aisparagraph">Pre-assigned variables are variables that get their values assigned
+    in preconditions and get a pre-binding before the preconditions are evaluated.
+    Pre-assigned variables are variables used in an object/attribute tuple (OA) or that are
+    used in an object/relation tuple (OR) or object/relation/object triplet (ORO) where the
+    object is a variable. In case of the ORO it could be one of the objects that is a variable
+    or both. The simulation engine makes sure that for each OA, OR (with an (un)known
+    modifier) and ORO there is at least one matching belief/fact before fully evaluating the
+    preconditions. The variables used in these condition elements will get a pre-binding by
+    matching the variables with the object values in the beliefs/facts. A final binding will
+    be determined when the preconditions are evaluated.
+    </p>
+    <p class="aisparagraph">Post-assigned variables are variables that get their values assigned
+    in preconditions as well, but they will get a binding during the evaluation of the
+    preconditions. These variables have no pre-binding like pre-assigned variables do.
+    Post-assigned variables are the variables not used in any OA, OR, ORO condition elements
+    but are usually 'assignment' variables specified on the left hand side or right hand side
+    of a value condition, for example:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">&lt;myagent&gt;.car = &lt;mycar&gt;</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">&lt;myagent&gt; is part of an OA pair and is therefor a post-assigned
+    variable. &lt;mycar&gt; is not specified in any OA, OR, ORO condition element and is
+    therefor a post-assigned variable. The simulation engine will have found potential matched
+    for the OA and will have pre-bound the &lt;myagent&gt; variable. During the evaluation of
+    the precondition the simulation engine will then for each value of &lt;myagent&gt; get the
+    belief/fact that caused that value binding for &lt;myagent&gt; and retrieve its right hand
+    side. Assume that the belief was:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">John.car = car1</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">&lt;myagent&gt; is John and the right hand side is 'car1'. The
+    simulation engine will now assigne the value 'car1' to the variable &lt;mycar&gt; during
+    the evaluation of the precondition.
+    </p>
+    <p class="aisparagraph">Due to the distinction between pre- and post-assigned variables
+    ordering of preconditions is also important if no conflicts are to occur with the
+    constraints listed below. Assume a frame with the following preconditions:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">knownval(&lt;totalOrders&gt; =
+    &lt;numVMOrders&gt;+Builder.numOrders)&nbsp;<br>
+ knownval(VM.numOrders = &lt;numVMOrders&gt;)</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">In this case the first precondition has two post-assigned variables
+    &lt;totalOrders&gt; and &lt;numVMOrders&gt;. The simulation engine can resolve
+    Builder.numOrders to a value but cannot resolve the values for the post-assigned
+    variables. This would be an endless list of possible values. The simulation engine would
+    report an error and fail the evaluation of the precondition. If the preconditions would
+    now be reversed</p>
+      <blockquote>
+    <p class="aisparagraph">
+    <font face="Courier">knownval(VM.numOrders = &lt;numVMOrders&gt;)&nbsp;<br>
+    knownval(&lt;totalOrders&gt; = &lt;numVMOrders&gt;+Builder.numOrders)</font></p>
+      </blockquote>
+    <p class="aisparagraph">
+    then the simulation engine resolves the &lt;numVMOrders&gt; post-assigned variable first,
+    it will bind a value to it by finding a belief of the form VM.numOrders = ? and assigning
+    the right hand side value to the variable. Then during the evaluation of the second
+    precondition the &lt;numVMOrders&gt; variable will have a value bound to it that can be
+    used together with the right hand side value of the belief Builder.numOrders = ? to assign
+    a value to &lt;totalOrders&gt;. The evaluation of all preconditions will succeed and the
+    frame can be made available.
+    </p>
+    <p class="aisparagraph">The left hand side attribute type and the right hand side value-type
+    or right hand side attribute type of a value-expression must be the same.
+    </p>
+    <p class="aisparagraph">
+    The left hand side and right hand side types in a relational expression must match the
+    types as defined for the relation used in the relational expression.
+    </p>
+    <p class="aisheader2">Tutorial
+    </p>
+    <p class="aisparagraph">Let's go back to the code in Student.b. Let's check again how the
+    student - any student - decides whether he or she needs to get more cash from the
+    Atm:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">workframe wf_moveToLocationForCash {<br>
+    &nbsp; repeat: true;<br>
+    &nbsp; variables:<br>
+    &nbsp; when(knownval(Alex_Cash.amount &lt; 10.00)) <br>
+    &nbsp; do {<br>
+    &nbsp;&nbsp;&nbsp; moveToLocation(Telegraph_Av_113);<br>
+    &nbsp;&nbsp;&nbsp; conclude((Alex_Cash.amount = Alex_Cash.amount +
+    current.preferredCashOut), bc:100,
+    fc:100); <br>
+    &nbsp;&nbsp;&nbsp; moveToLocation(SouthHall);<br>
+    &nbsp; }<br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">so, every student will check the amount of cash of Alex, and every
+    student will go for cash to the Atm of the bank where Alex has his account! This of course
+    is wrong. Variables can correct this situation.
+    </p>
+    <p class="aisparagraph">The way to solve this impasse is through matching, using variables in
+    the precondition of the workframe in the Student group. The same reasoning applies to
+    relations. Say that we have a relation in the student group: public Bankcard hasCard. To
+    match a specific student with a specific card, we need in the file of the agent (for
+    example, Alex_Agent) who is memberof Student, something like: initial_facts (or/and
+    beliefs):
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">(current hasCard Alex_BankCard)</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">then, we would bind the agent to the proper card from inside the
+    Student file with a code like:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">workframe matchBankcardExampleInGroupStudent {<br>
+    &nbsp; repeat:false;<br>
+    &nbsp; variables:<br>
+    &nbsp;&nbsp;&nbsp; forone(BankCard) bc; // let's assume the student has only <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    // one bankcard<br>
+    &nbsp; when (knownval(current hascard bc)) // here the engine matches and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    // binds the var. bc<br>
+    &nbsp; do {<br>
+    &nbsp;&nbsp;&nbsp; doSomeActivityThatLowersBankCardBalanceWithThreeDollars();<br>
+    &nbsp;&nbsp;&nbsp; conclude((bc.balance = bc.balance - 3.00), bc:100, fc:100);<br>
+    &nbsp; }<br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">Variables are powerful in rule-based programming. When you want to
+    use an agent or object or value from an agent's belief within a workframe or thoughtframe,
+    you most likely will have to use a variable in the precondition. You also use a variable
+    to make the matching of the rule more general (note, in fact, that in the example above
+    the precondition would match for every student and the bankcard that belongs to the
+    student. It would even be possible to have the student have multiple bankcards - i.e.
+    multiple beliefs with the relation; by using the forone variable - instead of a foreach -
+    the engine would simply match to one of the beliefs).
+    </p>
+    <p class="aisparagraph">
+    When you use variables in workframes, the first thing the engine does it to checks all the
+    variables of that kind; the second thing consists of binding the variables to the specific
+    item we are considering in the preconditions. By giving it a name inside the workframe, we
+    become able to use them in methods being called, conclusions, etc. In particular, their
+    being used as parameters in activities is one of the most useful features in the language.
+    Note that, in fact, you can write something like:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">knownval(p = current.something)
+    </font></p>
+      </blockquote>
+    <p class="aisparagraph">which will effectively create a binding and pass the
+    current.something value to p, that could be used as a parameter in a method/activity
+    (importantly, you cannot pass a form like object.attribute as a parameter for any action).
+    For example, in the communicatePin activity we can create a variable p for the pin and
+    pass that as the parameter.
+    </p>
+    <p class="aisparagraph">Similarly, we can use variables to specify the cost of the
+    restaurants in lines such as;
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">conclude((current.howHungry = howHungry -
+    amount_of_food_at_restaurant), bc: 100); </font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">where the variable that determines by how much the hunger of the
+    agent has decrease after eating might be decided and bound at run-time depending on which
+    restaurant the agent is in at that moment.
+    </p>
+    <p class="aisparagraph">Consider also the following two lines:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">knownval(current hasAccount bka) and<br>
+    knownval(bka.pin = p) and</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">The first line binds a specific Account bka to the current agent;
+    then, the second line will bind the pin to that specific Account. In other words, when we
+    use complex relations (e.g., a son of b son of c son of&#133;) we can bind them together
+    by respecting their logical order. Furthermore, the equality sign in the lines above will
+    also give to p the value of bka.pin.
+    </p>
+    <p class="aisparagraph">Binding and beliefs are really crucial in workframes and
+    thoughtframes. To use variables, you have to bind them with the preconditions (there are
+    exceptions to this rule, and we will discuss them later in this section). But to evaluate
+    the preconditions, your agents need beliefs. If your code is not working as you expect,
+    try checking first if these crucial steps (beliefs and binding) have been coded correctly!
+    </p>
+    <p class="aisparagraph">Be careful about using variables with locations: note that,
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">forone(Cash) cs;<br>
+    // forone(location) lc; this one would not work<br>
+    forone(Building) bd; // this line will work </font></p>
+    <p class="aisparagraph"><font face="Courier">when(knownval(current hasCash cs) and<br>
+    knownval(cs.amount &lt; 16.00) and <br>
+    knownval(current.howHungry &gt; 20.00))<br>
+    knownval(current.location = dn.location))</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">The first line will not work, the second will. A very general way to
+    deal with locations and geography concepts is to refer to them as AreaDef, which is a
+    'meta type' (cf. <a href="http://www.agentisolutions.com/documentation/language/ls_att_sem.htm">http://www.agentisolutions.com/documentation/language/ls_att_sem.htm</a>). In
+    the code above for example you could write:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">forone(BaseAreaDef) bd; // this line will work</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">and this line will work regardless of whether bd is a building, a
+    city, a world, etc&#133;
+    </p>
+    <p class="aisparagraph">Note that the above examples are assigned variables. Pre- and post-
+    assigned variables are both assigned variables (consider the example given earlier,
+    &lt;myagent&gt;.car = &lt;mycar&gt;, where myagent is pre-assigned and mycar is
+    post-assigned; a further example: in current.mytime = time, time is post-assigned). If we
+    were using relations (that, as we have discussed, can have multiple values) in combination
+    with foreach statements, we could produce multiple instantiations of the same workframe.
+    With the collectall, instead, we would have one only workframe instance that would process
+    all the (eg the variable contains instantiation of different attributes/relations).
+    Unassigned variables instead are not inserted (nor bound) in any preconditions - rather,
+    they are used and get their context in a create-object activity (unassigned variable will
+    be bound to the destination object), or in communications to bind the variable to a
+    context based on what is communicated. For example, in a communication activity where we
+    want to transmit a boolean whatever that can be either false or true, we can write:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">Communication_activity<br>
+    Send (current.whatever = current.whatever) </font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">or also:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">Send (current.whatever =
+    anyvalue)</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">
+    And both versions will work.
+    </p>
+    <p class="aisparagraph">So, let's try to apply this new tools to the Atm case. We will have
+    to modify the workframe moveToLocationForCash as follows:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">workframe wf_moveToLocationForCash {<br>
+    &nbsp; repeat: true;
+    </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; variables:<br>
+    &nbsp;&nbsp;&nbsp; forone(Cash) cs; <br>
+    &nbsp;&nbsp;&nbsp; forone(Atm) at;<br>
+    &nbsp;&nbsp;&nbsp; forone(Bank) bk;<br>
+    &nbsp;&nbsp;&nbsp; forone(Building) bd;<br>
+    &nbsp;&nbsp;&nbsp; forone(Account) ac;
+    </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; when(knownval(current hasCash cs) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(cs.amount &lt; 10.00) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current hasAccount ac) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(ac openedWithBank bk) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(at ownedbyBank bk) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; not(current.location = at.location) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(at.location = bd ) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.readyToLeaveRestaurant = false))<br>
+    &nbsp; do {<br>
+    &nbsp;&nbsp;&nbsp; moveToLocation(bd);<br>
+    &nbsp;&nbsp;&nbsp; conclude((cs.amount = cs.amount + current.preferredCashOut), bc:100, fc:100); <br>
+    &nbsp;&nbsp;&nbsp; moveToLocation(SouthHall);<br>
+    &nbsp; }<br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">(here we are still making the student first go back to a University
+    Hall after she got her money, before spending the cash at some restaurant, because it is
+    simpler. </p>
+    <p class="aisparagraph">But soon - in one of the next lessons - you will be asked to model
+    this more realistically by having the student go straight to the restaurant after getting
+    the cash). Remember to add Alex's initial beliefs:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">(current hasAccount Alex_Account);<br>
+    (Alex_Account openedWithBank Boa_Bank);<br>
+    (Boa_Atm ownedbyBank Boa_Bank);
+    </font></p>
+      </blockquote>
+    <p class="aisparagraph">
+    and also modify the Study workframe as follows:</p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">
+    workframe wf_study {<br>
+    &nbsp; repeat: true;<br>
+    &nbsp; variables:<br>
+    &nbsp;&nbsp;&nbsp; forone(Cash) cs;
+    </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; when(knownval(Campanile_Clock.time &lt; 20) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current hasCash cs) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.howHungry &lt; 21) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.location = SouthHall) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(cs.amount &gt;10.00)) <br>
+    &nbsp; do { <br>
+    &nbsp;&nbsp;&nbsp; study();<br>
+    &nbsp; }<br>
+    } </font></p>
+      </blockquote>
+    <p class="aisparagraph">There are some interesting issues in this construct. We have an
+    example of the successive binding we mentioned earlier, where variables are bound one
+    after the other, sequentially. We can also see how those variables can be used as
+    parameters in the activities that are triggered from inside the workframe, as well as in
+    the conclusions. Also, note that as the activities become more complex, so become their
+    interactions. Take the preconditions in the goToLocationForCash: try to see what happens
+    if we remove the precondition:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">knownval(current.readyToLeaveRestaurant =
+    false))</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">The reader should now try to apply these concepts to the diner case.
+    Eating at the restaurant is structured into the various steps above, that can be now made
+    more general by passing parameters and using variables. You should have preconditions in
+    the workframe wf_move that test in which location-restaurant your agent is. When modeling
+    the restaurants, you will have to consider the fact the restaurants have different prices,
+    and the agent might chose the restaurant each time after having considered how money she
+    is carrying. Such chosen restaurant can be modeled either as a relation or as an
+    attribute. What would be better? This is another open question of modeling. One factor to
+    consider might be, for example, the following: while attributes can only hold (currently)
+    single values, relations can be multiple.
+    </p>
+    <p class="aisparagraph">After you attempt to complete this scenario, you can find comparison
+    code up to this section here.</td>
+  </tr>
+</table>
+</div><div align="left">
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="100%"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" align="center"><font size="1" face="Arial">Questions or problems
+    regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
+    Copyright © 2001 NASA Ames Research Center. All rights reserved.<br>
+    Last modified: 
+	<!--webbot bot="TimeStamp" S-Type="EDITED" S-Format="%A %B %d, %Y" startspan -->Monday April 30, 2007<!--webbot bot="TimeStamp" i-checksum="31391" endspan -->.</font></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

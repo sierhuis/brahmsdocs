@@ -1,0 +1,151 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Agent iSolutions - Language - The Unknown Value</title>
+<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
+<script type="text/javascript" src="../doctree.jsc"></script>
+<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+</head>
+
+<body onload="openTree('OUT0t,DT92');">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
+    <tr>
+      <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" width="168" height="78"></td>
+      <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
+    </tr>
+    <tr>
+      <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../index.htm">Home</a></td>
+      <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
+      <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a href="../index.htm">Documentation</a></td>
+      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
+      <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
+      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">&nbsp;</td>
+    </tr>
+  </table>
+
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td height="10" width="100%">
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
+    <tr>
+      <td width="164" valign="top" bgcolor="#6C69F7" height="1%">
+        <p class="TOCHeader">Documentation</td>
+      <td width="12" rowspan="9" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="550" hspace="3">
+      </td>
+      <td width="100%" valign="top" align="justify" height="1" colspan="2">
+        <p class="aisheader1">Language Specification - The 'Unknown' Value</p>
+      </td>
+    </tr>
+    <tr>
+      <td width="167" rowspan="8" valign="top" height="200">
+      	 <script language="javascript">
+      	 <!--
+      	 	createDocumentTree("../");
+      	 -->
+      	 </script>
+      </td>
+      <td width="100%" valign="top" align="left" height="1" colspan="2">
+        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+      </td>
+    </tr>
+    <tr>
+      <td width="36" valign="top" align="left" height="1">
+      <p class="ls_nav_text_l"><a href="ls_tdf_stx.htm">Prev</a>
+      </td>
+      <td width="100%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_r" align="left">
+      <a href="ls_collectiontypes.htm">Next</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" valign="top" align="justify" height="1" colspan="2">
+        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" valign="top" align="justify" height="400" colspan="2">
+
+<p class="aisparagraph">The Brahms language provides support for the
+‘unknown’ value and ‘unknown’ truth-value in beliefs, facts,
+preconditions, consequences, detectables and transfer definitions.</p>
+<p class="aisparagraph">The ‘unknown’ value is a type independent value and
+can be assigned to any variable, parameter, attribute or relation. The model
+builder must be aware that the value ‘unknown’ can at runtime potentially be
+assigned to a property of an activity (such as max_duration). Properties such as
+max_duration do not allow the value ‘unknown’. If such a value is assigned
+anyway at runtime then the virtual machine will generate a warning in the
+virtual machine’s log and use the default value for that property. If however
+no default value is available for the property an error will be generated and
+the agent/object in which the error occurred will be halted.</p>
+<p class="aisparagraph">The ‘unknown’ value can be tested for in
+preconditions, can be communicated in communication and broadcast activities,
+can be detected using detectables and can be concluded using consequences. Note
+that when the value ‘unknown’ is concluded for a relation that all the
+previously existing values for that relation are retracted. If an agent
+concludes that it doesn’t know the value of the relation (unknown) it is
+necessary to remove all existing values for the relation. The reverse is valid
+as well. If an agent concludes a value for a relation other then ‘unknown’
+and the value ‘unknown’ was already present for that relation, then the
+‘unknown’ value will be retracted and replaced by the new value.</p>
+<p class="aisparagraph">The value ‘unknown’ for the truth-value can be used
+to specify that the truth-value for a relation is unknown or uncertain. The
+‘unknown’ truth-value can also be tested for in preconditions and can be
+used in consequences to conclude the truth-value.</p>
+<p class="aisparagraph">Before
+reporting any errors to the support team when a model doesn’t behave as
+expected make sure to check the vm.log file first. This log file might list
+warnings or errors that relate to assigning the value ‘unknown’ to a
+property of an activity that doesn’t allow for the value unknown.</p>
+
+<p class="aisparagraph">&nbsp;</p>
+
+
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div align="left">
+  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="100%">
+        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" align="center"><font size="1" face="Arial">
+Questions or problems regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
+Copyright &#169; 2001-2006 NASA Ames Research Center. All rights reserved.<br>
+Last modified: 
+		<!--WEBBOT 
+   bot=TimeStamp
+   S-Type="EDITED"
+   S-Format="%A %B %d, %Y" startspan
+ -->Monday April 30, 2007<!--webbot bot="TimeStamp" i-checksum="31391" endspan -->.</font></td>
+    </tr>
+  </table>
+</div>
+
+</body>
+
+</html>

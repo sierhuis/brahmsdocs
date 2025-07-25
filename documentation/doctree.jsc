@@ -1,0 +1,284 @@
+
+function createDocumentTree(relPath) {
+  // A couple of rules when modifying the tree
+  // 1. Check what the last used outline id (OUT<id>) is and what the last used 
+  //    element id is (the number used for non-outlined elements). Both
+  // 	number are at the end of this section. If you add new elements, make
+  //    sure to update these numbers.
+  // 2. Currently 3 levels are supported, if you need more let me know, we can
+  //    easily modify the tree script.
+  // 3. The ouline levels must have an id that starts with OUT. Their paragraph
+  //	tag must have as id: OUT<id>t, the IMG tag must have as id: OUT<id>i and
+  //	the DIV tag following the outline heading must have as id: OUT<id>s.
+  // 4. The non-outlined elements must have as id: DT<id>
+  // 5. The relPath parameter specifies the relative path from the documentation
+  //	directory. If the document containing the tree is in the documentation
+  //	directory relPath can be "". Other wise it should specify the path to
+  // 	documentation from the location where the document resides that includes
+  // 	the tree. If the document would be located in 'documentation/language'
+  //	relPath must be '../'
+  //
+  //	Last used OUT id = 28
+  // 	Last used DT id = 96 
+
+  var noneimg = "\""+relPath+"../images/none.gif\"";
+  var plusimg = "\""+relPath+"../images/plus.gif\"";
+
+  // Overview
+  window.document.writeln("<p class=\"TOC1tree\" id=\"DT1\"><img src="+noneimg+" border=\"0\" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"index.htm\">Overview</a></p>");
+
+  // Language specification
+  window.document.writeln("<p class=\"TOC1tree\" id=\"OUT0t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL1\" id=\"OUT0i\" width=\"9\" height=\"9\">&nbsp;Language</p>");
+  window.document.writeln("<div style=\"display:none\" id=\"OUT0s\">");
+    window.document.writeln("<p class=\"TOC2tree\" id=\"DT2\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_title.htm\" style=\"text-decoration:none;\">Title</a></p>");
+    window.document.writeln("<p class=\"TOC2tree\" id=\"DT3\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_info.htm\" style=\"text-decoration:none;\">Document Info</a></p>");
+    window.document.writeln("<p class=\"TOC2tree\" id=\"DT4\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_version.htm\" style=\"text-decoration:none;\">Version History</a></p>");
+
+    // Introduction
+    window.document.writeln("<p class=\"TOC2tree\" id=\"OUT1t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL2\" id=\"OUT1i\" width=\"9\" height=\"9\">&nbsp;Introduction</p>");
+    window.document.writeln("<div style=\"display:none\" id=\"OUT1s\">");
+      window.document.writeln("<p class=\"TOC3tree\" id=\"DT5\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_purpose.htm\" style=\"text-decoration:none;\">Purpose</a></p>");
+      window.document.writeln("<p class=\"TOC3tree\" id=\"DT6\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_usage.htm\" style=\"text-decoration:none;\">Usage</a></p>");
+      window.document.writeln("<p class=\"TOC3tree\" id=\"DT7\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_audience.htm\" style=\"text-decoration:none;\">Intended Audience</a></p>");
+      window.document.writeln("<p class=\"TOC3tree\" id=\"DT8\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_summary.htm\" style=\"text-decoration:none;\">Summary</a></p>");
+    window.document.writeln("</div>");
+
+    // Language Definition
+    window.document.writeln("<p class=\"TOC2tree\" id=\"OUT2t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL2\" id=\"OUT2i\" width=\"9\" height=\"9\">&nbsp;Language Definition</p>");
+    window.document.writeln("<div style=\"display:none\" id=\"OUT2s\">");
+      window.document.writeln("<p class=\"TOC3tree\" id=\"DT9\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_id.htm\" style=\"text-decoration:none;\">Identifiers</a></p>");
+      window.document.writeln("<p class=\"TOC3tree\" id=\"DT10\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_cun_stx.htm\" style=\"text-decoration:none;\">Compilation Unit</a></p>");
+      window.document.writeln("<p class=\"TOC3tree\" id=\"DT11\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_pck_stx.htm\" style=\"text-decoration:none;\">Package Declaration</a></p>");
+      window.document.writeln("<p class=\"TOC3tree\" id=\"DT12\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_imp_stx.htm\" style=\"text-decoration:none;\">Import Declaration</a></p>");
+      window.document.writeln("<p class=\"TOC3tree\" id=\"DT13\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_mod_stx.htm\" style=\"text-decoration:none;\">Model</a></p>");
+
+      // Concepts
+      window.document.writeln("<p class=\"TOC3tree\" id=\"OUT3t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL3\" id=\"OUT3i\" width=\"9\" height=\"9\">&nbsp;Concepts</p>");
+      window.document.writeln("<div style=\"display:none\" id=\"OUT3s\">");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT14\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_grp_stx.htm\" style=\"text-decoration:none;\">Group</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT15\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_agt_stx.htm\" style=\"text-decoration:none;\">Agent</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT16\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_cls_stx.htm\" style=\"text-decoration:none;\">Class</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT17\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_obj_stx.htm\" style=\"text-decoration:none;\">Object</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT18\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_coc_stx.htm\" style=\"text-decoration:none;\">Conceptual Class</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT19\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_cob_stx.htm\" style=\"text-decoration:none;\">Conceptual Object</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT20\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_adf_stx.htm\" style=\"text-decoration:none;\">Area Definition</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT21\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_are_stx.htm\" style=\"text-decoration:none;\">Area</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT22\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_pat_stx.htm\" style=\"text-decoration:none;\">Path</a></p>");
+      window.document.writeln("</div>");
+      
+      // Attributes, Relations, Variables
+      window.document.writeln("<p class=\"TOC3tree\" id=\"OUT4t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL3\" id=\"OUT4i\" width=\"9\" height=\"9\">&nbsp;Attributes, Relations, and Variables</p>");
+      window.document.writeln("<div style=\"display:none\" id=\"OUT4s\">");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT23\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_att_stx.htm\" style=\"text-decoration:none;\">Attribute</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT24\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_rel_stx.htm\" style=\"text-decoration:none;\">Relation</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT25\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_var_stx.htm\" style=\"text-decoration:none;\">Variable</a></p>");
+      window.document.writeln("</div>");
+      
+      // Belief and Facts
+      window.document.writeln("<p class=\"TOC3tree\" id=\"OUT5t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL3\" id=\"OUT5i\" width=\"9\" height=\"9\">&nbsp;Beliefs and Facts</p>");
+      window.document.writeln("<div style=\"display:none\" id=\"OUT5s\">");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT26\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_bel_stx.htm\" style=\"text-decoration:none;\">Initial Belief</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT27\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_fct_stx.htm\" style=\"text-decoration:none;\">Initial Fact</a></p>");
+      window.document.writeln("</div>");
+      
+      // Activities
+      window.document.writeln("<p class=\"TOC3tree\" id=\"OUT6t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL3\" id=\"OUT6i\" width=\"9\" height=\"9\">&nbsp;Activities</p>");
+      window.document.writeln("<div style=\"display:none\" id=\"OUT6s\">");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT28\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_pac_stx.htm\" style=\"text-decoration:none;\">Primitive</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT29\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_mov_stx.htm\" style=\"text-decoration:none;\">Move</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT89\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_caa_stx.htm\" style=\"text-decoration:none;\">Create Agent</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT94\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_car_stx.htm\" style=\"text-decoration:none;\">Create Area</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT30\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_coa_stx.htm\" style=\"text-decoration:none;\">Create Object</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT31\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_com_stx.htm\" style=\"text-decoration:none;\">Communicate</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT32\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_bac_stx.htm\" style=\"text-decoration:none;\">Broadcast</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT90\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_get_stx.htm\" style=\"text-decoration:none;\">Get</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT91\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_put_stx.htm\" style=\"text-decoration:none;\">Put</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT93\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_gac_stx.htm\" style=\"text-decoration:none;\">Gesture</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT33\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_jac_stx.htm\" style=\"text-decoration:none;\">Java</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT34\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_cac_stx.htm\" style=\"text-decoration:none;\">Composite</a></p>");
+      window.document.writeln("</div>");
+      
+      // Frames
+      window.document.writeln("<p class=\"TOC3tree\" id=\"OUT7t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL3\" id=\"OUT7i\" width=\"9\" height=\"9\">&nbsp;Frames</p>");
+      window.document.writeln("<div style=\"display:none\" id=\"OUT7s\">");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT35\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_wfr_stx.htm\" style=\"text-decoration:none;\">Workframe</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT36\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_tfr_stx.htm\" style=\"text-decoration:none;\">Thoughtframe</a></p>");
+      window.document.writeln("</div>");
+      
+      // Conditions
+      window.document.writeln("<p class=\"TOC3tree\" id=\"OUT8t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL3\" id=\"OUT8i\" width=\"9\" height=\"9\">&nbsp;Conditions</p>");
+      window.document.writeln("<div style=\"display:none\" id=\"OUT8s\">");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT37\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_pre_stx.htm\" style=\"text-decoration:none;\">Precondition</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT38\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_con_stx.htm\" style=\"text-decoration:none;\">Consequence</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT39\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_det_stx.htm\" style=\"text-decoration:none;\">Detectable</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT40\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_tdf_stx.htm\" style=\"text-decoration:none;\">Transfer Definition</a></p>");
+      window.document.writeln("</div>");
+      
+      // Operations
+      window.document.writeln("<p class=\"TOC3tree\" id=\"OUT28t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL3\" id=\"OUT28i\" width=\"9\" height=\"9\">&nbsp;Actions</p>");
+      window.document.writeln("<div style=\"display:none\" id=\"OUT28s\">");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT96\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_del_stx.htm\" style=\"text-decoration:none;\">Delete</a></p>");
+      window.document.writeln("</div>");
+    window.document.writeln("</div>");
+
+    // Unknown value
+    window.document.writeln("<p class=\"TOC2tree\" id=\"DT92\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_unknown.htm\" style=\"text-decoration:none;\">The Unknown Value</a></p>");
+    
+    // Collection Types
+    window.document.writeln("<p class=\"TOC2tree\" id=\"DT95\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_collectiontypes.htm\" style=\"text-decoration:none;\">Collection Types</a></p>");
+    
+    // Keywords
+    window.document.writeln("<p class=\"TOC2tree\" id=\"DT41\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"language/ls_kwd.htm\" style=\"text-decoration:none;\">List of Keywords</a></p>");
+  window.document.writeln("</div>");
+  
+  // Tutorial
+  window.document.writeln("<p class=\"TOC1tree\" id=\"OUT10t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL1\" id=\"OUT10i\" width=\"9\" height=\"9\">&nbsp;Tutorial</p>");
+  window.document.writeln("<div style=\"display:none\" id=\"OUT10s\">");
+    window.document.writeln("<p class=\"TOC2tree\" id=\"DT44\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_title.htm\" style=\"text-decoration:none;\">Title</a></p>");
+    window.document.writeln("<p class=\"TOC2tree\" id=\"DT45\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_info.htm\" style=\"text-decoration:none;\">Document Info</a></p>");
+    window.document.writeln("<p class=\"TOC2tree\" id=\"DT46\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_version.htm\" style=\"text-decoration:none;\">Version History</a></p>");
+
+    // Introduction
+    window.document.writeln("<p class=\"TOC2tree\" id=\"OUT11t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL2\" id=\"OUT11i\" width=\"9\" height=\"9\">&nbsp;Introduction</p>");
+    window.document.writeln("<div style=\"display:none\" id=\"OUT11s\">");
+      window.document.writeln("<p class=\"TOC3tree\" id=\"DT47\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_purpose.htm\" style=\"text-decoration:none;\">Purpose</a></p>");
+      window.document.writeln("<p class=\"TOC3tree\" id=\"DT48\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_usage.htm\" style=\"text-decoration:none;\">Usage</a></p>");
+      window.document.writeln("<p class=\"TOC3tree\" id=\"DT49\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_audience.htm\" style=\"text-decoration:none;\">Intended Audience</a></p>");
+      window.document.writeln("<p class=\"TOC3tree\" id=\"DT50\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_summary.htm\" style=\"text-decoration:none;\">Summary and Overview</a></p>");
+    window.document.writeln("</div>");
+
+    // Tutorial Full
+    window.document.writeln("<p class=\"TOC2tree\" id=\"OUT12t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL2\" id=\"OUT12i\" width=\"9\" height=\"9\">&nbsp;Tutorial Full</p>");
+    window.document.writeln("<div style=\"display:none\" id=\"OUT12s\">");
+      window.document.writeln("<p class=\"TOC3tree\" id=\"DT51\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_download.htm\" style=\"text-decoration:none;\">Download</a></p>");
+    window.document.writeln("</div>");
+    
+    // Tutorial Lite
+    window.document.writeln("<p class=\"TOC2tree\" id=\"OUT13t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL2\" id=\"OUT13i\" width=\"9\" height=\"9\">&nbsp;Tutorial Lite</p>");
+    window.document.writeln("<div style=\"display:none\" id=\"OUT13s\">");
+    
+      // Installation and Use
+      window.document.writeln("<p class=\"TOC3tree\" id=\"OUT14t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL3\" id=\"OUT14i\" width=\"9\" height=\"9\">&nbsp;Installation and Use</p>");
+      window.document.writeln("<div style=\"display:none\" id=\"OUT14s\">");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT52\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_ius_bus.htm\" style=\"text-decoration:none;\">Installation</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT53\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_ius_sen.htm\" style=\"text-decoration:none;\">Components</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT54\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_ius_agv.htm\" style=\"text-decoration:none;\">Additional Notes</a></p>");
+      window.document.writeln("</div>");      
+
+      // Lesson I 
+      window.document.writeln("<p class=\"TOC3tree\" id=\"OUT15t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL3\" id=\"OUT15i\" width=\"9\" height=\"9\">&nbsp;Lesson I: Compilation Units</p>");
+      window.document.writeln("<div style=\"display:none\" id=\"OUT15s\">");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT55\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le1_txt.htm\" style=\"text-decoration:none;\">Text</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT56\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le1_cod.htm\" style=\"text-decoration:none;\">Code</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT57\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le1_syn.htm\" style=\"text-decoration:none;\">Syntax</a></p>");
+      window.document.writeln("</div>");
+      
+      // Lesson II 
+      window.document.writeln("<p class=\"TOC3tree\" id=\"OUT16t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL3\" id=\"OUT16i\" width=\"9\" height=\"9\">&nbsp;Lesson II: Geography</p>");
+      window.document.writeln("<div style=\"display:none\" id=\"OUT16s\">");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT58\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le2_txt.htm\" style=\"text-decoration:none;\">Text</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT59\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le2_cod.htm\" style=\"text-decoration:none;\">Code</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT60\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le2_syn.htm\" style=\"text-decoration:none;\">Syntax</a></p>");
+      window.document.writeln("</div>");
+
+      // Lesson III
+      window.document.writeln("<p class=\"TOC3tree\" id=\"OUT17t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL3\" id=\"OUT17i\" width=\"9\" height=\"9\">&nbsp;Lesson III: Groups, Agents, and Attributes</p>");
+      window.document.writeln("<div style=\"display:none\" id=\"OUT17s\">");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT61\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le3_txt.htm\" style=\"text-decoration:none;\">Text</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT62\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le3_cod.htm\" style=\"text-decoration:none;\">Code</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT63\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le3_syn.htm\" style=\"text-decoration:none;\">Syntax</a></p>");
+      window.document.writeln("</div>");
+
+      // Lesson IV
+      window.document.writeln("<p class=\"TOC3tree\" id=\"OUT18t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL3\" id=\"OUT18i\" width=\"9\" height=\"9\">&nbsp;Lesson IV: Facts and Beliefs</p>");
+      window.document.writeln("<div style=\"display:none\" id=\"OUT18s\">");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT64\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le4_txt.htm\" style=\"text-decoration:none;\">Text</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT65\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le4_cod.htm\" style=\"text-decoration:none;\">Code</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT66\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le4_syn.htm\" style=\"text-decoration:none;\">Syntax</a></p>");
+      window.document.writeln("</div>");
+
+      // Lesson V
+      window.document.writeln("<p class=\"TOC3tree\" id=\"OUT19t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL3\" id=\"OUT19i\" width=\"9\" height=\"9\">&nbsp;Lesson V: Workframes and Primitive Activities</p>");
+      window.document.writeln("<div style=\"display:none\" id=\"OUT19s\">");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT67\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le5_txt.htm\" style=\"text-decoration:none;\">Text</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT68\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le5_cod.htm\" style=\"text-decoration:none;\">Code</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT69\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le5_syn.htm\" style=\"text-decoration:none;\">Syntax</a></p>");
+      window.document.writeln("</div>");
+
+      // Lesson VI
+      window.document.writeln("<p class=\"TOC3tree\" id=\"OUT20t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL3\" id=\"OUT20i\" width=\"9\" height=\"9\">&nbsp;Lesson VI: Objects, Classes and Relations</p>");
+      window.document.writeln("<div style=\"display:none\" id=\"OUT20s\">");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT70\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le6_txt.htm\" style=\"text-decoration:none;\">Text</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT71\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le6_cod.htm\" style=\"text-decoration:none;\">Code</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT72\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le6_syn.htm\" style=\"text-decoration:none;\">Syntax</a></p>");
+      window.document.writeln("</div>");
+
+      // Lesson VII
+      window.document.writeln("<p class=\"TOC3tree\" id=\"OUT21t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL3\" id=\"OUT21i\" width=\"9\" height=\"9\">&nbsp;Lesson VII: Thoughtframes and Other Activities</p>");
+      window.document.writeln("<div style=\"display:none\" id=\"OUT21s\">");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT73\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le7_txt.htm\" style=\"text-decoration:none;\">Text</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT74\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le7_cod.htm\" style=\"text-decoration:none;\">Code</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT75\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le7_syn.htm\" style=\"text-decoration:none;\">Syntax</a></p>");
+      window.document.writeln("</div>");
+
+      // Lesson VIII
+      window.document.writeln("<p class=\"TOC3tree\" id=\"OUT22t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL3\" id=\"OUT22i\" width=\"9\" height=\"9\">&nbsp;Lesson VIII: Variables</p>");
+      window.document.writeln("<div style=\"display:none\" id=\"OUT22s\">");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT76\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le8_txt.htm\" style=\"text-decoration:none;\">Text</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT77\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le8_cod.htm\" style=\"text-decoration:none;\">Code</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT78\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le8_syn.htm\" style=\"text-decoration:none;\">Syntax</a></p>");
+      window.document.writeln("</div>");
+
+      // Lesson IX
+      window.document.writeln("<p class=\"TOC3tree\" id=\"OUT23t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL3\" id=\"OUT23i\" width=\"9\" height=\"9\">&nbsp;Lesson IX: Composite Activities</p>");
+      window.document.writeln("<div style=\"display:none\" id=\"OUT23s\">");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT79\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le9_txt.htm\" style=\"text-decoration:none;\">Text</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT80\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le9_cod.htm\" style=\"text-decoration:none;\">Code</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT80b\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le9_syn.htm\" style=\"text-decoration:none;\">Syntax</a></p>");
+      window.document.writeln("</div>");
+
+      // Lesson X
+      window.document.writeln("<p class=\"TOC3tree\" id=\"OUT24t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL3\" id=\"OUT24i\" width=\"9\" height=\"9\">&nbsp;Lesson X: Multi-agent and Randomness</p>");
+      window.document.writeln("<div style=\"display:none\" id=\"OUT24s\">");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT81\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le10_txt.htm\" style=\"text-decoration:none;\">Text</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT82\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le10_cod.htm\" style=\"text-decoration:none;\">Code</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT83\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le10_syn.htm\" style=\"text-decoration:none;\">Syntax</a></p>");
+      window.document.writeln("</div>");
+
+
+      // Lesson XI	
+      window.document.writeln("<p class=\"TOC3tree\" id=\"OUT25t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL3\" id=\"OUT25i\" width=\"9\" height=\"9\">&nbsp;Lesson XI: Detectables, Priorities and the Complete Scenario</p>");
+      window.document.writeln("<div style=\"display:none\" id=\"OUT25s\">");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT84\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le11_txt.htm\" style=\"text-decoration:none;\">Text</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT85\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le11_cod.htm\" style=\"text-decoration:none;\">Code</a></p>");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT86\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_le11_syn.htm\" style=\"text-decoration:none;\">Syntax</a></p>");
+      window.document.writeln("</div>");
+
+      // Concluding Remarks
+      window.document.writeln("<p class=\"TOC3tree\" id=\"OUT26t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL3\" id=\"OUT26i\" width=\"9\" height=\"9\">&nbsp;Concluding Remarks</p>");
+      window.document.writeln("<div style=\"display:none\" id=\"OUT26s\">");
+        window.document.writeln("<p class=\"TOC4tree\" id=\"DT87\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_concl.htm\" style=\"text-decoration:none;\">Next Steps, Debugging and Further Exercises</a></p>");
+      window.document.writeln("</div>");
+    window.document.writeln("</div>");
+
+    // Tutorial Files
+    window.document.writeln("<p class=\"TOC2tree\" id=\"OUT27t\"><img src="+plusimg+" border=\"0\" class=\"LEVEL2\" id=\"OUT27i\" width=\"9\" height=\"9\">&nbsp;Tutorial Files</p>");
+    window.document.writeln("<div style=\"display:none\" id=\"OUT27s\">");
+      window.document.writeln("<p class=\"TOC3tree\" id=\"DT88\"><img src="+noneimg+" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"tutorial/tt_files.htm\" style=\"text-decoration:none;\">Download</a></p>");
+    window.document.writeln("</div>");
+  window.document.writeln("</div>");
+  
+  // VM API
+  window.document.writeln("<p class=\"TOC1tree\" id=\"DT42\"><img src="+noneimg+" border=\"0\" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"vmapi/index.html\">VM API</a></p>");
+  
+  // Papers
+  window.document.writeln("<p class=\"TOC1tree\" id=\"DT43\"><img src="+noneimg+" border=\"0\" width=\"9\" height=\"9\">&nbsp;<a href=\""+relPath+"papers.htm\">Papers</a></p>");
+	
+
+
+  // *********** INSERT OTHER DOCUMENTATION ABOVE THIS LINE *************
+	
+  // Image to keep the table of contents at a specific width
+  window.document.writeln("<p><img border=\"0\" src=\""+relPath+"../images/tocwidth.gif\" width=\"167\" height=\"1\"></p>");
+
+} // createDocumentTree

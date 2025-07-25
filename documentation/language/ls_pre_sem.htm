@@ -1,0 +1,476 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Agent iSolutions - Language - Precondition (PRE) - Semantics</title>
+<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
+<script type="text/javascript" src="../doctree.jsc"></script>
+<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+</head>
+
+<body onload="openTree('OUT0t,OUT2t,OUT8t,DT37');">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
+    <tr>
+      <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" width="168" height="78"></td>
+      <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
+    </tr>
+    <tr>
+      <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../home.htm">Home</a></td>
+      <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
+      <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a href="../index.htm">Documentation</a></td>
+      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
+      <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
+      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">&nbsp;</td>
+    </tr>
+  </table>
+
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td height="10" width="100%">
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
+    <tr>
+      <td width="164" valign="top" bgcolor="#6C69F7" height="1%">
+        <p class="TOCHeader">Documentation</td>
+      <td width="12" rowspan="9" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="4000" hspace="3">
+      </td>
+      <td width="100%" valign="top" align="justify" height="1" colspan="5">
+        <p class="aisheader1">Language Specification - Precondition (PRE) -
+        Semantics</p>
+      </td>
+    </tr>
+    <tr>
+      <td width="167" rowspan="8" valign="top" height="200">
+      	 <script language="javascript">
+      	 <!--
+      	 	createDocumentTree("../");
+      	 -->
+      	 </script>
+      </td>
+      <td width="100%" valign="top" align="left" height="1" colspan="5">
+        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+      </td>
+    </tr>
+    <tr>
+      <td width="12%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_l"><a href="ls_tfr_sem.htm">Prev</a>
+      </td>
+      <td width="25%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_c"><a href="ls_pre_dsc.htm">Description</a>
+      </td>
+      <td width="25%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_c"><a href="ls_pre_stx.htm">Syntax</a>
+      </td>
+      <td width="25%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_c"><font color="#808080">Semantics</font>
+      </td>
+      <td width="12%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_r" align="left"><a href="ls_con_sem.htm">Next</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" valign="top" align="justify" height="1" colspan="5">
+        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" valign="top" align="justify" height="525" colspan="5">
+
+<p class="aisparagraph"><b>Precondition modifiers</b></p>
+
+<p class="aisparagraph">A precondition is defined with one of four
+modifiers: <a href="#known">known</a>, <a href="#knownval">knownval</a>, <a href="#unknown">unknown</a>, or
+<a href="#not">not</a>. The modifiers have the following meaning.</p>
+
+<p class="aisparagraph"><a name="known"><i>known</i></a>:</p>
+
+<blockquote>
+    <p class="aisparagraph">The modifier &#145;known&#146; represents
+    the possibility for an agent/object to have a belief/fact,
+    but be unspecific as to whether the agent/objects knows the
+    actual value.</p>
+    <p class="aisparagraph">For example, to evaluate the following
+    precondition:</p>
+    <blockquote>
+        <p class="aisparagraph"><font face="Courier">known (car1.color)</font></p>
+    </blockquote>
+    <p class="aisparagraph"><font face="Helvetica,Arial">The simulation engine
+    would simply check with the belief set of an agent to see whether the agent
+    has a belief of the form:</font></p>
+    <blockquote>
+        <p class="aisparagraph"><font face="Courier">car1.color = ?</font></p>
+    </blockquote>
+    <p class="aisparagraph">If the engine finds a belief of this form,
+    as it would when the following belief is present:</p>
+    <blockquote>
+        <p class="aisparagraph"><font face="Courier">car1.color = red</font></p>
+    </blockquote>
+    <p class="aisparagraph">then the engine would evaluate the
+    precondition as true. A simple relational precondition like:</p>
+    <blockquote>
+        <p class="aisparagraph"><font face="Courier">known<b>  </b> (John
+        is-the-son-of)</font></p>
+    </blockquote>
+    <p class="aisparagraph">will evaluate to true when the engine finds
+    the beliefs <font face="Helvetica,Arial">(the right hand side and
+    truth-value are completely ignored):</font></p>
+    <blockquote>
+        <p class="aisparagraph"><font face="Courier">John is-the-son-of Bill
+        is true<br>
+        John is-the-son-of Bill
+        is false<br>
+        John is-the-son-of Jack is true<br>
+        John is-the-son-of Jack is false</font></p>
+    </blockquote>
+    <p class="aisparagraph">A more complex precondition like:</p>
+    <blockquote>
+        <p class="aisparagraph"><font face="Courier">known<b>  </b> (Cimap-order1.service-tech
+        is-the-son-of)</font></p>
+    </blockquote>
+    <p class="aisparagraph">will evaluate to true if the following
+    beliefs are present:</p>
+    <blockquote>
+        <p class="aisparagraph"><font face="Courier">Cimap-order1.service-tech = &lt;agent1&gt;<br>
+        &lt;agent1&gt; is-the-son-of</font></p>
+    </blockquote>
+    <p class="aisparagraph">where &lt;agent1&gt; is either an agent or object.</p>
+</blockquote>
+
+<p class="aisparagraph"><a name="knownval"><i>knownval</i></a>:</p>
+
+<blockquote>
+    <p class="aisparagraph">The modifier &#145;knownval&#146; (known
+    value) means that the simulation engine must find a precise
+    match for the precondition. The precondition is only true if
+    matching beliefs/facts can be found for both the left hand
+    side and the right hand side and if the relation between them
+    is found as well. For example for a complex precondition such
+    as:</p>
+    <blockquote>
+        <p class="aisparagraph"><font face="Courier">knownval(Cimap-order1.service-tech
+        is-the-son-of Cimap-order2.service-tech)</font></p>
+    </blockquote>
+    <p class="aisparagraph">the following beliefs must be present:</p>
+    <blockquote>
+        <p class="aisparagraph"><font face="Courier">
+        Cimap-order1.service-tech = &lt;agent1&gt;<br>
+        Cimap-order2.service-tech = &lt;agent2&gt;<br>
+        &lt;agent1&gt;
+        is-the-son-of &lt;agent2&gt;</font></p>
+    </blockquote>
+    <p class="aisparagraph">When using variables, the engine will find
+    as many matches as there are valid instantiations for the
+    variables.</p>
+</blockquote>
+
+<p class="aisparagraph"><a name="unknown"><i>unknown</i></a><i> (a.k.a. no-knowledge-of)</i>:</p>
+
+<blockquote>
+    <p class="aisparagraph">When the modifier &#145;unknown&#146; is
+    used, the simulation engine looks at the beliefs of the agent
+    or facts in the world for objects for possible matches of the
+    precondition. If there are any matches, the precondition
+    evaluates to false, if no matches are found the precondition
+    evaluates to true. The &#145;unknown&#146; modifier can be
+    interpreted as &#145;The agent/object has no beliefs/facts
+    for &lt;precondition&gt;&#146;. However, there are
+    intricacies that need to be explained further.</p>
+    <p class="aisparagraph"><font face="Helvetica,Arial">When matching a
+    precondition of the form: O<sub>1</sub>A<sub>1</sub>, the simulation engine
+    looks for a belief of the form O<sub>1</sub>A<sub>1</sub>= ?. When a belief
+    of the form O<sub>1</sub>A<sub>1</sub>= ? is found, the simulation engine
+    interprets this to mean that the agent ‘knows’ about this object and
+    attribute and thus the precondition is false.</font></p>
+    <p class="aisparagraph"><font face="Helvetica,Arial">When the precondition
+    is of the form O<sub>1</sub> rel however, no matter what the right hand side
+    or the truth of the relation is, the simulation engine will simply look up
+    whether the agent/object possesses the belief/fact O<sub>1</sub> rel ?, and
+    if so will evaluate the precondition to be false.</font></p>
+    <p class="aisparagraph"><font face="Helvetica,Arial">All other
+    preconditions, require at least two steps for the simulation engine to
+    determine the truth or falsehood of the precondition.</font></p>
+    <p class="aisparagraph"><font face="Helvetica,Arial">The form O<sub>1</sub>A<sub>1</sub>
+    rel requires the simulation engine to evaluate first the O<sub>1</sub>A<sub>1</sub>
+    then the result of the O<sub>1</sub>A<sub>1</sub> (say O<sub>2</sub>) with
+    the relation. When a belief/fact for either the OA or for O<sub>2</sub> rel
+    is not found, the precondition will be evaluated to true, if both are found
+    the precondition will evaluate to false. For example given the following
+    beliefs:</font></p>
+    <blockquote>
+        <p class="aisparagraph"><font face="Courier">John.car = car1<br>
+        car1 is-drive-by Jack</font></p>
+    </blockquote>
+    <p class="aisparagraph">and the precondition:</p>
+    <blockquote>
+        <p class="aisparagraph"><font face="Courier">unknown (John.car
+        is-driven-by)</font></p>
+    </blockquote>
+    <p class="aisparagraph">The simulation engine will evaluate the
+    precondition to false, because it finds beliefs for
+    &quot;John.car = ?&quot; with the value car1 and it finds a belief for &quot;car1
+    is-drive-by ?&quot;. If either of the beliefs were not available the
+    precondition would evaluate to true.</p>
+</blockquote>
+
+<p class="aisparagraph"><a name="not"><i>not</i></a><i> (a.k.a. no-matching-beliefs)</i>:</p>
+
+<blockquote>
+    <p class="aisparagraph"><font face="Helvetica,Arial">Not works similar to
+    unknown in that when there is no belief for the precondition specified with
+    the not modifier the precondition will evaluate to true. If a belief does
+    exist for the condition in the precondition then the not modifier works
+    similar to the modifier knownval, but negates the resulting truth-value. The
+    simulation engine will first try the knownval for the precondition. If the
+    precondition with the knownval modifier evaluates to true then the
+    precondition with the not modifier evaluates to false and vice versa.</font></p>
+</blockquote>
+
+<p class="aisparagraph"><b>Precondition Evaluation Order</b></p>
+
+<blockquote>
+
+    <p ALIGN="JUSTIFY" class="aisparagraph">When variables are used in one or more precondition(s)
+    the order in which the preconditions are specified is important. Depending
+    on the order different outcomes are possible. The reason that precondition
+    order is important is that the simulation engine is not a standard pattern
+    matcher, but actually evaluates the preconditions causing potential
+    assignments of values to variables. For example:</p>
+  <blockquote>
+    <p ALIGN="JUSTIFY" class="aisparagraph"><font face="Courier,Courier New">knownval(John.car
+    = &lt;car&gt;)</font></p>
+  </blockquote>
+  <font FACE="Arial" SIZE="3">
+    <p ALIGN="JUSTIFY" class="aisparagraph">The simulation engine tries to find a belief of the form
+    ‘John.car=’. If it finds one stating ‘John.car=car1’ then it will
+    assign the value car1 to the variable &lt;car&gt;.</p>
+    <p ALIGN="JUSTIFY" class="aisparagraph">If you were to write the following two preconditions in
+    the following order the outcome might be unexpexted:</p>
+    <blockquote>
+    <p class="aisparagraph"></font><font face="Courier,Courier New">not(John.car =
+    &lt;car&gt;)<br>
+    knownval(&lt;car&gt; belongs-to &lt;company&gt;)</font></p>
+  </blockquote>
+  <font FACE="Arial" SIZE="3">
+    <p ALIGN="JUSTIFY" class="aisparagraph">Suppose we have the following beliefs:</p>
+    </font>
+  <blockquote>
+    <p class="aisparagraph"><font face="Courier,Courier New">John.car = car1<br>
+    car2 belongs-to nynex</font></p>
+  </blockquote>
+  <font FACE="Arial" SIZE="3">
+    <p ALIGN="JUSTIFY" class="aisparagraph">The simulation engine will evaluate the first
+    precondition first and first treat the precondition as a knownval therefor
+    assigning the value ‘car1’ to the variable &lt;car&gt; because it
+    matches the precondition with the belief ‘John.car = car1’. Since this
+    precondition is a not this precondition will always evaluate to false. The
+    simulation engine would not continue but if it would then the simulation
+    engine would verify the second precondition. It found a binding for the
+    &lt;car&gt; variable and will substitute its value. It will then try to find
+    a belief of the form ‘car1 belongs-to &lt;company&gt;. It cannot find such
+    a belief and therefor will fail the evaluation causing the frame not to be
+    made available. However if you turn the preconditions around the outcome is
+    different.</p>
+    </font>
+  <blockquote>
+    <p class="aisparagraph"><font face="Courier,Courier New">knownval(&lt;car&gt; belongs-to &lt;company&gt;)<br>
+    not(John.car = &lt;car&gt;)</font></p>
+  </blockquote>
+  <font FACE="Arial" SIZE="3">
+    <p ALIGN="JUSTIFY" class="aisparagraph">In this case &lt;car&gt; will be bound to car2, the first
+    precondition evaluates to true. The second precondition will be evaluated
+    and the simulation engine tries to find the belief ‘John.car=car2’, it
+    cannot find such a belief but due to the ‘not’ modifier the precondition
+    will evaluate to true causing the frame to be made available.</p>
+    <p ALIGN="JUSTIFY" class="aisparagraph">The precondition ordering will also be important when
+    taking into account the use of variables. The next section discusses the
+    distinction made by the simulation engine in the types variables and how
+    that can affect the importance of the precondition order.</p>
+  </blockquote>
+    <b>
+    <p ALIGN="JUSTIFY" class="aisparagraph">Pre-, Post- and Unassigned Variables</p>
+    </b>
+  <blockquote>
+    <p ALIGN="JUSTIFY" class="aisparagraph">The simulation engine makes a distinction in how
+    variables are bound in a frame. The three types of value assignments are
+    pre-assigned, post-assigned and unassigned.</p>
+    <p ALIGN="JUSTIFY" class="aisparagraph">Unassigned variables are variables not used in any
+    preconditions but that get their binding in an activity.</p>
+    <p ALIGN="JUSTIFY" class="aisparagraph">Pre-assigned variables are variables that get their
+    values assigned in preconditions and get a pre-binding before the
+    preconditions are evaluated. Pre-assigned variables are variables used in an
+    object/attribute tuple (OA) or that are used in an object/relation tuple
+    (OR) or object/relation/object triplet (ORO) where the object is a variable.
+    In case of the ORO it could be one of the objects that is a variable or
+    both. The simulation engine makes sure that for each OA, OR (with an (un)known
+    modifier) and ORO there is at least one matching belief/fact before fully
+    evaluating the preconditions. The variables used in these condition elements
+    will get a pre-binding by matching the variables with the object values in
+    the beliefs/facts. A final binding will be determined when the preconditions
+    are evaluated.</p>
+    <p ALIGN="JUSTIFY" class="aisparagraph">Post-assigned variables are variables that get their
+    values assigned in preconditions as well, but they will get a binding during
+    the evaluation of the preconditions. These variables have no pre-binding
+    like pre-assigned variables do. Post-assigned variables are the variables
+    not used in any OA, OR, ORO condition elements but are usually ‘assignment’
+    variables specified on the left hand side or right hand side of a value
+    condition, for example:</p>
+    </font>
+  <blockquote>
+    <p class="aisparagraph"><font face="Courier,Courier New">&lt;myagent&gt;.car = &lt;mycar&gt;</font></p>
+  </blockquote>
+  <font FACE="Arial" SIZE="3">
+    <p ALIGN="JUSTIFY" class="aisparagraph">&lt;myagent&gt; is part of an OA pair and is therefor a
+    post-assigned variable. &lt;mycar&gt; is not specified in any OA, OR, ORO
+    condition element and is therefor a post-assigned variable. The simulation
+    engine will have found potential matched for the OA and will have pre-bound
+    the &lt;myagent&gt; variable. During the evaluation of the precondition the
+    simulation engine will then for each value of &lt;myagent&gt; get the
+    belief/fact that caused that value binding for &lt;myagent&gt; and retrieve
+    its right hand side. Assume that the belief was:</p>
+    </font>
+  <blockquote>
+    <p class="aisparagraph"><font face="Courier,Courier New">John.car = car1</font></p>
+  </blockquote>
+  <font FACE="Arial" SIZE="3">
+    <p ALIGN="JUSTIFY" class="aisparagraph">&lt;myagent&gt; is John and the right hand side is ‘car1’.
+    The simulation engine will now assigne the value ‘car1’ to the variable
+    &lt;mycar&gt; during the evaluation of the precondition.</p>
+    <p ALIGN="JUSTIFY" class="aisparagraph">Due to the distinction between pre- and post-assigned
+    variables ordering of preconditions is also important if no conflicts are to
+    occur with the constraints listed below. Assume a frame with the following
+    preconditions:</p>
+    </font>
+  <blockquote>
+    <p class="aisparagraph"><font face="Courier,Courier New">knownval(&lt;totalOrders&gt; = &lt;numVMOrders&gt;+Builder.numOrders)
+    knownval(VM.numOrders = &lt;numVMOrders&gt;)</font></p>
+  </blockquote>
+  <font FACE="Arial" SIZE="3">
+    <p ALIGN="JUSTIFY" class="aisparagraph">In this case the first precondition has two post-assigned
+    variables &lt;totalOrders&gt; and &lt;numVMOrders&gt;. The simulation engine
+    can resolve Builder.numOrders to a value but cannot resolve the values for
+    the post-assigned variables. This would be an endless list of possible
+    values. The simulation engine would report an error and fail the evaluation
+    of the precondition. If the preconditions would now be reversed</p>
+    </font>
+  <blockquote>
+    <p class="aisparagraph"><font face="Courier,Courier New">knownval(VM.numOrders = &lt;numVMOrders&gt;)&nbsp;<br>
+    knownval(&lt;totalOrders&gt;
+    = &lt;numVMOrders&gt;+Builder.numOrders)</font></p>
+  </blockquote>
+  <font FACE="Helvetica,Arial" SIZE="2">
+<p class="aisparagraph">then the simulation engine resolves the &lt;numVMOrders&gt; post-assigned
+variable first, it will bind a value to it by finding a belief of the form
+VM.numOrders = ? and assigning the right hand side value to the variable. Then
+during the evaluation of the second precondition the &lt;numVMOrders&gt;
+variable will have a value bound to it that can be used together with the right
+hand side value of the belief Builder.numOrders = ? to assign a value to &lt;totalOrders&gt;.
+The evaluation of all preconditions will succeed and the frame can be made
+available.</p>
+  </blockquote>
+</font>
+
+<p class="aisparagraph"><b>Constraints</b></p>
+
+<ol>
+    <li>
+      <p class="aisparagraph">The left hand side attribute type and the right 
+		hand side value-type or right hand side attribute type of a 
+		value-expression must be the same, except in the case of an attribute 
+		being of a collection type and an index having been specific for the 
+		attribute, in that case any value can be assigned, if no index is 
+		specified however only unknown is valid or an expression resulting in 
+		the same collection type. If an object-attribute-index is used on the 
+		left or right hand side to resolve to a value then the type 
+		compatibility constraint is relaxed, the compiler will assume that a 
+		value of the correct type is returned to compare to the left or right 
+		hand side. The virtual machine will at run-time ensure that type 
+		compatibility holds, if not it will evaluate the precondition to false 
+		and generate a warning message in the log.</li>
+    <li>
+      <p class="aisparagraph">The left hand side and right hand side types in a 
+		relational expression must match the types as defined for the relation 
+		used in the relational expression. Only the right hand side can be 
+		defined to use an object-attribute-index. The compiler will allow this 
+		without type checking, the compiler will assume that a value of the 
+		correct type is returned for the relation. The virtual machine will at 
+		run-time ensure that type compatibility holds, if not it will evaluate 
+		the precondition to false and generate a warning message in the log. The 
+		use of object-attribute-index on the left hand side would resolve to an 
+		unknown type not allowing the compiler to verify whether the relation is 
+		declared for that type and is therefore not permitted.</li>
+    <li>
+      <p class="aisparagraph">Expressions must evaluate to a value of type int, 
+		long
+      or double.</li>
+    <li>
+      <p class="aisparagraph"><font face="Helvetica,Arial">No nested expressions
+      are allowed. The first release of the virtual machine will not support
+      them yet. As soon as the virtual machine is able to support nested
+      expressions, this constraint will be lifted.</font></li>
+    <li>
+      <p class="aisparagraph"><font face="Helvetica,Arial">Only one unbound
+      post-assigned variable can be used in a precondition.</font></li>
+    <li>
+      <p class="aisparagraph"><font face="Helvetica,Arial">No unbound
+      post-assigned variables can be used in a precondition using one of the
+      relational operators ‘&lt;’, ‘&gt;’ or ‘!=’.</font></li>
+    <li>
+      <p class="aisparagraph"><font face="Helvetica,Arial">No unbound
+      post-assigned variables can be used in an expression.</font></li>
+</ol>
+
+      <p class="aisparagraph"><font face="Helvetica,Arial">Note that constraints
+      5 to 7 cannot be detected by the compiler but only by the simulation
+      engine. The simulation engine will report errors in the error log and will
+      fail the evaluation of the precondition in which these constraints are
+      violated.</font>
+
+<p class="aisparagraph">&nbsp;</p>
+
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div align="left">
+  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="100%">
+        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" align="center"><font size="1" face="Arial">
+Questions or problems regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
+Copyright &#169; 2000-2006 NASA Ames Research Center. All rights reserved.<br>
+Last modified: 
+		<!--WEBBOT 
+   bot=TimeStamp
+   S-Type="EDITED"
+   S-Format="%A %B %d, %Y" startspan
+ -->Monday April 30, 2007<!--webbot bot="TimeStamp" i-checksum="31391" endspan -->.</font></td>
+    </tr>
+  </table>
+</div>
+
+</body>
+
+</html>

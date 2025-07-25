@@ -1,0 +1,161 @@
+var img1 = new Image();
+img1.src = "http://www.agentisolutions.com/images/plus.gif";
+var img2 = new Image();
+img2.src = "http://www.agentisolutions.com/images/minus.gif";
+
+function getAttributes(elm) {
+  var attStr = "";
+  if (elm && elm.attributes.length > 0) {
+    for (a = 0; a < elm.attributes.length; a ++) {
+      attStr += " " + elm.attributes.item(a).nodeName + "=\"";
+      attStr += elm.attributes.item(a).nodeValue + "\"";
+    } // end for
+  } // end if
+  return attStr;
+} // getAttributes
+
+function getInsideNodes(elm) {
+  if (elm) {
+    var cNodesStr = "", i = 0;
+    var iEmpty = /^(img|embed|input|br|hr|bgsound)$/i;
+    var cNodes = elm.childNodes;
+    for (i = 0; i < cNodes.length; i ++) {
+      switch(cNodes.item(i).nodeType) {
+        case 1 :
+          cNodesStr += "<" + cNodes.item(i).nodeName.toLowerCase();
+          if (cNodes.item(i).attributes.length > 0){
+            cNodesStr += getAttributes(cNodes.item(i));
+          } // end if
+          cNodesStr += (cNodes.item(i).nodeName.match(iEmpty))? "" : ">";
+          if (cNodes.item(i).childNodes.length > 0){
+            cNodesStr += getInsideNodes(cNodes.item(i));
+          } // end if
+          if (cNodes.item(i).nodeName.match(iEmpty)){
+            cNodesStr += " />";
+          } else {
+            cNodesStr += "</" + cNodes.item(i).nodeName.toLowerCase() + ">";
+          } // end if
+          break;
+        case 3 :
+          cNodesStr += cNodes.item(i).nodeValue;
+          break;
+        case 8 :
+          cNodesStr += "<!--" + cNodes.item(i).nodeValue + "-->";
+          break;
+      } // end switch
+    } // end for
+    return cNodesStr;
+  } // end if
+} // getInsideNodes
+
+// used to add support for outerHTML to Mozilla browser that don't
+// support the outerHTML property
+function getOuterHTML(elm) {
+  var strOuter = "";
+  var iEmpty = /^(img|embed|input|br|hr|bgsound)$/i;
+  switch(elm.nodeType){
+    case 1 :
+      strOuter += "<" + elm.nodeName.toLowerCase();
+      strOuter += getAttributes(elm);
+      if (elm.nodeName.match(iEmpty)) {
+        strOuter += " />";
+      } else {
+        strOuter += ">" + getInsideNodes(elm);
+        strOuter += "</" + elm.nodeName.toLowerCase() + ">";
+      } // end if
+      break;
+    case 3 :
+      strOuter += elm.nodeValue;
+      break;
+    case 8 :
+      cNodesStr += "<!--" + elm.nodeValue + "-->";
+      break;
+  } // end switch
+  return strOuter;
+} // getOuterHTML
+
+// redisplay the outline when a tree node that can be opened/closed 
+// is selected
+function doOutline(e) {
+  var srcId, srcElement, targetElement;
+  if (!e)
+    e = window.event;
+  if (e.target)
+    srcElement = e.target;
+  else if (e.srcElement)
+    srcElement = e.srcElement;
+  if (srcElement.nodeType == 3) // defeat Safari bug
+    srcElement = srcElement.parentNode
+  if (srcElement.className.toUpperCase() == "LEVEL1" || srcElement.className.toUpperCase() == "TOC1TREE" ||
+      srcElement.className.toUpperCase() == "LEVEL2" || srcElement.className.toUpperCase() == "TOC2TREE" ||
+      srcElement.className.toUpperCase() == "LEVEL3" || srcElement.className.toUpperCase() == "TOC3TREE") {
+    srcID = srcElement.id.substr(0, srcElement.id.length-1);
+    targetElement = document.getElementById(srcID + "s");
+    srcElement = document.getElementById(srcID + "i");
+
+    if (targetElement.style.display == "none") {		
+      targetElement.style.display = "block";
+      if (srcElement.className == "LEVEL1" ||
+          srcElement.className == "LEVEL2" ||
+          srcElement.className == "LEVEL3") 
+        srcElement.src = img2.src;
+    } else {
+      targetElement.style.display = "none";
+      if (srcElement.className == "LEVEL1" || 
+          srcElement.className == "LEVEL2" || 
+          srcElement.className == "LEVEL3") 
+        srcElement.src = img1.src;
+    }
+  }
+}
+
+// Open the tree to the specific node in the tree. The node is
+// specified using the idlist, a list of the id's of the 
+// nodes in the tree separated with comma's
+function openTree(idlist) {
+  var id, srcElement, srcId, targetElement, imgTag;
+  var fontColor = "<font color=\"#808080\">";
+  var font = "</font>";
+  
+  // split the list with ids indicating what nodes should be opened
+  var ids = idlist.split(",");
+  
+  // for each node that can be opened (all but the last one) open
+  // the node
+  for (i = 0; i < ids.length-1; i++) {
+    id = ids[i];
+    srcElement = window.document.getElementById(id);
+    if (srcElement.className.toUpperCase() == "LEVEL1" || srcElement.className.toUpperCase() == "TOC1TREE" ||
+	    srcElement.className.toUpperCase() == "LEVEL2" || srcElement.className.toUpperCase() == "TOC2TREE" ||
+	    srcElement.className.toUpperCase() == "LEVEL3" || srcElement.className.toUpperCase() == "TOC3TREE") {
+      srcID = srcElement.id.substr(0, srcElement.id.length-1);
+      targetElement = document.getElementById(srcID + "s");
+      srcParElement = srcElement;
+      srcElement = document.getElementById(srcID + "i");
+
+      if (targetElement.style.display == "none") {			
+		targetElement.style.display = "block";
+		if (srcElement.className == "LEVEL1" ||
+		    srcElement.className == "LEVEL2" ||
+		    srcElement.className == "LEVEL3") {
+	      srcElement.src = img2.src;
+	      if (!srcParElement.innerText) 
+	        srcParElement.innerText = srcParElement.textContent;
+	      if (!srcElement.outerHTML)
+	        srcElement.outerHTML = getOuterHTML(srcElement);
+	      srcParElement.innerHTML = srcElement.outerHTML + fontColor + srcParElement.innerText + font;
+	    } // end if
+      } // end if
+    } // end if
+  } // end for
+  
+  srcElement = window.document.getElementById(ids[ids.length-1]);
+  imgTag = "<img src=\"http://www.agentisolutions.com/images/none.gif\" width=\"9\" height=\"9\">";
+  if (!srcElement.innerText) 
+    srcElement.innerText = srcElement.textContent;
+  srcElement.innerHTML = imgTag + fontColor + srcElement.innerText + font;
+}
+
+// whenever the mouse is clicked we check if it was for something
+// in the tree
+document.onclick = doOutline;

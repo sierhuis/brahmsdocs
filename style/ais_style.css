@@ -1,0 +1,45 @@
+.hidden      { display: none; }
+.aisheader1  { font-family: Arial, helvetica, sans-serif; font-size: 11pt; color: #6C69F7; margin-left: 2; 
+               margin-top: 2; margin-bottom: 2 }
+.aisheader2  { font-family: Arial, helvetica, sans-serif; font-size: 10pt; color: #6C69F7; margin-left: 2; 
+               margin-top: 12; margin-bottom: 2 }
+.aisparagraph { text-align: Justify; font-family: Arial, helvetica, sans-serif; font-size: 9pt; margin-left: 2; 
+               margin-right: 2; margin-top: 12; margin-bottom: 0 }
+.aisnormal   { text-align: Left; font-family: Arial, helvetica, sans-serif; font-size: 9pt; margin-left: 2; 
+               margin-right: 2; margin-top: 0; margin-bottom: 0 }
+.aisnormalctr { text-align: Center; font-family: Arial, helvetica, sans-serif; font-size: 9pt; margin-left: 2; 
+               margin-right: 2; margin-top: 0; margin-bottom: 0 }
+.aisindent   { text-align: Left; font-family: Arial, helvetica, sans-serif; font-size: 9pt; margin-left: 24; 
+               margin-right: 2; margin-top: 0; margin-bottom: 0 }
+.aiscaption  { text-align: Center; font-family: Arial, helvetica, sans-serif; font-size: 8pt; margin-left: 2; 
+               margin-right: 2; margin-top: 0; margin-bottom: 0 }
+.aiscaption_s  { text-align: Center; font-family: Arial, helvetica, sans-serif; font-size: 7pt; margin-left: 2; 
+               margin-right: 2; margin-top: 0; margin-bottom: 0 }
+.TOCHeader   { font-family: Arial, helvetica, sans-serif; font-size: 12pt; text-align: Center; color: #FFFFFF; 
+               font-weight: bold }
+.TOC1        { font-family: Arial, helvetica, sans-serif; font-size: 10pt; color: #0000FF; list-style-type: none; 
+               margin-left: 12; margin-top: 12; margin-bottom: 0 }
+.TOC2        { font-family: Arial, helvetica, sans-serif; font-size: 9pt; color: #0000FF; list-style-type: none; 
+               margin-left: 24; margin-top: 3; margin-bottom: 3 }
+.TOC1tree    { font-family: Arial, helvetica, sans-serif; font-size: 10pt; color: #0000FF; list-style-type: none; 
+               margin-left: 0; margin-top: 12; margin-bottom: 0 }
+.TOC2tree    { font-family: Arial, helvetica, sans-serif; font-size: 9pt; color: #0000FF; list-style-type: none; 
+               margin-left: 12; margin-top: 3; margin-bottom: 3 }
+.TOC3tree    { font-family: Arial, helvetica, sans-serif; font-size: 8pt; color: #0000FF; list-style-type: none; 
+               margin-left: 24; margin-top: 3; margin-bottom: 3 }
+.TOC4tree    { font-family: Arial, helvetica, sans-serif; font-size: 8pt; color: #0000FF; list-style-type: none; 
+               margin-left: 36; margin-top: 3; margin-bottom: 3 }
+.nb_text     { font-family: Arial, helvetica, sans-serif; font-size: 10pt; text-align: Center; color: #0000FF; 
+               margin-bottom: 6 }
+.ls_nav_text_l { text-align: Left; font-family: Arial, helvetica, sans-serif; font-size: 9pt; margin-left: 2; 
+               margin-right: 2; margin-top: 0; margin-bottom: 0 }
+.ls_nav_text_c { text-align: Center; font-family: Arial, helvetica, sans-serif; font-size: 9pt; margin-left: 2; 
+               margin-right: 2; margin-top: 0; margin-bottom: 0 }
+.ls_nav_text_r { text-align: Right; font-family: Arial, helvetica, sans-serif; font-size: 9pt; margin-left: 2; 
+               margin-right: 2; margin-top: 0; margin-bottom: 0 }
+A:link       {color: #0000FF;}
+A:visited    {color: #0000FF;}
+A:hover      {color: red;}
+A			 {text-decoration: none;}
+ul           { font-size: 9pt; font-family: Arial, helvetica, sans-serif }
+ol           { font-size: 9pt; font-family: Arial, helvetica, sans-serif }

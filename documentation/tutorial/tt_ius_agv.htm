@@ -1,0 +1,151 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
+<script type="text/javascript" src="../doctree.jsc"></script>
+<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+
+<title>Agent iSolutions - Tutorial - Additional Notes</title>
+</head>
+
+<body onload="openTree('OUT10t,OUT13t,OUT14t,DT54');">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
+  <tr>
+    <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" WIDTH="168" HEIGHT="78"></td>
+    <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
+  </tr>
+  <tr>
+    <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../index.htm">Home</a></td>
+    <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
+    <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a href="../index.htm">Documentation</a></td>
+    <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
+    <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
+    <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"></td>
+  </tr>
+</table>
+<div align="left">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td height="10" width="100%"></td>
+  </tr>
+</table>
+</div><div align="left">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
+  <tr>
+    <td width="164" valign="top" bgcolor="#6C69F7" height="1%"><p class="TOCHeader">Documentation</td>
+    <td width="12" rowspan="9" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="492" hspace="3"> </td>
+    <td width="100%" valign="top" align="justify" height="1" colspan="2"><p class="aisheader1">Tutorial
+    - Additional Notes</td>
+  </tr>
+  <tr>
+    <td width="167" rowspan="8" valign="top" height="200"><script language="javascript">
+         <!--
+            createDocumentTree("../");
+         -->
+         </script>
+    </td>
+    <td width="100%" valign="top" align="left" height="1" colspan="2"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="36" valign="top" align="left" height="1"><p class="ls_nav_text_l" align="left"><a href="tt_ius_sen.htm">Prev</a> </td>
+    <td width="100%" valign="top" align="left" height="1"><p class="ls_nav_text_r" align="left"><a href="tt_le1_txt.htm">Next</a> </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top" align="justify" height="1" colspan="2"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top" align="justify" height="400" colspan="2"><p class="aisheader2">Summary of steps</p>
+    <p class="aisnormal"><br>
+    To summarize, these are the steps necessary to write, compile and run a Brahms simulation:</p>
+    <p class="aisnormal"><br>
+    1. write the Brahms file(s), i.e. files with the .b extension written according to the
+    rules and specifications of the Brahms language.<br>
+    <p class="aisnormal"><br>2. compile them using the Composer or - from the command line - bc.bat; for example,
+    <font face="Courier">bc.bat c:\Brahms&nbsp; c:\Brahms\Projects\Atm\AtmModel.b</font> where AtmModel.b is a file that imports the other files in the projects.atm package - more on package in the next chapter - and c:\Brahms is the library path<br>
+    <p class="aisnormal"><br>3. run the Virtual Machine (simulation engine) on the xml files created by the compiler in
+    the same folder where you saved the .b files: bvm projects.Atm.AtmModel<br>
+    <p class="aisnormal"><br>4. parse the resulting history of events .txt file from the AgentViewer, and then open the
+    database file that the parser has just created.</p>
+    <p class="aisnormal">&nbsp;</p>
+    <p class="aisheader2">Structure of the scenario</p>
+    <p class="aisnormal"><br>
+    Each of the following sections will introduce you to a concept of Brahms modeling: the
+    basic compilation unit; the geography; groups, agents, attributes and relations; facts and
+    beliefs; workframes, thoughtframes and activities; objects and classes; variables; as well
+    as advanced topics like the interaction of many agents, the use of priorities, and the use
+    of random elements.</p>
+    <p class="aisnormal"><br>
+    Each section will adhere to the same structure: a subsection titled 'Introduction' will
+    describe the scope of the section; the 'Task' subsection will present you with the
+    modeling goal to be accomplished by the end of the section; the 'Description' subsection
+    will discuss, more or less formally, the language concepts of interest to the section. The
+    'Syntax' subsection will link to the complete syntactical details and rules of the
+    concepts being discussed. Finally, the 'Tutorial' subsection will be the area where the
+    'goal' and the 'description' meet: it will drive you through the actual coding of the Atm
+    scenario. As a general rule, it will be useful to try to code each section's scenario on
+    your own, right after reading the 'Task' and the 'Description', before reading the
+    'Tutorial' section. Complete model files are also available and linked to from the
+    'Tutorial' sections.</p>
+    <p class="aisheader2"><br>
+    Expectations and Goals</p>
+    <p class="aisnormal"><br>
+    The reader should have some level of previous programming experience to get the most from
+    this tutorial. Knowledge of object-oriented languages and rule-based languages is
+    preferable, but not essential.</p>
+    <p class="aisnormal"><br>
+    This tutorial will provide a self-contained introduction to the language. It will start
+    with simple concepts and examples and builds up in complexity and difficulty. By the end
+    of this tutorial you should be able to model easy to mildly complex scenarios on your own.
+    The tutorial however will not covered all of the language features. Once you get going,
+    you should refer to the online language specifications for a complete view of the
+    language.</p>
+    <p class="aisnormal"><br>
+    Experienced programmers might move relatively quickly through the initial sections of the
+    Tutorial (Lessons 3 - 8) and spend more time on the final sections, where more complex
+    activities and constructs will be introduced (Lessons 9 -11). Even experienced
+    programmers, however, should try to keep in mind that Brahms is different from
+    object-oriented languages: Brahms is an agent-oriented language with elements of
+    rule-based languages, where activities are not the same things as methods, and rules are
+    not the same as if..then constructs of imperative languages.</p>
+    <p class="aisnormal"><br>
+    One final note before kick-off: this tutorial will not follow the way you are supposed to
+    build a model in Brahms, because you still do not know about Brahms concepts. And
+    remember: there is no substitute for practice to learn a new programming language. As
+    mentioned above, while in the beginning all the details will be described and all the code
+    to implement the cases will be provided, as you will progress in the tutorial less and
+    less details will be provided, and more will be left to your judgmenet. You will have to
+    come out with good solutions to the exercises and challenges proposed in the text. Of
+    course, you will be given examples of code to compare and verify your own solutions. <span style="color:black"><o:p></o:p></span></td>
+  </tr>
+</table>
+</div><div align="left">
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="100%"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" align="center"><font face="Arial" size="1">Questions or problems
+    regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
+    Copyright © 2001 NASA Ames Research Center. All rights reserved.<br>
+    Last modified: 
+	<!--webbot bot="TimeStamp" S-Type="EDITED" S-Format="%A %B %d, %Y" startspan -->Monday April 30, 2007<!--webbot bot="TimeStamp" i-checksum="31391" endspan -->.</font></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

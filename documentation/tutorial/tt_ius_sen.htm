@@ -1,0 +1,293 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
+<script type="text/javascript" src="../doctree.jsc"></script>
+<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+
+<title>Agent iSolutions - Tutorial - Components</title>
+</head>
+
+<body onload="openTree('OUT10t,OUT13t,OUT14t,DT53');">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
+  <tr>
+    <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" WIDTH="168" HEIGHT="78"></td>
+    <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
+  </tr>
+  <tr>
+    <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../index.htm">Home</a></td>
+    <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
+    <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a href="../index.htm">Documentation</a></td>
+    <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
+    <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
+    <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"></td>
+  </tr>
+</table>
+<div align="left">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td height="10" width="100%"></td>
+  </tr>
+</table>
+</div><div align="left">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
+  <tr>
+    <td width="164" valign="top" bgcolor="#6C69F7" height="1%"><p class="TOCHeader">Documentation</td>
+    <td width="12" rowspan="9" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="492" hspace="3"> </td>
+    <td width="100%" valign="top" align="justify" height="1" colspan="2"><p class="aisheader1">Tutorial
+    - Components</td>
+  </tr>
+  <tr>
+    <td width="167" rowspan="8" valign="top" height="200"><script language="javascript">
+         <!--
+            createDocumentTree("../");
+         -->
+         </script>
+    </td>
+    <td width="100%" valign="top" align="left" height="1" colspan="2"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="36" valign="top" align="left" height="1"><p class="ls_nav_text_l" align="left"><a href="tt_ius_bus.htm">Prev</a> </td>
+    <td width="100%" valign="top" align="left" height="1"><p class="ls_nav_text_r" align="left"><a href="tt_ius_agv.htm">Next</a> </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top" align="justify" height="1" colspan="2"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top" align="justify" height="400" colspan="2"><p style="margin-left:0in;text-indent:0in" class="aisnormal">&nbsp;</p>
+   <p class="aisheader2">Introduction: The life of a Brahms Simulation </p>
+    <p class="aisnormal"><br>
+In this section we will consider the different components of the Brahms system. The "big picture" to keep in mind is the following: </p>
+    <p class="aisnormal"><br>
+1.  A Brahms simulation starts with somebody - you! - writing Brahms code. You will use the Brahms Composer for this scope. In the Composer you can write code by using the internal text editor, or through the graphic interface that allows you to create concepts and modify parameters by moving your mouse and dragging/dropping items on the Composer windows. The final output of this stage will be a (set of) Brahms files, i.e. lines of code written according to the Brahms language rules and saved with the .b extension (the Composer also saves all of your model as a single entity in the .bmd format. More on this below)
+<p class="aisnormal"><br> 2.  Then, while still inside the Composer, you can "compile" your .b files. Compiling your model means that you use the internal parser to produce new files based on the .b files you have written. The new files are .xml files that can be read by the Brahms Simulation Engine. The new files are produced if no compilation errors is encountered. 
+<p class="aisnormal"><br>3.  The next step is to "run" your model (now contained in the .xml files) into a simulation: you will use a component called Brahms Simulation Engine (aka Virtual Machine) to do this. If all goes fine, the result will be an "event" file (saved with the .txt extension) that contains all the "history" of your simulation.
+<p class="aisnormal"><br>4.  Last step: seeing your simulation. You can use the component called Agent Viewer to open the .txt event file and parse it into a database file, which can be then viewed and studied through a graphical interface.
+<p class="aisnormal"><br> We will now discuss in details these various components - the Brahms Composer and Compiler, the Virtual Machine, and the Agent Viewer by trying to run the Atm model files available online. </p>
+    <p class="aisnormal"><br> 
+Firstly, download and install the four components described above, accepting the default, custom configuration (if you have not already done so). </p>
+    <p class="aisnormal"><br>
+Then, if you have not already done so, download from http://www.agentisolutions.com/documentation/tutorial/tt_files.htm all the folders with the Atm model files (there will be 4 folders, referring to different stages in the evolution of the tutorial). </p>
+    <p class="aisnormal"><br>
+Then, we suggest you to create a new set of folders on your c: drive:
+<font face="Courier">c:\Brahms\Projects\Atm</font> </p>
+    <p class="aisnormal"><br>
+The first folder - Brahms - can be used as a location for all of your Brahms working (i.e., non-application) files. The subfolder Projects will be used to contain the actual Brahms files that are part of your future Brahms models. The folder Atm will of course contain the files belonging to the Atm model in particular. Hence, from now on and for the rest of this tutorial, you will save all the Brahms files for your Atm project inside this folder. 
+In this section we will test the installation and the behavior of your Brahms system by making use to these files. Hence, paste into the newly created Atm folder all of the content of the folder called Final that contains the Brahms Atm scenario files that you have just downloaded. These files represent the complete version of the Atm scenario. </p>
+    <p class="aisnormal"><br>
+<p class="aisheader2">Brahms Composer and Compiler</p>
+    <p class="aisnormal"><br>
+The Brahms Composer allows you to create Brahms models through a powerful and intuitive graphic interface. The complete Composer's manual is available from the AgentiSolutions website. In this section we provide a quick introduction to its usage and capabilities. </p>
+    <p class="aisnormal"><br>
+In theory, any text editor would be sufficient to create Brahms models. You could just insert code for each "concept" in your model (such as groups, agents, locations, objects, etc.) into a different file, and give each of these files the extension .b. However, with the Brahms Composer, you can much more easily and quickly create Brahms concepts and edit them. Editing can be done through the Composer's graphic interface, or through the internal text editor. The Composer automatically creates .b files for you, as well as .bmd files. The former are the actual Brahms files that you create, edit, and parse in order to obtain a simulation run. Typically, a Brahms model - such as the Atm scenario - is composed of several agents, objects, etc., and therefore of several such files. The latter are files used only by the Composer to manipulate your model as a whole - that is, there is only one such file for each model of yours. </p>
+    <p class="aisnormal"><br>
+ 
+When you start the Composer, you have the option to start a new model, open an existing one, or import the files of an existing model. The difference between the other two options is that "opening" refers to accessing a .bmd file previously created by the Compose, while "importing" refers to importing into the Composer a set of Brahms .b files (composed, as discussed above, possibly with a simple text editor), starting with the .b file in your model that has an "import" statement for all the other files ("import" statements are discussed later in this tutorial). </p>
+    <p class="aisnormal"><br>
+ 
+To learn about the Composer and to test the installation of your files, we will try to use both latter options ("import," and "open") with the Atm scenarion files that you have downloaded. Note, however, that in the rest of this tutorial, we will focus more on understanding how the language works and can be used, and less on how to use the Composer (although examples and references will be made throughout the text). </p>
+    <p class="aisnormal"><br>
+
+ 
+We will assume that you have followed the step above (installed the Brahms components, created the new directories, and downloaded the Atm Model files). This should mean that your Brahms application files have been saved in a \Brahms\PersonalAgent\ folder in your Program Files directory and that your model files have been saved in <font face="Courier">c:\Brahms\Projects\</font>. In particular, you should have copied the files from the folder Final into the folder <font face="Courier">c:\Brahms\Projects\Atm. </font></p>
+    <p class="aisnormal"><br>
+Now, choose "Import" tab in the Composer dialog window, look for the <font face="Courier">c:\Brahms\Projects\Atm </font> folder, and select as "File_name" the file AtmModel.b. In the library path, add: <font face="Courier">c:\Brahms\ </font>(we will explain soon why). Click on open. </p>
+    <p class="aisnormal"><br>
+ 
+Now go to the "File" menu (top left) and choose: "Save Project." Congratulation, you have just imported and then saved again your first Brahms model! Now exit the Compose (in the "File" menu, choose "Exit"). </p>
+    <p class="aisnormal"><br>
+Start the Composer again. This time, however, do not choose the "Import' tab but rather the "Existing" tab. Look for the <font face="Courier">c:\Brahms\ </font>folder and open the AtmModel.bmd file. This is the file which did not exist before and that has been created by the Composer when you chose to save your project. You have just learnt two ways to achieve the same goal - open in the Composer an existing Brahms model! </p>
+    <p class="aisnormal"><br>
+In addition, the Composer also grants you access to the Brahms Compiler. </p>
+    <p class="aisnormal"><br> 
+By opening or compiling the files in the Brahms Composer, the modeler will be able to check whether they are syntactical correct or whether there are other errors in the code, and to produce xml files that can be fed into the Brahms Virtual Machine. </p>
+    <p class="aisnormal"><br>
+Before we see how this works, we must clarify the issue of that library path we mentioned above. </p>
+    <p class="aisnormal"><br>
+As the name says, with the library path we tell the Brahms Compiler what path to use when compiling files. By default, the Composer will look for the Models folder in the PersonalAgent folder, and if you wish so, you could certainly use this folder. However, several users prefer to keep working projects separated from application files, in different folders or even in different drives, and in this tutorial we want to teach you how to use your Brahms model files in a different directory. This is why you were asked in the previous section to create the set of nested directories: <font face="Courier">c:\Brahms\Projects\Atm</font>. This will be a useful exercise to start learning about how Brahms work - and will also make your future Brahms projects more flexible and reusable. </p>
+    <p class="aisnormal"><br>
+All comes at a little cost, however. If you want to use a particular directory to work on the files of your Brahms models (as we are forcing you to do in our exercise; in our case, the directory is: <font face="Courier">c:\Brahms\</font>), you must add a few parameters in the Brahms environment. In particular, you must modify a brahms.ini file to read in the library path that you are going to use for your models. This file is located in the PersonalAgent directory created during installation, and by default it is set to: </p>
+    <p class="aisnormal"><br>
+    <font face="Courier">libpath=<installation directory>\\Models </font></p>
+    <p class="aisnormal"><br>
+"Models" refers precisely to the directory inside PersonalAgent we were mentioning above. Now, let us assume that instead you want to you use a <font face="Courier">c:\Brahms\ </font>folder to save all your models (included the Atm). Then you should modify your libpath information to look like: </p>
+    <p class="aisnormal"><br>
+<font face="Courier">libpath=C:\\Brahms;C:\\Program Files\\Brahms\\PersonalAgent\\Models </font></p>
+    <p class="aisnormal"><br>
+Ok.  Now note: the double '\' is important! As you see, you can add other directories to this path by separating the directories with a semicolon (;). In this case we have left two directories - hence, if you like, you might keep on using the default Models directory as the location for your model files. </p>
+    <p class="aisnormal"><br>
+Other configuration files contain comments on how to use or set their properties. In particular, make sure to verify also the vm.cfg file, to reflect the same changes in your library path and/or working directory: open that file with a text editor such as Notepad and check that the library path contains the path where your xml files can be found:
+<font face="Courier">library_path=c:\\program files\\brahms\\PersonalAgent\\models;c:\\brahms </font></p>
+    <p class="aisnormal"><br>
+
+Anyway - let's go back to the Composer. You opened or imported your Atm model. Now, what do you do with it? Well, you can compile it so that the Simulation Engine will be able to run a simulation of your model. To compile your code from the Brahms Composer, simply go to the "Build" menu when your model is open, and choose "Build Model." There you go - if all goes well, at the bottom of the Composer windon a message will appear telling you that the build was successful. Some xml files will have been created - but we will discuss this later. </p>
+    <p class="aisnormal"><br>
+Technical note: if you prefer to go "manual" and directly access the underlying Compiler, you should execute the following from a MS-DOS command line: </p>
+    <p class="aisnormal"><br>
+<font face="Courier">C:\Program Files\Brahms\PersonalAgent\bc.bat c:\brahms -src c:\brahms\projects\Atm\AtmModel.b  </font> </p>
+    <p class="aisnormal"><br>
+where the first part of the command (up to bc.bat ) calls the Brahms Compiler executable, the second part (<font face="Courier">c:\Brahms</font>) tells the compiler the library path, and the third part (after -src) passes to it as an argument the AtmModel.b file - which is a Brahms file that imports all the other files of the Atm project (or 'package': more about later in this tutorial, where you will also see an example of code that imports other files for a project).  </p>
+    <p class="aisnormal"><br>
+Additional technical note. In order to use the compiler (as well as the Virtual Machine, that we will discuss in a moment) from other places on your machine (without having to spell out all the directory structure), make sure to add the Brahms PersonalAgent directory to your system PATH environment variable: that is, open your autoexec.bat file and add the directory where the bc.bat and bvm.bat files can be found to the line with the PATH: command.   </p>
+    <p class="aisnormal"><br>
+            
+Either way (click on the "Build" button on the Composer panel, or use the command line), the Brahms Compiler will start and the model will be compiled. The outcome of the compilation will be a set of xml files produced in the very same Atm folder. </p>
+    <p class="aisnormal"><br>
+
+<p class="aisheader2">Brahms Simulation Engine (Virtual Machine) </p>
+    <p class="aisnormal"><br>
+The Brahms Virtual Machine runs the simulation by reading the xml files produced by the Compiler and producing a text file with the history events captured during the simulation. This text file can be parsed by the Agent Viewer application to produce a complete event history database of the simulation. </p>
+    <p class="aisnormal"><br>
+The Virtual Machine can be called from MS-DOS by executing bvm.bat and by giving it the relevant xml filename, without the xml extension.  </p>
+    <p class="aisnormal"><br>
+Given that the Brahms Compiler saves the xml files in the same directory where the .b files are saved, the Virtual Machine is called through bvm.bat, which must be given the filename of the file that imports all other files. For example, in the case of the Atm model, supposing that the .b files have been created in the <font face="Courier">c:\brahms\projects\Atm\ </font>directory, the Compiler will save there also the xml files, and the necessary command to run the simulation will be: </p>
+    <p class="aisnormal"><br>
+<font face="Courier">bmv.bat projects.Atm.AtmModel</font> </p>
+    <p class="aisnormal"><br>
+where AtmModel, again, represents the xml file created by the Brahms file that imports all the other Atm project files. The example above assumes that bvm.bat  - that resides in the Brahms/PersonalAgent directory - can be called from anywhere because the PATH variable in the autoexec.bat file has been already modified. Furthermore, remember that the vm.cfg file has a library path that must contain the path where your xml files can be found: </p>
+    <p class="aisnormal"><br>
+<font face="Courier">library_path=c:\\program files\\brahms\\PersonalAgent\\models;c:\\brahms </font></p>
+    <p class="aisnormal"><br>
+The Virtual Machine will first initialize and load the concepts of your model, and then it will start the engine. When it stops,  a history file with a .txt extension will have been created in the PersonalAgent/Database folder, with the format: 'model name_date_time:' e.g., <font face="Courier">Atmmodel_20010418_100523.txt</font>. Everything that happened in the simulation is in this file. </p>
+    <p class="aisnormal"><br>
+It is possible to add an undocumented flag -ui inside the bmv.bat file (in the Brahms files directory) in order to halt the simulation at the modeler's discretion. An applet will start when the Virtual Machine is running the simulation; this applet will let you halt the process and still obtained a file that the Agent Viewer - discussed below - can parse. </p>
+    <p class="aisheader2"><br>
+    When things don't work</p>
+    <p class="aisnormal"><br>
+    At this stage, there are a couple of things that might be wrong. If a history file is not
+    created, then most likely you don't have the proper setup in your library path. In the
+    PersonalAgent directory you will find a vm.cfg file. Again, check that the library path
+    contains the path where your xml files can be found:</p>
+    <p class="aisnormal"><br>
+    <font face="Courier">library_path=c:\\program
+    files\\brahms\\PersonalAgent\\models;c:\\brahms</font></p>
+    <p class="aisnormal"><br>
+    The above command assumes that you have created the folders \projects\Atm\ inside
+    c:\brahms (note that you can separate multiple paths using the semicolon or comma). The
+    second thing that could be the cause for the problem is an incorrect use of packages (cfr.
+    note 6). We will discuss packages later in this tutorial but for the moment it will suffice to recall
+    that, if your Brahms files have statements like: </p>
+    <p class="aisnormal"><br>
+    <font face="Courier">package projects.Atm;</font></p>
+    <p class="aisnormal"><br>
+    then your model would have to be loaded using:</p>
+    <p class="aisnormal"><br>
+    <font face="Courier">bvm projects.Atm.&lt;modelfilename&gt;</font></p>
+    <p class="aisnormal"><br>
+    which in our case is:</p>
+    <p class="aisnormal"><br>
+    <font face="Courier">bvm projects.Atm.AtmModel</font></p>
+    <p class="aisnormal"><br>
+    because the file AtmModel.b contains an import statement for all other .b files in the Atm
+    directory (note that the directory in which 'projects' is specified must be in the library
+    path as well). </p>
+    <p class="aisheader2"><br>
+    Brahms AgentViewer</p>
+    <p class="aisnormal"><br>
+    The final step is to open the AgentViewer, and 'parse' (first icon on the top left, or
+    choose the menu item File|New) the history of events text file that can be found in the
+    PersonalAgent/Database folder. The AgentViewer will save it as a database
+    file, with the same name (something similar to <font face="Courier">AtmModel_20010415_134559.mdb</font>), in a
+    directory inside the AgentViewer directory. Then, the database file can be opened in
+    AgentViewer: click on the second leftmost menu button on the top, or use the menu).
+    AgentViewer will by default try to open the most recently created database file, so you will
+    simply have to click on yes in the selection window.</p>
+    <p class="aisnormal"><br>
+    </p>
+    <p class="aisnormal">The operations of the model are visually verified using the
+    AgentViewer. The AgentViewer is a separate Visual Basic application that uses the
+    simulation history data to display a 2-dimensional graphical time-line view of the
+    activities of agents and objects. The following timeline figures are all screenshots from
+    selected agents and objects in the AgentViewer. Using the AgentViewer application the
+    modeler can investigate the simulation run and the properties of the model. </p>
+    <p class="aisnormal"><br>
+    <img src="figures/tt_ius1.jpg" alt="wpe31.jpg (94478 bytes)" WIDTH="816" HEIGHT="583"></p>
+    <p class="aisnormal">&nbsp;</p>
+    <p class="aisnormal">Figure: AgentViewer Application</p>
+    <p class="aisnormal"><br>
+    Figure: AgentViewer Application shows the AgentViewer. Using this application the end-user
+    can select which agents and objects to view in the time-line view, and investigate the
+    exact behavior of those agents and objects during the simulation):<br>
+    a. Using the menu-bar, the end-user can parse the simulation history data into a history
+    database, and open a history database for viewing.<br>
+    b. When the database is opened all the agents and objects are loaded into the tree view.
+    Using the tree view, the end-user can select which agents and/or objects (s)he wants to
+    view in the time-line view.<br>
+    c. By selecting to view the agent/object communication, the (blue) arrows show all the
+    communication activities, and the direction of the communication (sender and receivers).
+    The communicated beliefs are also accessible by clicking on the square at the top of the
+    sender side of the communication arrow.<br>
+    d. For each agent/object the &quot;current&quot; location is shown. When the agent/object
+    moves to a new location, it is shown as a change in the location name and color.<br>
+    e. The time-line can show the time in different time-intervals, therewith zooming in and
+    out.<br>
+    f. The tool-tip pops up when the mouse is moved over &quot;hot spots&quot;. The hot spots
+    are those areas where more information is available than can be shown on the screen. By
+    moving the mouse over those areas the hidden information pops up in a tool-tip, such as
+    the name of a workframe or activity.<br>
+    g. The Activity-Context Tree is the central piece of the agent/object time-line. It shows
+    the workframe and activities hierarchy of the agent or object.<br>
+    h. The touch-object line is a (yellow) line that is shown when the agent/object is using
+    certain objects in its activity. &quot;Touch objects&quot; are used to calculate the time
+    those objects are used in activities.<br>
+    i. The explanation facility view is used to display more detailed information about the
+    execution of workframes. By clicking on any workframe (light blue in color), an
+    explanation facility window is opened for the workframe at hand.<br>
+    j. By selecting the &quot;Active&quot; tab in the explanation facility view, the executed
+    statements in the workframe body are shown.<br>
+    k. You can select the statements in the workframe body to get more info.<br>
+    l. When you select a statement in the body of the workframe, the total time the activity
+    was active is shown. Using the other tabs in this view, you can find out the exact time
+    the workframe became available, as well as the exact time it became active and ended.<br>
+    m. Workframes are situated-action rules that execute activities. The top of a
+    Activity-Context tree is always a workframe. You can recognize a workframe by the
+    &quot;wf:&quot; symbol, followed by the name of the workframe. When the zoom-level is too
+    high to contain the name of the workframe it is left out of the display. Using the
+    tool-tip the user can find out the name.<br>
+    n. Composite Activities are executed by workframes, and contain lower-level workframes.
+    You can recognize Composite Activities by the &quot;ca:&quot; symbol followed by the name
+    of the activity. When the zoom-level is too high to contain the name of the activity it is
+    left out of the display. Using the tool-tip the user can find out the name. <br>
+    o. Primitive Activities are executed by workframes, and are always at the bottom of the
+    Activity-Context Hierarchy. You can recognize Primitive Activities by the following
+    symbols, depending on the type of primitive activity: &quot;pa:&quot; (for a primitive
+    activity), &quot;mv:&quot; (for a move activity), &quot;cw&quot; (for a communicate
+    activity), &quot;co:&quot; (for a create object activity), followed by the name of the
+    activity. When the zoom-level is too high to contain the name of the activity it is left
+    out of the display. Using the tool-tip the user can find out the name.<br>
+    Using the AgentViewer it becomes possible to visually inspect the simultaneous behavior of
+    the agents and objects, and compare the expected behavior from the conceptual model with
+    the actual behavior during the simulation.</td>
+  </tr>
+</table>
+</div><div align="left">
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="100%"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" align="center"><font face="Arial" size="1">Questions or problems
+    regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
+    Copyright © 2001 NASA Ames Research Center. All rights reserved.<br>
+    Last modified: 
+	<!--webbot bot="TimeStamp" S-Type="EDITED" S-Format="%A %B %d, %Y" startspan -->Monday April 30, 2007<!--webbot bot="TimeStamp" i-checksum="31391" endspan -->.</font></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

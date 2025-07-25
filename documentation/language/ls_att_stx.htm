@@ -1,0 +1,282 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Agent iSolutions - Language - Attribute (ATT)</title>
+<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
+<script type="text/javascript" src="../doctree.jsc"></script>
+<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+</head>
+
+<body onload="openTree('OUT0t,OUT2t,OUT4t,DT23');">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
+    <tr>
+      <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" width="168" height="78"></td>
+      <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
+    </tr>
+    <tr>
+      <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../home.htm">Home</a></td>
+      <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
+      <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a href="../index.htm">Documentation</a></td>
+      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
+      <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
+      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">&nbsp;</td>
+    </tr>
+  </table>
+
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td height="10" width="100%">
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
+    <tr>
+      <td width="164" valign="top" bgcolor="#6C69F7" height="1%">
+        <p class="TOCHeader">Documentation</td>
+      <td width="12" rowspan="9" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="724" hspace="3">
+      </td>
+      <td width="100%" valign="top" align="justify" height="1" colspan="5">
+        <p class="aisheader1">Language Specification - Attribute (ATT) -
+        Syntax</p>
+      </td>
+    </tr>
+    <tr>
+      <td width="167" rowspan="8" valign="top" height="200">
+      	 <script language="javascript">
+      	 <!--
+      	 	createDocumentTree("../");
+      	 -->
+      	 </script>
+      </td>
+      <td width="100%" valign="top" align="left" height="1" colspan="5">
+        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+      </td>
+    </tr>
+    <tr>
+      <td width="12%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_l"><a href="ls_pat_stx.htm">Prev</a>
+      </td>
+      <td width="25%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_c"><a href="ls_att_dsc.htm">Description</a>
+      </td>
+      <td width="25%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_c"><font color="#808080">Syntax</font>
+      </td>
+      <td width="25%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_c"><a href="ls_att_sem.htm">Semantics</a>
+      </td>
+      <td width="12%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_r" align="left"><a href="ls_rel_stx.htm">Next</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" valign="top" align="justify" height="1" colspan="5">
+        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" valign="top" align="justify" height="400" colspan="5">
+
+<div align="center"><center>
+
+<table border="0" cellpadding="5" cellspacing="3">
+  <tr>
+        <td valign="top" class="aisnormal"><a name="attribute"><b>attribute</b></a></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal">{ <b><u>private</u></b> |
+        <b><u>protected</u></b> | <b><u>public</u></b> }<br>
+          <a href="#attribute-type-def">attribute-type-def</a> <br>
+          <a href="#attribute-name">attribute-name</a><br>
+        { <a href="#attrib-body">attrib-body</a> }<br>
+        <b><u>;</u></b></td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><a name="attribute-name"><b>attribute-name</b></a></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal"><b><u>location</u></b> | ID.<a href="ls_id.htm#name">name</a></td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><b><a name="attribute-type-def">
+		attribute-type-def</a></b></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal">[ <a href="#type-def">type-def</a><br>
+		|
+		<a href="#collection-type-def">collection-type-def</a><br>
+		| <a href="#relation-type-def">relation-type-def</a> ]</td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><a name="type-def"><b>type-def</b></a></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal">[ <a href="#class-type-def">class-type-def</a> 
+		<br>
+		| <a href="#value-type-def">value-type-def</a> <br>
+		| <a href="#java-type-def">java-type-def</a> ]</td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><a name="class-type-def"><b>class-type-def</b></a></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal">[ <u><b>Agent</b></u> |<b><u><br>
+          Group</u></b> |<b><u><br>
+          Class</u></b> |<b><u><br>
+          Object</u></b> |<b><u><br>
+          ActiveClass</u></b> |<b><u><br>
+          ActiveInstance</u></b> |<b><u><br>
+          ActiveConcept</u></b> |<b><u><br>
+          ConceptualClass</u></b>
+          |<b><u><br>
+          ConceptualObject</u></b>
+          |<b><u><br>
+          ConceptualConcept</u></b>
+          |<b><u><br>
+          AreaDef</u></b> |<b><u><br>
+          Area</u></b> |<b><u><br>
+          GeographyConcept</u></b>
+          |<b><u><br>
+          Concept</u></b> |<br>
+        GRP.<a href="ls_grp_stx.htm#group-name">group-name</a> |<br>
+        CLS.<a href="ls_cls_stx.htm#class-name">class-name</a> |<br>
+        COC.<a href="ls_coc_stx.htm#conceptual-class-name">conceptual-class-name</a>
+        |<br>
+        ADF.<a href="ls_adf_stx.htm#areadef-name">areadef-name</a> ]
+        </td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><a name="value-type-def"><b>value-type-def</b></a></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal">[ <b><u>int</u></b> | <u><b>long</b></u> 
+		| <b><u>double</u></b>
+        | <b><u>symbol</u></b> | <b><u>string</u></b> | <b><u>boolean</u></b>
+        ]</td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><b><a name="collection-type-def">
+		collection-type-def</a></b></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal">[ <u><b>map</b></u> ]</td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><b><a name="relation-type-def">
+		relation-type-def</a></b></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal"><u><b>relation</b></u> <u><b>(</b></u>
+		<a href="#type-def">type-def</a> <u><b>)</b></u></td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><b><a name="java-type-def">
+		java-type-def</a></b></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal"><u><b>java</b></u> <u><b>(</b></u>
+		<a href="#java-ref-type-def">java-ref-type-def</a> <u><b>)</b></u></td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><b><a name="java-ref-type-def">
+		java-ref-type-def</a></b></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal">
+		<a href="#java-class-or-interface-type-def">
+		java-class-or-interface-type-def</a> [ <u><b>[</b></u> <u><b>]</b></u> 
+		]*</td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><b>
+		<a name="java-class-or-interface-type-def">
+		java-class-or-interface-type-def</a></b></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal"><a href="#java-type-decl-specifier">
+		java-type-decl-specifier</a> { <a href="#java-type-arguments">
+		java-type-arguments</a> }</td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><b>
+		<a name="java-type-decl-specifier">java-type-decl-specifier</a></b></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal">[ ID.<a href="ls_id.htm#name">name</a> 
+		[ <u><b>.</b></u> ID.<a href="ls_id.htm#name">name</a> ]*<br>
+		| <a href="#java-class-or-interface-type-def">
+		java-class-or-interface-type-def</a> <u><b>.</b></u> ID.<a href="ls_id.htm#name">name</a> 
+		]</td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><b><a name="java-type-arguments">
+		java-type-arguments</a></b></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal"><u><b>&lt;</b></u>
+		<a href="#java-type-argument">java-type-argument</a> [ <u><b>,</b></u>
+		<a href="#java-type-argument">java-type-argument</a> ]* <u><b>&gt;</b></u></td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><b><a name="java-type-argument">
+		java-type-argument</a></b></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal">[ <a href="#java-ref-type-def">
+		java-ref-type-def</a><br>
+		| <u><b>?</b></u> { <a href="#java-wildcard-bounds">java-wildcard-bounds</a> 
+		} ]</td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><b><a name="java-wildcard-bounds">
+		java-wildcard-bounds</a></b></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal">[ <u><b>extends</b></u>
+		<a href="#java-ref-type-def">java-ref-type-def</a><br>
+		| <u><b>super</b></u> <a href="#java-ref-type-def">java-ref-type-def</a> 
+		]</td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><a name="attrib-body"><b>attrib-body</b></a></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal"><b><u>{<br>
+        </u></b>{ <b><u>display</u></b> <b><u>:</u></b> ID.<a href="ls_id.htm#literal-string">literal-string</a> <b><u>;</u></b> }<br>
+        <b><u>}</u></b></td>
+  </tr>
+</table>
+</center></div>
+
+<p class="aisparagraph">&nbsp;</p>
+
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div align="left">
+  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="100%">
+        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" align="center"><font size="1" face="Arial">
+Questions or problems regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
+Copyright &#169; 2000-2006 NASA Ames Research Center. All rights reserved.<br>
+Last modified: 
+		<!--WEBBOT 
+   bot=TimeStamp
+   S-Type="EDITED"
+   S-Format="%A %B %d, %Y" startspan
+ -->Monday April 30, 2007<!--webbot bot="TimeStamp" i-checksum="31391" endspan -->.</font></td>
+    </tr>
+  </table>
+</div>
+
+</body>
+
+</html>

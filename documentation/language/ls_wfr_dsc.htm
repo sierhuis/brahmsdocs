@@ -1,0 +1,156 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Agent iSolutions - Language - Workframe (WFR) - Description</title>
+<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
+<script type="text/javascript" src="../doctree.jsc"></script>
+<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+</head>
+
+<body onload="openTree('OUT0t,OUT2t,OUT7t,DT35');">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
+    <tr>
+      <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" width="168" height="78"></td>
+      <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
+    </tr>
+    <tr>
+      <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../home.htm">Home</a></td>
+      <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
+      <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a href="../index.htm">Documentation</a></td>
+      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
+      <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
+      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">&nbsp;</td>
+    </tr>
+  </table>
+
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td height="10" width="100%">
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
+    <tr>
+      <td width="164" valign="top" bgcolor="#6C69F7" height="1%">
+        <p class="TOCHeader">Documentation</td>
+      <td width="12" rowspan="9" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="590" hspace="3">
+      </td>
+      <td width="100%" valign="top" align="justify" height="1" colspan="5">
+        <p class="aisheader1">Language Specification - Workframe (WFR) -
+        Description</p>
+      </td>
+    </tr>
+    <tr>
+      <td width="167" rowspan="8" valign="top" height="200">
+      	 <script language="javascript">
+      	 <!--
+      	 	createDocumentTree("../");
+      	 -->
+      	 </script>
+      </td>
+      <td width="100%" valign="top" align="left" height="1" colspan="5">
+        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+      </td>
+    </tr>
+    <tr>
+      <td width="12%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_l"><a href="ls_cac_dsc.htm">Prev</a>
+      </td>
+      <td width="25%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_c"><font color="#808080">Description</font>
+      </td>
+      <td width="25%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_c"><a href="ls_wfr_stx.htm">Syntax</a>
+      </td>
+      <td width="25%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_c"><a href="ls_wfr_sem.htm">Semantics</a>
+      </td>
+      <td width="12%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_r" align="left"><a href="ls_tfr_dsc.htm">Next</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" valign="top" align="justify" height="1" colspan="5">
+        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" valign="top" align="justify" height="525" colspan="5">
+
+<p class="aisparagraph">A workframe is an action rule for an agent or object. It
+is a declarative description of under what condition (in case of an agent,
+beliefs that an agent has or in case of an object, the facts or beliefs in the
+world depending on the workframe type) the agent/object will perform the
+activities specified in the body of the rule. Workframes are treated like
+data-driven (forward chaining) production rules. However, workframes are
+different from production rules, in that they specify activities that agents and
+objects can perform (are engaged in) - production rules specify what conclusions
+can be drawn based on the conditions that are met.</p>
+<p class="aisparagraph"><span style="mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">In
+Brahms we separate facts in the world from beliefs that agents have. For
+example, in Brahms we can have a fact ‘<i style="mso-bidi-font-style:normal">the
+color of John’s Car is red</i>’. Agent John might have the belief ‘<i style="mso-bidi-font-style:normal">the
+color of John’s Car is red</i>’, but agent Caroline might have the belief
+‘<i style="mso-bidi-font-style:normal">the color of John’s Car is green</i>’.
+Agent workframes get ‘worked on’ (in production rules systems we call this
+‘get fired’) based on the beliefs that agents have. This means that, in the
+example above, if John and Caroline have the same workframe using the belief of
+John’s Car is red as a condition for the activation of the workframe; John
+will start working on the workframe, whereas Caroline will not start working on
+the workframe. Using this separation of beliefs and facts in the world allows
+Brahms to model agent’s activities, based on changes in the world (facts)
+detected through detectables, and the agent-specific beliefs that are created.
+For objects beliefs are the information that an object carries. By default
+workframes for objects are only triggered by facts in the world, the type of the
+workframe is by default ‘factframe’. If the type of the workframe is set to
+‘dataframe’ then the workframe will be triggered by the beliefs of the
+object. The workframe is in that case an information processing frame. It is not
+possible to specify the type of the workframes for agents. Agent’s workframes
+are only activated by beliefs matching the preconditions.</span>
+
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div align="left">
+  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="100%">
+        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" align="center"><font size="1" face="Arial">
+Questions or problems regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
+Copyright &#169; 2000 NASA Ames Research Center. All rights reserved.<br>
+Last modified: 
+		<!--WEBBOT 
+   bot=TimeStamp
+   S-Type="EDITED"
+   S-Format="%A %B %d, %Y" startspan
+ -->Monday April 30, 2007<!--webbot bot="TimeStamp" i-checksum="31391" endspan -->.</font></td>
+    </tr>
+  </table>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,225 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Agent iSolutions - Language - Group (GRP)</title>
+<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
+<script type="text/javascript" src="../doctree.jsc"></script>
+<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+</head>
+
+<body onload="openTree('OUT0t,OUT2t,OUT3t,DT14');">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
+    <tr>
+      <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" width="168" height="78"></td>
+      <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
+    </tr>
+    <tr>
+      <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../home.htm">Home</a></td>
+      <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
+      <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a href="../index.htm">Documentation</a></td>
+      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
+      <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
+      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">&nbsp;</td>
+    </tr>
+  </table>
+
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td height="10" width="100%">
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
+    <tr>
+      <td width="164" valign="top" bgcolor="#6C69F7" height="1%">
+        <p class="TOCHeader">Documentation</td>
+      <td width="12" rowspan="9" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="756" hspace="3">
+      </td>
+      <td width="100%" valign="top" align="justify" height="1" colspan="5">
+        <p class="aisheader1">Language Specification - Group (GRP) -
+        Syntax</p>
+      </td>
+    </tr>
+    <tr>
+      <td width="167" rowspan="8" valign="top" height="200">
+      	 <script language="javascript">
+      	 <!--
+      	 	createDocumentTree("../");
+      	 -->
+      	 </script>
+      </td>
+      <td width="100%" valign="top" align="left" height="1" colspan="5">
+        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+      </td>
+    </tr>
+    <tr>
+      <td width="12%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_l"><a href="ls_mod_stx.htm">Prev</a>
+      </td>
+      <td width="25%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_c"><a href="ls_grp_dsc.htm">Description</a>
+      </td>
+      <td width="25%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_c"><font color="#808080">Syntax</font>
+      </td>
+      <td width="25%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_c"><a href="ls_grp_sem.htm">Semantics</a>
+      </td>
+      <td width="12%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_r" align="left"><a href="ls_agt_stx.htm">Next</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" valign="top" align="justify" height="1" colspan="5">
+        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" valign="top" align="justify" height="400" colspan="5">
+
+<div align="center"><center>
+
+<table border="0" cellpadding="5" cellspacing="3">
+  <tr>
+        <td valign="top" class="aisnormal"><a name="group"><b>group</b></a></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal"><b><u>group</u></b>  <a href="#group-name">group-name</a> {
+          <a href="#group-membership">group-membership</a> }<br>
+        <b><u>{<br>
+        </u></b>{ <b><u>display</u></b> <b><u>:</u></b> ID.<a href="ls_id.htm#literal-string">literal-string</a> <b><u>;</u></b> }<br>
+        { <b><u>cost</u></b> <b><u>:</u></b> ID.<a href="ls_id.htm#number">number</a> <b><u>;</u></b> }<br>
+        { <b><u>time_unit</u></b> <b><u>:</u></b> ID.<a href="ls_id.htm#number">number</a> <b><u>;</u></b> }<br>
+        { <strong><u>icon</u></strong> <strong><u>:</u></strong>
+        ID.<a href="ls_id.htm#literal-string">literal-string</a> <strong><u>;</u></strong>
+        }<br>
+        { <a href="#attributes">attributes</a> }<br>
+        { <a href="#relations">relations</a> }<br>
+        { <a href="#initial-beliefs">initial-beliefs</a> }<br>
+        { <a href="#initial-facts">initial-facts</a> }<br>
+        { <a href="#activities">activities</a> }<br>
+        { <a href="#workframes">workframes</a> }<br>
+        { <a href="#thoughtframes">thoughtframes</a> }<br>
+        <b><u>}</u></b></td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><a name="group-name"><b>group-name</b></a></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal">ID.<a href="ls_id.htm#name">name</a></td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><a name="group-membership"><b>group-membership</b></a></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal"><b><u>memberof</u></b>  <a href="#group-name">group-name</a> [ <b><u>,</u></b> 
+          <a href="#group-name">group-name</a> ]*</td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><a name="attributes"><b>attributes</b></a></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal"><b><u>attributes</u></b> <b><u>:</u></b>
+        [ ATT.<a href="ls_att_stx.htm#attribute">attribute</a> ]*</td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><a name="relations"><b>relations</b></a></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal"><b><u>relations</u></b> <b><u>:</u></b>
+        [ REL.<a href="ls_rel_stx.htm#relation">relation</a> ]*</td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><a name="initial-beliefs"><b>initial-beliefs</b></a></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal"><b><u>initial_beliefs</u></b>
+        <b><u>:</u></b> [ BEL.<a href="ls_bel_stx.htm#initial-belief">initial-belief</a> ]*</td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><a name="initial-facts"><b>initial-facts</b></a></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal"><b><u>initial_facts</u></b>
+        <b><u>:</u></b> [ FCT.<a href="ls_fct_stx.htm#initial-fact">initial-fact</a> ]*</td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><a name="activities"><b>activities</b></a></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal"><b><u>activities</u></b> <b><u>:</u></b>
+        [ <a href="#activity">activity</a> ]*</td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><a name="activity"><b>activity</b></a></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal">[ CAC.<a href="ls_cac_stx.htm#composite-activity">composite-activity</a> | <br>
+        PAC.<a href="ls_pac_stx.htm#primitive-activity">primitive-activity</a> | <br>
+        MOV.<a href="ls_mov_stx.htm#move-activity">move-activity</a> |<br>
+          CAA.<a href="ls_caa_stx.htm#create-agent-activity">create-agent-activity</a>
+          | <br>
+        COA.<a href="ls_coa_stx.htm#create-object-activity">create-object-activity</a>
+        | <br>
+        COM.<a href="ls_com_stx.htm#communicate-activity">communicate-activity</a> |
+        <br>
+        BCT.<a href="ls_bac_stx.htm#broadcast-activity">broadcast-activity</a> 
+          |<br>
+          JAC.<a href="ls_jac_stx.htm#java-activity">java-activity</a> |<br>
+          GET.<a href="ls_get_stx.htm#get-activity">get-activity</a> |<br>
+          PUT.<a href="ls_put_stx.htm#put-activity">put-activity</a> ]</td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><a name="workframes"><b>workframes</b></a></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal"><b><u>workframes</u></b> <b><u>:</u></b>
+        [ WFR.<a href="ls_wfr_stx.htm#workframe">workframe</a> ]*</td>
+  </tr>
+  <tr>
+        <td valign="top" class="aisnormal"><a name="thoughtframes"><b>thoughtframes</b></a></td>
+        <td valign="top" class="aisnormal"><b>::=</b></td>
+        <td valign="top" class="aisnormal"><b><u>thoughtframes</u></b>
+        <b><u>:</u></b> [ TFR.<a href="ls_tfr_stx.htm#thoughtframe">thoughtframe</a> ]*</td>
+  </tr>
+</table>
+</center></div>
+
+<p class="aisparagraph">&nbsp;</p>
+
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div align="left">
+  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="100%">
+        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" align="center"><font size="1" face="Arial">
+Questions or problems regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
+Copyright &#169; 2001 NASA Ames Research Center. All rights reserved.<br>
+Last modified: 
+		<!--WEBBOT 
+   bot=TimeStamp
+   S-Type="EDITED"
+   S-Format="%A %B %d, %Y" startspan
+ -->Monday April 30, 2007<!--webbot bot="TimeStamp" i-checksum="31391" endspan -->.</font></td>
+    </tr>
+  </table>
+</div>
+
+</body>
+
+</html>

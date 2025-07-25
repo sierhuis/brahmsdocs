@@ -1,0 +1,328 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Agent iSolutions - Language - Delete (DEL) - Description</title>
+<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
+<script type="text/javascript" src="../doctree.jsc"></script>
+<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+</head>
+
+<body onload="openTree('OUT0t,OUT2t,OUT28t,DT96');">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
+    <tr>
+      <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" width="168" height="78"></td>
+      <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
+    </tr>
+    <tr>
+      <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../home.htm">Home</a></td>
+      <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
+      <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a href="../index.htm">Documentation</a></td>
+      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
+      <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
+      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">&nbsp;</td>
+    </tr>
+  </table>
+
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td height="10" width="100%">
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
+    <tr>
+      <td width="164" valign="top" bgcolor="#6C69F7" height="1%">
+        <p class="TOCHeader">Documentation</td>
+      <td width="12" rowspan="9" valign="top" height="200">
+		<img border="0" src="../../images/vline.gif" width="8" height="800" hspace="3">
+      </td>
+      <td width="100%" valign="top" align="justify" height="1" colspan="5">
+        <p class="aisheader1">Language Specification - Delete (DEL) -
+        Description</p>
+      </td>
+    </tr>
+    <tr>
+      <td width="167" rowspan="8" valign="top" height="200">
+      	 <script language="javascript">
+      	 <!--
+      	 	createDocumentTree("../");
+      	 -->
+      	 </script>
+      </td>
+      <td width="100%" valign="top" align="left" height="1" colspan="5">
+        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+      </td>
+    </tr>
+    <tr>
+      <td width="12%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_l"><a href="ls_tdf_dsc.htm">Prev</a>
+      </td>
+      <td width="25%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_c"><font color="#808080">Description</font>
+      </td>
+      <td width="25%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_c"><a href="ls_del_stx.htm">Syntax</a>
+      </td>
+      <td width="25%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_c"><a href="ls_del_sem.htm">Semantics</a>
+      </td>
+      <td width="12%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_r" align="left"><a href="ls_kwd.htm">Next</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" valign="top" align="justify" height="1" colspan="5">
+        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" valign="top" align="justify" height="525" colspan="5">
+
+<p class="aisparagraph">The delete action is an action used to reclaim memory 
+obtained for agents, objects and conceptual objects created at 
+simulation/run-time, the delete action cannot be used on agents, objects, 
+conceptual objects that are created at design-time. The deletion of an agent, 
+object, or conceptual object results in the deregistration of the element from 
+the directory service (in case of a distributed system), removal of references 
+to the element for the calling agent/object, and removal of the element from the 
+model. Elements declared as part of the model at compile time cannot be deleted. 
+Delete operations on static model elements are no-ops and will cause the Brahms 
+virtual machine to print a warning.</p>
+<p class="aisparagraph"><b>Element Creation and References</b></p>
+<p class="aisparagraph">Agents, objects and conceptual objects are created 
+either when a model is loaded when they are defined as part of the model, when 
+created using one of the create activities or created through the Java API. In 
+distributed mode these elements are registered in the directory service. 
+References to these elements are made in beliefs, facts, and as part of variable 
+contexts maintained for frames defining variables that have their repeat 
+property set to false. References to agents or objects are held using beliefs by 
+either these agents or objects themselves (beliefs about themselves) or 
+references to agents, objects, and conceptual objects are held by other agents 
+or objects (beliefs about those elements). The world state maintains references 
+to elements through facts. In distributed mode beliefs referencing these 
+elements can be communicated to a remote agent or object. Objects that have no 
+frames can be communicated by value to a remote agent or object effectively 
+creating a duplicate copy of the object (this happens when communicating 
+CommunicativeActs).</p>
+<p class="aisparagraph"><b>Reference Counting</b></p>
+<p class="aisparagraph">To identify when an object can truly be deleted the 
+Brahms virtual machine maintains a reference count for every element per 
+agent/object holding beliefs with a reference to the element.</p>
+<p class="aisparagraph">The reference count will go up:</p>
+<ol>
+	<li>
+	<p class="aisparagraph">when an agent/object creates the element</p></li>
+	<li>
+	<p class="aisparagraph">when an agent/object asserts a belief with a 
+	reference to the element</p></li>
+	<li>
+	<p class="aisparagraph">when an external agent acquires a memory reference (IActiveInstance::acquireMemoryReference(), 
+	IConceptualInstance::acquireMemoryReference())</p></li>
+</ol>
+<p class="aisparagraph">The count will go down:</p>
+<ol>
+	<li>
+	<p class="aisparagraph">&nbsp;when an agent invokes 'delete &lt;element&gt;'</p>
+	</li>
+	<li>
+	<p class="aisparagraph">when an external agent releases a memory reference (IActiveInstance::releaseMemoryReference(), 
+	IConceptualInstance::releaseMemoryReference())</p></li>
+</ol>
+<p class="aisparagraph">Notes regarding the reference count:</p>
+<ol>
+	<li>
+	<p class="aisparagraph">The agent/object that creates the element and that 
+	asserts beliefs with references to the element will only increment the 
+	reference count by 1, not 2. Any agent/object can at maximum hold one 
+	reference to the element.</p></li>
+	<li>
+	<p class="aisparagraph">References held by remote agents/objects are not 
+	counted since we can't guarantee network availability, remote system uptime, 
+	and proper notifications of element deletion in a remote Brahms virtual 
+	machine.</p></li>
+	<li>
+	<p class="aisparagraph">Object copies (due to transfer by value) will have 
+	their own reference count in the Brahms virtual machine in which they were 
+	created as a copy and will therefore require separate deletion.</p></li>
+	<li>
+	<p class="aisparagraph">The element for which a reference count is being 
+	maintained has itself no impact on the reference count even when beliefs 
+	about the element are being asserted in that element about that element.</p>
+	</li>
+	<li>
+	<p class="aisparagraph">Multiple invocations of the delete action on the 
+	same element by the same agent/object will have no effects on the reference 
+	count. Only the first delete will cause the reference count to go down by 1.</p>
+	</li>
+	<li>
+	<p class="aisparagraph">If an external agent creates a new dynamic element 
+	automatically a reference to it for the external agent will be created! This 
+	means that the external agent must release any references to elements it 
+	creates using either (IActiveInstance::releaseMemoryReference() or 
+	IConceptualInstance::releaseMemoryReference(). </p></li>
+	<li>
+	<p class="aisparagraph">When an external agent is notified of a belief (via 
+	invocation on onReceive) no automatic reference is obtained for any of the 
+	dynamic elements referenced in the belief. It is up to the external agent to 
+	acquire and release the necessary references.</p></li>
+</ol>
+<p class="aisparagraph"><b>Hard and Soft Reference</b></p>
+<p class="aisparagraph">For the purposes of element deletion the Brahms virtual 
+machine differentiates between hard and soft references.</p>
+<p class="aisparagraph">A hard reference is a reference held by an agent/object 
+that has frames. This agent/object is able to invoke a delete of the element at 
+the appropriate time.</p>
+<p class="aisparagraph">A soft reference is a reference held by an object that 
+has no reasoning capabilities (a data object). It has beliefs in its beliefset 
+that reference the element.</p>
+<p class="aisparagraph">If there are no more hard references to an element and 
+only soft references then the element will only be deleted when all 
+agents/objects that have references to the element to be deleted themselves are 
+marked for deletion and have no more hard references to those elements. If 
+object O1 and object O2 have references to eachother in their beliefsets under 
+normal circumstances neither would ever be deleted since the reference count 
+never goes to 0. Assuming O1 and O2 are data objects then the references to 
+eachother would be soft references. If no hard references exist for either of 
+these two objects then the Brahms virtual machine will garbage collect them and 
+perform the final deletion on both O1 and O2.</p>
+<p class="aisparagraph"><b>Results of a Delete</b></p>
+<p class="aisparagraph">When an agent or object invokes a delete on an element E 
+the Brahms virtual machine will take the following actions:</p>
+<ol>
+	<li>
+	<p class="aisparagraph">Retract all beliefs in which E is referenced, 
+	whether it be on the left hand side or right hand side of the belief.</p>
+	</li>
+	<li>
+	<p class="aisparagraph">Remove all previously executed frame contexts that 
+	hold a reference to E in a variable context when the frame has the repeat 
+	property set to false.</p></li>
+	<li>
+	<p class="aisparagraph">Reduce the hard reference count by 1 for the caller. 
+	If delete was invoked earlier the reference count remains unchanged.</p>
+	</li>
+</ol>
+<p class="aisparagraph"><b>When the Hard Reference Count goes to 0</b></p>
+<p class="aisparagraph">When there are no soft references to the element E:</p>
+<ol>
+	<li>
+	<p class="aisparagraph">Retract all facts referencing E, whether it be on 
+	the left hand side or right hand side of the fact.</p></li>
+	<li>
+	<p class="aisparagraph">Deregister E from the directory service.</p></li>
+	<li>
+	<p class="aisparagraph">Remove E from the model.</p></li>
+</ol>
+<p class="aisparagraph">When there are soft references to the element E:</p>
+<ol>
+	<li>
+	<p class="aisparagraph">Mark E for garbage collection.</p></li>
+	<li>
+	<p class="aisparagraph">Verify all soft references that reference E and 
+	delete any elements marked for garbage collection that only had a soft 
+	reference remaining to E.</p></li>
+</ol>
+<p class="aisparagraph"><b>Can an element be brought back?</b></p>
+<p class="aisparagraph">Yes. If an object still has soft references the facts 
+about the object are not yet retracted. This means that object detection is 
+still possible. When an agent/object detects the object and asserts a new belief 
+about the object the hard reference count is incremented and the object is no 
+longer marked for garbage collection.</p>
+<p class="aisparagraph"><b>Remote References </b></p>
+<p class="aisparagraph">If an element E is created in Brahms virtual machine VM1 
+and a belief referencing E is communicated to an agent/object in Brahms virtual 
+machine VM2, E is deleted in VM1 and VM1 no longer holds any hard or soft 
+references to E then the element will be deleted. The reference to E held in VM2 
+becomes stale. Any operations on E in VM2 can result in exceptions. Operations 
+that cause exceptions:</p>
+<ol>
+	<li>
+	<p class="aisparagraph">reading of beliefs from E</p></li>
+	<li>
+	<p class="aisparagraph">communication of beliefs referencing E to a remote 
+	agent, an exception will be raised in the receiving virtual machine when it 
+	attempts to resolve E by looking it up in the directory service (E is longer 
+	registered in the directory service and cannot be located)</p></li>
+</ol>
+<p class="aisparagraph">If E is a data object that was communicated by value 
+then a separate reference count is maintained for this 'copy'. NOTE however that 
+this copy is not registered in the directory service and if its original has 
+been deleted then exceptions will be raised when:</p>
+<ol>
+	<li>
+	<p class="aisparagraph">beliefs referencing E are communicated to a remote 
+	agent/object. The exception is raised in the receiving virtual machine when 
+	it attempts to resolve E using the directory service (E is longer registered 
+	in the directory service and cannot be located)</p></li>
+</ol>
+<p class="aisparagraph">Note that transmitting E in its entirety by value will 
+cause no problems since when transmitting the entire object all relevant 
+information to create a copy of it will be included as part of the message. This 
+is generally only done with CommunicativeActs. It is safe to communicate a copy 
+of a CommunicativeAct using a communicate activity to a remote agent even if its 
+original has been deleted. Just communicating a belief about the 
+CommunicativeAct to a remote agent however will raise an exception in the 
+receiving virtual machine.</p>
+<p class="aisparagraph">Any agent/object holding references to a copy of an 
+element must call 'delete' for that element to ensure that it is deleted just 
+like any other element. </p>
+<p class="aisparagraph">Invoking delete on an element E for which the original 
+does not exist in the virtual machine or where E is not a copy the delete will:</p>
+<ol>
+	<li>
+	<p class="aisparagraph">Retract all beliefs referencing E from the beliefset 
+	of the agent/object invoking delete</p></li>
+	<li>
+	<p class="aisparagraph">Remove all previously executed frame contexts that 
+	hold a reference to E in a variable context when the frame has the repeat 
+	property set to false.</p></li>
+</ol>
+<p class="aisparagraph">There will be no reference count modifications since the 
+original/copy is not held in that virtual machine.</p>
+
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div align="left">
+  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="100%">
+        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" align="center"><font size="1" face="Arial">
+Questions or problems regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
+Copyright &#169; 2007 NASA Ames Research Center. All rights reserved.<br>
+Last modified: 
+		<!--WEBBOT 
+   bot=TimeStamp
+   S-Type="EDITED"
+   S-Format="%A %B %d, %Y" startspan
+ -->Friday July 27, 2007<!--webbot bot="TimeStamp" i-checksum="29785" endspan -->.</font></td>
+    </tr>
+  </table>
+</div>
+
+</body>
+
+</html>

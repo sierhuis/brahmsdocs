@@ -1,0 +1,357 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Agent iSolutions - Tutorial - Lesson IX - Text</title>
+<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
+<script type="text/javascript" src="../doctree.jsc"></script>
+<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+</head>
+
+<body onload="openTree('OUT10t,OUT13t,OUT23t,DT79');">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
+  <tr>
+    <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" WIDTH="168" HEIGHT="78"></td>
+    <td width="439" height="46" align="left" valign="bottom" colspan="12">o</td>
+  </tr>
+  <tr>
+    <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../index.htm">Home</a></td>
+    <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
+    <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a href="../index.htm">Documentation</a></td>
+    <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
+    <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
+    <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"></td>
+  </tr>
+</table>
+<div align="left">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td height="10" width="100%"></td>
+  </tr>
+</table>
+</div><div align="left">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
+  <tr>
+    <td width="164" valign="top" bgcolor="#6C69F7" height="1%"><p class="TOCHeader">Documentation</td>
+    <td width="12" rowspan="7" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="1000" hspace="3"> </td>
+    <td width="100%" valign="top" align="justify" height="1" colspan="5"><p class="aisheader1">Tutorial
+    - Lesson IX - Text</td>
+  </tr>
+  <tr>
+    <td width="167" rowspan="6" valign="top" height="200"><script language="javascript">
+      	 <!--
+      	 	createDocumentTree("../");
+      	 -->
+      	 </script>
+    </td>
+    <td width="100%" valign="top" align="left" height="1" colspan="5"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="12%" valign="top" align="left" height="1"><p class="ls_nav_text_l"><a href="tt_le8_txt.htm">Prev</a> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><font color="#808080">Text</font> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><a href="tt_le9_cod.htm">Code</a> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><a href="tt_le9_syn.htm">Syntax</a> </td>
+    <td width="12%" valign="top" align="left" height="1"><p class="ls_nav_text_r" align="left"><a href="tt_le10_txt.htm">Next</a> </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top" align="justify" height="1" colspan="5"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top" align="justify" height="400" colspan="5"><p class="aisheader2">Introduction</p>
+    <p class="aisparagraph">
+    This chapter will teach you how to use composite activities in Brahms models.</p>
+    <p class="aisheader2">
+    Task</p>
+    <p class="aisparagraph">
+    This is an important Lesson: you need to organize the various activities that you wrote
+    earlier in the tutorial, into composite activity, and then increase the number of
+    activities to make the model more realistic. In particular: the activity 'goToAtm', will
+    be a composite activity that will comprehend several different steps (moveGoAtm,
+    insertCard, getMoney, leaveAtm); goToRestaurant, similarly, will be composed of 3
+    activities: moveToRestaurant, Eat, leaveRestaurant. You will try to use the same
+    'moveToLocation' primitive activity for all the various cases: you will see that you can
+    call it from different workframes, and by passing the appropriate parameters, make it do
+    different things.</p>
+    <p class="aisheader2">Description</p>
+    <p class="aisparagraph">
+    The activities in a workframe are one or more primitive activities, one or more composite
+    activities or both. A composite activity includes one or more workframes, any of which may
+    trigger other composite activities, each with its own workframes (Figure 19). Other than a
+    few predefined atomic activities that have semantics, activities are differentiated solely
+    by the modeler's description and use of them (see the sections on primitive activities and
+    composite activities).
+    </p>
+    <p class="aisparagraph"><i>Primitive activities</i>
+    </p>
+    <p class="aisparagraph">
+    Primitive activities take time, which may be specified by the modeler as a definite
+    quantity or a random quantity within a range. However, because workframes can be
+    interrupted and never resumed, when an activity will finish cannot be predicted from its
+    start time. Primitive activities are atomic behaviors that are not decomposed. Whether
+    something is modeled as a primitive activity is a decision made by the modeler. A
+    primitive activity also has a priority that is used for determining the priority of
+    workframes.
+    </p>
+    <p class="aisparagraph"><i>Composite activities</i></p>
+    <p class="aisparagraph">
+    A composite activity expresses an activity that may require several workframes to be
+    accomplished. Since activities are called within the do-part of a workframe, each is
+    performed at a certain time within that workframe. The body of a workframe has a top-down,
+    left-to-right execution sequence. Preference or relative priority of workframes can be
+    modeled by grouping them into ordered composite activities. The workframes within a
+    composite activity, however, can be performed in any order, depending on when their
+    preconditions are satisfied. In this fashion, workframes can explicitly control executions
+    of composite activities, whereas execution of workframes depends not on their order but on
+    the satisfiability of their preconditions and the priorities of their activities.</p>
+    <p class="aisparagraph">
+    A composite activity can terminate in the following four ways. First, a composite activity
+    terminates whenever the workframe in which it is executed terminates, due to a workframe
+    detectable of type complete or aborts. Second, a composite activity terminates whenever a
+    detectable of type complete or abort is detected within the composite activity. Third, a
+    composite activity terminates immediately whenever an end condition declared within the
+    composite activity is activated. And fourth, a composite activity terminates when the
+    modeler has defined it to be ended &quot;when there is no more work available&quot; and no
+    more workframes in the composite activity are available or being worked on. During the
+    execution of a composite activity, the engine continuously checks whether the agent has
+    received a belief that matches any end-conditions.</p>
+    <p class="aisparagraph">
+    A composite activity is an activity that has to be decomposed into more specific
+    workframes. Unlike primitive activities no duration is specified for this activity. The
+    duration of this type of activity depends on the workframes that will be worked on as part
+    of the activity. Composite activities allow us to build a hierarchy of workframes.
+    </p>
+    <p class="aisparagraph">All activities have to be declared in the activities section of
+    either a group, agent, class, object, or composite-activity. The declared activities can
+    then be referenced in the workframes defined for the group, agent, class or object.</p>
+    <p class="aisheader2">Tutorial</p>
+    <p class="aisnormal"><br>
+    We will now try to add some complexity to the Atm scenario by modeling subactivities with
+    more details and representing them inside a composite activities. We will do this both for
+    the activities related to getting money out of an Atm, and also for those related to
+    eating at a restaurant.</p>
+    <p class="aisnormal"><br>
+    We will start with the Atm case and we will use a composite activity that we will call:
+    useAtm. First, create a new workframe:</p>
+      <blockquote>
+    <p class="aisnormal"><br>
+    <font face="Courier">workframe wf_useAtm {<br>
+    &nbsp; repeat: true;<br>
+    </font></p>
+    <p class="aisnormal"><font face="Courier">&nbsp; when(knownval(current hasCash cs) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(cs.amount &lt; 10.00) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current hasAccount ac) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(ac openedWithBank bk) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(at ownedbyBank bk) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; not(current.location = at.location) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(at.location = bd ) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.readyToLeaveRestaurant = false))<br>
+    &nbsp; do {<br>
+    &nbsp;&nbsp;&nbsp; useAtm();<br>
+    &nbsp; }<br>
+    }</font></p>
+      </blockquote>
+    <p class="aisnormal">
+    Create new attributes that will be used for this activity:</p>
+      <blockquote>
+    <p class="aisnormal"><font face="Courier"><br>
+    public Bank chosenBank;<br>
+    public boolean needCash;<br>
+    public boolean receivedCash;<br>
+    public boolean pinCommunicated;<br>
+    public boolean readyToLeaveAtm;</font></p>
+      </blockquote>
+    <p class="aisnormal">
+    and give them the proper values in the agent body (all the booleans are false; for
+    Alex_Agent, the chosen bank is Boa_Atm). Now: useAtm is a composite activity. Its
+    workframe is defined as all others, after the workframes: tag. And the activity is placed
+    among other activities. The novelty is that the composite activity itself has, inside its
+    body, other activities and other workframes. </p>
+    <p class="aisnormal"><br>
+    Here, your goal is to model a simple composite activity. The student goes to the Atm,
+    inserts the BankCcard, communicates the pin, and then (we assume, for the moment, that the
+    pin is correct) gets the card back and the preferred amount of cash. This is very
+    simplistic: there is not real interaction with the Atm, there are no errors with the
+    Pin&#133;This is ok! This composite activity will be probably already enough to keep you
+    working for a little while - we will model more complex interactions in the next section.</p>
+    <p class="aisnormal"><br>
+    A sketch of the code would be the following. Look at that code only after having
+    experimented yourself, and remember: this is only one of the many ways you could use to
+    reach your goal. </p>
+    <p class="aisnormal"><br>
+    You will start defining a composite activity inside the activities: declaration:</p>
+      <blockquote>
+    <p class="aisnormal"><br>
+    <font face="Courier">composite_activity useAtm() {</font></p>
+      </blockquote>
+    <p class="aisnormal">
+    then, inside this composite activity, you will define the sub-activities and the related
+    workframes. In other words, the composite activity will work as if it were scaling down
+    the usual structure of an agent/object body:</p>
+      <blockquote>
+    <p class="aisnormal"><font face="Courier"><br>
+    activities:<br>
+    </font></p>
+    <p class="aisnormal"><font face="Courier">primitive_activity insertBankCard() {<br>
+    &nbsp; max_duration: 45;<br>
+    }<br>
+    </font></p>
+    <p class="aisnormal"><font face="Courier">communicate communicatePIN(Atm at3, Account bka)
+    {<br>
+    &nbsp; max_duration: 20;<br>
+    &nbsp; with: at3;<br>
+    &nbsp; about:<br>
+    &nbsp;&nbsp;&nbsp; send(bka.pin = p);<br>
+    &nbsp; when: end;<br>
+    }<br>
+    </font></p>
+    <p class="aisnormal"><font face="Courier">primitive_activity getCash() {<br>
+    &nbsp; max_duration: 50; <br>
+    }</font></p>
+      </blockquote>
+    <p class="aisnormal">
+    Finally, as mentioned, you will add the workframes (yes, still inside the composite
+    activity body):</p>
+      <blockquote>
+    <p class="aisnormal"><font face="Courier"><br>
+    workframes:<br>
+    &nbsp; workframe wf_moveToLocationForCash {<br>
+    &nbsp;&nbsp;&nbsp; repeat: true;<br>
+    &nbsp;&nbsp;&nbsp; variables:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forone(Cash) cs; <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forone(Atm) at;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forone(Bank) bk;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forone(Building) bd;<br>
+    &nbsp;&nbsp;&nbsp; when(knownval(current hasCash cs) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.chosenBank = bk) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(at ownedbyBank bk) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(cs.amount &lt; 10.00) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; not(current.location = at.location) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(at.location = bd ))<br>
+    &nbsp;&nbsp;&nbsp; do {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; moveToLocation(bd);<br>
+    &nbsp;&nbsp;&nbsp; }<br>
+    &nbsp; } <br>
+    </font></p>
+    <p class="ls_nav_text_l"><font face="Courier">&nbsp; workframe wf_insertBankCard {<br>
+    &nbsp;&nbsp;&nbsp; repeat: true; <br>
+    &nbsp;&nbsp;&nbsp; variables:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forone(BankCard) bkc2; <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forone(Atm) at2;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forone(Bank) bk2;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forone(Building) bd2;<br>
+    &nbsp;&nbsp;&nbsp; when(knownval(current hasBankCard bkc2) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.chosenBank = bk2) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(at2 ownedbyBank bk2) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.receivedCash = false) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.location = at2.location) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.pinCommunicated = false) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current contains bkc2)) <br>
+    &nbsp;&nbsp;&nbsp; do {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; insertBankCard();<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current contains bkc2 is false), bc:100, fc:100); <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((at2 contains bkc2), bc:100, fc:100); <br>
+    &nbsp;&nbsp;&nbsp; }<br>
+    &nbsp; }<br>
+ </font></p>
+    <p class="aisnormal"><font face="Courier">&nbsp; workframe wf_communicatePIN {<br>
+    &nbsp;&nbsp;&nbsp; repeat: true;<br>
+    &nbsp;&nbsp;&nbsp; variables:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forone(Account) bka; <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forone(BankCard) bkc3; <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forone(Atm) at3;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forone(Bank) ba3;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forone(Building) bd3;<br>
+    &nbsp;&nbsp;&nbsp; when(knownval(current hasBankCard bkc3) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; not(current contains bkc3) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current hasAccount bka) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.chosenBank = ba3) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(at3 ownedbyBank ba3) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.pinCommunicated = false) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.location = at3.location) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(at3 contains bkc3)) <br>
+    &nbsp;&nbsp;&nbsp; do {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; communicatePIN(at3, bka);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current.pinCommunicated = true), bc:100);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current contains bkc3), bc:100, fc:100);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((at3 contains bkc3 is false), bc:100, fc:100);<br>
+    &nbsp;&nbsp;&nbsp; }<br>
+    &nbsp; }<br>
+    <br>
+    &nbsp; workframe wf_getCash {<br>
+    &nbsp;&nbsp;&nbsp; repeat: true; <br>
+    &nbsp;&nbsp;&nbsp; variables:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forone(BankCard) bkc4; <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forone(Cash) cs4; <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forone(Atm) at4;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forone(Bank) bk4; <br>
+    &nbsp;&nbsp;&nbsp; when(knownval(current hasBankCard bkc4) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current hasCash cs4) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current contains bkc4) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.chosenBank = bk4) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(at4 ownedbyBank bk4) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.pinCommunicated = true))<br>
+    &nbsp;&nbsp;&nbsp; do {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; getCash();<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((cs4.amount = cs4.amount + current.preferredCashOut), bc:100, fc:100); <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current.pinCommunicated = false), bc:100);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current.receivedCash = true), bc:100);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current.readyToLeaveAtm = true), bc:100);<br>
+    &nbsp;&nbsp;&nbsp; }<br>
+    &nbsp; }<br>
+    </font></p>
+    <p class="aisnormal"><font face="Courier">&nbsp; workframe wf_BackToStudy {<br>
+    &nbsp;&nbsp;&nbsp; repeat: true; <br>
+    &nbsp;&nbsp;&nbsp; variables:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; forone(Atm) at5;<br>
+    &nbsp;&nbsp;&nbsp; when(knownval(current.readyToLeaveAtm = true) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.location = at5.location))<br>
+    &nbsp;&nbsp;&nbsp; do {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MoveToLocation(SouthHall);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current.needCash = false), bc:100, fc:100);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current.readyToLeaveAtm = false), bc:100);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current.receivedCash = false), bc:100);<br>
+    &nbsp;&nbsp;&nbsp; }<br>
+    &nbsp; }</font></p>
+      </blockquote>
+    <p class="aisnormal">
+    You should now apply the same strategy to the case of the restaurant, by making the
+    activities of going, eating and coming back from a generic restaurant a composite
+    activity. The choice of the restaurant should be modeled as a thoughtframe. Moreover, this
+    choice will have to be coordinated with a thoughtframe where the agent decides whether she
+    needs cash or not before going to the Atm (hint: you can use a new needCash attribute to
+    trigger the useAtm compostive activitiy). Be very precise when using composite activities.
+    Like normal activities, they can be interrupted and resumed. However, if your code is not
+    written properly a composite activity might create a loop or an impasse that halts your
+    simulation (see more on this in the section on debugging, 4.14.2). Comparison code is offered here.</td>
+  </tr>
+</table>
+</div><div align="left">
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="100%"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" align="center"><font size="1" face="Arial">Questions or problems
+    regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
+    Copyright © 2001 NASA Ames Research Center. All rights reserved.<br>
+    Last modified: 
+	<!--webbot bot="TimeStamp" S-Type="EDITED" S-Format="%A %B %d, %Y" startspan -->Monday April 30, 2007<!--webbot bot="TimeStamp" i-checksum="31391" endspan -->.</font></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

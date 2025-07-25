@@ -1,0 +1,272 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Agent iSolutions - Language - Detectable (DET) - Semantics</title>
+<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
+<script type="text/javascript" src="../doctree.jsc"></script>
+<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+</head>
+
+<body onload="openTree('OUT0t,OUT2t,OUT8t,DT39');">
+  <table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
+    <tr>
+      <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" width="168" height="78"></td>
+      <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
+    </tr>
+    <tr>
+      <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../home.htm">Home</a></td>
+      <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
+      <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a href="../index.htm">Documentation</a></td>
+      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
+      <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
+        <p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
+      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
+      <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">&nbsp;</td>
+    </tr>
+  </table>
+
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tr>
+      <td height="10" width="100%">
+      </td>
+    </tr>
+  </table>
+</div>
+<div align="left">
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
+    <tr>
+      <td width="164" valign="top" bgcolor="#6C69F7" height="1%">
+        <p class="TOCHeader">Documentation</td>
+      <td width="12" rowspan="9" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="1250" hspace="3">
+      </td>
+      <td width="100%" valign="top" align="justify" height="1" colspan="5">
+        <p class="aisheader1">Language Specification - Detectable (DET) -
+        Semantics</p>
+      </td>
+    </tr>
+    <tr>
+      <td width="167" rowspan="8" valign="top" height="200">
+      	 <script language="javascript">
+      	 <!--
+      	 	createDocumentTree("../");
+      	 -->
+      	 </script>
+      </td>
+      <td width="100%" valign="top" align="left" height="1" colspan="5">
+        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+      </td>
+    </tr>
+    <tr>
+      <td width="12%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_l"><a href="ls_con_sem.htm">Prev</a>
+      </td>
+      <td width="25%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_c"><a href="ls_det_dsc.htm">Description</a>
+      </td>
+      <td width="25%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_c"><a href="ls_det_stx.htm">Syntax</a>
+      </td>
+      <td width="25%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_c"><font color="#808080">Semantics</font>
+      </td>
+      <td width="12%" valign="top" align="left" height="1">
+      <p class="ls_nav_text_r" align="left"><a href="ls_tdf_sem.htm">Next</a>
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" valign="top" align="justify" height="1" colspan="5">
+        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" valign="top" align="justify" height="525" colspan="5">
+
+<p class="aisparagraph"><b>When</b></p>
+
+<p class="aisparagraph">For each detectable needs to be specified when
+the agent or object can detect a certain fact. There are two
+options:</p>
+
+<p class="aisparagraph"><i>whenever</i>:</p>
+
+<blockquote>
+    <p class="aisparagraph">This means that the detectable is checked
+    every time a new fact is asserted in the world and for an
+    agent also every time a new belief is asserted.</p>
+</blockquote>
+
+<p class="aisparagraph"><i>at a specified time</i>:</p>
+
+<blockquote>
+    <p class="aisparagraph">For the detectable needs to be specified
+    exactly when the detectable needs to be checked by specifying
+    a percentage varying from 0 to 100% specifying at what
+    percentage of the workframe completion the detectable needs
+    to check the fact set and belief set. These kind of
+    detectables are only checked once.</p>
+</blockquote>
+
+<p class="aisparagraph"><b>&lt; Class Variable &gt;</b></p>
+
+<p class="aisparagraph">Agents and objects do not always have the ability to 
+know in advance about what concepts they can detect facts. To allow these agents 
+and objects to detect facts about unknown concepts it is possible to define the 
+class of concepts for which facts need to be detected. On the left hand side of 
+the detectable condition instead of specifying the name of a variable, parameter 
+or concept instance (agent, object, conceptual object, or area) the class of 
+concept is specified in between the brackets &lt; and &gt; such as <code>&lt;BaseGroup&gt;</code>. This 
+will have the agent or object detect all facts of which the left hand side 
+concept instance is an instance of the specified class or an instance of any of 
+its sub classes. The matches can be restricted by specifying a more specific 
+class in the detectable condition. The agent or object will in that case only 
+detect those instances that are instances of that class or any of its 
+subclasses, but not any of its superclasses, even if the superclass defines that 
+attribute and facts for concept instances of that super class exist.</p>
+
+<p class="aisparagraph"><b>Detect-certainty</b></p>
+
+<p class="aisparagraph">The detect-certainty is a number ranging from 0
+to 100 and represents the percentage of chance that a fact will
+be detected based on the detectable. A detect-certainty of 0%
+means that the fact will never be detected and basically means
+that the detectable is switched off. A detect-certainty of 100%
+means that a fact will always be detected based on the
+detectable.</p>
+
+<p class="aisparagraph"><b>Detectable action</b></p>
+
+<p class="aisparagraph">There are 5 different detectable actions
+possible:</p>
+
+<p class="aisparagraph"><i>continue</i>:</p>
+
+<blockquote>
+    <p class="aisparagraph">Has no effect, only used for having agents
+    or object detect facts and turn them into beliefs.</p>
+</blockquote>
+
+<p class="aisparagraph"><i>impasse</i>:</p>
+
+<blockquote>
+    <p class="aisparagraph">Impasses the workframe on which the agent
+    or object is working until the impasse is resolved.</p>
+</blockquote>
+
+<p class="aisparagraph"><i>abort</i>:</p>
+
+<blockquote>
+    <p class="aisparagraph">Terminates the workframe on which the agent
+    or object is working immediately.</p>
+</blockquote>
+
+<p class="aisparagraph"><i>complete</i>:</p>
+
+<blockquote>
+    <p class="aisparagraph">Terminates the workframe on which the agent
+    or object is working immediately, but still executes all
+    remaining consequences defined in the workframe. All
+    remaining activities are skipped.</p>
+</blockquote>
+
+<p class="aisparagraph"><i>end_activity</i>:</p>
+
+<blockquote>
+    <p class="aisparagraph">This action type is only meaning full when
+    used with composite activities. Causes the composite activity
+    on which the agent or object is working to be ended.</p>
+</blockquote>
+
+<p class="aisparagraph"><b>Defaults</b></p>
+
+<ul>
+    <li>
+      when = whenever</li>
+    <li>
+      dc = 100</li>
+    <li>
+      action = continue</li>
+</ul>
+
+<p class="aisparagraph"><b>Constraints</b></p>
+
+<ol>
+    <li>
+      <p class="aisparagraph">In the comparison the left hand side
+        attribute type and the right hand side value-type or
+        right hand side attribute type of a value-expression must
+        be the same. Object-attribute-index is considered type compatible with 
+		any type and is permitted on both the left and right hand side. For 
+		detectables the right hand side is ignored and therefore no errors or 
+		warnings will ever be generated even if the right hand side resolves to 
+		a value that is type incompatible with the left hand side. However for 
+		the trigger the right hand side is relevant and if the value resulting 
+		from evaluating the right hand side is type incompatible with the left 
+		hand side a warning is generated in the log and the detectable action is 
+		not executed.</li>
+    <li>
+      <p class="aisparagraph">In the comparison the left hand side and
+        right hand side types in a relational expression must
+        match the types as defined for the relation used in the
+        relational expression. Only the right hand side permits an 
+		object-attribute-index expression and resolves to the unknown type which 
+		is type compatible with any type. The virtual machine will at run-time 
+		ensure that the resulting value is type compatible with the left hand 
+		side, if not it will generate a warning in the log and the detectable 
+		action is not executed.</li>
+	<li>
+      <p class="aisparagraph">ID.name when used as the left hand side concept 
+		must be the name of a concept class, i.e. a group, class, conceptual 
+		class or area definition.</li>
+    <li>
+      <p class="aisparagraph">The value of the detect-certainty ranges
+        from 0 to 100 and represents a percentage.</li>
+    <li>
+      <p class="aisparagraph">The end-activity action type can only be
+        used when a detectable is defined in a composite
+        activity.</li>
+</ol>
+
+<p class="aisparagraph">&nbsp;</p>
+
+      </td>
+    </tr>
+  </table>
+</div>
+
+<div align="left">
+  <table border="0" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="100%">
+        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+      </td>
+    </tr>
+    <tr>
+      <td width="100%" align="center"><font size="1" face="Arial">
+Questions or problems regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
+Copyright &#169; 2000-2006 NASA Ames Research Center. All rights reserved.<br>
+Last modified: 
+		<!--WEBBOT 
+   bot=TimeStamp
+   S-Type="EDITED"
+   S-Format="%A %B %d, %Y" startspan
+ -->Monday April 30, 2007<!--webbot bot="TimeStamp" i-checksum="31391" endspan -->.</font></td>
+    </tr>
+  </table>
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,663 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Agent iSolutions - Tutorial - Lesson V - Text</title>
+<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
+<script type="text/javascript" src="../doctree.jsc"></script>
+<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+</head>
+
+<body onload="openTree('OUT10t,OUT13t,OUT19t,DT67');">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
+  <tr>
+    <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" WIDTH="168" HEIGHT="78"></td>
+    <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
+  </tr>
+  <tr>
+    <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../index.htm">Home</a></td>
+    <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
+    <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a href="../index.htm">Documentation</a></td>
+    <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
+    <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
+    <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"></td>
+  </tr>
+</table>
+<div align="left">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td height="10" width="100%"></td>
+  </tr>
+</table>
+</div><div align="left">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
+  <tr>
+    <td width="164" valign="top" bgcolor="#6C69F7" height="1%"><p class="TOCHeader">Documentation</td>
+    <td width="12" rowspan="9" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="492" hspace="3"> </td>
+    <td width="100%" valign="top" align="justify" height="1" colspan="5"><p class="aisheader1">Tutorial
+    - Lesson V - Text</td>
+  </tr>
+  <tr>
+    <td width="167" rowspan="8" valign="top" height="200"><script language="javascript">
+         <!--
+            createDocumentTree("../");
+         -->
+         </script>
+    </td>
+    <td width="100%" valign="top" align="left" height="1" colspan="5"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="12%" valign="top" align="left" height="1"><p class="ls_nav_text_l"><a href="tt_le4_txt.htm">Prev</a> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><font color="#808080">Text</font> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><a href="tt_le5_cod.htm">Code</a> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><a href="tt_le5_syn.htm">Syntax</a> </td>
+    <td width="12%" valign="top" align="left" height="1"><p class="ls_nav_text_r" align="left"><a href="tt_le6_txt.htm">Next</a> </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top" align="justify" height="1" colspan="5"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top" align="justify" height="400" colspan="5"><p class="aisheader2">Introduction</p>
+    <p class="aisnormal"><br>
+    This chapter will teach you how to use activities and frames in Brahms models.</p>
+    <p class="aisheader2"><br>
+    Task</p>
+    <p class="aisnormal"><br>
+    Finally, some action inside the model! Alex_Agent is hungry and needs food, therefore he
+    goes to the restaurant, where his 'hungriness level' is automatically decreased. </p>
+    <p class="aisheader2"><br>
+    Description</p>
+    <p class="aisnormal"><br>
+    Workframes<br>
+    Recall the conceptual approach to modeling in Brahms that we have described in a previous
+    lesson:</p>
+    <p class="aisnormal"><br>
+    <font face="Courier">GROUPS are composed of <br>
+    AGENTS having<br>
+    BELIEFS and doing<br>
+    ACTIVITIES executed by<br>
+    WORKFRAMES defined by<br>
+    PRECONDITIONS, matching agent's beliefs<br>
+    PRIMITIVE ACTIVITIES<br>
+    COMPOSITE ACTIVITIES, decomposing the activity<br>
+    DETECTABLES, including INTERUPT, IMPASSES<br>
+    CONSEQUENCES, creating new beliefs and/or facts</font></p>
+    <p class="aisnormal"><br>
+    An activity is an abstraction of real-life actions that help accomplish a task. A model of
+    an agent's activities describes what the agent actually does over time (i.e. its actions)
+    based on decision-points that are described based on the causal relationship between the
+    decision to perform an action and the past and present state of its beliefs. In Brahms we
+    represent activities to take a certain amount of time. </p>
+    <p class="aisnormal"><br>
+    However, an agent cannot always apply all its available activities, given the agent's
+    cognitive state. Each activity is therefore associated with a conditional statement or
+    constraint, representing a condition/activity pair, most of the time referred to as a
+    rule. If the conditions of a rule are believed, then the associated activities are
+    performed. In Brahms, such rules are called workframes. Workframes are situated-action
+    rules.</p>
+    <p class="aisnormal"><br>
+    A workframe defines an activity (or activities) that an agent or object may perform.
+    Worframes have conditions, called preconditions, that constrain when to carry out the
+    activity. A workframe precondition tests a belief held by the agent executing the
+    workframe. A workframe can also contain a detectable. Detectables describe circumstances
+    (in the form of fact-conditions about the world) an agent might observe while executing
+    the workframe. Detectable could, for instance, create an impasse to completing the
+    activity (we will discuss detectables in more detail later in section 4.13). A typical
+    workframe would be defined as follows, inside the body of an agent:</p>
+    <p class="aisnormal"><br>
+    <font face="Courier">workframes:<br>
+    workframe wf_moveToRestaurant {<br>
+    repeat: true;<br>
+    variables:<br>
+    when<br>
+    [&#133;]<br>
+    do<br>
+    [&#133;]<br>
+    }<br>
+    }</font></p>
+    <p class="aisnormal"><br>
+    A workframe is a larger unit than the simple precondition-activity-consequence design
+    might suggest, because a workframe may model relationships involving location, object
+    resources such as tools and documents, required information, other agents the agent is
+    working with, and the state of previous or ongoing work. Active workframes may establish a
+    context of activities for the agent and thereby model the agent's intentions, e.g.,
+    calling person X to give or get information, or going to the fax machine to look for
+    document Y. In this way, behavior may be modeled as continuous across time, and not merely
+    reactive.</p>
+    <p class="aisnormal"><br>
+    A workframe is an action rule for an agent or object. It is a declarative description of
+    under what condition (in case of an agent, beliefs that an agent has or in case of an
+    object, the facts in the world) the agent/object will perform the activities specified in
+    the body of the rule. Workframes are treated like data-driven (forward chaining)
+    production rules. However, workframes are different from production rules, in that they
+    specify activities that agents and objects can perform (are engaged in) - production rules
+    specify what conclusions can be drawn based on the conditions that are met (facts).</p>
+    <p class="aisnormal"><br>
+    As mentioned in the previous section, in Brahms we separate facts in the world from
+    beliefs that agents have. For example, in Brahms we can have a fact 'the color of John's
+    Car is red'. Agent John might have the belief 'the color of John's Car is red', but agent
+    Caroline might have the belief 'the color of John's Car is green'. Agent workframes get
+    'worked on' (in production rules systems we call this 'get fired') based on the beliefs
+    that agents have. This means that, in the example above, if John and Caroline have the
+    same workframe using the belief of John's Car is red as a condition for the activation of
+    the workframe; John will start working on the workframe, whereas Caroline will not start
+    working on the workframe. Using this separation of beliefs and facts in the world allows
+    Brahms to model agent's activities, based on changes in the world (facts) detected through
+    detectables, and the agent-specific beliefs that are created. For objects beliefs are the
+    information that an object carries and the beliefs do not trigger any workframes.
+    Workframes for objects are only triggered by facts in the world.</p>
+    <p class="aisnormal"><br>
+    Workframes can also be associated with objects. In this case workframes satisfy their
+    preconditions with facts rather than with beliefs. Workframes for objects are inherited
+    from object classes as workframes for agents are inherited from groups.</p>
+    <p class="aisnormal"><br>
+    On the other side, having two or more agents with different workframes, performing the
+    same activity, can represent individual differences. Individual differences can also be
+    modeled by giving different agents the same workframes but different beliefs about the
+    world. Activities are constrained on their activation by the preconditions that are
+    associated with the workframe it is in. For example, activities may have preferential
+    start times, as expressed in the preconditions, which may refer to the time in hours,
+    minutes, seconds, day of the year, and/or day of the week. </p>
+    <p class="aisnormal"><br>
+    Repeat<br>
+    A workframe can be performed one or more times depending on the value of the 'repeat'
+    attribute. A workframe can be performed repeatedly if the repeat attribute is set to true.
+    In case the repeat attribute is set to false, the workframe can only be performed once for
+    the specific binding of the variables at run-time. The scope of the repeat attribute of a
+    workframe defined as part of a composite activity is limited to the time the activity is
+    active, meaning that the workframe with a specific binding and a repeat set to false will
+    not execute repeatedly while the composite activity is active. As soon as the composite
+    activity is ended the states are reset and in the next execution of the activity it is
+    possible for the workframe with the same binding to be executed. So only for top-level
+    workframes the state will be stored permanently during a simulation run.</p>
+    <p class="aisnormal"><br>
+    Priority<br>
+    The workframe priority can be set in one of two different ways. You can have the
+    simulation engine determine the priority of the workframe (in that case the priority will
+    be deduced based on the priorities of the activities defined within the workframe; the
+    workframe will get the priority of the activity with the highest priority); or you can set
+    the priority of the workframe manually by setting a priority value with the priority
+    attribute. This priority value will cause the simulation engine to use this value instead
+    of the deduced priority value.</p>
+    <p class="aisnormal"><br>
+    Activities<br>
+    As mentioned earlier, an activity is an abstraction of real-life actions that help
+    accomplish a task. A model of an agent's activities describes what the agent actually does
+    over time (i.e. its actions) based on decision-points that are described based on the
+    causal relationship between the decision to perform an action and the past and present
+    state of its beliefs. In Brahms we represent activities to take a certain amount of time. </p>
+    <p class="aisnormal"><br>
+    There are several types of activities. The simpler ones are primitive activities. A
+    primitive activity is the lowest level of activity an agent or object works on for a
+    specified amount of time. A primitive activity has no side-effects. In the next sections
+    we will study other activities, such as communicate, create object, as well as composite
+    activities (that is, activities composed by other activities). In this section we will
+    just consider one particular form of activity - the move activity - because it will come
+    immediately useful for our Atm model. </p>
+    <p class="aisnormal"><br>
+    Move activity<br>
+    The primitive move activities trigger an agent or object to move to a location if not yet
+    located there. For this activity type, the modeler defines the goal-location, such as the
+    name of an area in the geography model, or a variable referring to an area. In moving, an
+    agent or object may act as a container for another agent or object that is carried along.
+    For example, a car-object may carry an agent, and then move to a new location. To simulate
+    this, the modeler links the carrier and the carried with the built-in contains relation,
+    before the move activity is executed (about relations see section 4.8). This is done with
+    a consequence that asserts the relation, and then negates the relation with another
+    consequence when the trip is completed, and the carrier &quot;drops&quot; the carried
+    object or agent in the new location.<br>
+    When a primitive move activity is executed, and the goal-location is different from the
+    agent's or object's current location, the agent or object will start moving to the goal
+    location. The simulation engine finds a path between the locations and gets or computes
+    the distance. It is possible, however, to define the duration of the activity and thus
+    avoid the need to define a geography model with travel paths. The engine calculates the
+    duration of the trip and uses it to set the duration of the primitive move activity. When
+    the agent or object reaches the new location, a new fact and belief are created stating
+    that it is there. The agents currently at the new location detect the agent or object and
+    will therefore get a belief about its location. A newly arrived agent will also detect the
+    other agents and objects in the new location. The agent or object then continues with the
+    workframe.</p>
+    <p class="aisnormal"><br>
+    Brahms can handle interruptions that cause the location of an agent to change. Work that
+    has to be done at a specific location may be interrupted and the agent may then move to
+    another location to do work of a higher priority. When the higher-priority work is
+    completed, before the agent resumes the interrupted work, the agent returns to the
+    location where the agent has to do the work.</p>
+    <p class="aisnormal"><br>
+    Declaration and reference<br>
+    All activities have to be declared in the activities section of either a group, an agent,
+    a class, an object, or a composite-activity. A typical declaration could be as follow (se
+    more in the Utorial sub section below):<br>
+    activities:</p>
+    <p class="aisnormal"><br>
+    <font face="Courier">move moveToRestaurant() {<br>
+    [Body of the activity]<br>
+    }</font></p>
+    <p class="aisnormal"><br>
+    The declared activities can then be referenced in the workframes defined for the group,
+    agent, class or object, as we will soon see in the tutorial section:</p>
+    <p class="aisnormal"><br>
+    <font face="Courier">workframes:<br>
+    workframe wf_moveToRestaurant {<br>
+    repeat: true;<br>
+    variables:<br>
+    when<br>
+    [&#133;]<br>
+    do<br>
+    { [activity]<br>
+    [&#133;]<br>
+    }<br>
+    }</font></p>
+    <p class="aisnormal"><br>
+    Parameters<br>
+    It is possible to define input parameters for primitive activities. These input parameters
+    can be used to make activities more generic. In the reference the values for the input
+    parameters have to be passed.</p>
+    <p class="aisnormal"><br>
+    Priority<br>
+    Activities can be assigned a priority. The priorities of activities in a workframe are
+    used to define the priority of a workframe. The workframe will get the priority of the
+    activity with the highest priority defined in the workframe.</p>
+    <p class="aisnormal"><br>
+    Duration<br>
+    Activities in general have duration. The duration of the activity can be defined to be a
+    fixed amount of time. The random attribute has to be set to false and the max-duration
+    attribute has to be set to the maximum duration in seconds. The duration of the activity
+    can also be defined to be a random amount of time. To define a random amount of time the
+    random attribute has to be set to true, the min-duration attribute has to be set to the
+    minimum duration of the activity in seconds and the max-duration attribute has to be set
+    to the maximum duration of the activity in seconds. </p>
+    <p class="aisnormal"><br>
+    Resources<br>
+    Artifacts (objects) can be defined as being a resource or not by setting the resource
+    attribute to either true or false. In general artifacts that are worked on by agents are
+    not considered to be a resource in an activity (a form, a fax). Artifacts that are used by
+    an agent in an activity are considered to be resources ( a fax machine, a telephone).</p>
+    <p class="aisnormal"><br>
+    It is possible to associate artifacts with activities for statistical purposes and for the
+    purpose of generating object flows by defining them in the list of resources for an
+    activity. Artifacts that are defined as resources are also called resource objects.
+    Resource objects associated with activities will only collect statistics and will not be
+    used for the object flow generation. Artifacts which are defined not to be a resource and
+    which are associated with an activity are also called touch objects. Touch objects should
+    be associated with one or more conceptual object(s) for object flow purposes and
+    statistical purposes.</p>
+    <p class="aisnormal"><br>
+    As mentioned before, primitive activities are atomic actions, and a small number of
+    primitive activities are defined to have built-in semantics that is implemented in the
+    Brahms engine. These predefined primitive activities exist to communicate beliefs, create
+    runtime objects, and travel to a location.</p>
+    <p class="aisnormal"><br>
+    Preconditions<br>
+    Preconditions control the activation of a workframe or thoughtframe. For a frame to become
+    active the preconditions defined for the frame have to be satisfied. Preconditions are
+    satisfied by either matching beliefs of an agent (if the workframes are defined for an
+    agent or the frame is a thoughtframe) or by matching facts in the world (if the workframes
+    are defined for an object). Preconditions can include variables as part of their matching
+    of specific beliefs/facts.<br>
+    known:</p>
+    <p class="aisnormal"><br>
+    The modifier 'known' represents the possibility for an agent/object to have a belief/fact,
+    but be unspecific as to whether the agent/objects knows the actual value. <br>
+    For example, to evaluate the following precondition: </p>
+    <p class="aisnormal"><br>
+    <font face="Courier">known (car1.color)</font></p>
+    <p class="aisnormal"><br>
+    The simulation engine would simply check with the belief set of an agent to see whether
+    the agent has a belief of the form: </p>
+    <p class="aisnormal"><br>
+    <font face="Courier">car1.color = ?</font></p>
+    <p class="aisnormal"><br>
+    If the engine finds a belief of this form, as it would when the following belief is
+    present: </p>
+    <p class="aisnormal"><br>
+    <font face="Courier">car1.color = red</font></p>
+    <p class="aisnormal"><br>
+    then the engine would evaluate the precondition as true. A simple relational precondition
+    like: </p>
+    <p class="aisnormal"><br>
+    <font face="Courier">known (John is-the-son-of)</font></p>
+    <p class="aisnormal"><br>
+    will evaluate to true when the engine finds any of the following beliefs (the right hand
+    side and truth-value are completely ignored): </p>
+    <p class="aisnormal"><br>
+    <font face="Courier">John is-the-son-of Bill is true<br>
+    John is-the-son-of Bill is false<br>
+    John is-the-son-of Jack is true<br>
+    John is-the-son-of Jack is false</font></p>
+    <p class="aisnormal"><br>
+    A more complex precondition like: </p>
+    <p class="aisnormal"><br>
+    <font face="Courier">known (Cimap-order1.service-tech is-the-son-of)</font></p>
+    <p class="aisnormal"><br>
+    will evaluate to true if the following beliefs are present:</p>
+    <p class="aisnormal"><br>
+    <font face="Courier">Cimap-order1.service-tech = &lt;agent1&gt;<br>
+    &lt;agent1&gt; is-the-son-of ?</font></p>
+    <p class="aisnormal"><br>
+    where &lt;agent1&gt; is either an agent or object.</p>
+    <p class="aisnormal"><br>
+    knownval:<br>
+    The modifier 'knownval' (known value) means that the simulation engine must find a precise
+    match for the precondition. The precondition is only true if matching beliefs/facts can be
+    found for both the left hand side and the right hand side and if the relation between them
+    is found as well. For an example of a complex precondition such as:</p>
+    <p class="aisnormal"><br>
+    <font face="Courier">knownval(Cimap-order1.service-tech is-the-son-of
+    Cimap-order2.service-tech)</font></p>
+    <p class="aisnormal"><br>
+    the following beliefs must be present:</p>
+    <p class="aisnormal"><br>
+    <font face="Courier">Cimap-order1.service-tech = &lt;agent1&gt;<br>
+    Cimap-order2.service-tech = &lt;agent2&gt;<br>
+    &lt;agent1&gt; is-the-son-of &lt;agent2&gt;</font></p>
+    <p class="aisnormal"><br>
+    When using variables, the engine will find as many matches as there are valid
+    instantiations for the variables.</p>
+    <p class="aisnormal"><br>
+    unknown (aka no-knowledge-of):<br>
+    When the modifier 'unknown' is used, the simulation engine looks at the beliefs of the
+    agent or facts in the world for objects for possible matches of the precondition. If there
+    are any matches, the precondition evaluates to false, if no matches are found the
+    precondition evaluates to true. The 'unknown' modifier can be interpreted as 'The
+    agent/object has no beliefs/facts for &lt;precondition&gt;'. However, there are
+    intricacies that need to be explained further. </p>
+    <p class="aisnormal"><br>
+    When matching a precondition of the form: O1A1, the simulation engine looks for a belief
+    of the form O1A1= ?. When a belief of the form O1A1= ? is found, the simulation engine
+    interprets this to mean that the agent 'knows' about this object and attribute and thus
+    the precondition is false.</p>
+    <p class="aisnormal"><br>
+    When the precondition is of the form O1 rel however, no matter what the right hand side or
+    the truth of the relation is, the simulation engine will simply look up whether the
+    agent/object possesses the belief/fact O1 rel ?, and if so will evaluate the precondition
+    to be false.</p>
+    <p class="aisnormal"><br>
+    All other preconditions, require at least two steps for the simulation engine to determine
+    the truth or falsehood of the precondition. </p>
+    <p class="aisnormal"><br>
+    The form O1A1 rel requires the simulation engine to evaluate first the O1A1 then the
+    result of the O1A1 (say O2) with the relation. When a belief/fact for either the OA or for
+    O2 rel is not found, the precondition will be evaluated to true, if both are found the
+    precondition will evaluate to false. For example given the following beliefs:</p>
+    <p class="aisnormal"><br>
+    <font face="Courier">John.car = car1<br>
+    car1 is-driven-by Jack</font></p>
+    <p class="aisnormal"><br>
+    and the precondition:</p>
+    <p class="aisnormal"><br>
+    <font face="Courier">unknown (John.car is-driven-by)</font></p>
+    <p class="aisnormal"><br>
+    The simulation engine will evaluate the precondition to false, because it finds a belief
+    for &quot;John.car = ?&quot; with the value car1 and it finds a belief for car1
+    is-driven-by. If either of the beliefs were not available the precondition would evaluate
+    to true. </p>
+    <p class="aisnormal"><br>
+    <font face="Courier">not (aka no-matching-beliefs):</font></p>
+    <p class="aisnormal"><br>
+    Not works similar to unknown in that when there is no belief for the precondition
+    specified with the not modifier the precondition will evaluate to true. If a belief does
+    exist for the condition in the precondition then the not modifier works similar to the
+    modifier knownval, but negates the resulting truth-value. The simulation engine will first
+    try the knownval for the precondition. If the precondition with the knownval modifier
+    evaluates to true then the precondition with the not modifier evaluates to false and vice
+    versa. </p>
+    <p class="aisnormal"><br>
+    Precondition Evaluation Order<br>
+    When variables are used in one or more precondition(s) the order in which the
+    preconditions are specified is important. Depending on the order different outcomes are
+    possible. The reason that precondition order is important is that the simulation engine is
+    not a standard pattern matcher, but actually evaluates the preconditions causing potential
+    assignments of values to variables. For example:</p>
+    <p class="aisnormal"><br>
+    <font face="Courier">knownval(John.car = &lt;car&gt;)</font></p>
+    <p class="aisnormal"><br>
+    The simulation engine tries to find a belief of the form 'John.car='. If it finds one
+    stating 'John.car=car1' then it will assign the value car1 to the variable &lt;car&gt;.<br>
+    If you were to write the following two preconditions in the following order the outcome
+    might be unexpexted:</p>
+    <p class="aisnormal"><br>
+    <font face="Courier">not(John.car = &lt;car&gt;)</font></p>
+    <p class="aisnormal"><br>
+    knownval(&lt;car&gt; belongs-to &lt;company&gt;)</p>
+    <p class="aisnormal"><br>
+    Suppose we have the following beliefs:</p>
+    <p class="aisnormal"><br>
+    <font face="Courier">John.car = car1</font></p>
+    <p class="aisnormal"><font face="Courier"><br>
+    car2 belongs-to nynex</font></p>
+    <p class="aisnormal"><br>
+    The simulation engine will evaluate the first precondition first and first treat the
+    precondition as a knownval therefor assigning the value 'car1' to the variable &lt;car&gt;
+    because it matches the precondition with the belief 'John.car = car1'. Since this
+    precondition is a not this precondition will always evaluate to false. The simulation
+    engine would not continue but if it would then the simulation engine would verify the
+    second precondition. It found a binding for the &lt;car&gt; variable and will substitute
+    its value. It will then try to find a belief of the form 'car1 belongs-to &lt;company&gt;.
+    It cannot find such a belief and therefor will fail the evaluation causing the frame not
+    to be made available. However if you turn the preconditions around the outcome is
+    different.</p>
+    <p class="aisnormal"><br>
+    <font face="Courier">knownval(&lt;car&gt; belongs-to &lt;company&gt;)</font></p>
+    <p class="aisnormal"><font face="Courier">not(John.car = &lt;car&gt;)</font></p>
+    <p class="aisnormal"><br>
+    In this case &lt;car&gt; will be bound to car2, the first precondition evaluates to true.
+    The second precondition will be evaluated and the simulation engine tries to find the
+    belief 'John.car=car2', it cannot find such a belief but due to the 'not' modifier the
+    precondition will evaluate to true causing the frame to be made available.<br>
+    The precondition ordering will also be important when taking into account the use of
+    variables. We will discuss variables in later lessons</p>
+    <p class="aisnormal"><br>
+    Consequences<br>
+    Consequences are statements that are inside a workframe's body. They can be situated
+    before or after activities. Consequences are facts or beliefs or both that may be asserted
+    when a workframe is executed. They exist so a modeler may model the results of the
+    activities in a workframe. A consequence is formally like a condition and defines the
+    facts or beliefs that will be created or changed, when executed. The property
+    fact-certainty is the probability that the fact will be changed or created; the default
+    value is 100%. The property belief-certainty is the probability (with also a default value
+    of 100%) that the belief will be changed or created, conditional on the fact being true.
+    That is, if the fact-certainty and the belief-certainty are each 50%, then 1 in 2 times
+    the fact will be created and 1 in 4 times the belief will be created. If the
+    fact-certainty is zero, then no fact will be created but the belief-certainty determines
+    how often a belief is created. <br>
+    A consequence is a logical statement for concluding/asserting new beliefs for an agent or
+    object and/or facts in the world. </p>
+    <p class="aisnormal"><br>
+    Fact certainty<br>
+    The fact certainty is a number ranging from 0 to 100 and represents the percentage of
+    chance that a fact will be created based on the consequence. A fact certainty of 0% means
+    that no fact will be created, 100% means that a fact will be created at all times.</p>
+    <p class="aisnormal"><br>
+    Belief certainty<br>
+    The belief certainty is a number ranging from 0 to 100 and represents the percentage of
+    chance that a belief will be created based on the consequence. A belief certainty of 0%
+    means that no belief will be created, 100% means that a belief will be created at all
+    times.</p>
+    <p class="aisheader2"><br>
+    Tutorial</p>
+    <p class="aisnormal"><br>
+    So: the first action we will make our Alex_Agent complete in our Atm scenario will simply
+    be going to one of the two Restaurants in town and eating there. This will be a very
+    simplified version of what happens in real life. We do not have yet a Restaurant object -
+    but you might remember that we have already defined a couple of restaurant locations (that
+    extend the building area definition). One of such location is Telegraph_Av_2405, the
+    street address of the restaurant. Let's say that we know that every student will go to
+    that specific restaurant - not only Alex - to keep things simple for the moment. And let's
+    assume that, just by being there, the student will feel automatically less hungry
+    (basically, we will bypass modelling the 'eating' step). So, we might write something like
+    this: inside the Student body declaration, under the workframes: tag, let's define a
+    workframe called 'moveToRestaurant':</p>
+    <p class="aisnormal"><br>
+    <font face="Courier">workframes:<br>
+    workframe wf_moveToRestaurant {<br>
+    repeat: true; <br>
+    variables:<br>
+    when<br>
+    (knownval(current.howHungry &gt; 2.00) and<br>
+    knownval(current.location != Telegraph_Av_2405))<br>
+    do<br>
+    {moveToRestaurant();<br>
+    conclude((current.howHungry = current.howHungry - 5.00), bc:100, fc:100);<br>
+    }<br>
+    }</font></p>
+    <p class="aisnormal"><br>
+    The first line of the workframe simply declares the unique name of the workframe. We do
+    not bother - for the moment - with the variables declaration. Repeat is set to true so
+    that this workframe might be repeated, if needed. The repeat attribute for workframes
+    allows workframes with the exact same variable binding to be executed repeatedly. When a
+    workframe is instantiated with a specific binding that workframe instantiation (wfi) is
+    executed. When the wfi has been completed the engine will determine if the bindings are
+    still valid (if the preconditions still hold true for the same beliefs). If that is the
+    case and if repeat is set to true, the engine will make a new wfi with the exact same
+    bindings available. If repeat is set to false then that specific workframe will never be
+    executed again with that specific set of bindings. </p>
+    <p class="aisnormal"><br>
+    The when: tag is very important. It states under which conditions the workframe has to be
+    triggered. When the conditions stated are met (precisely those values, cause we are using
+    the knownval statement) the conclusions stated after the 'do' tag will be fired, in the
+    order that they are written. In this case, we need that the current student/agent being
+    considered be hungrier than '2.00' (whatever that means; and that he/she is not already at
+    the restaurant. The conclusion will make him less hungry by a constant (equal to 5) after
+    he has been to the restaurant. (Aside note: you can of course alter this and other values
+    in this scenario - how much money the agents has or gets from the bank, how expensive the
+    restaurants are, etc. In fact, you are encouraged to do so and see how your simulation
+    will change!).</p>
+    <p class="aisnormal"><br>
+    Note that knowval checks for a belief that the agent has about that concept, and also
+    checks to see whether that belief is true; hence kknowval (&#133;.) is by default a check
+    for 'is it true?'. Note, moreover, that preconditions are always checked from the point of
+    view of the agent/group/object or class from inside which they are executed. A when
+    condition about a belief that the agent does not even have will simply be skipped. Hence,
+    beliefs for agents are absolutely crucial in their workframes (and thoughtframes). The
+    compiler will throw no error (because no error is there to be found), but all the
+    consequences after the do tag will be ignored. Note that in order to make an agent do
+    something when it does not have a belief about something (i.e. not even an uncertain
+    belief), you can write: unknown(current.attribute). On the other side, the situation where
+    an agent has an 'uncertain' belief about something (for example, an agent who has
+    forgotten how hungry she is, but not about the fact that she has an 'hungriness'
+    attribute), might be represented with the following format: (current.howHungry !=
+    anynumber). A known precondition applied to an agent with such belief and referred to the
+    attributed howHungry will evaluate to true (and, of course, the knownval precondition will
+    evaluate to false).</p>
+    <p class="aisnormal"><br>
+    Note how the not operator works when applied to beliefs about attributes and relations: </p>
+    <p class="aisnormal"><br>
+    <font face="Courier">not(current contains object)</font></p>
+    <p class="aisnormal"><br>
+    evaluates to false if the agent has a belief that she contains the object. The same thing
+    would happen by evaluating a belief under a different syntactical form: knownval(current
+    contains object is false). On the other side, if the agent does not have a belief,
+    not(current contains object) will evaluate to true simply because there is no belief; but
+    knownval(current contains object is false) will evaluate to false for the same reason.
+    With relations, most of the times not can be safely used rather than the is false
+    statement.</p>
+    <p class="aisnormal"><br>
+    Let's go back to the tutorial. If the conditions are met, the agent will first try to
+    perform the activity moveToRestaurant(); then, the agent will process some conclusions
+    about beliefs and facts of the world (in particular, about the fact/belief that he/she is
+    less hungry than before). Note that activities must always be called from a workframe. Of
+    course, you can re-use the same activity and make it be called by several workframes with
+    different parameters. Note, however, that moveToRestaurant() is different from
+    wf_moveToRestaurant. The latter is a workframe; the former is an activity, written
+    similarly to a method in Java, where inside the parenthesis parameters can be passed to
+    make the activity specific (in this case we are not passing any parameter, but we still
+    need to use the parenthesis). <br>
+    So, workframes check the facts and beliefs in the world, and when their conditions are
+    met, they trigger activities and conclusions. But where are the activities explicitly
+    written? Who tells the agent what moveToRestaurant really means? We need to add some more
+    code for this purpose (aside: activities can be interrupted when conditions are met that
+    trigger new activities/workframes; however, when we use composite activities things become
+    much trickier: cf. 4.11). We will add this code right after the activities tag, outside
+    the workframe:</p>
+    <p class="aisnormal"><br>
+    <font face="Courier">activities:<br>
+    move moveToRestaurant() { <br>
+    location: Telegraph_Av_2405;<br>
+    }</font></p>
+    <p class="aisnormal"><br>
+    This is a simple move activity. We did not have to specify its duration because the
+    geography of this scenario has already been described in the AtmGeography file where we
+    have declared a path for the movement we are considering now. We could have overridden
+    those timings by imposing, for example, </p>
+    <p class="aisnormal"><br>
+    <font face="Courier">move moveToRestaurant() {<br>
+    random: true;<br>
+    min_duration: 50;<br>
+    max_duration: 150;<br>
+    location: Telegraph_Av_2405;<br>
+    }</font></p>
+    <p class="aisnormal"><br>
+    Now, try to compile this code. You can do it from the Compile Model command inside the Composer, or you can do it manually as explained before (the command should look like: <font face="Courier">C:\Program Files\Brahms\PersonalAgent\bc.bat c:\brahms -src c:\brahms\projects\Atm\AtmModel.b</font>). Remember in this case that you must use the AtmModel.b file, which imports all the other files in the Atm project/folder. </p>
+    <p class="aisnormal"><br>
+    If everything worked out fine, you should now be able to see a message (in one of the Composer's windows or in the command line interface) telling you that the model has been successfully built. You might even want to open one of the xml files that have been produced in the Atm folder. For example, there will be an Alex_Agent.xml file that will look more or less like this:</p>
+    <p class="aisnormal"><br>
+    <font face="Courier">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; ?&gt; <br>
+    &lt;!DOCTYPE AGENT SYSTEM &quot;file:///C:\Program Files\Brahms\PersonalAgent
+    1.0\DTD\agent.dtd&quot;&gt; <br>
+    &lt;!-- Generated at Sun Apr 15 18:23:02 PDT 2001 --&gt; </font></p>
+    <p class="aisnormal"><font face="Courier">&lt;AGENT
+    name=&quot;projects.Atm.Alex_Agent&quot; display=&quot;Alex_Agent&quot;
+    location=&quot;projects.Atm.SouthHall&quot;&gt;<br>
+    &lt;MEMBEROF ref=&quot;projects.Atm.Student&quot; /&gt;<br>
+    &lt;BELIEFS&gt;<br>
+    &lt;BELIEF&gt;<br>
+    &lt;OAV lObjRef=&quot;current&quot; lObjType=&quot;Current&quot;
+    attRef=&quot;projects.Atm.Student.howHungry&quot; evalOp=&quot;eq&quot;
+    value=&quot;15.0&quot; valueType=&quot;double&quot;/&gt;<br>
+    &lt;/BELIEF&gt;<br>
+    &lt;BELIEF&gt;<br>
+    &lt;OAV lObjRef=&quot;current&quot; lObjType=&quot;Current&quot;
+    attRef=&quot;projects.Atm.Student.male&quot; evalOp=&quot;eq&quot; value=&quot;true&quot;
+    valueType=&quot;boolean&quot;/&gt;<br>
+    &lt;/BELIEF&gt;<br>
+    &lt;BELIEF&gt;<br>
+    &lt;OAV lObjRef=&quot;current&quot; lObjType=&quot;Current&quot;
+    attRef=&quot;projects.Atm.Student.preferredCashOut&quot; evalOp=&quot;eq&quot;
+    value=&quot;8.0&quot; valueType=&quot;double&quot;/&gt;<br>
+    &lt;/BELIEF&gt;<br>
+    &lt;/BELIEFS&gt;<br>
+    &lt;FACTS&gt;<br>
+    &lt;FACT&gt;<br>
+    &lt;OAV lObjRef=&quot;current&quot; lObjType=&quot;Current&quot;
+    attRef=&quot;projects.Atm.Student.howHungry&quot; evalOp=&quot;eq&quot;
+    value=&quot;15.0&quot; valueType=&quot;double&quot;/&gt;<br>
+    &lt;/FACT&gt;<br>
+    &lt;FACT&gt;<br>
+    &lt;OAV lObjRef=&quot;current&quot; lObjType=&quot;Current&quot;
+    attRef=&quot;projects.Atm.Student.male&quot; evalOp=&quot;eq&quot; value=&quot;true&quot;
+    valueType=&quot;boolean&quot;/&gt;<br>
+    &lt;/FACT&gt;<br>
+    &lt;FACT&gt;<br>
+    &lt;OAV lObjRef=&quot;current&quot; lObjType=&quot;Current&quot;
+    attRef=&quot;projects.Atm.Student.preferredCashOut&quot; evalOp=&quot;eq&quot;
+    value=&quot;8.0&quot; valueType=&quot;double&quot;/&gt;<br>
+    &lt;/FACT&gt;<br>
+    &lt;/FACTS&gt;<br>
+    &lt;/AGENT&gt;</font></p>
+    <p class="aisnormal"><br>
+    Now, you are ready for the big step! Try running your simulation for the first time, the
+    way it was discussed in the previous lessons (remember, you have to use the bvm.bat and be sure to
+    give as argument the correct path, for example projects.Atm.AtmModel; hence the command should look like:
+<font face="Courier">bmv.bat projects.Atm.AtmModel</font>).</p>
+    <p class="aisnormal"><br>
+    If everything goes fine, you will see something like:<br>
+    </p>
+    <p></p></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

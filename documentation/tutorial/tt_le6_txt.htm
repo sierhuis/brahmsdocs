@@ -1,0 +1,588 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Agent iSolutions - Tutorial - Lesson VI - Text</title>
+<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
+<script type="text/javascript" src="../doctree.jsc"></script>
+<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+</head>
+
+<body onload="openTree('OUT10t,OUT13t,OUT20t,DT70');">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
+  <tr>
+    <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" WIDTH="168" HEIGHT="78"></td>
+    <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
+  </tr>
+  <tr>
+    <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../index.htm">Home</a></td>
+    <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
+    <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a href="../index.htm">Documentation</a></td>
+    <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
+    <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
+    <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"></td>
+  </tr>
+</table>
+<div align="left">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td height="10" width="100%"></td>
+  </tr>
+</table>
+</div><div align="left">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
+  <tr>
+    <td width="164" valign="top" bgcolor="#6C69F7" height="1%"><p class="TOCHeader">Documentation</td>
+    <td width="12" rowspan="7" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="1000" hspace="3"> </td>
+    <td width="100%" valign="top" align="justify" height="1" colspan="5"><p class="aisheader1">Tutorial
+    - Lesson VI - Text</td>
+  </tr>
+  <tr>
+    <td width="167" rowspan="6" valign="top" height="200"><script language="javascript">
+      	 <!--
+      	 	createDocumentTree("../");
+      	 -->
+      	 </script>
+    </td>
+    <td width="100%" valign="top" align="left" height="1" colspan="5"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="12%" valign="top" align="left" height="1"><p class="ls_nav_text_l"><a href="tt_le5_txt.htm">Prev</a> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><font color="#808080">Text</font> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><a href="tt_le6_cod.htm">Code</a> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><a href="tt_le6_syn.htm">Syntax</a> </td>
+    <td width="12%" valign="top" align="left" height="1"><p class="ls_nav_text_r" align="left"><a href="tt_le7_txt.htm">Next</a> </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top" align="justify" height="1" colspan="5"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top" align="justify" height="400" colspan="5"><p class="aisheader2">Introduction</p>
+    <p class="aisparagraph">
+    This chapter will teach you how to create objects as instances of classes in a Brahms
+    model, and will discuss relations between objects and agents.
+    </p>
+    <p class="aisheader2">Task
+    </p>
+    <p class="aisparagraph">Create the objects that are part of the simulation: the Atm(s), the
+    campanile (to signal the flow of time), the bank, the cash, the bank account, the
+    restaurant diner, etc., together with their various attributes and their relations. Then,
+    give the simulation a little more 'movement': Alex_Agent, as before, is hungry and needs
+    food; therefore he goes to the restaurant, where his 'hungriness level' is automatically
+    decreased. The diner is an actual object with a specific location and some attributes
+    (let's imagine all restaurants in the simulation have fixed-price menus, and one such
+    attribute is the cost of the restaurant's fixed menu). In addition, now Alex needs money
+    to pay for the restaurant: if he does not have enough money, Alex will have to go to the
+    Atm machine. While in that location, he will automatically get our more cash. This will
+    happen only once (it will be replicated and extended in the next lessons&#133;)
+    </p>
+    <p class="aisheader2">Description
+    </p>
+    <p class="aisparagraph"><i>Objects</i> </p>
+    <p class="aisparagraph">
+    An 'object' is the second most central element in a Brahms model. An object represents a
+    specific artifact in the world. It is possible to model the activities of an artifact in
+    an organization. For example the data processing activities of a computer system can be
+    modeled. The activities can be defined in the object's class (which will be inherited by
+    the object) and/or can be defined for the object itself. In Brahms there is a difference
+    between animate-intentional-objects (which we refer to as agents) and
+    inanimate-unintentional-objects (which we refer to as objects). In all other
+    agent-languages there is only one type of object, namely an intentional agent. In Brahms,
+    agents are intentional. </p>
+    <p class="aisparagraph">
+    However, we also want to be able to describe artifacts in the real world as
+    action-oriented systems, but unintentional at the same time. We describe such an artifact
+    as an object. An example of an object in Brahms is a fax machine. If we want to describe
+    the behavior of a fax machine, we could argue that we could describe a fax machine as an
+    intentional agent. However, in the real world we would never ascribe intention to the
+    actions of a fax machine. A fax machine mainly reacts to facts in the world; such as a
+    person pushing the start button on the fax machine that makes the fax machine start faxing
+    the document. Since in Brahms we are interested in describing the world with its animate
+    and inanimate objects, we want the capability to make a difference between an intentional
+    object (an agent) like a human and an unintentional object (an object) like a fax machine.
+    There might be occasions when the intentional stance is appropriate for objects. When this
+    is the case, we might decide to represent a machine as an agent. For example, in the Atm
+    scenario the Atm machines and Bank computers might be modeled as agents (there will be
+    differences regarding detectables and what the objects act upon, and we will analyze these
+    differences soon). </p>
+    <p class="aisparagraph">
+    To summarize, an object in Brahms is a construct that generally represents an artifact.
+    The key properties of objects are facts, workframes, and activities, which together
+    represent the state and causal behaviors of objects. Some objects may have internal
+    states, such as information in a computer, that are modeled as beliefs. Other artifact
+    states --such as the fact that a phone is off hook-- are facts about the world. </p>
+    <p class="aisparagraph">
+    On the other side, a conceptual object is used to allow for a user to track things that
+    exist as concepts in people's minds, like the concept of an order. The concepts do not
+    exist as such but do have incarnations in the form of real artifacts, such as a fax, a
+    form, or a database record. Through conceptual objects statistics can be generated such as
+    touch time and cycle time and object flows can be generated through a work process.
+    </p>
+    <p class="aisparagraph"><i>Classes</i>
+    </p>
+    <p class="aisparagraph">
+    Classes in Brahms represent an abstraction of one or more object instances. The concept of
+    a 'class' in Brahms is similar to the concept of a template or class in object-oriented
+    programming. It defines the activities and workframes, initial-facts and initial-beliefs
+    for instances of that class (objects). Brahms allows for multiple inheritances for objects
+    (note that objects currently do not inherit the cost, time-unit and resource values - they
+    must be specified in the object's body). Classes are used to define inanimate artifacts,
+    such as phones, faxes, computer systems, pieces of paper, etc.
+    </p>
+    <p class="aisparagraph">
+    In a model, a hierarchy of classes can be built by defining the class inheritance. A class
+    can inherit from more than one class, so multiple inheritance is supported. When a class
+    is a subclass of a class the subclass will 'inherit' the attributes, relations,
+    initial-beliefs, initial-facts, activities, workframes and thoughtframes from its parent
+    classes. Private attributes and relations are not inherited, only public and protected
+    attributes and relations are inherited. In case the same constructs are encountered in the
+    inheritance path always the most specific construct will be used, meaning that for example
+    a workframe defined for a class lowest in the hierarchy tree has precedence over a
+    workframe with the same name higher in the hierarchy.
+    </p>
+    <p class="aisparagraph">Note that a conceptual object class defines a type of conceptual
+    objects used in a model.
+    </p>
+    <p class="aisparagraph"><i>Elements of objects and classes</i></p>
+    <p class="aisparagraph">
+    A Brahms object has all of the elements that an agent has, plus two additional elements;
+    conceptual object membership and resource. Furthermore, instead of having a group
+    membership relation with groups, an object can have class-inheritance relationships with
+    classes.</p>
+    <p class="aisparagraph">
+    A Brahms object has the following extra elements:</p>
+      <ul>
+        <li>
+          <p class="aisparagraph"><i>Class-inheritance</i>: An object can be an instance of one or more classes. In case constructs
+    with the same name are encountered in the inheritance path, always the most specific
+    construct will be used. For example, a workframe defined for the object has precedence
+    over a workframe with the same name defined in one of the classes of which the object is
+    an instance.</li>
+        <li>
+          <p class="aisparagraph"><i>
+    Conceptual-object membership</i>: An object can be part of one or more conceptual objects by
+    defining the conceptual-object-membership for the object. This allows for later grouping
+    of statistical results and workflow.</li>
+        <li>
+          <p class="aisparagraph"><i>Resource</i>: The resource attribute defines whether or not the object is considered to be a
+    resource when used in an activity (resource attribute is set to true) or whether the
+    object is considered something that &quot;is worked on&quot; (resource attribute is set to
+    false).</li>
+        <li>
+          <p class="aisparagraph"><i>
+    Cost and Time-Unit:</i> The cost and time-unit are used for statistical purposes and define the
+    cost/time-unit (in seconds) for work done by instances of the class. The instances of the
+    class can override the cost and time-unit figures.</li>
+        <li>
+          <p class="aisparagraph"><i>Relations</i>:
+    Relations are used to represent the connections between two concepts. The first (left hand
+    side) concept is always the concept for which the relation is defined, the second concept
+    (right hand side) can be any concept.</li>
+      </ul>
+    <p class="aisparagraph">
+    Relations are always defined within a group, agent, conceptual-class, conceptual-object,
+    class or object definition and cannot be defined outside any of these concepts or inside
+    of any other concepts. Relations can have different scopes within the specified concepts
+    defined by one of the keywords private, protected or public. The distinction is exactly
+    the same as that for attributes - hence we do not repeat it again here.
+    </p>
+    <p class="aisheader2">Tutorial</p>
+    <p class="aisparagraph">Let's start creating now the objects that are important in our Atm
+    scenario. We might forget some, and we will add more on the way. </p>
+    <p class="aisparagraph">
+    We certainly need banks (or, at least, bank central computers) that keep information about
+    bank accounts and communicate with Atms when agents visit them for cash. Hence, we also
+    need bankcards, to be used at Atms, and we need a formalism to model cash itself. We will
+    also need diners where the agents eat - such diners might be simply modeled as locations
+    (remember that locations can have attributes, such as the cost of the diner and its name),
+    or we might model diners as actual entities (for example objects) at a specific location
+    (as you have already understood, there are several ways to model any scenario and you
+    always have to find the one which is the more appropriate, the one that balances
+    complexity with realism). </p>
+    <p class="aisparagraph">
+    So, let's start creating some new classes! We quite certainly need Atms. Thus, let's
+    create a new file Atm.b. As usual, remember to define the package at its beginning:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">package projects.Atm;<br>
+    class Atm {<br>
+    &nbsp; display: &quot;Atm&quot;;<br>
+    &nbsp; cost: 0.0;<br>
+    &nbsp; resource: false;<br>
+    <br>
+    &nbsp; attributes:<br>
+    &nbsp;&nbsp;&nbsp; public int currentAccountCode;<br>
+    &nbsp;&nbsp;&nbsp; public int currentAccountPin;<br>
+    &nbsp;&nbsp;&nbsp; public boolean checkedAccountCode;<br>
+    &nbsp;&nbsp;&nbsp; public boolean checkedAccountPin;<br>
+    <br>
+    &nbsp; relations:<br>
+    &nbsp;&nbsp;&nbsp; public Bank ownedbyBank; </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; initial_facts:<br>
+    &nbsp;&nbsp;&nbsp; (current.checkedAccountCode = false);<br>
+    &nbsp;&nbsp;&nbsp; (current.checkedAccountPin = false);<br>
+    } </font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">Let's comment a little the code above. Apart from some differences
+    that you should be able to easily spot, the structure looks very similar to that of a
+    group. We have already coded some initial facts inside the class definition (rather than
+    an object, specific instance of that class) because we simply want all instances of Atms
+    to start that same way.
+    </p>
+    <p class="aisparagraph">Note that objects do not need a location to exist and act in the
+    world. On the other side, what does it mean that objects react on facts only? Objects can
+    have beliefs, and can even have thoughtframes where they conclude new beliefs. However,
+    they act on facts only, in the sense that the preconditions of an object's workframe must
+    be satisfied by facts rather than beliefs. In fact, objects act on fact regardless of the
+    beliefs they have (or do not have)!</p>
+    <p class="aisparagraph">
+    In addition, in the code above we have also used for the first time a relation:
+    ownedbyBank. This relation links a specific Atm to a specific Bank (which Atm and which
+    Bank is specified at the object level). So, let's now also define a Bank class:</p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">package projects.Atm;<br>
+    class Bank {<br>
+    &nbsp; display: &quot;Bank&quot;;<br>
+    &nbsp; cost: 0.0;<br>
+    &nbsp; resource: false; </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; attributes:<br>
+    &nbsp;&nbsp;&nbsp; public string name;<br>
+    &nbsp;&nbsp;&nbsp; public int receivedAccountPin;<br>
+    &nbsp;&nbsp;&nbsp; public int receivedAccountCode;
+    </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; relations:
+    </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; initial_facts: </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; activities:<br>
+    <br>
+    &nbsp; workframes:<br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">Of course, as the tutorial proceeds, we will add many other
+    attributes, as well as activities and workframes. For the moment, we can note that we do
+    not have to model an inverse relation Bank owns Atm inside the Bank class - one relation
+    will be enough to make our model work, as we will see soon when we will be dealing with
+    variables (section 4.10). On the other side, we should start filling in the details of
+    these classes and populate the model with their instances. Let's imagine that there are
+    two Banks in our model of Berkeley: Bank of America and Wells Fargo. Each has one Atm in
+    town. So, we can write for the Atms:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">package projects.Atm;<br>
+    object Boa_Atm instanceof Atm { </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; location: Telegraph_Av_113; </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; initial_facts:<br>
+    &nbsp;&nbsp;&nbsp; (current ownedbyBank Boa_Bank);<br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">and
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">package projects.Atm;<br>
+    object WF_Atm instanceof Atm { </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; location: Bancroft_Av_77;
+    </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; initial_facts:<br>
+    &nbsp;&nbsp;&nbsp; (current ownedbyBank WF_Bank);<br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">and, for the Banks:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">package projects.Atm;<br>
+    object Boa_Bank instanceof Bank {<br>
+    &nbsp; display: &quot;Boa_Bank&quot;;
+    </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; initial_facts:<br>
+    &nbsp;&nbsp;&nbsp; (current.name = BankofAmerica);<br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">and
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">package projects.Atm;<br>
+    object WF_Bank instanceof Bank {<br>
+    &nbsp; display: &quot;WF_Bank&quot;;
+    </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; initial_facts:<br>
+    &nbsp;&nbsp;&nbsp; (current.name = WellsFargo);<br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">We then need to model the Accounts of the agents and their BankCards.
+    To keep things very simple, a BankCard will keep stored its pin and its account code, that
+    we can model as attributes. We can also model Cash as an object whose attribute 'balance'
+    gives the amount of the cash currently carried by the agent. Finally, a bank Account will
+    have some minimal attributes such as its code, its balance, and some relations, such as
+    what bank it has been opened with, or what agent it is owned by (which could be also
+    modeled from inside the Student declaration). Armed with this information, we can create
+    the following files: Account.b,
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">package projects.Atm;<br>
+    class Account {<br>
+    &nbsp; display: &quot;Account&quot;;<br>
+    &nbsp; cost: 0.0;<br>
+    &nbsp; resource: true; </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; attributes:<br>
+    &nbsp;&nbsp;&nbsp; public double balance;<br>
+    &nbsp;&nbsp;&nbsp; public string typeof;<br>
+    &nbsp;&nbsp;&nbsp; public int code;<br>
+    &nbsp;&nbsp;&nbsp; public int pin; </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; relations:<br>
+    &nbsp;&nbsp;&nbsp; public Bank openedWithBank;
+    </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; activities:<br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">then Cash.b:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">package projects.Atm;<br>
+    class Cash { </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; display: &quot;Cash&quot;;<br>
+    &nbsp; cost: 0.0;<br>
+    &nbsp; resource: true; </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; attributes:<br>
+    &nbsp;&nbsp;&nbsp; public double amount;
+    </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; activities:<br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">and finally BankCard.b:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">package projects.Atm;<br>
+    class BankCard { </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; display: &quot;BankCard&quot;;<br>
+    &nbsp; cost: 0.0;<br>
+    &nbsp; resource: true; </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; attributes:<br>
+    &nbsp;&nbsp;&nbsp; public int code; </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; relations:<br>
+    &nbsp;&nbsp;&nbsp; public Account accesses;
+    </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; activities:<br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">In a similar fashion, we start drawing the net of relations that link
+    students to other objects in the Atm universe. The first we can think about are Banks,
+    bank Accounts, and BankCards. Hence we write inside the body of the Student group:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">relations:<br>
+    &nbsp; public Account hasAccount;<br>
+    &nbsp; public Cash hasCash;<br>
+    &nbsp; public BankCard hasBankCard;</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">Finally, we must create the additional files for the specific
+    instances of these classes that belong to Alex_Agent: create therefore a file
+    Alex_Account.b,
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">
+    package projects.Atm;</font>
+    </p>
+    <p class="aisparagraph"><font face="Courier">object Alex_Account instanceof Account {<br>
+    &nbsp; display: &quot;Alex_Account&quot;;
+    </font></p>
+    <p class="aisparagraph"><font face="Courier">&nbsp; initial_facts:<br>
+    &nbsp;&nbsp;&nbsp; (current.balance = 100.00);<br>
+    &nbsp;&nbsp;&nbsp; (current.typeof = checking);<br>
+    &nbsp;&nbsp;&nbsp; (current.code = 1212);<br>
+    &nbsp;&nbsp;&nbsp; (current.pin = 1111);<br>
+    &nbsp;&nbsp;&nbsp; (current openedWithBank Boa_Bank);<br>
+    }
+    </font></p>
+      </blockquote>
+    <p class="aisparagraph">then a file Alex_Cash.b:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">package projects.Atm;<br>
+    object Alex_Cash instanceof Cash {<br>
+    &nbsp; initial_facts:<br>
+    &nbsp;&nbsp;&nbsp; (current.amount = 8.00);<br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">and finally a file Alex_BankCard.b:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">package projects.Atm;<br>
+    object Alex_BankCard instanceof BankCard {<br>
+    &nbsp; initial_facts:<br>
+    &nbsp;&nbsp;&nbsp; (Alex_BankCard.code = 1212);<br>
+    &nbsp;&nbsp;&nbsp; (current accesses Alex_Account);<br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">Of course, we must also modify the Alex_Agent file to reflect the new
+    information. We must update the beliefs (and the facts, where necessary) as follows:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">initial_beliefs:<br>
+    &nbsp; (current.howHungry = 15.00);<br>
+    &nbsp; (current.male = true);<br>
+    &nbsp; (current.preferredCashOut = 8.0);<br>
+    &nbsp; (current contains Alex_Cash);<br>
+    &nbsp; (current contains Alex_BankCard);<br>
+    &nbsp; (Alex_Account.balance = 100.00);<br>
+    &nbsp; (Alex_Account.code = 1212 );<br>
+    &nbsp; (Alex_Account.pin = 1111);<br>
+    &nbsp; (Alex_Account openedWithBank Boa_Bank);<br>
+    &nbsp; (Alex_Cash.amount = 13.00);<br>
+    &nbsp; (current hasCash Alex_Cash);<br>
+    &nbsp; (current hasBankCard Alex_BankCard);</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">We can spend a few words here about how to express conditions
+    (preconditions and conclusions) about relations. The is true or is false statements are
+    only used for relations. (current hasBankCard bkc is false) is the right syntax to check
+    whether the relation (fact of belief thereof) is false. But if we wanted to check whether
+    this relation was actually true, we could just write: current hasBankCard bkc. In other
+    words, the is true form is not needed when checking or concluding conditions. One might
+    ask what is the difference between knownval((current.attribute = x) and
+    knownval(current.attribute = x) is true). Note that we are using the 'contains' relation:
+    it is a relation built-in the language that is very useful when we want to move objects
+    and agents together with what they are carrying. </p>
+    <p class="aisparagraph">
+    The difference is that we can apply is true to relations (because, otherwise, it would be
+    impossible to create a false belief; in other words, an agent always believes its own
+    beliefs), but we do not use it for attributes. Therefore, when you want to express
+    conclusions about relations, if the conclusion is true, you can simply conclude (whoever
+    hasCard whatever); if false, you might instead conclude (whoever hasCard whatever is
+    false). Finally, in preconditions, knownval(whoever hasCard whatever is false) is
+    equivalent, but possibly slightly preferred, to: not(whoever hasCard whatever) </p>
+    <p class="aisparagraph">
+    Let's go back to the model. With regards the diner, we leave it as an exercise for the
+    reader to create a Diner class, that would have attributes such as the cost of the fixed
+    menu. Two restaurants should be created: Raleigh and Blakes. Raleigh will be located in
+    Telegraph_Av_2405, and its attribute 'foodcost' (that represents the cost of the fixed
+    menu) will be set equal to 4.0. Blakes will be located in Telegraph_Av_2134 and its 'cost'
+    will be set to 6.0 dollars. (Note that from Section 4.9 we will start presenting the code
+    of the Atm tutorial for your verification. If you need, you can start already browsing
+    those files from here).</p>
+    <p class="aisparagraph">
+    Are you done with the restaurant files? Ok, now we are ready to play a little more with
+    the activities and workframes of our scenario. Let' say that we want our agents to move to
+    the Atm of the bank where they opened their account whenever the cash they are carrying
+    goes below a certain level. Let's say that this level is 10, a little above the cost of a
+    lunch at any of the two restaurants. We have modeled only Alex_Agent and his objects, for
+    the moment, so we will write something like this inside the Student group (workframes:
+    tag):
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">workframe wf_moveToLocationForCash {<br>
+    &nbsp; repeat: true;<br>
+    &nbsp; variables:<br>
+    &nbsp; when(knownval(Alex_Cash.amount &lt; 10.00)) <br>
+    &nbsp; do {<br>
+    &nbsp;&nbsp;&nbsp; moveToLocationForCash(Telegraph_Av_113);&nbsp;<br>
+    &nbsp;&nbsp;&nbsp; conclude((Alex_Cash.amount = Alex_Cash.amount +
+    current.preferredCashOut), bc:100, fc:100); <br>
+    &nbsp;&nbsp;&nbsp; moveToLocationForCash(SouthHall);<br>
+    &nbsp; }<br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">(we will see later - but you might as well imagine that already -
+    that this is not a good approach to a general solution of the issue: can you guess why?).
+    Of course, we also need to pass some new initial beliefs to the agent:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">initial_beliefs:<br>
+    &nbsp; (Blakes_Diner.location = Telegraph_Av_2134);<br>
+    &nbsp; (Raleigh_Diner.location = Telegraph_Av_2405);<br>
+    &nbsp; (Boa_Atm.location = Telegraph_Av_113);</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">
+    Now we better create a new move activity, more generic than the ones we have used before:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">
+    move moveToLocationForCash(Building loc) {<br>
+    &nbsp; location: loc;<br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">where, of course, the location can be specified inside the workframe,
+    as we have done in the workframe MoveToLocationForCash.
+    </p>
+    <p class="aisparagraph">
+    We will also need to give the agent an idea of what the cost of each diner/restaurant is,
+    starting with Raleigh; so, modify the agent's initial beliefs:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">(Raleigh_Diner.foodcost = 4.0);<br>
+    (Blakes_Diner.foodcost = 4.0); </font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">and then modify also the moveToRestaurant workframe&#133;
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">workframe wf_moveToRestaurant {<br>
+    &nbsp; repeat: true;<br>
+    &nbsp; variables:<br>
+    &nbsp; when(knownval(current.howHungry &gt; 2.00) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.location != Telegraph_Av_2405))<br>
+    &nbsp; do {<br>
+    &nbsp;&nbsp;&nbsp; moveToRestaurant();<br>
+    &nbsp;&nbsp;&nbsp; conclude((current.howHungry = current.howHungry - 5.00), bc:100, fc:100);<br>
+    &nbsp;&nbsp;&nbsp; conclude((Alex_Cash.amount = Alex_Cash.amount - Raleigh_Diner.foodcost), bc:100, fc:100);<br>
+    &nbsp;&nbsp;&nbsp; moveToSouthHall();<br>
+    &nbsp; }<br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">Save everything and execute the usual steps to compile and parse your
+    model. You should get something like this:
+    </p>
+    <p class="aisparagraph">Our agent checks his location and compares it with the location of a
+    restaurant; if the two locations are the same, the agent realizes that he is already in
+    the restaurant. Note that we have not given the agent a belief about the location of the
+    diner object. The reason the agent is still able to derive this information lies in the
+    fact that whenever an agent reaches a location, she can see the other objects in that
+    location (otherwise she would have no idea of where a diner, is unless she is explicitly
+    given a belief about that). </td>
+  </tr>
+</table>
+</div><div align="left">
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="100%"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" align="center"><font size="1" face="Arial">Questions or problems
+    regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
+    Copyright © 2001 NASA Ames Research Center. All rights reserved.<br>
+    Last modified: 
+	<!--webbot bot="TimeStamp" S-Type="EDITED" S-Format="%A %B %d, %Y" startspan -->Monday April 30, 2007<!--webbot bot="TimeStamp" i-checksum="31391" endspan -->.</font></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>

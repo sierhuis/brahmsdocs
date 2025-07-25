@@ -1,0 +1,431 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Agent iSolutions - Tutorial - Lesson VII - Text</title>
+<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
+<script type="text/javascript" src="../doctree.jsc"></script>
+<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+</head>
+
+<body onload="openTree('OUT10t,OUT13t,OUT21t,DT73');">
+<table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
+  <tr>
+    <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" WIDTH="168" HEIGHT="78"></td>
+    <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
+  </tr>
+  <tr>
+    <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../index.htm">Home</a></td>
+    <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
+    <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a href="../index.htm">Documentation</a></td>
+    <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
+    <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"><p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
+    <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" WIDTH="11" HEIGHT="34"></td>
+    <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg"></td>
+  </tr>
+</table>
+<div align="left">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td height="10" width="100%"></td>
+  </tr>
+</table>
+</div><div align="left">
+
+<table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
+  <tr>
+    <td width="164" valign="top" bgcolor="#6C69F7" height="1%"><p class="TOCHeader">Documentation</td>
+    <td width="12" rowspan="7" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="1000" hspace="3"> </td>
+    <td width="100%" valign="top" align="justify" height="1" colspan="5"><p class="aisheader1">Tutorial
+    - Lesson VII - Text</td>
+  </tr>
+  <tr>
+    <td width="167" rowspan="6" valign="top" height="200"><script language="javascript">
+      	 <!--
+      	 	createDocumentTree("../");
+      	 -->
+      	 </script>
+    </td>
+    <td width="100%" valign="top" align="left" height="1" colspan="5"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="12%" valign="top" align="left" height="1"><p class="ls_nav_text_l"><a href="tt_le6_txt.htm">Prev</a> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><font color="#808080">Text</font> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><a href="tt_le7_cod.htm">Code</a> </td>
+    <td width="25%" valign="top" align="left" height="1"><p class="ls_nav_text_c"><a href="tt_le7_syn.htm">Syntax</a> </td>
+    <td width="12%" valign="top" align="left" height="1"><p class="ls_nav_text_r" align="left"><a href="tt_le8_txt.htm">Next</a> </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top" align="justify" height="1" colspan="5"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" valign="top" align="justify" height="400" colspan="5"><p class="aisheader2">Introduction
+    </p>
+    <p class="aisparagraph">This chapter will teach you how to use thoughtframes and other
+    primitive activities (such as communication activities) in Brahms models.
+    </p>
+    <p class="aisheader2">Task
+    </p>
+    <p class="aisparagraph">Now, try to connect the variation of an agent's hungriness to an
+    object - the Campanile - that at regular intervals broadcasts a signal to all objects and
+    agents in the scenario. The Campanile is actually signaling the flow of time. In this
+    section you will have to use communication activities (such as the broadcast activity
+    executed by the Campanile) and thoughtframes: when agents perceive the Campanile signal,
+    their hungriness levels increase; moreover, depending on how much cash they have left,
+    they will decide which restaurant to move to; finally, they will decide whether they need
+    to go to the Atm even before going to the restaurant and spending their money. For the
+    moment, you will not use variables - the choice of the different restaurants, for example,
+    will be hard-coded in the activities that make the agent actually go to a specific
+    restaurant.
+    </p>
+    <p class="aisheader2">Description
+    </p>
+    <p class="aisparagraph"><i>Thoughtframes</i></p>
+    <p class="aisparagraph">
+    Thoughtframes define deductions, mostly referred to as production rules. Thoughtframes are
+    similar to workframes, but are taken to be inferences an agent (or object) makes without
+    executing any activities. Thoughtframes have the same preconditions and consequences as
+    workframes. Thoughtframes have no activities, consume no time, and cannot be interrupted.
+    Once the preconditions of a thoughtframe match the beliefs of the agent or object, its
+    consequences are automatically executed, similar to forward-chaining rules. An important
+    point is that the preconditions in thoughtframes for object always only match with the
+    beliefs of the object. Another important point is that the consequences in a thoughtframe
+    can only create new beliefs for the agent or object, and cannot create new facts in the
+    world.</p>
+    <p class="aisparagraph">
+    A thoughtframe is the Brahms equivalent of a production rule for an agent or object. A
+    thoughtframe allows an agent or object to deduce new beliefs from existing beliefs. The
+    difference between a thoughtframe and a workframe is that a thoughtframe can only have
+    consequences in its body. A thoughtframe consists of preconditions and consequences.</p>
+    <p class="aisparagraph"><i>Repeat</i>
+    </p>
+    <p class="aisparagraph">
+    A thoughtframe can be performed one or more times depending on the value of the 'repeat'
+    attribute. A thoughtframe can only be performed once if the repeat attribute is set to
+    false. A thoughtframe can be performed repeatedly if the repeat attribute is set to true.
+    In case the repeat attribute is set to false, the thoughtframe can only be performed once
+    for the specific binding of the variables at run-time. The scope of the repeat attribute
+    of a thoughtframe defined as part of a composite activity is limited to the time the
+    activity is active, meaning that the thoughtframe with a specific binding and a repeat set
+    to false will not execute repeatedly while the composite activity is active. As soon as
+    the composite activity is ended the states are reset and in the next execution of the
+    activity it is possible for the thoughtframe with the same binding to be executed. So only
+    for top-level thoughtframes the state will be stored permanently during a simulation run.
+    </p>
+    <p class="aisparagraph"><i>Create objects activity</i>
+    </p>
+    <p class="aisparagraph">
+    Primitive create-object activities allow the modeler to create new objects at runtime or
+    to make copies of existing objects dynamically. The modeler can specify when the actual
+    creation or copying takes place during the execution of the activity, by setting the
+    when-value to either start or end. Create-object activities can be used, for example, to
+    model a fax machine creating a new instance of a fax elsewhere, or a customer creating an
+    order. In addition, in a create-object activity, an object can automatically be connected
+    to a conceptual object or placed at a location.
+    </p>
+    <p class="aisparagraph"><i>Communication activity</i> </p>
+    <p class="aisparagraph">
+    The predefined primitive communication activities transfer beliefs to/from one agent to
+    one or several other agents, or to/from an (information carrier) object. </p>
+    <p class="aisparagraph">
+    An agent can give (send) and request (receive) beliefs. One can think of the
+    agent-to-agent and agent-from-agent communication primitives as modeling a simple
+    conversation where agent A asks B to tell him anything B knows about subjects X (From B),
+    and likewise tells B anything that A knows about subjects Y (To A). In either case,
+    beliefs must be specified in so-called transfer-definitions. In the first case, it
+    specifies what beliefs will be transferred to the &quot;To&quot; agent or object. In the
+    second case, it matches these beliefs against the beliefs of the &quot;From&quot; agent or
+    object. Only the agent or object's beliefs that match the specified beliefs in the
+    transfer-definition are transmitted. </p>
+    <p class="aisparagraph">
+    A belief specified in a primitive communication activity is deemed to match another belief
+    under the same conditions that a workframe known-type precondition is deemed to match a
+    belief. The specified beliefs are transmitted only if they are actually held by the agent
+    or object. In other words, an agent or object has to have the belief before it can
+    communicate (i.e. tell) the belief to another agent or object. The transmitted beliefs
+    overwrite any beliefs the recipient might have about the same object-attribute or
+    object-relation. </p>
+    <p class="aisparagraph">
+    Beliefs transferred to or from an object, model information stored in or on the object.
+    For example, a modeler can use a communication activity to model the reading of
+    information from, or the writing of information to, a fax, paper, bulletin-board, or a
+    computer system. If transmitted beliefs contain variables that remain unbound in the
+    recipient-initiator's workframe, then those variables are bound from matching beliefs
+    supplied by the sender-responder. </p>
+    <p class="aisparagraph"><i>Broadcast activity</i></p>
+    <p class="aisparagraph">
+    Primitive broadcast activities work like communication activities. Here, however, the
+    acting agent is broadcasting the matching beliefs to all other agents in the same location
+    as the acting agent. One can think of the broadcast activity as modeling an agent shouting
+    information to other agents.</p>
+    <p class="aisparagraph">
+    When an agent broadcasts, the agent transmits beliefs to all other agents in the same
+    geographical area (location) if the agent has a location, or to all other agents if the
+    agent has no location. If an object broadcasts, the object most likely transmits a belief
+    about itself (e.g., a phone ringing), which will be received by the agents in the same
+    location if the object has a location, or by all agents if the object does not have a
+    location.</p>
+    <p class="aisparagraph"><i>Java activity</i>
+    </p>
+    <p class="aisparagraph">
+    A java activity is a primitive activity but its actual behavior is specified in Java code.
+    The java activity specifies the fully qualified name of the class that implements the
+    IExternalActivity interface or extends the AbstractExternalActivity class. When the java
+    activity is to be executed an instance of the class is created and the code for the
+    activity executed. If the class extends the AbstractExternalActivity class then the java
+    code will have access to the parameters passed to the activity, belief set of the agent or
+    object and the fact set of the world and will be able to conclude new beliefs and facts.
+    </p>
+    <p class="aisheader2">Tutorial
+    </p>
+    <p class="aisparagraph">Up till now, the agents of the Atm world have been acting following
+    basic needs, with no sense of time. Now we will create a new class of objects - clocks -
+    and a specific instance (the Campanile) to signal the passage of time to all the
+    participants to the simulation. The Campanile will broadcast a signal at regular times.
+    This signal will be received by every agent, that might or might not modify her behavior
+    accordingly.</p>
+    <p class="aisparagraph">
+    Let's first consider a new MyClock.b class:</p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">package projects.Atm;<br>
+    class MyClock {<br>
+    &nbsp; attributes:<br>
+    &nbsp;&nbsp;&nbsp; public int time;<br>
+    &nbsp; activities:<br>
+    &nbsp;&nbsp;&nbsp; primitive_activity asTimeGoesBy() {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; random: false;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; max_duration: 3599;<br>
+    &nbsp;&nbsp;&nbsp; }<br>
+    &nbsp;&nbsp;&nbsp; broadcast announceTime() {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; random: false;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; max_duration: 1;<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; about: <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; send(current.time = current.time);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; when: end; <br>
+    &nbsp;&nbsp;&nbsp; }<br>
+    &nbsp; workframes:<br>
+    &nbsp;&nbsp;&nbsp; workframe wf_asTimeGoesBy {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; repeat: true; <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; when(knownval(current.time &lt; 20)) <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; do {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; aTimeGoesBy();<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current.time = current.time + 1), bc:100, fc:100);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; announceTime();<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+    &nbsp;&nbsp;&nbsp; } <br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">This clock works in a very simple way: it spends 3599 time units (or
+    seconds) waiting, and then 'signal' to the world (in one second, or unit of time) the fact
+    that one hour has passed. It does so for 20 hours (the usual working day of a Berkeley
+    student - sleep is not an option!). Then, it stops doing anything.
+    </p>
+    <p class="aisparagraph">
+    Now consider a specific instance of this class: let's call it
+    Campanile_Clock.b.
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">package projects.Atm;<br>
+    object Campanile_Clock instanceof MyClock {<br>
+    &nbsp; // location: SouthHall; <br>
+    &nbsp; // no location has been added, so that the Campanile can broadcast to&nbsp;<br>
+    &nbsp; // all the&nbsp; agents,
+    wherever they are.<br>
+    &nbsp; initial_beliefs:<br>
+    &nbsp;&nbsp;&nbsp; (current.time = 1);<br>
+    &nbsp; initial_facts:<br>
+    &nbsp;&nbsp;&nbsp; (current.time = 1);<br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">No location has been given to the Campanile, so that when it
+    broadcasts, all the agents and objects in the simulation, wherever they are, they will
+    receive the signal.
+    </p>
+    <p class="aisparagraph">
+    Ok. Now we have to make our Students do 'something' in response to these signals. Let's go
+    back to the Student.b file. Firstly, we add a new attribute:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">public int perceivedtime;</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">and we also give the Student (and all of them, rather than Alex_Agent
+    alone) an initial_belief about such perceivedtime:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">(current.perceivedtime = 1);<br>
+    (Campanile_Clock.time = 1);
+    </font></p>
+      </blockquote>
+    <p class="aisparagraph">(we need to give a belief about the Campanile only to 'bootstrap' the
+    simulation and in particular the activity of studying for the agent. Note that it is not
+    necessary in itself to give any belief about the campanile's time to the agent, since the
+    belief will be broadcast and will enter the set of the agent's beliefs regardless of
+    whether the agent had a prior belief or not). Then, we create a new thoughtframe where we
+    put these new concepts into action. Thoughtframes can be used to model reasoning,
+    problem-solving (for example inside some composite activity - cf. 4.11), mental
+    states&#133; Here we interpret hungriness as a (at least partially) mental state, and
+    under the thoughtframe section of the Student body declaration therefore we write:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">thoughtframes:<br>
+    &nbsp; thoughtframe tf_feelHungry {<br>
+    &nbsp;&nbsp;&nbsp; repeat: true;<br>
+    &nbsp;&nbsp;&nbsp; when(knownval(Campanile_Clock.time &gt; current.perceivedtime))<br>
+    &nbsp;&nbsp;&nbsp; do {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current.perceivedtime = Campanile_Clock.time), bc: 100);<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current.howHungry = current.howHungry + 3.00), bc:100);<br>
+    &nbsp;&nbsp;&nbsp; }<br>
+    &nbsp; }
+    </font></p>
+      </blockquote>
+    <p class="aisparagraph">Note that thoughtframes act on beliefs and conclude only beliefs, and
+    facts are ignored.
+    </p>
+    <p class="aisparagraph">
+    Then, we also add a new activity (Study) and another activity (Eat), so that we split into
+    smaller units the activity of going to the restaurant for food. Hence, let's write:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">workframe wf_study {<br>
+    &nbsp; repeat: true;<br>
+    &nbsp; when(knownval(Campanile_Clock.time &lt; 20) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.howHungry &lt; 21) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.location = SouthHall)) <br>
+    &nbsp; do { <br>
+    &nbsp;&nbsp;&nbsp; Study();<br>
+    &nbsp; }<br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">This workframes is supposed to make the Student study, until he is
+    very hungry. Modify the goToRestaurantForFood workframe accordingly, i.e. set the value
+    above which the student will feel the urge to go to the diner as 20.00. You also need to
+    write a new primitive activity:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">primitive_activity Study() {<br>
+    &nbsp; max_duration: 1500;<br>
+    }
+    </font></p>
+      </blockquote>
+    <p class="aisparagraph">Then, let's modify the wf_moveToRestaurant workframe so to split it
+    in 3 steps: 1) when the agent is hungry, she moves to the restaurant; 2) at the
+    restaurants, she eats; 3) she goes back to study.</p>
+    <p class="aisparagraph">
+    We will probably need just primitive activities: a generic moveToLocation(Building loc)
+    activity, whose parameter is used to make it more specific; and a primitive Eat()
+    activity. Let's then write (in the Student.b file):</p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">activities:<br>
+    &nbsp; move moveToLocation(Building loc) {<br>
+    &nbsp;&nbsp;&nbsp; location: loc;<br>
+    &nbsp; }<br>
+    &nbsp; primitive_activity eat() {<br>
+    &nbsp;&nbsp;&nbsp; max_duration: 400;<br>
+    &nbsp; }</font></p>
+      </blockquote>
+    <p class="aisparagraph">which will be triggered by the following new workframes:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">workframe wf_moveToRestaurant {<br>
+    &nbsp; repeat: true;<br>
+    &nbsp; when(knownval(current.howHungry &gt; 20.00) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.location != Telegraph_Av_2405))<br>
+    &nbsp; do {<br>
+    &nbsp;&nbsp;&nbsp; moveToLocation(Telegraph_Av_2405); <br>
+    &nbsp; }<br>
+    } // wf_moveToRestaurant<br>
+    <br>
+    workframe wf_eat {<br>
+    &nbsp; repeat: true;<br>
+    &nbsp; when(knownval(current.howHungry &gt; 20.00) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.location = Telegraph_Av_2405))<br>
+    &nbsp; do {<br>
+    &nbsp;&nbsp;&nbsp; eat();<br>
+    &nbsp;&nbsp;&nbsp; conclude((current.howHungry = current.howHungry - 5.00), bc:100, fc:100);<br>
+    &nbsp;&nbsp;&nbsp; conclude((Alex_Cash.amount = Alex_Cash.amount - Raleigh_Diner.foodcost), bc:100, fc:100);<br>
+    &nbsp;&nbsp;&nbsp; conclude((current.readyToLeaveRestaurant = true), bc:100);<br>
+    &nbsp; }<br>
+    } // wf_eat<br>
+    <br>
+    workframe wf_backToStudy {<br>
+    &nbsp; repeat: true;<br>
+    &nbsp; when(knownval(current.readyToLeaveRestaurant = true) and<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.location = Telegraph_Av_2405))<br>
+    &nbsp; do {<br>
+    &nbsp;&nbsp;&nbsp; moveToLocation(SouthHall);<br>
+    &nbsp;&nbsp;&nbsp; conclude((current.readyToLeaveRestaurant = false), bc:100);<br>
+    &nbsp; } <br>
+    } // wf_backToStudy
+    </font></p>
+      </blockquote>
+    <p class="aisparagraph">You should have noted the presence of a new Student attribute:
+    readyToLeaveRestaurant. There are always several ways of dealing with a situation in
+    Brahms. In this case, the action of eating triggers several consequences, one of those
+    being a feeling of 'satisfaction' that urges the agent to leave the restaurant having
+    satisfied his needs, and is modeled through the abovementioned attribute. If you decide to
+    follow this approach, then you must also remember to declare the attribute in the agent's
+    definition and give her an initial belief:
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">(current.readyToLeaveRestaurant = false);</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">Note that now you can also correct a non pleasant aspect of the
+    wf_MoveToLocationForCash workframe - the fact that it called the activity
+    moveToLocationForCash twice - also when the agent was actually going back to study. Use
+    the new activity and correct the workframe, now letting the student go back to a
+    University Hall after getting the money and before spending the cash at some restaurant
+    (the more realistic case is the one where the students goes straight to the restaurant
+    after getting the money: we will model this in section 4.13):
+    </p>
+      <blockquote>
+    <p class="aisparagraph"><font face="Courier">workframe wf_moveToLocationForCash {<br>
+    &nbsp; repeat: true;<br>
+    &nbsp; variables: <br>
+    &nbsp;&nbsp;&nbsp; when(knownval(Alex_Cash.amount &lt; 10.00)) <br>
+    &nbsp; do {<br>
+    &nbsp;&nbsp;&nbsp; moveToLocation(Telegraph_Av_113);<br>
+    &nbsp;&nbsp;&nbsp; conclude((Alex_Cash.amount = Alex_Cash.amount + current.preferredCashOut), bc:100,
+    fc:100);<br>
+    &nbsp;&nbsp;&nbsp; moveToLocation(SouthHall);<br>
+    &nbsp; }<br>
+    }</font>
+    </p>
+      </blockquote>
+    <p class="aisparagraph">As you can see, your model is getting step by step more general and
+    re-usable. You can verify and compare your code with the code we have prepared - here. In
+    the next section we will study how to make it even more general and adaptable.</td>
+  </tr>
+</table>
+</div><div align="left">
+
+<table border="0" width="100%" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="100%"><hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
+    </td>
+  </tr>
+  <tr>
+    <td width="100%" align="center"><font size="1" face="Arial">Questions or problems
+    regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
+    Copyright © 2001 NASA Ames Research Center. All rights reserved.<br>
+    Last modified: 
+	<!--webbot bot="TimeStamp" S-Type="EDITED" S-Format="%A %B %d, %Y" startspan -->Monday April 30, 2007<!--webbot bot="TimeStamp" i-checksum="31391" endspan -->.</font></td>
+  </tr>
+</table>
+</div>
+</body>
+</html>
