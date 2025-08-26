@@ -1,458 +1,241 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
-<meta name="ProgId" content="FrontPage.Editor.Document">
-<title>Agent iSolutions - Language - Collection Types</title>
-<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
-<script type="text/javascript" src="../doctree.jsc"></script>
-<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
-<style>
-<!--
-span.CODE
-	{mso-style-parent:"";
-	font-family:"Courier New";
-	}
--->
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejenta - Language Specification - Collection Types</title>
+    <link rel="stylesheet" type="text/css" href="../../style/modern_style.css">
+    <link rel="SHORTCUT ICON" href="../../logo.ico">
+    <script type="text/javascript" src="../doctree.jsc"></script>
+    <script type="text/javascript" src="../../scripts/treescript.jsc"></script>
 </head>
+<body onload="open_folder_to_page('OUT0t,DT95');">
 
-<body onload="openTree('OUT0t,DT95');">
-  <table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
-    <tr>
-      <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" width="168" height="78"></td>
-      <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
-    </tr>
-    <tr>
-      <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../index.htm">Home</a></td>
-      <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
-      <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a href="../index.htm">Documentation</a></td>
-      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
-      <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
-      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">&nbsp;</td>
-    </tr>
-  </table>
+    <header>
+        <img src="../../images/aislogo_600_small.jpg" alt="Ejenta Logo" class="logo">
+        <nav class="top-nav">
+            <ul>
+                <li><a href="../../index.htm">Home</a></li>
+                <li><a href="../../products/index.htm">Products</a></li>
+                <li><a href="../index.htm" class="active">Documentation</a></li>
+                <li><a href="../../download/index.htm">Download</a></li>
+                <li><a href="../../support/index.htm">Support</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div align="left">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-      <td height="10" width="100%">
-      </td>
-    </tr>
-  </table>
-</div>
-<div align="left">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
-    <tr>
-      <td width="164" valign="top" bgcolor="#6C69F7" height="1%">
-        <p class="TOCHeader">Documentation</td>
-      <td width="12" rowspan="9" valign="top" height="200">
-		<img border="0" src="../../images/vline.gif" width="10" height="1000" hspace="3">
-      </td>
-      <td width="755" valign="top" align="justify" height="1" colspan="2">
-        <p class="aisheader1">Language Specification - Collection Types</p>
-      </td>
-    </tr>
-    <tr>
-      <td width="167" rowspan="8" valign="top" height="200">
-      	 <script language="javascript">
-      	 <!--
-      	 	createDocumentTree("../");
-      	 -->
-      	 </script>
-      </td>
-      <td width="755" valign="top" align="left" height="1" colspan="2">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="140" valign="top" align="left" height="1">
-      <p class="ls_nav_text_l"><a href="ls_unknown.htm">Prev</a>
-      </td>
-      <td width="100%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_r" align="left">
-      <a href="ls_kwd.htm">Next</a>
-      </td>
-    </tr>
-    <tr>
-      <td width="755" valign="top" align="justify" height="1" colspan="2">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="755" valign="top" align="justify" height="400" colspan="2">
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav class="side-nav">
+                <h2>Documentation</h2>
+                <div class="tree-container">
+                    <script language="javascript">
+                        <!--
+                        createDocumentTree("../");
+                        -->
+                    </script>
+                </div>
+            </nav>
+        </aside>
 
-<p class="aisparagraph">The Brahms language lacked support for multi-valued 
-attributes, only relations allowed for multiple values. To address this issue 
-the language will now receive support in the form of collection types. The type 
-currently supported in the language is the map type.<br>
-&nbsp;</p>
-<p class="aisheader1">Map</p>
-<p class="aisparagraph">The map collection type is a type that can only be used 
-as part of the declaration of attributes. It allows for the assignment of 
-multiple values to the attribute where each value is addressable using an index 
-or key. The attribute’s values are index/value or key/value pairs. The index or 
-key can be any positive integer or string value.</p>
-<p class="aisheader2">Declaring Maps</p>
-<p class="aisparagraph">A map is declared by declaring an attribute of type 
-‘map’.</p>
-<p class="aisparagraph"><span class="CODE">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; attributes:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; public map myMap;</span></p>
-<p class="aisheader2">Creating Map Values</p>
-<p class="aisparagraph">A map value is an index/value or key/value pair. Where 
-we specify index we also imply key. Map values like any other attribute values 
-are represented as beliefs and/or facts. A map is created when at least one 
-belief or fact exists defining a map value. The creation of these beliefs/facts 
-is done like any other beliefs/facts, through initial beliefs/facts or by 
-concluding the beliefs. The index of a map value can only be an integer or a 
-string. The value as part of the index/value pair can be any value of any type.</p>
-<p class="aisparagraph">Using initial beliefs/facts map values can be created 
-as:</p>
-<p class="Body" align="left" style="text-align:left"><span class="CODE">
-<span style="font-size: 9pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; initial_beliefs:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(1) = 10);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // int<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(2) = 100L);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // long<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(240) = 10.0);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // double<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(3) = true);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // boolean<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(4) = SomeSymbol&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // symbol<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(5) = “Some String”&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // string<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(6) = MyAgent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // agent<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(7) = MyObject&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // object<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(8) = unknown&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // unknown<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(“intValue”) = 10);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // int<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(“longValue”) = 100L);&nbsp;&nbsp;&nbsp; // long<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(“doubleValue”) = 10.0);&nbsp; // double<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(“booleanValue”) = true); // boolean<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(“symbolValue”) = SomeSymbol&nbsp;&nbsp;&nbsp; // symbol<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(“stringValue”) = “Some String” // string<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(“agentReference”) = MyAgent&nbsp;&nbsp;&nbsp; // agent<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(“objectReference”) = MyObject&nbsp; // object<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(“unknownValue”) = unknown&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // unknown<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; initial_facts:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(1) = 10);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // int<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(2) = 100L);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // long<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(240) = 10.0);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // double<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(3) = true);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // boolean<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(4) = SomeSymbol&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // symbol<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(5) = “Some String”&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // string<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(6) = MyAgent&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // agent<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(7) = MyObject&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // object<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(8) = unknown&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // unknown<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(“intValue”) = 10);&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // int<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(“longValue”) = 100L);&nbsp;&nbsp;&nbsp; // long<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(“doubleValue”) = 10.0);&nbsp; // double<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(“booleanValue”) = true); // boolean<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(“symbolValue”) = SomeSymbol&nbsp;&nbsp;&nbsp; // symbol<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(“stringValue”) = “Some String” // string<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(“agentReference”) = MyAgent&nbsp;&nbsp;&nbsp; // agent<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(“objectReference”) = MyObject&nbsp; // object<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; (current.myMap(“unknownValue”) = unknown&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; // unknown</span></span></p>
-<p class="aisparagraph" align="left" style="text-align:left">The numeric indices 
-do not need to be sequential, they can be any valid positive integer value. Any 
-string can be used for the index of a map as well. Generally when a numeric 
-index value is used we refer to it as an index, when a string index value is 
-used we refer to it as a key. The numeric value can be referred to as a key and 
-the string value as an index as well so in this document will just refer to all 
-of them as an index.</p>
-<p class="aisparagraph" align="left" style="text-align:left">Besides defining 
-map values through initial beliefs and facts the map values can also be created 
-using consequences. The following consequences show the most simplistic way to 
-create new map values. Just like with initial beliefs and facts any value can be 
-assigned to an index of a map.</p>
-<p class="Body" align="left" style="text-align:left"><span class="CODE">
-<span style="font-size: 9pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current.myMap(100) = “Some 
-Value”));<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current.myMap(“newValue”) = 25.0));</span></span></p>
-<p class="aisparagraph">It is also possible to change the values of an index for 
-a map. The value can be changed to any other value, it does not necessarily have 
-to be of the same value type as the previously assigned value. The following 
-consequences show examples of this, the first consequence just changes the 
-value, not the type (both strings), the second consequence changes the value 
-type from double to boolean. </p>
-<p class="Body" align="left" style="text-align:left"><span class="CODE">
-<span style="font-size: 9pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current.myMap(100) = “Some Other 
-Value”));<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current.myMap(“newValue”) = true));</span></span></p>
-<p class="aisparagraph">When a value is replaced the virtual machine will first 
-retract the old belief/fact for that index/value pair followed by asserting the 
-new belief/fact.</p>
-<p class="aisparagraph">Variables declared for the workframe or thoughtframe can 
-also be used for either or both the index and value in a consequence. A variable 
-that is intended to be used for the index must be of type int or string. The 
-variables must also be bound to a valid value or the virtual machine will 
-generate an error.</p>
-<p class="Body" align="left" style="text-align:left"><span class="CODE">
-<span style="font-size: 9pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; variables:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; foreach(string) sKey;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; foreach(symbol) sSymbolValue;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; foreach(int) nIntValue;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; when( … )<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; do {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; conclude((current.myMap(25) = sSymbolValue));<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; conclude((current.myMap(sKey) = nIntValue));<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } // end do</span></span></p>
-<p class="aisparagraph">Parameters declared for activities can also be used for 
-either or both the index and value in a consequence. They work in the same way 
-as variables. The parameter must be resolvable to a value, either an actual 
-value passed as an argument for the parameter or a variable passed as an 
-argument for the parameter that is bound to a value. An error is generated by 
-the virtual machine if this is not the case. Parameters used for the index of a 
-map value must be declared to be of type int or string.</p>
-<p class="Body" align="left" style="text-align:left"><span class="CODE">
-<span style="font-size: 9pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; composite_activity myActivity(string key, <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; symbol symbolValue, <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; int intValue) {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; workframes:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; workframe wf_myWorkframe {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; do {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current.myMap(25) = symbolValue));<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current.myMap(key) = intValue));<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } // end do<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; } // wf_myWorkframe<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } // myActivity</span></span></p>
-<p class="aisparagraph">It is also possible to assign values to an index of a 
-map by resolving a belief or fact on the right hand side of a consequence. The 
-right hand side can be an object/attribute tuple or the right hand side can 
-consist of a reference to the index of a map that is resolved to a value. Again 
-variables can be used anywhere in these consequences both on the left and right 
-hand side.</p>
-<p class="Body" align="left" style="text-align:left"><span class="CODE">
-<span style="font-size: 9pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current.myMap(30) = 
-current.location));<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current.myMap(“value”) = current.myMap(“intValue”));</span></span></p>
-<p class="aisparagraph">It is <b><i>not</i></b> possible to assign a map to an 
-index of a map. The compiler will not permit this and will generate a compiler 
-error. The following is not permitted:</p>
-<p class="Body"><span class="CODE"><span style="font-size: 9pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
-conclude((current.myMap(“someMap”) = current.myMap));</span></span></p>
-<p class="aisheader2">Using Map Values in Preconditions</p>
-<p class="aisparagraph">The use of map values in preconditions is no different 
-then using regular values. Preconditions now allow you to specify an index for 
-attributes of type map to allow for the proper matching of beliefs in the 
-preconditions. Variables can be declared for both the index and the index value.
-</p>
-<p class="Body" align="left" style="text-align:left"><span class="CODE">
-<span style="font-size: 9pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.myMap(1) = 10)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.myMap(“stringValue”) = “Some String”)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.myMap(1) = current.myMap(“intValue”)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.myMap(nIndexVar) = 10)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(nValue = current.myMap(nIndexVar))<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current manages current.myMap(“agentReference”))<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current manages current.myMap(nIndexVar))<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.myMap = unknown)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; known(current.myMap)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; known(current.myMap(1))<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; known(current.myMap(nIndexVar))</span></span></p>
-<p class="aisparagraph">All of these preconditions are valid preconditions. The 
-virtual machine ensures that the variables used in these preconditions get the 
-proper matching binding. A few notes about the known preconditions. In the case 
-of known(current.myMap) the precondition will only evaluate to true if the 
-belief (current.myMap = unknown) exists, if beliefs with index/value pairs exist 
-for the map then that precondition evaluates to false. For the known 
-precondition specifying the index the precondition will only evaluate to true if 
-the index value matches with a belief that has that same index value or it 
-evaluates to true for any index value that is matched for the index if a 
-variable is specified for the index that has not been bound in earlier 
-preconditions.</p>
-<p class="aisparagraph">Note that since map values are not typed the virtual 
-machine will do run-time type checking to make sure that any values resulting 
-from the evaluation of a object-attribute-index expression is type compatible 
-with the opposite side of the condition if an attribute or variable is specified 
-or if a relation is used.</p>
-<p class="Body" align="left" style="text-align:left"><span class="CODE">
-<span style="font-size: 9pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; attributes:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; public int numEmployees;<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; relations:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; public BaseGroup manages;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current.numEmployees = current.myMap(“stringValue”))<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; knownval(current manages current.myMap(“intValue”))</span></span></p>
-<p class="aisparagraph">These preconditions will generate warnings in the log 
-file and will evaluate to false, since the map value for the “stringValue” index 
-is a string and not an integer and since the map value for “intValue” is an 
-integer and not an agent reference with the agent being a member of BaseGroup.</p>
-<p class="aisheader2">Using Map Values in Consequences</p>
-<p class="aisparagraph">Map values can be used in the right hand side of 
-consequences to conclude a new value of a single valued attribute or to conclude 
-a new value of a relation. The values of index/value pairs are not strongly 
-typed for maps and any value is supported. However attributes that are not of a 
-collection type and relations are strongly typed. Care is therefore required 
-when assigning a value to an attribute using a map value.</p>
-<p class="Body" align="left" style="text-align:left"><span class="CODE">
-<span style="font-size: 9pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; attributes:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; public int numEmployees;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current.numEmployees = current.myMap(“intValue”));<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current.numEmployees = current.myMap(“doubleValue”));</span></span></p>
-<p class="aisparagraph">The first consequence will succeed since the agent 
-currently beliefs the integer value 10 for the index “intValue” for myMap which 
-is of the correct type for numEmployees. For the second one however the virtual 
-machine will generate an error in the log file since double values are not type 
-compatible with integers and the double value can therefore not be assigned to 
-numEmployees. </p>
-<p class="Body" align="left" style="text-align:left"><span class="CODE">
-<span style="font-size: 9pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; relations:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; public BaseGroup manages;<br>
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current manages current.myMap(“agentReference”));<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current manages current.myMap(“objectReference”));</span></span></p>
-<p class="aisparagraph"><span style="font-family: Helvetica">In this case with 
-the use of relations the first consequence again will succeed since the agent 
-currently beliefs MyAgent as the value for the index “agentReference” for myMap 
-which is an agent that is always a memberof BaseGroup and is therefore type 
-compatible with the manages relation. The second consequence however returns 
-MyObject from the map when using the index “objectReference” which is of type 
-BaseClass and not type compatible with BaseGroup. The virtual machine will 
-generate an error in the log file and not execute the consequence.</span></p>
-<p class="aisheader2">Copying Maps</p>
-<p class="aisparagraph">The language makes it easy to copy the map values of one 
-map to another map. This is done by using consequences. </p>
-<p class="aisparagraph">Assume that we have two attributes declared myMap and 
-myMapCopy both of type map. Also assume that we have assigned values to myMap 
-already as we’ve shown in the examples for initial beliefs and assume that this 
-consequence is executed for an agent.</p>
-<p class="Body" align="left" style="text-align:left"><span class="CODE">
-<span style="font-size: 9pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current.myMapCopy = current.myMap));</span></span></p>
-<p class="aisparagraph">This consequence will copy all beliefs with the 
-index/value pairs for myMap to myMapCopy, creating the identical index/value 
-pairs for myMapCopy. If myMapCopy had any indices that were identical to those 
-in myMap then the values for those indices for myMapCopy will be replaced with 
-those of myMap.</p>
-<p class="aisparagraph">Before the conclude we have the following beliefs:</p>
-<p class="Body" align="left" style="text-align:left"><span class="CODE">
-<span style="font-size: 9pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (current.myMap(1) = 10)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (current.myMap(“stringValue”) = “Some String”)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (current.myMapCopy(1) = 50)</span></span></p>
-<p class="aisparagraph">After the conclude we have the following beliefs:</p>
-<p class="Body" align="left" style="text-align:left"><span class="CODE">
-<span style="font-size: 9pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (current.myMap(1) = 10)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (current.myMap(“stringValue”) = “Some String”)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (current.myMapCopy(1) = 10)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (current.myMapCopy(“stringValue”) = “Some String”)</span></span></p>
-<p class="aisparagraph">The value 50 for index 1 for myMapCopy was retracted and 
-the new value 10 was asserted and a new belief for index “stringValue” with 
-value “Some String” was asserted for myMapCopy. Note that since we didn’t 
-specify belief or fact certainties both were defaulted to 100% and therefore 
-also facts were asserted for the myMapCopy index/value pairs.</p>
-<p class="aisheader2">Clearing Maps</p>
-<p class="aisparagraph">A consequence is also used to clear a map of all of its 
-index/value pairs. This is done by concluding the value unknown for the map 
-attribute without specifying an index.</p>
-<p class="Body" align="left" style="text-align:left"><span class="CODE">
-<span style="font-size: 9pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; conclude((current.myMap = unknown));</span></span></p>
-<p class="aisparagraph">This retracts all index/value pair beliefs and facts for 
-myMap and asserts the new belief/fact:</p>
-<p class="Body" align="left" style="text-align:left"><span class="CODE">
-<span style="font-size: 9pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (current.myMap = unknown)</span></span></p>
-<p class="aisparagraph"><span style="font-family: Helvetica">When a new 
-index/value pair for this cleared map is concluded then first the unknown 
-belief/fact for that map is retract followed by the assertion of the new 
-index/value pair.</span></p>
-<p class="aisheader2">Communicating Maps/Map Values</p>
-<p class="aisparagraph">Using broadcast and communicate activities it is 
-possible to communicate beliefs from one agent to another. Since index/value 
-pairs for maps are represented as beliefs they are communicated in the same way.</p>
-<p class="aisparagraph">In the transfer definitions of the broadcast and 
-communicate activities either single map values can be communicated or an entire 
-map.</p>
-<p class="Body" align="left" style="text-align:left"><span class="CODE">
-<span style="font-size: 9pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; communicate communicateMapValues(string key, 
-SomeGroup agt) {<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; …<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; about:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; send(current.myMap(1) = unknown),<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; send(current.myMap(“intValue”) = unknown),<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; send(current.myMap(key) = unknown),<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; send(current.myMap = unknown),<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; receive(agt.otherMap(1) = unknown),<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; receive(agt.otherMap(“intValue” = unknown),<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; receive(agt.otherMap(key) = unknown),<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; receive(agt.otherMap = unknown);<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } // communicateMapValues</span></span></p>
-<p class="aisparagraph">When an index is specified only the belief matching the 
-OA(index) will be sent/received. The index can be specified using a parameter 
-declared for the activity. If no index is specified for the map all beliefs 
-about the map will be sent/received. This makes it easy to send/receive the 
-entire contents of a map.</p>
-<p class="aisheader2">Detecting Map Values</p>
-<p class="aisparagraph">Map values can also be detected in detectables and can 
-be used to trigger detectable actions. They operate in a similar way as in 
-preconditions. For detection of facts on the left hand side of the detectable 
-condition is relevant. On that left hand side can be specified whether a single 
-map value is to be detected by specifying the index for the map value to be 
-detected or whether all map values need to be detected.</p>
-<p class="Body" align="left" style="text-align:left"><span class="CODE">
-<span style="font-size: 9pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; detect((current.myMap(1) = unknown));<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; detect((current.myMap(“intValue”) = unknown));<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; detect((current.myMap(someVariable) = unknown));<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; detect((current.myMap = unknown));</span></span></p>
-<p class="aisparagraph">The first three detectable conditions detect a single 
-value, with the third one using a variable to specify the index to be detected. 
-That variable must have been bound in the preconditions. The last detectable 
-condition detects all map values for myMap.</p>
-<p class="aisparagraph">For triggers the right hand side value must match with 
-the detected belief or belief matching the left hand side. The right hand side 
-of the detectable can also specify a reference to a map value. The following are 
-all valid detectable/trigger conditions.</p>
-<p class="Body" align="left" style="text-align:left"><span class="CODE">
-<span style="font-size: 9pt">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; detect((current.myMap(1) = 
-current.myMap(“intValue”));<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; detect((current.numEmployees = current.myMap(1));<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; detect((current manages current.myMap(“agentReference”));</span></span></p>
-<p class="aisparagraph">In the last two conditions there is a potential for type 
-mismatch. For the condition using an attribute on the left hand side no warnings 
-or errors are generated if there is a type mismatch. The virtual machine just 
-compares the right hand side value of the belief matching (current.numEmployees 
-= ?) with the right hand side value of the belief (current.myMap(1) = ?). If 
-they match the detectable action is triggered, if not the action is not 
-performed. For the condition using a relation a warning is generated if the map 
-value is not type compatible with the relation due to the fact that relations 
-are handled differently then attributes by the virtual machine. The detectable 
-action is not triggered in that case, only when the resulting reference matches 
-that of the right hand side reference of the belief (current manages ?).</p>
-<p class="aisparagraph">&nbsp;</p>
-<p class="aisparagraph">&nbsp;</p>
+        <main class="content">
+            <div class="doc-header">
+                <h1>Language Specification - Collection Types</h1>
+            </div>
+            <nav class="doc-nav">
+                <a href="ls_unknown.htm" class="prev">Prev</a>
+                <a href="ls_kwd.htm" class="next">Next</a>
+            </nav>
+            <hr>
+            <section class="doc-content">
+                <p>The Brahms language lacked support for multi-valued attributes; only relations allowed for multiple values. To address this issue, the language now supports collection types. The type currently supported in the language is the map type.</p>
 
+                <h2>Map</h2>
+                <p>The map collection type is a type that can only be used as part of the declaration of attributes. It allows for the assignment of multiple values to the attribute where each value is addressable using an index or key. The attribute's values are index/value or key/value pairs. The index or key can be any positive integer or string value.</p>
 
-      </td>
-    </tr>
-  </table>
-</div>
+                <h3>Declaring Maps</h3>
+                <p>A map is declared by declaring an attribute of type 'map'.</p>
+                <pre><code>    attributes:
+        public map myMap;</code></pre>
 
-<div align="left">
-  <table border="0" width="100%" cellpadding="0" cellspacing="0">
-    <tr>
-      <td width="100%">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" align="center"><font size="1" face="Arial">
-Questions or problems regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
-Copyright &#169; 2006 NASA Ames Research Center. All rights reserved.<br>
-Last modified: 
-		<!--WEBBOT 
-   bot=TimeStamp
-   S-Type="EDITED"
-   S-Format="%A %B %d, %Y" startspan
- -->Monday April 30, 2007<!--webbot bot="TimeStamp" i-checksum="31391" endspan -->.</font></td>
-    </tr>
-  </table>
-</div>
+                <h3>Creating Map Values</h3>
+                <p>A map value is an index/value or key/value pair. Where we specify index, we also imply key. Map values, like any other attribute values, are represented as beliefs and/or facts. A map is created when at least one belief or fact exists defining a map value. The creation of these beliefs/facts is done like any other beliefs/facts, through initial beliefs/facts or by concluding the beliefs. The index of a map value can only be an integer or a string. The value as part of the index/value pair can be any value of any type.</p>
+                <p>Using initial beliefs/facts, map values can be created as:</p>
+                <pre><code>    initial_beliefs:
+        (current.myMap(1) = 10);                  // int
+        (current.myMap(2) = 100L);                 // long
+        (current.myMap(240) = 10.0);               // double
+        (current.myMap(3) = true);                 // boolean
+        (current.myMap(4) = SomeSymbol);           // symbol
+        (current.myMap(5) = "Some String");        // string
+        (current.myMap(6) = MyAgent);              // agent
+        (current.myMap(7) = MyObject);             // object
+        (current.myMap(8) = unknown);              // unknown
+        (current.myMap("intValue") = 10);          // int
+        (current.myMap("longValue") = 100L);       // long
+        (current.myMap("doubleValue") = 10.0);     // double
+        (current.myMap("booleanValue") = true);    // boolean
+        (current.myMap("symbolValue") = SomeSymbol);   // symbol
+        (current.myMap("stringValue") = "Some String"); // string
+        (current.myMap("agentReference") = MyAgent);   // agent
+        (current.myMap("objectReference") = MyObject); // object
+        (current.myMap("unknownValue") = unknown);     // unknown
+
+    initial_facts:
+        (current.myMap(1) = 10);                   // int
+        (current.myMap(2) = 100L);                  // long
+        (current.myMap(240) = 10.0);                // double
+        (current.myMap(3) = true);                  // boolean
+        (current.myMap(4) = SomeSymbol);            // symbol
+        (current.myMap(5) = "Some String");         // string
+        (current.myMap(6) = MyAgent);               // agent
+        (current.myMap(7) = MyObject);              // object
+        (current.myMap(8) = unknown);               // unknown
+        (current.myMap("intValue") = 10);           // int
+        (current.myMap("longValue") = 100L);        // long
+        (current.myMap("doubleValue") = 10.0);      // double
+        (current.myMap("booleanValue") = true);     // boolean
+        (current.myMap("symbolValue") = SomeSymbol);    // symbol
+        (current.myMap("stringValue") = "Some String");  // string
+        (current.myMap("agentReference") = MyAgent);    // agent
+        (current.myMap("objectReference") = MyObject);  // object
+        (current.myMap("unknownValue") = unknown);      // unknown</code></pre>
+                <p>The numeric indices do not need to be sequential; they can be any valid positive integer value. Any string can be used for the index of a map as well. Generally, when a numeric index value is used, we refer to it as an index; when a string index value is used, we refer to it as a key. The numeric value can be referred to as a key and the string value as an index as well, so in this document, we will just refer to all of them as an index.</p>
+                <p>Besides defining map values through initial beliefs and facts, the map values can also be created using consequences. The following consequences show the most simplistic way to create new map values. Just like with initial beliefs and facts, any value can be assigned to an index of a map.</p>
+                <pre><code>    conclude((current.myMap(100) = "Some Value"));
+    conclude((current.myMap("newValue") = 25.0));</code></pre>
+                <p>It is also possible to change the values of an index for a map. The value can be changed to any other value; it does not necessarily have to be of the same value type as the previously assigned value. The following consequences show examples of this: the first consequence just changes the value, not the type (both strings), the second consequence changes the value type from double to boolean.</p>
+                <pre><code>    conclude((current.myMap(100) = "Some Other Value"));
+    conclude((current.myMap("newValue") = true));</code></pre>
+                <p>When a value is replaced, the virtual machine will first retract the old belief/fact for that index/value pair, followed by asserting the new belief/fact.</p>
+                <p>Variables declared for the workframe or thoughtframe can also be used for either or both the index and value in a consequence. A variable that is intended to be used for the index must be of type int or string. The variables must also be bound to a valid value, or the virtual machine will generate an error.</p>
+                <pre><code>    variables:
+        foreach(string) sKey;
+        foreach(symbol) sSymbolValue;
+        foreach(int) nIntValue;
+    when( ... )
+    do {
+        conclude((current.myMap(25) = sSymbolValue));
+        conclude((current.myMap(sKey) = nIntValue));
+    } // end do</code></pre>
+                <p>Parameters declared for activities can also be used for either or both the index and value in a consequence. They work in the same way as variables. The parameter must be resolvable to a value, either an actual value passed as an argument for the parameter or a variable passed as an argument for the parameter that is bound to a value. An error is generated by the virtual machine if this is not the case. Parameters used for the index of a map value must be declared to be of type int or string.</p>
+                <pre><code>    composite_activity myActivity(string key, 
+                                     symbol symbolValue, 
+                                     int intValue) {
+        workframes:
+            workframe wf_myWorkframe {
+                do {
+                    conclude((current.myMap(25) = symbolValue));
+                    conclude((current.myMap(key) = intValue));
+                } // end do
+            } // wf_myWorkframe
+    } // myActivity</code></pre>
+                <p>It is also possible to assign values to an index of a map by resolving a belief or fact on the right-hand side of a consequence. The right-hand side can be an object/attribute tuple or it can consist of a reference to the index of a map that is resolved to a value. Again, variables can be used anywhere in these consequences, both on the left and right-hand side.</p>
+                <pre><code>    conclude((current.myMap(30) = current.location));
+    conclude((current.myMap("value") = current.myMap("intValue")));</code></pre>
+                <p>It is <b><i>not</i></b> possible to assign a map to an index of a map. The compiler will not permit this and will generate a compiler error. The following is not permitted:</p>
+                <pre><code>    conclude((current.myMap("someMap") = current.myMap));</code></pre>
+
+                <h3>Using Map Values in Preconditions</h3>
+                <p>The use of map values in preconditions is no different than using regular values. Preconditions now allow you to specify an index for attributes of type map to allow for the proper matching of beliefs in the preconditions. Variables can be declared for both the index and the index value.</p>
+                <pre><code>    knownval(current.myMap(1) = 10)
+    knownval(current.myMap("stringValue") = "Some String")
+    knownval(current.myMap(1) = current.myMap("intValue"))
+    knownval(current.myMap(nIndexVar) = 10)
+    knownval(nValue = current.myMap(nIndexVar))
+    knownval(current manages current.myMap("agentReference"))
+    knownval(current manages current.myMap(nIndexVar))
+    knownval(current.myMap = unknown)
+    known(current.myMap)
+    known(current.myMap(1))
+    known(current.myMap(nIndexVar))</code></pre>
+                <p>All of these preconditions are valid. The virtual machine ensures that the variables used in these preconditions get the proper matching binding. A few notes about the known preconditions: In the case of <code>known(current.myMap)</code>, the precondition will only evaluate to true if the belief <code>(current.myMap = unknown)</code> exists. If beliefs with index/value pairs exist for the map, then that precondition evaluates to false. For the known precondition specifying the index, the precondition will only evaluate to true if the index value matches with a belief that has that same index value, or it evaluates to true for any index value that is matched for the index if a variable is specified for the index that has not been bound in earlier preconditions.</p>
+                <p>Note that since map values are not typed, the virtual machine will do run-time type checking to make sure that any values resulting from the evaluation of an object-attribute-index expression is type-compatible with the opposite side of the condition if an attribute or variable is specified or if a relation is used.</p>
+                <pre><code>    attributes:
+        public int numEmployees;
+    relations:
+        public BaseGroup manages;
+
+    knownval(current.numEmployees = current.myMap("stringValue"))
+    knownval(current manages current.myMap("intValue"))</code></pre>
+                <p>These preconditions will generate warnings in the log file and will evaluate to false, since the map value for the "stringValue" index is a string and not an integer, and since the map value for "intValue" is an integer and not an agent reference with the agent being a member of BaseGroup.</p>
+
+                <h3>Using Map Values in Consequences</h3>
+                <p>Map values can be used in the right-hand side of consequences to conclude a new value of a single-valued attribute or to conclude a new value of a relation. The values of index/value pairs are not strongly typed for maps and any value is supported. However, attributes that are not of a collection type and relations are strongly typed. Care is therefore required when assigning a value to an attribute using a map value.</p>
+                <pre><code>    attributes:
+        public int numEmployees;
+
+    conclude((current.numEmployees = current.myMap("intValue")));
+    conclude((current.numEmployees = current.myMap("doubleValue")));</code></pre>
+                <p>The first consequence will succeed since the agent currently believes the integer value 10 for the index "intValue" for myMap, which is of the correct type for numEmployees. For the second one, however, the virtual machine will generate an error in the log file since double values are not type-compatible with integers, and the double value can therefore not be assigned to numEmployees.</p>
+                <pre><code>    relations:
+        public BaseGroup manages;
+
+    conclude((current manages current.myMap("agentReference")));
+    conclude((current manages current.myMap("objectReference")));</code></pre>
+                <p>In this case with the use of relations, the first consequence again will succeed since the agent currently believes MyAgent as the value for the index "agentReference" for myMap, which is an agent that is always a member of BaseGroup and is therefore type-compatible with the manages relation. The second consequence, however, returns MyObject from the map when using the index "objectReference", which is of type BaseClass and not type-compatible with BaseGroup. The virtual machine will generate an error in the log file and not execute the consequence.</p>
+
+                <h3>Copying Maps</h3>
+                <p>The language makes it easy to copy the map values of one map to another map. This is done by using consequences.</p>
+                <p>Assume that we have two attributes declared, myMap and myMapCopy, both of type map. Also assume that we have assigned values to myMap already as we've shown in the examples for initial beliefs and assume that this consequence is executed for an agent.</p>
+                <pre><code>    conclude((current.myMapCopy = current.myMap));</code></pre>
+                <p>This consequence will copy all beliefs with the index/value pairs for myMap to myMapCopy, creating the identical index/value pairs for myMapCopy. If myMapCopy had any indices that were identical to those in myMap, then the values for those indices for myMapCopy will be replaced with those of myMap.</p>
+                <p>Before the conclude, we have the following beliefs:</p>
+                <pre><code>    (current.myMap(1) = 10)
+    (current.myMap("stringValue") = "Some String")
+    (current.myMapCopy(1) = 50)</code></pre>
+                <p>After the conclude, we have the following beliefs:</p>
+                <pre><code>    (current.myMap(1) = 10)
+    (current.myMap("stringValue") = "Some String")
+    (current.myMapCopy(1) = 10)
+    (current.myMapCopy("stringValue") = "Some String")</code></pre>
+                <p>The value 50 for index 1 for myMapCopy was retracted and the new value 10 was asserted, and a new belief for index "stringValue" with value "Some String" was asserted for myMapCopy. Note that since we didn't specify belief or fact certainties, both were defaulted to 100% and therefore also facts were asserted for the myMapCopy index/value pairs.</p>
+
+                <h3>Clearing Maps</h3>
+                <p>A consequence is also used to clear a map of all of its index/value pairs. This is done by concluding the value unknown for the map attribute without specifying an index.</p>
+                <pre><code>    conclude((current.myMap = unknown));</code></pre>
+                <p>This retracts all index/value pair beliefs and facts for myMap and asserts the new belief/fact:</p>
+                <pre><code>    (current.myMap = unknown)</code></pre>
+                <p>When a new index/value pair for this cleared map is concluded, then first the unknown belief/fact for that map is retracted, followed by the assertion of the new index/value pair.</p>
+
+                <h3>Communicating Maps/Map Values</h3>
+                <p>Using broadcast and communicate activities, it is possible to communicate beliefs from one agent to another. Since index/value pairs for maps are represented as beliefs, they are communicated in the same way.</p>
+                <p>In the transfer definitions of the broadcast and communicate activities, either single map values can be communicated or an entire map.</p>
+                <pre><code>    communicate communicateMapValues(string key, SomeGroup agt) {
+        ...
+        about:
+            send(current.myMap(1) = unknown),
+            send(current.myMap("intValue") = unknown),
+            send(current.myMap(key) = unknown),
+            send(current.myMap = unknown),
+            receive(agt.otherMap(1) = unknown),
+            receive(agt.otherMap("intValue") = unknown),
+            receive(agt.otherMap(key) = unknown),
+            receive(agt.otherMap = unknown);
+    } // communicateMapValues</code></pre>
+                <p>When an index is specified, only the belief matching the OA(index) will be sent/received. The index can be specified using a parameter declared for the activity. If no index is specified for the map, all beliefs about the map will be sent/received. This makes it easy to send/receive the entire contents of a map.</p>
+
+                <h3>Detecting Map Values</h3>
+                <p>Map values can also be detected in detectables and can be used to trigger detectable actions. They operate in a similar way as in preconditions. For detection of facts, the left-hand side of the detectable condition is relevant. On that left-hand side can be specified whether a single map value is to be detected by specifying the index for the map value to be detected or whether all map values need to be detected.</p>
+                <pre><code>    detect((current.myMap(1) = unknown));
+    detect((current.myMap("intValue") = unknown));
+    detect((current.myMap(someVariable) = unknown));
+    detect((current.myMap = unknown));</code></pre>
+                <p>The first three detectable conditions detect a single value, with the third one using a variable to specify the index to be detected. That variable must have been bound in the preconditions. The last detectable condition detects all map values for myMap.</p>
+                <p>For triggers, the right-hand side value must match with the detected belief or belief matching the left-hand side. The right-hand side of the detectable can also specify a reference to a map value. The following are all valid detectable/trigger conditions.</p>
+                <pre><code>    detect((current.myMap(1) = current.myMap("intValue")));
+    detect((current.numEmployees = current.myMap(1)));
+    detect((current manages current.myMap("agentReference")));</code></pre>
+                <p>In the last two conditions, there is a potential for type mismatch. For the condition using an attribute on the left-hand side, no warnings or errors are generated if there is a type mismatch. The virtual machine just compares the right-hand side value of the belief matching <code>(current.numEmployees = ?)</code> with the right-hand side value of the belief <code>(current.myMap(1) = ?)</code>. If they match, the detectable action is triggered; if not, the action is not performed. For the condition using a relation, a warning is generated if the map value is not type-compatible with the relation due to the fact that relations are handled differently than attributes by the virtual machine. The detectable action is not triggered in that case, only when the resulting reference matches that of the right-hand side reference of the belief <code>(current manages ?)</code>.</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <hr>
+        <p>Copyright &#169; 2012-2025 Ejenta, Inc. All rights reserved.</p>
+        <p>Last modified: August 25, 2025.</p>
+    </footer>
 
 </body>
-
 </html>

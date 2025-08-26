@@ -1,176 +1,93 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
-<meta name="ProgId" content="FrontPage.Editor.Document">
-<title>Agent iSolutions - Language - Agent (AGT) - Semantics</title>
-<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
-<script type="text/javascript" src="../doctree.jsc"></script>
-<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejenta - Language Specification - Agent (AGT) - Semantics</title>
+    <link rel="stylesheet" type="text/css" href="../../style/modern_style.css">
+    <link rel="SHORTCUT ICON" href="../../logo.ico">
+    <script type="text/javascript" src="../doctree.jsc"></script>
+    <script type="text/javascript" src="../../scripts/treescript.jsc"></script>
 </head>
 
-<body onload="openTree('OUT0t,OUT2t,OUT3t,DT15');">
-  <table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
-    <tr>
-      <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" width="168" height="78"></td>
-      <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
-    </tr>
-    <tr>
-      <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../home.htm">Home</a></td>
-      <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
-      <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a href="../index.htm">Documentation</a></td>
-      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
-      <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
-      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">&nbsp;</td>
-    </tr>
-  </table>
+<body onload="open_folder_to_page('OUT0t,OUT2t,OUT3t,DT15');">
 
-<div align="left">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-      <td height="10" width="100%">
-      </td>
-    </tr>
-  </table>
-</div>
-<div align="left">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
-    <tr>
-      <td width="164" valign="top" bgcolor="#6C69F7" height="1%">
-        <p class="TOCHeader">Documentation</td>
-      <td width="12" rowspan="9" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="656" hspace="3">
-      </td>
-      <td width="100%" valign="top" align="justify" height="1" colspan="5">
-        <p class="aisheader1">Language Specification - Agent (AGT) - Semantics</p>
-      </td>
-    </tr>
-    <tr>
-      <td width="167" rowspan="8" valign="top" height="200">
-      	 <script language="javascript">
-      	 <!--
-      	 	createDocumentTree("../");
-      	 -->
-      	 </script>
-      </td>
-      <td width="100%" valign="top" align="left" height="1" colspan="5">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="12%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_l"><a href="ls_grp_sem.htm">Prev</a>
-      </td>
-      <td width="25%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_c"><a href="ls_agt_dsc.htm">Description</a>
-      </td>
-      <td width="25%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_c"><a href="ls_agt_stx.htm">Syntax</a>
-      </td>
-      <td width="25%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_c"><font color="#808080">Semantics</font>
-      </td>
-      <td width="12%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_r" align="left"><a href="ls_cls_sem.htm">Next</a>
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" valign="top" align="justify" height="1" colspan="5">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" valign="top" align="justify" height="590" colspan="5">
+    <header>
+        <img src="../../images/aislogo_600_small.jpg" alt="Ejenta Logo" class="logo">
+        <nav class="top-nav">
+            <ul>
+                <li><a href="../../index.htm">Home</a></li>
+                <li><a href="../../products/index.htm">Products</a></li>
+                <li><a href="../index.htm" class="active">Documentation</a></li>
+                <li><a href="../../download/index.htm">Download</a></li>
+                <li><a href="../../support/index.htm">Support</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<p class="aisparagraph"><b>Group membership</b></p>
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav class="side-nav">
+                <h2>Documentation</h2>
+                <div class="tree-container">
+                    <script language="javascript">
+                        <!--
+                        createDocumentTree("../");
+                        -->
+                    </script>
+                </div>
+            </nav>
+        </aside>
 
-<p class="aisparagraph">An agent can be a member of one or more groups.
-When an agent is a member of a group the agent will
-&#145;inherit&#146; attributes, relations, initial-beliefs,
-initial-facts, activities, workframes and thoughtframes from the group(s) it is a member of. All attributes and relations are
-inherited including private ones (an agent can be seen as an
-instance of a group in terms of object oriented practices). In
-case the same constructs are encountered in the inheritance path
-always the most specific construct will be used, meaning that a
-workframe defined for the agent has precedence over a workframe
-with the same name defined in one of the groups of which the
-agent is a member.</p>
+        <main class="content">
+            <div class="doc-header">
+                <h1>Language Specification - Agent (AGT) - Semantics</h1>
+            </div>
+            <nav class="doc-nav">
+                <a href="ls_grp_sem.htm" class="prev">Prev</a>
+                <div class="doc-sub-nav">
+                    <a href="ls_agt_dsc.htm">Description</a>
+                    <a href="ls_agt_stx.htm">Syntax</a>
+                    <span class="active">Semantics</span>
+                </div>
+                <a href="ls_cls_sem.htm" class="next">Next</a>
+            </nav>
+            <hr>
+            <section class="doc-content">
+                <h3>Group membership</h3>
+                <p class="aisparagraph">An agent can be a member of one or more groups. When an agent is a member of a group the agent will ‘inherit’ attributes, relations, initial-beliefs, initial-facts, activities, workframes and thoughtframes from the group(s) it is a member of. All attributes and relations are inherited including private ones (an agent can be seen as an instance of a group in terms of object oriented practices). In case the same constructs are encountered in the inheritance path always the most specific construct will be used, meaning that a workframe defined for the agent has precedence over a workframe with the same name defined in one of the groups of which the agent is a member.</p>
 
-<p class="aisparagraph"><b>Defaults</b></p>
+                <h3>Defaults</h3>
+                <p class="aisparagraph">Every agent in a model is by definition a member of ‘BaseGroup’ defined in the ‘BaseModel’ library which is imported by definition for every model. The ‘BaseGroup’ defines built-in attributes, relations, initial-beliefs, initial-facts, activities, workframes and thoughtframes as defaults for agents and groups. The ‘BaseGroup’ membership does not have to be defined explicitly. Other defaults are:</p>
+                <ul>
+                    <li>display = &lt;agent-name&gt;</li>
+                    <li>cost = 0</li>
+                    <li>time_unit = 0</li>
+                    <li>location = none</li>
+                </ul>
 
-<p class="aisparagraph">Every agent in a model is by definition a
-member of &#145;BaseGroup&#146; defined in the
-&#145;BaseModel&#146; library which is imported by definition for
-every model. The &#145;BaseGroup&#146; defines built-in
-attributes, relations, initial-beliefs, initial-facts,
-activities, workframes and thoughtframes as defaults for agents
-and groups. The &#145;BaseGroup&#146; membership does not have to
-be defined explicitly. Other defaults are:</p>
+                <h3>Constraints</h3>
+                <ol>
+                    <li>
+                        <p class="aisparagraph">The name of an agent must be unique amongst all concepts in a model.</p>
+                    </li>
+                    <li>
+                        <p class="aisparagraph">The time_unit defines the time in seconds.</p>
+                    </li>
+                    <li>
+                        <p class="aisparagraph">The Java class name of an external agent must be identical to the agent's name as defined in the Brahms model. The Java class must also be in the same package as the package the external agent is defined in.</p>
+                    </li>
+                </ol>
+            </section>
+        </main>
+    </div>
 
-<ul>
-    <li>
-      display = &lt;agent-name&gt;</li>
-    <li>
-      cost = 0</li>
-    <li>
-      time_unit = 0</li>
-    <li>
-      location = none</li>
-</ul>
-
-<p class="aisparagraph"><b>Constraints</b></p>
-
-<ol>
-    <li>
-      <p class="aisparagraph">The name of an agent must be unique
-        amongst all concepts in a model.</li>
-    <li>
-      <p class="aisparagraph">The time_unit defines the time in seconds.</li>
-    <li>
-      <p class="aisparagraph">The Java class name of an external agent must be
-      identical to the agent's name as defined in the Brahms model. The Java
-      class must also be in the same package as the package the external agent
-      is defined in.</li>
-</ol>
-
-<p class="aisparagraph">&nbsp;</p>
-
-      </td>
-    </tr>
-  </table>
-</div>
-
-<div align="left">
-  <table border="0" width="100%" cellpadding="0" cellspacing="0">
-    <tr>
-      <td width="100%">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" align="center"><font size="1" face="Arial">
-Questions or problems regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
-Copyright &#169; 2000 NASA Ames Research Center. All rights reserved.<br>
-Last modified: 
-		<!--WEBBOT 
-   bot=TimeStamp
-   S-Type="EDITED"
-   S-Format="%A %B %d, %Y" startspan
- -->Sunday April 29, 2007<!--webbot bot="TimeStamp" i-checksum="31953" endspan -->.</font></td>
-    </tr>
-  </table>
-</div>
+    <footer>
+        <hr>
+        <p>Copyright &#169; 2012-2025 Ejenta, Inc. All rights reserved.</p>
+        <p>Last modified: August 25, 2025.</p>
+    </footer>
 
 </body>
 

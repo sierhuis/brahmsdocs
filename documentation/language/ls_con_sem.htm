@@ -1,193 +1,86 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
-<meta name="ProgId" content="FrontPage.Editor.Document">
-<title>Agent iSolutions - Language - Consequence (CON) - Semantics</title>
-<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
-<script type="text/javascript" src="../doctree.jsc"></script>
-<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejenta - Language Specification - Consequence (CON) - Semantics</title>
+    <link rel="stylesheet" type="text/css" href="../../style/modern_style.css">
+    <link rel="SHORTCUT ICON" href="../../logo.ico">
+    <script type="text/javascript" src="../doctree.jsc"></script>
+    <script type="text/javascript" src="../../scripts/treescript.jsc"></script>
 </head>
+<body onload="open_folder_to_page('OUT0t,OUT2t,OUT8t,DT38');">
 
-<body onload="openTree('OUT0t,OUT2t,OUT8t,DT38');">
-  <table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
-    <tr>
-      <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" width="168" height="78"></td>
-      <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
-    </tr>
-    <tr>
-      <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../home.htm">Home</a></td>
-      <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
-      <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a href="../index.htm">Documentation</a></td>
-      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
-      <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
-      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">&nbsp;</td>
-    </tr>
-  </table>
+    <header>
+        <img src="../../images/aislogo_600_small.jpg" alt="Ejenta Logo" class="logo">
+        <nav class="top-nav">
+            <ul>
+                <li><a href="../../index.htm">Home</a></li>
+                <li><a href="../../products/index.htm">Products</a></li>
+                <li><a href="../index.htm" class="active">Documentation</a></li>
+                <li><a href="../../download/index.htm">Download</a></li>
+                <li><a href="../../support/index.htm">Support</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div align="left">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-      <td height="10" width="100%">
-      </td>
-    </tr>
-  </table>
-</div>
-<div align="left">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
-    <tr>
-      <td width="164" valign="top" bgcolor="#6C69F7" height="1%">
-        <p class="TOCHeader">Documentation</td>
-      <td width="12" rowspan="9" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="590" hspace="3">
-      </td>
-      <td width="100%" valign="top" align="justify" height="1" colspan="5">
-        <p class="aisheader1">Language Specification - Consequence (CON) -
-        Semantics</p>
-      </td>
-    </tr>
-    <tr>
-      <td width="167" rowspan="8" valign="top" height="200">
-      	 <script language="javascript">
-      	 <!--
-      	 	createDocumentTree("../");
-      	 -->
-      	 </script>
-      </td>
-      <td width="100%" valign="top" align="left" height="1" colspan="5">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="12%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_l"><a href="ls_pre_sem.htm">Prev</a>
-      </td>
-      <td width="25%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_c"><a href="ls_con_dsc.htm">Description</a>
-      </td>
-      <td width="25%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_c"><a href="ls_con_stx.htm">Syntax</a>
-      </td>
-      <td width="25%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_c"><font color="#808080">Semantics</font>
-      </td>
-      <td width="12%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_r" align="left"><a href="ls_det_sem.htm">Next</a>
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" valign="top" align="justify" height="1" colspan="5">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" valign="top" align="justify" height="525" colspan="5">
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav class="side-nav">
+                <h2>Documentation</h2>
+                <div class="tree-container">
+                    <script language="javascript">
+                        <!--
+                        createDocumentTree("../");
+                        -->
+                    </script>
+                </div>
+            </nav>
+        </aside>
 
-<p class="aisparagraph"><b>Fact certainty</b></p>
+        <main class="content">
+            <div class="doc-header">
+                <h1>Language Specification - Consequence (CON) - Semantics</h1>
+            </div>
+            <nav class="doc-nav">
+                <a href="ls_pre_sem.htm" class="prev">Prev</a>
+                <div class="doc-sub-nav">
+                    <a href="ls_con_dsc.htm">Description</a>
+                    <a href="ls_con_stx.htm">Syntax</a>
+                    <span class="active">Semantics</span>
+                </div>
+                <a href="ls_det_sem.htm" class="next">Next</a>
+            </nav>
+            <hr>
+            <section class="doc-content">
+                <h3>Fact certainty</h3>
+                <p>The fact certainty is a number ranging from 0 to 100 and represents the percentage of chance that a fact will be created based on the consequence. A fact certainty of 0% means that no fact will be created, 100% means that a fact will be created at all times.</p>
 
-<p class="aisparagraph">The fact certainty is a number ranging from 0
-to 100 and represents the percentage of chance that a fact will
-be created based on the consequence. A fact certainty of 0% means
-that no fact will be created, 100% means that a fact will be
-created at all times.</p>
+                <h3>Belief certainty</h3>
+                <p>The belief certainty is a number ranging from 0 to 100 and represents the percentage of chance that a belief will be created based on the consequence. A belief certainty of 0% means that no belief will be created, 100% means that a belief will be created at all times.</p>
 
-<p class="aisparagraph"><b>Belief certainty</b></p>
+                <h3>Defaults</h3>
+                <ul>
+                    <li>fc = 100</li>
+                    <li>bc = 100</li>
+                </ul>
 
-<p class="aisparagraph">The belief certainty is a number ranging from 0
-to 100 and represents the percentage of chance that a belief will
-be created based on the consequence. A belief certainty of 0%
-means that no belief will be created, 100% means that a belief
-will be created at all times.</p>
+                <h3>Constraints</h3>
+                <ol>
+                    <li>In the comparison the left hand side attribute type and the right hand side value-type or right hand side attribute type of a value-expression must be the same, except in the case of an attribute being of a collection type. If the left hand side attribute is of a collection type and an index is specified any value type can be assigned. If no index is specified then only the value unknown or a value resolving to a collection type can be defined on the right hand side. If the right hand side is of a collection type and an index is specified then the compiler will assume that the type it resolves to is compatible with the left hand side type, the virtual machine will at run-time ensure type compatibility. If the right hand side resolves to a type that is incompatible with the left hand side type then an error is reported in the log and the consequence will fail.</li>
+                    <li>In the comparison the left hand side and right hand side types in a relational expression must match the types as defined for the relation used in the relational expression. Only the right hand side can be defined to use an object-attribute-index. The compiler will allow this without type checking, the compiler will assume that a value of the correct type is returned for the relation. The virtual machine will at run-time ensure that type compatibility holds, if not it will evaluate the precondition to false and generate a warning message in the log. The use of object-attribute-index on the left hand side would resolve to an unknown type not allowing the compiler to verify whether the relation is declared for that type and is therefore not permitted.</li>
+                    <li>The values of fact-certainty and belief-certainty range from 0 to 100 and represent a percentage.</li>
+                    <li>A consequence defined in the body of a thoughtframe can only conclude beliefs. The fact certainty argument will be ignored, a warning will be generated in case the belief-certainty is set to 0.</li>
+                </ol>
+            </section>
+        </main>
+    </div>
 
-<p class="aisparagraph"><b>Defaults</b></p>
-
-<ul>
-    <li>
-      fc = 100</li>
-    <li>
-      bc = 100</li>
-</ul>
-
-<p class="aisparagraph"><b>Constraints</b></p>
-
-<ol>
-    <li>
-      <p class="aisparagraph">In the comparison the left hand side attribute 
-		type and the right hand side value-type or right hand side attribute 
-		type of a value-expression must be the same, except in the case of an 
-		attribute being of a collection type. If the left hand side attribute is 
-		of a collection type and an index is specified any value type can be 
-		assigned. If no index is specified then only the value unknown or a 
-		value resolving to a collection type can be defined on the right hand 
-		side. If the right hand side is of a collection type and an index is 
-		specified then the compiler will assume that the type it resolves to is 
-		compatible with the left hand side type, the virtual machine will at 
-		run-time ensure type compatibility. If the right hand side resolves to a 
-		type that is incompatible with the left hand side type then an error is 
-		reported in the log and the consequence will fail.</li>
-    <li>
-      <p class="aisparagraph">In the comparison the left hand side and
-        right hand side types in a relational expression must
-        match the types as defined for the relation used in the
-        relational expression. Only the right hand side can be defined to use an 
-		object-attribute-index. The compiler will allow this without type 
-		checking, the compiler will assume that a value of the correct type is 
-		returned for the relation. The virtual machine will at run-time ensure 
-		that type compatibility holds, if not it will evaluate the precondition 
-		to false and generate a warning message in the log. The use of 
-		object-attribute-index on the left hand side would resolve to an unknown 
-		type not allowing the compiler to verify whether the relation is 
-		declared for that type and is therefore not permitted.</li>
-    <li>
-      <p class="aisparagraph">The values of fact-certainty and
-        belief-certainty range from 0 to 100 and represent a
-        percentage.</li>
-    <li>
-      <p class="aisparagraph">A consequence defined in the body of a
-        thoughtframe can only conclude beliefs. The fact
-        certainty argument will be ignored, a warning will be
-        generated in case the belief-certainty is set to 0.</li>
-</ol>
-
-<p class="aisparagraph">&nbsp;</p>
-
-      </td>
-    </tr>
-  </table>
-</div>
-
-<div align="left">
-  <table border="0" width="100%" cellpadding="0" cellspacing="0">
-    <tr>
-      <td width="100%">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" align="center"><font size="1" face="Arial">
-Questions or problems regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
-Copyright &#169; 2000-2006 NASA Ames Research Center. All rights reserved.<br>
-Last modified: 
-		<!--WEBBOT 
-   bot=TimeStamp
-   S-Type="EDITED"
-   S-Format="%A %B %d, %Y" startspan
- -->Monday April 30, 2007<!--webbot bot="TimeStamp" i-checksum="31391" endspan -->.</font></td>
-    </tr>
-  </table>
-</div>
+    <footer>
+        <hr>
+        <p>Copyright &#169; 2012-2025 Ejenta, Inc. All rights reserved.</p>
+        <p>Last modified: August 25, 2025.</p>
+    </footer>
 
 </body>
-
 </html>

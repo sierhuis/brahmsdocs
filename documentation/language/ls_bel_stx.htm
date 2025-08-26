@@ -1,214 +1,147 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
-<meta name="ProgId" content="FrontPage.Editor.Document">
-<title>Agent iSolutions - Language - Initial Belief (BEL)</title>
-<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
-<script type="text/javascript" src="../doctree.jsc"></script>
-<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejenta - Language Specification - Initial Belief (BEL) - Syntax</title>
+    <link rel="stylesheet" type="text/css" href="../../style/modern_style.css">
+    <link rel="SHORTCUT ICON" href="../../logo.ico">
+    <script type="text/javascript" src="../doctree.jsc"></script>
+    <script type="text/javascript" src="../../scripts/treescript.jsc"></script>
 </head>
+<body onload="open_folder_to_page('OUT0t,OUT2t,OUT5t,DT26');">
 
-<body onload="openTree('OUT0t,OUT2t,OUT5t,DT26');">
-  <table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
-    <tr>
-      <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" width="168" height="78"></td>
-      <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
-    </tr>
-    <tr>
-      <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../home.htm">Home</a></td>
-      <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
-      <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a href="../index.htm">Documentation</a></td>
-      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
-      <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
-      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">&nbsp;</td>
-    </tr>
-  </table>
+    <header>
+        <img src="../../images/aislogo_600_small.jpg" alt="Ejenta Logo" class="logo">
+        <nav class="top-nav">
+            <ul>
+                <li><a href="../../index.htm">Home</a></li>
+                <li><a href="../../products/index.htm">Products</a></li>
+                <li><a href="../index.htm" class="active">Documentation</a></li>
+                <li><a href="../../download/index.htm">Download</a></li>
+                <li><a href="../../support/index.htm">Support</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div align="left">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-      <td height="10" width="100%">
-      </td>
-    </tr>
-  </table>
-</div>
-<div align="left">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
-    <tr>
-      <td width="164" valign="top" bgcolor="#6C69F7" height="1%">
-        <p class="TOCHeader">Documentation</td>
-      <td width="12" rowspan="9" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="565" hspace="3">
-      </td>
-      <td width="100%" valign="top" align="justify" height="1" colspan="5">
-        <p class="aisheader1">Language Specification - Initial Belief (BEL) -
-        Syntax</p>
-      </td>
-    </tr>
-    <tr>
-      <td width="167" rowspan="8" valign="top" height="200">
-      	 <script language="javascript">
-      	 <!--
-      	 	createDocumentTree("../");
-      	 -->
-      	 </script>
-      </td>
-      <td width="100%" valign="top" align="left" height="1" colspan="5">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="12%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_l"><a href="ls_var_stx.htm">Prev</a>
-      </td>
-      <td width="25%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_c"><a href="ls_bel_dsc.htm">Description</a>
-      </td>
-      <td width="25%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_c"><font color="#808080">Syntax</font>
-      </td>
-      <td width="25%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_c"><a href="ls_bel_sem.htm">Semantics</a>
-      </td>
-      <td width="12%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_r" align="left"><a href="ls_fct_stx.htm">Next</a>
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" valign="top" align="justify" height="1" colspan="5">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" valign="top" align="justify" height="500" colspan="5">
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav class="side-nav">
+                <h2>Documentation</h2>
+                <div class="tree-container">
+                    <script language="javascript">
+                        <!--
+                        createDocumentTree("../");
+                        -->
+                    </script>
+                </div>
+            </nav>
+        </aside>
 
-<div align="center"><center>
+        <main class="content">
+            <div class="doc-header">
+                <h1>Language Specification - Initial Belief (BEL) - Syntax</h1>
+            </div>
+            <nav class="doc-nav">
+                <a href="ls_var_stx.htm" class="prev">Prev</a>
+                <div class="doc-sub-nav">
+                    <a href="ls_bel_dsc.htm">Description</a>
+                    <span class="active">Syntax</span>
+                    <a href="ls_bel_sem.htm">Semantics</a>
+                </div>
+                <a href="ls_fct_stx.htm" class="next">Next</a>
+            </nav>
+            <hr>
+            <section class="doc-content">
+                <table class="syntax-table">
+                    <tr>
+                        <td><b id="initial-belief">initial-belief</b></td>
+                        <td><b>::=</b></td>
+                        <td><b><u>(</u></b> [ <a href="#value-expression">value-expression</a> | <a href="#relational-expression">relational-expression</a> ] <b><u>)</u></b> <b><u>;</u></b></td>
+                    </tr>
+                    <tr>
+                        <td><b id="value-expression">value-expression</b></td>
+                        <td><b>::=</b></td>
+                        <td>
+                            <a href="#obj-attr">obj-attr</a> <a href="#equality-operator">equality-operator</a> <a href="#value">value</a> |<br>
+                            <a href="#obj-attr">obj-attr</a> <a href="#equality-operator">equality-operator</a> <a href="#sgl-object-ref">sgl-object-ref</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b id="equality-operator">equality-operator</b></td>
+                        <td><b>::=</b></td>
+                        <td><b><u>=</u></b> | <b><u>!=</u></b></td>
+                    </tr>
+                    <tr>
+                        <td><b id="evaluation-operator">evaluation-operator</b></td>
+                        <td><b>::=</b></td>
+                        <td><a href="#equality-operator">equality-operator</a> | <b><u>&gt;</u></b> | <b><u>&gt;=</u></b> | <b><u>&lt;</u></b> | <b><u>&lt;=</u></b></td>
+                    </tr>
+                    <tr>
+                        <td><b id="obj-attr">obj-attr</b></td>
+                        <td><b>::=</b></td>
+                        <td>
+                            <a href="#tuple-object-ref">tuple-object-ref</a> <b><u>.</u></b> ATT.<a href="ls_att_stx.htm#attribute-name">attribute-name</a><br>
+                            { ( <a href="#collection-index">collection-index</a> ) }
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b id="tuple-object-ref">tuple-object-ref</b></td>
+                        <td><b>::=</b></td>
+                        <td>
+                            AGT.<a href="ls_agt_stx.htm#agent-name">agent-name</a> |<br>
+                            OBJ.<a href="ls_obj_stx.htm#object-name">object-name</a> |<br>
+                            COB.<a href="ls_cob_stx.htm#conceptual-object-name">conceptual-object-name</a> |<br>
+                            ARE.<a href="ls_are_stx.htm#area-name">area-name</a> |<br>
+                            VAR.<a href="ls_var_stx.htm#variable-name">variable-name</a> |<br>
+                            PAC.<a href="ls_pac_stx.htm#param-name">param-name</a> |<br>
+                            <b><u>current</u></b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b id="collection-index">collection-index</b></td>
+                        <td><b>::=</b></td>
+                        <td>
+                            ID.<a href="ls_id.htm#literal-string">literal-string</a> |<br>
+                            ID.<a href="ls_id.htm#unsigned">unsigned</a> |<br>
+                            VAR.<a href="ls_var_stx.htm#variable-name">variable-name</a> |<br>
+                            PAC.<a href="ls_pac_stx.htm#param-name">param-name</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b id="sgl-object-ref">sgl-object-ref</b></td>
+                        <td><b>::=</b></td>
+                        <td>
+                            AGT.<a href="ls_agt_stx.htm#agent-name">agent-name</a> |<br>
+                            OBJ.<a href="ls_obj_stx.htm#object-name">object-name</a> |<br>
+                            COB.<a href="ls_cob_stx.htm#conceptual-object-name">conceptual-object-name</a> |<br>
+                            ARE.<a href="ls_are_stx.htm#area-name">area-name</a> |<br>
+                            VAR.<a href="ls_var_stx.htm#variable-name">variable-name</a> |<br>
+                            PAC.<a href="ls_pac_stx.htm#param-name">param-name</a> |<br>
+                            <b><u>unknown</u></b> |<br>
+                            <b><u>current</u></b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><b id="value">value</b></td>
+                        <td><b>::=</b></td>
+                        <td>ID.<a href="ls_id.htm#literal-string">literal-string</a> | ID.<a href="ls_id.htm#number">number</a> | PAC.<a href="ls_pac_stx.htm#param-name">param-name</a> | <b><u>unknown</u></b></td>
+                    </tr>
+                    <tr>
+                        <td><b id="relational-expression">relational-expression</b></td>
+                        <td><b>::=</b></td>
+                        <td><a href="#tuple-object-ref">tuple-object-ref</a> REL.<a href="ls_rel_stx.htm#relation-name">relation-name</a> <a href="#sgl-object-ref">sgl-object-ref</a> { <b><u>is</u></b> ID.<a href="ls_id.htm#truth-value">truth-value</a> }</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+    </div>
 
-<table border="0" cellpadding="5" cellspacing="3">
-  <tr>
-        <td valign="top" class="aisnormal"><a name="initial-belief"><b>initial-belief</b></a></td>
-        <td valign="top" class="aisnormal"><b>::=</b></td>
-        <td valign="top" class="aisnormal"><b><u>(</u></b> [ <a href="#value-expression">value-expression</a> |
-          <a href="#relational-expression">relational-expression</a>
-        ] <b><u>)</u></b> <b><u>;</u></b></td>
-  </tr>
-  <tr>
-        <td valign="top" class="aisnormal"><a name="value-expression"><b>value-expression</b></a></td>
-        <td valign="top" class="aisnormal"><b>::=</b></td>
-        <td valign="top" class="aisnormal"><a href="#obj-attr">obj-attr</a> <a href="#equality-operator">equality-operator</a>
-          <a href="#value">value</a> |<br>
-          <a href="#obj-attr">obj-attr</a> <a href="#equality-operator">equality-operator</a>
-          <a href="#sgl-object-ref">sgl-object-ref</a></td>
-  </tr>
-  <tr>
-        <td valign="top" class="aisnormal"><a name="equality-operator"><b>equality-operator</b></a></td>
-        <td valign="top" class="aisnormal"><b>::=</b></td>
-        <td valign="top" class="aisnormal"><b><u>=</u></b> | <b><u>!=</u></b></td>
-  </tr>
-  <tr>
-        <td valign="top" class="aisnormal"><a name="evaluation-operator"><b>evaluation-operator</b></a></td>
-        <td valign="top" class="aisnormal"><b>::=</b></td>
-        <td valign="top" class="aisnormal"><a href="#equality-operator">equality-operator</a> | <b><u>&gt;</u></b>
-        | <b><u>&gt;=</u></b> | <b><u>&lt;</u></b> | <b><u>&lt;=</u></b></td>
-  </tr>
-  <tr>
-        <td valign="top" class="aisnormal"><a name="obj-attr"><b>obj-attr</b></a></td>
-        <td valign="top" class="aisnormal"><b>::=</b></td>
-        <td valign="top" class="aisnormal">
-          <a href="#tuple-object-ref">tuple-object-ref</a>
-          <b><u>.</u></b> ATT.<a href="ls_att_stx.htm#attribute-name">attribute-name</a><br>
-		{ ( collection-index ) }</td>
-  </tr>
-  <tr>
-        <td valign="top" class="aisnormal"><b><a name="tuple-object-ref">tuple-</a></b><a name="tuple-object-ref"><b>object-ref</b></a></td>
-        <td valign="top" class="aisnormal"><b>::=</b></td>
-        <td valign="top" class="aisnormal">AGT.<a href="ls_agt_stx.htm#agent-name">agent-name</a> | <br>
-        OBJ.<a href="ls_obj_stx.htm#object-name">object-name</a> |<br>
-          COB.<a href="ls_cob_stx.htm#conceptual-object-name">conceptual-object-name</a>
-          | <br>
-        ARE.<a href="ls_are_stx.htm#area-name">area-name</a> |<br>
-        VAR.<a href="ls_var_stx.htm#variable-name">variable-name</a> | <br>
-        PAC.<a href="ls_pac_stx.htm#param-name">param-name</a> |<br>
-        <b><u>current</u></b></td>
-  </tr>
-  <tr>
-        <td class="aisnormal" valign="top"><b><a name="collection-index">
-		collection-index</a></b></td>
-        <td class="aisnormal" valign="top"><b>::=</b></td>
-        <td class="aisnormal" valign="top">ID.<a href="ls_id.htm#literal-string">literal-string</a> 
-		|<br>
-		ID.<a href="ls_id.htm#unsigned">unsigned</a> |<br>
-        VAR.<a href="ls_var_stx.htm#variable-name">variable-name</a> |<br>
-        PAC.<a href="ls_pac_stx.htm#param-name">param-name</a></td>
-  </tr>
-  <tr>
-        <td class="aisnormal" valign="top"><b><a name="sgl-object-ref">sgl-object-ref</a></b></td>
-        <td class="aisnormal" valign="top">::=</td>
-        <td class="aisnormal" valign="top">AGT.<a href="ls_agt_stx.htm#agent-name">agent-name</a> | <br>
-        OBJ.<a href="ls_obj_stx.htm#object-name">object-name</a> |<br>
-          COB.<a href="ls_cob_stx.htm#conceptual-object-name">conceptual-object-name</a>
-          | <br>
-        ARE.<a href="ls_are_stx.htm#area-name">area-name</a> |<br>
-        VAR.<a href="ls_var_stx.htm#variable-name">variable-name</a> | <br>
-        PAC.<a href="ls_pac_stx.htm#param-name">param-name</a> |<br>
-          <b><u>unknown</u></b> |<br>
-        <b><u>current</u></b></td>
-  </tr>
-  <tr>
-        <td class="aisnormal"><a name="value"><b>value</b></a></td>
-        <td class="aisnormal"><b>::=</b></td>
-        <td class="aisnormal">ID.<a href="ls_id.htm#literal-string">literal-string</a> | ID.<a href="ls_id.htm#number">number</a> | PAC.<a href="ls_pac_stx.htm#param-name">param-name</a>
-          | <b><u>unknown</u></b></td>
-  </tr>
-  <tr>
-        <td class="aisnormal"><a name="relational-expression"><b>relational-expression</b></a></td>
-        <td class="aisnormal"><b>::=</b></td>
-        <td class="aisnormal"><a href="#tuple-object-ref">tuple-object-ref</a> REL.<a href="ls_rel_stx.htm#relation-name">relation-name</a>
-          <a href="#sgl-object-ref">sgl-object-ref</a> { <b><u>is</u></b> ID.<a href="ls_id.htm#truth-value">truth-value</a> }</td>
-  </tr>
-</table>
-</center></div>
-
-<p class="aisparagraph">&nbsp;</p>
-
-      </td>
-    </tr>
-  </table>
-</div>
-
-<div align="left">
-  <table border="0" width="100%" cellpadding="0" cellspacing="0">
-    <tr>
-      <td width="100%">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" align="center"><font size="1" face="Arial">
-Questions or problems regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
-Copyright &#169; 2000-2006 NASA Ames Research Center. All rights reserved.<br>
-Last modified: 
-		<!--WEBBOT 
-   bot=TimeStamp
-   S-Type="EDITED"
-   S-Format="%A %B %d, %Y" startspan
- -->Monday April 30, 2007<!--webbot bot="TimeStamp" i-checksum="31391" endspan -->.</font></td>
-    </tr>
-  </table>
-</div>
+    <footer>
+        <hr>
+        <p>Copyright &#169; 2012-2025 Ejenta, Inc. All rights reserved.</p>
+        <p>Last modified: August 25, 2025.</p>
+    </footer>
 
 </body>
-
 </html>

@@ -112,7 +112,7 @@ function doOutline(e) {
 // Open the tree to the specific node in the tree. The node is
 // specified using the idlist, a list of the id's of the 
 // nodes in the tree separated with comma's
-function openTree(idlist) {
+function open_folder_to_page(idlist) {
   var id, srcElement, srcId, targetElement, imgTag;
   var fontColor = "<font color=\"#808080\">";
   var font = "</font>";
@@ -159,3 +159,68 @@ function openTree(idlist) {
 // whenever the mouse is clicked we check if it was for something
 // in the tree
 document.onclick = doOutline;
+
+var folder_id_counter = 0;
+
+function generate_folder(folder_name, folder_link) {
+    var local_folder_id = "d_" + folder_id_counter;
+    var local_a_id = "a_" + folder_id_counter;
+    var local_i_id = "i_" + folder_id_counter;
+    folder_id_counter++;
+
+    document.write("<table>");
+    document.write("<tr>");
+    document.write("<td valign=\"center\" nowrap>");
+    document.write("<a href=\"javascript:click_on_folder('" + local_folder_id + "');\" id=\"" + local_a_id + "\">");
+    document.write("<img src=\"../../images/plus.gif\" id=\"" + local_i_id + "\" border=\"0\">");
+    document.write("</a>");
+    document.write("</td>");
+    document.write("<td valign=\"center\" nowrap>");
+    document.write("<img src=\"../../images/minus.gif\" border=\"0\">");
+    document.write("</td>");
+    document.write("<td valign=\"center\" nowrap>");
+    document.write("<a href=\"" + folder_link + "\">");
+    document.write(folder_name);
+    document.write("</a>");
+    document.write("</td>");
+    document.write("</tr>");
+    document.write("<tr>");
+    document.write("<td colspan=\"3\">");
+    document.write("<div id=\"" + local_folder_id + "\" style=\"display:none;\">");
+    document.write("</div>");
+    document.write("</td>");
+    document.write("</tr>");
+    document.write("</table>");
+}
+
+function click_on_folder(folder_id) {
+    var d_folder_id = "d_" + folder_id;
+    var i_folder_id = "i_" + folder_id.replace("d_", "i_");
+
+    if (document.getElementById(d_folder_id).style.display == "none") {
+        document.getElementById(d_folder_id).style.display = "block";
+        document.getElementById(i_folder_id).src = "../../images/minus.gif";
+    } else {
+        document.getElementById(d_folder_id).style.display = "none";
+        document.getElementById(i_folder_id).src = "../../images/plus.gif";
+    }
+}
+
+function open_folder(folder_id) {
+    var d_folder_id = "d_" + folder_id;
+    var i_folder_id = "i_" + folder_id;
+    document.getElementById(d_folder_id).style.display = "block";
+    document.getElementById(i_folder_id).src = "../../images/minus.gif";
+}
+
+function open_folder_to_page(idlist) {
+    var ids = idlist.split(",");
+    for (i = 0; i < ids.length - 1; i++) {
+        open_folder(ids[i]);
+    }
+    var page_element = document.getElementById(ids[ids.length - 1]);
+    if (page_element) {
+        page_element.style.fontWeight = 'bold';
+        page_element.style.color = '#808080';
+    }
+}

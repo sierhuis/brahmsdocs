@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejenta - Language Specification - Syntax</title>
+    <link rel="stylesheet" type="text/css" href="../../style/modern_style.css">
+    <link rel="SHORTCUT ICON" href="../../logo.ico">
+    <script type="text/javascript" src="../doctree.jsc"></script>
+    <script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+</head>
+<body onload="open_folder_to_page('OUT0t,DT2');">
+
+    <header>
+        <img src="../../images/aislogo_600_small.jpg" alt="Ejenta Logo" class="logo">
+        <nav class="top-nav">
+            <ul>
+                <li><a href="../../index.htm">Home</a></li>
+                <li><a href="../../products/index.htm">Products</a></li>
+                <li><a href="../index.htm" class="active">Documentation</a></li>
+                <li><a href="../../download/index.htm">Download</a></li>
+                <li><a href="../../support/index.htm">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav class="side-nav">
+                <h2>Documentation</h2>
+                <div class="tree-container">
+                    <script language="javascript">
+                        <!--
+                        createDocumentTree("../");
+                        -->
+                    </script>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="doc-header">
+                <h1>Syntax Notation</h1>
+            </div>
+            <nav class="doc-nav">
+                <a href="ls_info.htm" class="prev">Prev</a>
+                <a href="ls_mod_stx.htm" class="next">Next</a>
+            </nav>
+            <hr>
+            <section class="doc-content">
+                <p>The syntax of the Brahms agent language is specified using a variant of the Backus-Naur Form (BNF). The following is a list of the meta-symbols used in the BNF specification and their meaning.</p>
+                <table class="syntax-table">
+                    <tr>
+                        <td>::=</td>
+                        <td>The symbol is defined by the expression that follows.</td>
+                    </tr>
+                    <tr>
+                        <td>|</td>
+                        <td>Separates alternative options.</td>
+                    </tr>
+                    <tr>
+                        <td>[ ]</td>
+                        <td>Encloses an optional item.</td>
+                    </tr>
+                    <tr>
+                        <td>{ }</td>
+                        <td>Encloses a repeated item. The item may appear zero or more times.</td>
+                    </tr>
+                    <tr>
+                        <td>( )</td>
+                        <td>Groups items together.</td>
+                    </tr>
+                    <tr>
+                        <td><b>bold</b></td>
+                        <td>A terminal symbol that must be typed as is.</td>
+                    </tr>
+                    <tr>
+                        <td><i>italic</i></td>
+                        <td>A non-terminal symbol that is defined elsewhere.</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <hr>
+        <p>Copyright &#169; 2012-2025 Ejenta, Inc. All rights reserved.</p>
+        <p>Last modified: August 25, 2025.</p>
+    </footer>
+
+</body>
+</html>

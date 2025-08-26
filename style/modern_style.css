@@ -1,0 +1,399 @@
+/* General Body Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+/* Header and Top Navigation */
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 3px solid #6C69F7;
+    background-color: #f8f8f8;
+}
+
+.logo {
+    width: 168px;
+    height: 40px;
+}
+
+.top-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.top-nav li {
+    margin-left: 20px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.top-nav a.active {
+    color: #808080;
+}
+
+/* Force modern font size on nav lists to override ais_style.css */
+.top-nav ul, .side-nav ul {
+    font-size: inherit;
+}
+
+/* Main Layout Container */
+.main-container {
+    display: flex;
+}
+
+.sidebar {
+    width: 350px;
+    flex-shrink: 0;
+    background-color: #f8f8f8;
+    padding: 20px;
+    border-right: 3px solid #6C69F7;
+}
+
+.logo {
+    width: 168px;
+    height: 40px;
+}
+
+.top-nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.top-nav li {
+    margin-left: 20px;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+.top-nav a.active {
+    color: #808080;
+}
+
+/* Force modern font size on nav lists to override ais_style.css */
+.top-nav ul, .side-nav ul {
+    font-size: inherit;
+}
+
+/* Main Layout Container */
+.main-container {
+    display: flex;
+    padding: 20px;
+}
+
+/* Sidebar / Aside */
+.sidebar {
+    width: 180px;
+    flex-shrink: 0;
+    margin-right: 20px;
+}
+
+.side-nav h2, .side-nav h3 {
+    background-color: #6C69F7;
+    color: white;
+    padding: 8px;
+    margin: 10px 0 5px 0;
+    font-size: 1em;
+}
+
+.side-nav ul {
+    list-style: none;
+    padding-left: 10px;
+    margin: 0 0 15px 0;
+}
+
+.side-nav li {
+    margin-bottom: 5px;
+}
+
+.side-nav a {
+    text-decoration: none;
+    color: #0000EE; /* Standard link blue */
+}
+
+.side-nav a.active-side {
+    color: #808080;
+    font-weight: bold;
+}
+
+.side-logos {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.side-logos img {
+    margin-bottom: 10px;
+}
+
+/* Main Content Area */
+.content {
+    flex-grow: 1;
+}
+
+.content h1, .content h2 {
+    color: #333;
+    font-family: "Times New Roman", Times, serif;
+}
+
+.content h1 {
+    font-size: 1.5em;
+}
+
+.content h2 {
+    font-size: 1.2em;
+}
+
+.content p {
+    font-size: 1em; /* Explicitly set paragraph font size */
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+.content .date {
+    font-size: 0.9em;
+    color: #555;
+    text-align: left;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #C0C0C0;
+    margin: 20px 0;
+}
+
+/* Media Object for image-text pairs */
+.media-object {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1em;
+}
+
+.media-object img {
+    margin-right: 15px;
+    max-width: 150px; /* Adjust as needed */
+    height: auto;
+}
+
+.media-object .media-body {
+    flex-grow: 1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.8em;
+    color: #555;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+.book-details .order-info ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+/* Documentation Page Styles */
+.tree-container {
+    padding-left: 10px;
+}
+
+.tree-container a {
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.publications-list article {
+    margin-bottom: 1em;
+}
+
+/* Force modern font size on tree links to override ais_style.css TOC classes */
+.tree-container a {
+    font-size: 1em !important; /* Use 1em to inherit from body and !important to ensure override */
+}
+
+/* Override for old ais_style.css paragraph class */
+.aisparagraph {
+    font-size: 1em; /* This will inherit the 18px from the body */
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+/* Documentation Content Styles */
+.doc-header {
+    border-bottom: 1px solid #C0C0C0;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.doc-header h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    color: #6C69F7;
+    margin: 0;
+}
+
+.doc-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.doc-nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+}
+
+.doc-sub-nav span.active {
+    color: #808080;
+    font-weight: bold;
+}
+
+.doc-content h3 {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.doc-content h4 {
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 1.2em;
+    margin-bottom: 0.2em;
+}
+
+.doc-content.text-center {
+    text-align: center;
+}
+
+.doc-logo {
+    width: 181px;
+    height: 165px;
+    margin-bottom: 20px;
+}
+
+.doc-title {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0;
+}
+
+.doc-version {
+    font-size: 1.2em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0 30px 0;
+}
+
+.doc-authors {
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.syntax-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 0.9em; /* Set a base font size for the table */
+}
+
+.syntax-table caption {
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.syntax-table th,
+.syntax-table td {
+    border: 1px solid #C0C0C0;
+    padding: 8px;
+    font-family: Arial, helvetica, sans-serif;
+}
+
+.syntax-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+}
+
+.data-table td {
+    border: 1px solid #C0C0C0;
+    padding: 8px;
+    font-family: Arial, helvetica, sans-serif;
+    font-size: 0.9em;
+    vertical-align: top;
+}
+
+.data-table td:first-child {
+    font-weight: bold;
+    width: 20%;
+}
+
+.version-history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.version-history-table th,
+.version-history-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.version-history-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.version-history-table td:nth-child(1) { width: 10%; }
+.version-history-table td:nth-child(2) { width: 10%; }
+.version-history-table td:nth-child(3) { width: 10%; }
+.version-history-table td:nth-child(4) { width: 20%; }
+.version-history-table td:nth-child(5) { width: 50%; }
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 0.8em;
+    color: #555;
+}
+
+footer p {
+    margin: 5px 0;
+}

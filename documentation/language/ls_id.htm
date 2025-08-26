@@ -1,189 +1,125 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
-<meta name="ProgId" content="FrontPage.Editor.Document">
-<title>Agent iSolutions - Language - Summary</title>
-<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
-<script type="text/javascript" src="../doctree.jsc"></script>
-<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejenta - Language Specification - Identifiers (ID)</title>
+    <link rel="stylesheet" type="text/css" href="../../style/modern_style.css">
+    <link rel="SHORTCUT ICON" href="../../logo.ico">
+    <script type="text/javascript" src="../doctree.jsc"></script>
+    <script type="text/javascript" src="../../scripts/treescript.jsc"></script>
 </head>
+<body onload="open_folder_to_page('OUT0t,OUT2t,DT9');">
 
-<body onload="openTree('OUT0t,OUT2t,DT9');">
-  <table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
-    <tr>
-      <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" width="168" height="78"></td>
-      <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
-    </tr>
-    <tr>
-      <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../home.htm">Home</a></td>
-      <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
-      <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a href="../index.htm">Documentation</a></td>
-      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
-      <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
-      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">&nbsp;</td>
-    </tr>
-  </table>
+    <header>
+        <img src="../../images/aislogo_600_small.jpg" alt="Ejenta Logo" class="logo">
+        <nav class="top-nav">
+            <ul>
+                <li><a href="../../index.htm">Home</a></li>
+                <li><a href="../../products/index.htm">Products</a></li>
+                <li><a href="../index.htm" class="active">Documentation</a></li>
+                <li><a href="../../download/index.htm">Download</a></li>
+                <li><a href="../../support/index.htm">Support</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div align="left">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-      <td height="10" width="100%">
-      </td>
-    </tr>
-  </table>
-</div>
-<div align="left">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
-    <tr>
-      <td width="164" valign="top" bgcolor="#6C69F7" height="1%">
-        <p class="TOCHeader">Documentation</td>
-      <td width="12" rowspan="9" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="492" hspace="3">
-      </td>
-      <td width="100%" valign="top" align="justify" height="1" colspan="2">
-        <p class="aisheader1">Language Specification - Identifiers (ID)</p>
-      </td>
-    </tr>
-    <tr>
-      <td width="167" rowspan="8" valign="top" height="200">
-      	 <script language="javascript">
-      	 <!--
-      	 	createDocumentTree("../");
-      	 -->
-      	 </script>
-      </td>
-      <td width="100%" valign="top" align="left" height="1" colspan="2">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="36" valign="top" align="left" height="1">
-      <p class="ls_nav_text_l"><a href="ls_summary.htm">Prev</a>
-      </td>
-      <td width="100%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_r" align="left"><a href="ls_cun_stx.htm">Next</a>
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" valign="top" align="justify" height="1" colspan="2">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" valign="top" align="justify" height="400" colspan="2">
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav class="side-nav">
+                <h2>Documentation</h2>
+                <div class="tree-container">
+                    <script language="javascript">
+                        <!--
+                        createDocumentTree("../");
+                        -->
+                    </script>
+                </div>
+            </nav>
+        </aside>
 
-<div align="center"><center>
+        <main class="content">
+            <div class="doc-header">
+                <h1>Language Specification - Identifiers (ID)</h1>
+            </div>
+            <nav class="doc-nav">
+                <a href="ls_summary.htm" class="prev">Prev</a>
+                <a href="ls_cun_stx.htm" class="next">Next</a>
+            </nav>
+            <hr>
+            <section class="doc-content">
+                <table class="syntax-table">
+                    <tr>
+                        <td><b id="name">name</b></td>
+                        <td><b>::=</b></td>
+                        <td>[ letter ][ letter | digit | '-' ]*</td>
+                    </tr>
+                    <tr>
+                        <td><b id="letter">letter</b></td>
+                        <td><b>::=</b></td>
+                        <td>'a' | 'b' |…| 'z' | 'A' | 'B' |…| 'Z' | '_'</td>
+                    </tr>
+                    <tr>
+                        <td><b id="digit">digit</b></td>
+                        <td><b>::=</b></td>
+                        <td>'0' | '1' |…| '9'</td>
+                    </tr>
+                    <tr>
+                        <td><b id="blank-character">blank-character</b></td>
+                        <td><b>::=</b></td>
+                        <td>' ' | '\t' | '\n' | '\f' | '\r'</td>
+                    </tr>
+                    <tr>
+                        <td><b id="number">number</b></td>
+                        <td><b>::=</b></td>
+                        <td>[ <a href="#integer">integer</a> | <a href="#long">long</a> | <a href="#double">double</a> ]</td>
+                    </tr>
+                    <tr>
+                        <td><b id="integer">integer</b></td>
+                        <td><b>::=</b></td>
+                        <td>{ <b><u>+</u></b> | <b><u>-</u></b> } <a href="#unsigned">unsigned</a></td>
+                    </tr>
+                    <tr>
+                        <td><b id="long">long</b></td>
+                        <td><b>::=</b></td>
+                        <td>{ <b><u>+</u></b> | <b><u>-</u></b> } <a href="#unsigned">unsigned</a> { <b><u>l</u></b> | <b><u>L</u></b> }</td>
+                    </tr>
+                    <tr>
+                        <td><b id="unsigned">unsigned</b></td>
+                        <td><b>::=</b></td>
+                        <td>[ <a href="#digit">digit</a> ]+</td>
+                    </tr>
+                    <tr>
+                        <td><b id="double">double</b></td>
+                        <td><b>::=</b></td>
+                        <td>[ <a href="#integer">integer</a><b><u>.</u></b><a href="#unsigned">unsigned</a> ]</td>
+                    </tr>
+                    <tr>
+                        <td><b id="truth-value">truth-value</b></td>
+                        <td><b>::=</b></td>
+                        <td><b><u>true</u></b> | <b><u>false</u></b> | <b><u>unknown</u></b></td>
+                    </tr>
+                    <tr>
+                        <td><b id="literal-string">literal-string</b></td>
+                        <td><b>::=</b></td>
+                        <td><b><u>"</u></b> [ <a href="#letter">letter</a> | <a href="#digit">digit</a> | '-' | ':' | ';' | '.' ] <b><u>"</u></b></td>
+                    </tr>
+                    <tr>
+                        <td><b id="literal-symbol">literal-symbol</b></td>
+                        <td><b>::=</b></td>
+                        <td><a href="#name">name</a></td>
+                    </tr>
+                </table>
+                <p>It is possible to add comments to models. One line comments need to start with '//'. Multi-line comments have to start with '/*' and end with '*/'.</p>
+            </section>
+        </main>
+    </div>
 
-<table border="0" cellpadding="5" cellspacing="3">
-  <tr>
-    <td class="aisnormal"><a name="name"><b>name</b></a></td>
-    <td class="aisnormal"><b>::=</b></td>
-    <td class="aisnormal">[ letter ][ letter | digit | &#145;-&#145; ]*</td>
-  </tr>
-  <tr>
-    <td class="aisnormal"><a name="letter"><b>letter</b></a></td>
-    <td class="aisnormal"><b>::=</b></td>
-    <td class="aisnormal">&#145;a&#146; | &#146;b&#146; |&#133;| &#146;z&#146; | &#146;A&#146; |
-    &#146;B&#146; |&#133;| &#146;Z&#146; | &#146;_&#146;</td>
-  </tr>
-  <tr>
-    <td class="aisnormal"><a name="digit"><b>digit</b></a></td>
-    <td class="aisnormal"><b>::=</b></td>
-    <td class="aisnormal">&#145;0&#146; | &#146;1&#146; |&#133;| &#146;9&#146;</td>
-  </tr>
-  <tr>
-    <td class="aisnormal"><a name="blank-character"><b>blank-character</b></a></td>
-    <td class="aisnormal"><b>::=</b></td>
-    <td class="aisnormal">&#145; &#145; | &#145;\t&#146; | &#145;\n&#146; | &#145;\f&#146; |
-    &#145;\r&#146;</td>
-  </tr>
-  <tr>
-    <td class="aisnormal"><a name="number"><b>number</b></a></td>
-    <td class="aisnormal"><b>::=</b></td>
-    <td class="aisnormal">[ integer | long | double ]</td>
-  </tr>
-  <tr>
-    <td class="aisnormal"><a name="integer"><b>integer</b></a></td>
-    <td class="aisnormal"><b>::=</b></td>
-    <td class="aisnormal">{ <b><u>+</u></b> | <b><u>-</u></b> } unsigned</td>
-  </tr>
-  <tr>
-    <td class="aisnormal"><a name="long"><b>long</b></a></td>
-    <td class="aisnormal">::=</td>
-    <td class="aisnormal">{ <b><u>+</u></b> | <b><u>-</u></b> } unsigned { <u>
-	<b>l</b></u> | <u><b>L</b></u> }</td>
-  </tr>
-  <tr>
-    <td class="aisnormal"><a name="unsigned"><b>unsigned</b></a></td>
-    <td class="aisnormal"><b>::=</b></td>
-    <td class="aisnormal">[ digit ]+</td>
-  </tr>
-  <tr>
-    <td class="aisnormal"><a name="double"><b>double</b></a></td>
-    <td class="aisnormal"><b>::=</b></td>
-    <td class="aisnormal">[ integer<b><u>.</u></b>unsigned ]</td>
-  </tr>
-  <tr>
-    <td class="aisnormal"><a name="truth-value"><b>truth-value</b></a></td>
-    <td class="aisnormal"><b>::=</b></td>
-    <td class="aisnormal"><b><u>true</u></b> | <u> <b>false</b></u> | <u><b>unknown</b></u></td>
-  </tr>
-  <tr>
-    <td class="aisnormal"><a name="literal-string"><b>literal-string</b></a></td>
-    <td class="aisnormal"><b>::=</b></td>
-    <td class="aisnormal"><b><u>&quot;</u></b> [ letter | digit | &#145;-&#145; | &#145;:&#146; |
-    &#145;;&#146; | &#145;.&#146; ] <b><u>&quot;</u></b></td>
-  </tr>
-  <tr>
-    <td class="aisnormal"><a name="literal-symbol"><b>literal-symbol</b></a></td>
-    <td class="aisnormal"><b>::=</b></td>
-    <td class="aisnormal">name</td>
-  </tr>
-</table>
-</center></div>
-
-<p class="aisparagraph">It is possible to add comments to models. One line comments need to
-start with &#145;//&#146;. Multi-line comments have to start with &#145;/*&#146; and end
-with &#145;*/&#146;.</p>
-
-      </td>
-    </tr>
-  </table>
-</div>
-
-<div align="left">
-  <table border="0" width="100%" cellpadding="0" cellspacing="0">
-    <tr>
-      <td width="100%">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" align="center"><font size="1" face="Arial">
-Questions or problems regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
-Copyright &#169; 2001-2006 NASA Ames Research Center. All rights reserved.<br>
-Last modified: 
-		<!--WEBBOT 
-   bot=TimeStamp
-   S-Type="EDITED"
-   S-Format="%A %B %d, %Y" startspan
- -->Monday April 30, 2007<!--webbot bot="TimeStamp" i-checksum="31391" endspan -->.</font></td>
-    </tr>
-  </table>
-</div>
+    <footer>
+        <hr>
+        <p>Copyright &#169; 2012-2025 Ejenta, Inc. All rights reserved.</p>
+        <p>Last modified: August 25, 2025.</p>
+    </footer>
 
 </body>
-
 </html>

@@ -1,177 +1,77 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
-<meta name="ProgId" content="FrontPage.Editor.Document">
-<title>Agent iSolutions - Language - Transfer Definition (TDF) - Semantics</title>
-<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
-<script type="text/javascript" src="../doctree.jsc"></script>
-<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejenta - Language Specification - Transfer Definition (TDF) - Semantics</title>
+    <link rel="stylesheet" type="text/css" href="../../style/modern_style.css">
+    <link rel="SHORTCUT ICON" href="../../logo.ico">
+    <script type="text/javascript" src="../doctree.jsc"></script>
+    <script type="text/javascript" src="../../scripts/treescript.jsc"></script>
 </head>
+<body onload="open_folder_to_page('OUT0t,OUT2t,OUT8t,DT40');">
 
-<body onload="openTree('OUT0t,OUT2t,OUT8t,DT40');">
-  <table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
-    <tr>
-      <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" width="168" height="78"></td>
-      <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
-    </tr>
-    <tr>
-      <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../home.htm">Home</a></td>
-      <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
-      <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a href="../index.htm">Documentation</a></td>
-      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
-      <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
-      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">&nbsp;</td>
-    </tr>
-  </table>
+    <header>
+        <img src="../../images/aislogo_600_small.jpg" alt="Ejenta Logo" class="logo">
+        <nav class="top-nav">
+            <ul>
+                <li><a href="../../index.htm">Home</a></li>
+                <li><a href="../../products/index.htm">Products</a></li>
+                <li><a href="../index.htm" class="active">Documentation</a></li>
+                <li><a href="../../download/index.htm">Download</a></li>
+                <li><a href="../../support/index.htm">Support</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div align="left">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-      <td height="10" width="100%">
-      </td>
-    </tr>
-  </table>
-</div>
-<div align="left">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
-    <tr>
-      <td width="164" valign="top" bgcolor="#6C69F7" height="1%">
-        <p class="TOCHeader">Documentation</td>
-      <td width="12" rowspan="9" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="590" hspace="3">
-      </td>
-      <td width="100%" valign="top" align="justify" height="1" colspan="5">
-        <p class="aisheader1">Language Specification - Transfer Definition (TDF) -
-        Semantics</p>
-      </td>
-    </tr>
-    <tr>
-      <td width="167" rowspan="8" valign="top" height="200">
-      	 <script language="javascript">
-      	 <!--
-      	 	createDocumentTree("../");
-      	 -->
-      	 </script>
-      </td>
-      <td width="100%" valign="top" align="left" height="1" colspan="5">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="12%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_l"><a href="ls_det_sem.htm">Prev</a>
-      </td>
-      <td width="25%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_c"><a href="ls_tdf_dsc.htm">Description</a>
-      </td>
-      <td width="25%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_c"><a href="ls_tdf_stx.htm">Syntax</a>
-      </td>
-      <td width="25%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_c"><font color="#808080">Semantics</font>
-      </td>
-      <td width="12%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_r" align="left"><a href="ls_del_sem.htm">Next</a>
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" valign="top" align="justify" height="1" colspan="5">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" valign="top" align="justify" height="525" colspan="5">
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav class="side-nav">
+                <h2>Documentation</h2>
+                <div class="tree-container">
+                    <script language="javascript">
+                        <!--
+                        createDocumentTree("../");
+                        -->
+                    </script>
+                </div>
+            </nav>
+        </aside>
 
-<p class="aisparagraph"><b>Transfer-action</b></p>
+        <main class="content">
+            <div class="doc-header">
+                <h1>Language Specification - Transfer Definition (TDF) - Semantics</h1>
+            </div>
+            <nav class="doc-nav">
+                <a href="ls_det_sem.htm" class="prev">Prev</a>
+                <div class="doc-sub-nav">
+                    <a href="ls_tdf_dsc.htm">Description</a>
+                    <a href="ls_tdf_stx.htm">Syntax</a>
+                    <span class="active">Semantics</span>
+                </div>
+                <a href="ls_del_sem.htm" class="next">Next</a>
+            </nav>
+            <hr>
+            <section class="doc-content">
+                <h3>Transfer-action</h3>
+                <p>The transfer action defines the direction of the communication. The 'send' action states that belief(s) of the initiating agent or object matching the transfer definition are transferred from the initiating agent or object to the non-initiating agent or object. The 'receive' action states that belief(s) of the non-initiating agent or object matching the transfer definition are transferred from the non-initiating agent or object to the initiating agent or object. Note that if the transfer definition specifies a condition as an object/attribute tuple (OA=V) the right hand side value is ignored in the matching process. In case of an ORO the truth value is ignored in the matching process.</p>
 
-<p class="aisparagraph">The transfer action defines the direction of
-the communication. The &#145;send&#146; action states that belief(s) of the initiating agent or object matching the transfer
-definition are transferred from the initiating agent or object to
-the non-initiating agent or object. The &#145;receive&#146;
-action states that belief(s) of the non-initiating agent or
-object matching the transfer definition are transferred from the
-non-initiating agent or object to the initiating agent or object. <font face="Helvetica,Arial">Note
-that if the transfer definition specifies a condition as an object/attribute
-tuple (OA=V) the right hand side value is ignored in the matching process. In
-case of an ORO the truth value is ignored in the matching process.</font></p>
+                <h3>Constraints</h3>
+                <ol>
+                    <li>In the comparison the left hand side attribute type and the right hand side value-type or right hand side attribute type of a value-expression must be the same. Object-attribute-index is considered type compatible with any type and is permitted on both the left and right hand side. Since the right hand side of the condition is ignored, no errors or warnings will ever be generated event if the value resulting from the right hand side is type incompatible.</li>
+                    <li>In the comparison the left hand side and right hand side types in a relational expression must match the types as defined for the relation used in the relational expression. Only the right hand side permits an object-attribute-index expression and resolves to the unknown type which is type compatible with any type. The virtual machine will at run-time ensure that the resulting value is type compatible, if not it will generate a warning in the log and ignore the value as a possible value for the transfer definition.</li>
+                    <li>If a communicative-act is specified and the action is <code>send</code> then the object-name or value passed to the parameter identified by param-name must be an object instance that is an instance of <code>brahms.communication.CommunicativeAct</code>.</li>
+                    <li>If a communicative-act is specified and the action is <code>receive</code> then the object-name or value passed to the parameter identified by param-name must be an object instance that is an instance of <code>brahms.communication.CommunicativeAct</code> and the value for the communication activities 'with' property must be identical to the communicative-act specified in the transfer definition to indicate the reading of the communicative-act's beliefs.</li>
+                </ol>
+            </section>
+        </main>
+    </div>
 
-<p class="aisparagraph"><b>Constraints</b></p>
-
-<ol>
-    <li>
-      <p class="aisparagraph">In the comparison the left hand side
-        attribute type and the right hand side value-type or
-        right hand side attribute type of a value-expression must
-        be the same. Object-attribute-index is considered type compatible with 
-		any type and is permitted on both the left and right hand side. Since 
-		the right hand side of the condition is ignored, no errors or warnings 
-		will ever be generated event if the value resulting from the right hand 
-		side is type incompatible.</li>
-    <li>
-      <p class="aisparagraph">In the comparison the left hand side and
-        right hand side types in a relational expression must
-        match the types as defined for the relation used in the
-        relational expression. Only the right hand side permits an 
-		object-attribute-index expression and resolves to the unknown type which 
-		is type compatible with any type. The virtual machine will at run-time 
-		ensure that the resulting value is type compatible, if not it will 
-		generate a warning in the log and ignore the value as a possible value 
-		for the transfer definition.</li>
-	<li>
-      <p class="aisparagraph">If a communicative-act is specified and the action 
-		is send then the object-name or value passed to the parameter identified 
-		by param-name must be an object instance that is an instance of 
-		brahms.communication.CommunicativeAct.</li>
-	<li>
-      <p class="aisparagraph">If a communicative-act is specified and the action 
-		is receive then the object-name or value passed to the parameter 
-		identified by param-name must be an object instance that is an instance 
-		of brahms.communication.CommunicativeAct and the value for the 
-		communication activities ‘with’ property must be identical to the 
-		communicative-act specified in the transfer definition to indicate the 
-		reading of the communicative-act’s beliefs.</li>
-</ol>
-
-<p class="aisparagraph">&nbsp;</p>
-
-      </td>
-    </tr>
-  </table>
-</div>
-
-<div align="left">
-  <table border="0" width="100%" cellpadding="0" cellspacing="0">
-    <tr>
-      <td width="100%">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" align="center"><font size="1" face="Arial">
-Questions or problems regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
-Copyright &#169; 2000-2007 NASA Ames Research Center. All rights reserved.<br>
-Last modified: 
-		<!--WEBBOT 
-   bot=TimeStamp
-   S-Type="EDITED"
-   S-Format="%A %B %d, %Y" startspan
- -->Friday July 27, 2007<!--webbot bot="TimeStamp" i-checksum="29785" endspan -->.</font></td>
-    </tr>
-  </table>
-</div>
+    <footer>
+        <hr>
+        <p>Copyright &#169; 2012-2025 Ejenta, Inc. All rights reserved.</p>
+        <p>Last modified: August 25, 2025.</p>
+    </footer>
 
 </body>
-
 </html>

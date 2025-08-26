@@ -1,368 +1,176 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
-<meta name="ProgId" content="FrontPage.Editor.Document">
-<title>Agent iSolutions - Language - Attribute (ATT) - Semantics</title>
-<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
-<script type="text/javascript" src="../doctree.jsc"></script>
-<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejenta - Language Specification - Attribute (ATT) - Semantics</title>
+    <link rel="stylesheet" type="text/css" href="../../style/modern_style.css">
+    <link rel="SHORTCUT ICON" href="../../logo.ico">
+    <script type="text/javascript" src="../doctree.jsc"></script>
+    <script type="text/javascript" src="../../scripts/treescript.jsc"></script>
 </head>
+<body onload="open_folder_to_page('OUT0t,OUT2t,OUT4t,DT23');">
 
-<body onload="openTree('OUT0t,OUT2t,OUT4t,DT23');">
-  <table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
-    <tr>
-      <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" width="168" height="78"></td>
-      <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
-    </tr>
-    <tr>
-      <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../home.htm">Home</a></td>
-      <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
-      <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a href="../index.htm">Documentation</a></td>
-      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
-      <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
-      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">&nbsp;</td>
-    </tr>
-  </table>
+    <header>
+        <img src="../../images/aislogo_600_small.jpg" alt="Ejenta Logo" class="logo">
+        <nav class="top-nav">
+            <ul>
+                <li><a href="../../index.htm">Home</a></li>
+                <li><a href="../../products/index.htm">Products</a></li>
+                <li><a href="../index.htm" class="active">Documentation</a></li>
+                <li><a href="../../download/index.htm">Download</a></li>
+                <li><a href="../../support/index.htm">Support</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div align="left">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-      <td height="10" width="100%">
-      </td>
-    </tr>
-  </table>
-</div>
-<div align="left">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
-    <tr>
-      <td width="164" valign="top" bgcolor="#6C69F7" height="1%">
-        <p class="TOCHeader">Documentation</td>
-      <td width="12" rowspan="9" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="1500" hspace="3">
-      </td>
-      <td width="100%" valign="top" align="justify" height="1" colspan="5">
-        <p class="aisheader1">Language Specification - Attribute (ATT) -
-        Semantics</p>
-      </td>
-    </tr>
-    <tr>
-      <td width="167" rowspan="8" valign="top" height="200">
-      	 <script language="javascript">
-      	 <!--
-      	 	createDocumentTree("../");
-      	 -->
-      	 </script>
-      </td>
-      <td width="100%" valign="top" align="left" height="1" colspan="5">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="12%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_l"><a href="ls_pat_sem.htm">Prev</a>
-      </td>
-      <td width="25%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_c"><a href="ls_att_dsc.htm">Description</a>
-      </td>
-      <td width="25%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_c"><a href="ls_att_stx.htm">Syntax</a>
-      </td>
-      <td width="25%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_c"><font color="#808080">Semantics</font>
-      </td>
-      <td width="12%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_r" align="left"><a href="ls_rel_sem.htm">Next</a>
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" valign="top" align="justify" height="1" colspan="5">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" valign="top" align="justify" height="650" colspan="5">
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav class="side-nav">
+                <h2>Documentation</h2>
+                <div class="tree-container">
+                    <script language="javascript">
+                        <!--
+                        createDocumentTree("../");
+                        -->
+                    </script>
+                </div>
+            </nav>
+        </aside>
 
-<p class="aisparagraph"><b>Attribute scope</b></p>
+        <main class="content">
+            <div class="doc-header">
+                <h1>Language Specification - Attribute (ATT) - Semantics</h1>
+            </div>
+            <nav class="doc-nav">
+                <a href="ls_pat_sem.htm" class="prev">Prev</a>
+                <div class="doc-sub-nav">
+                    <a href="ls_att_dsc.htm">Description</a>
+                    <a href="ls_att_stx.htm">Syntax</a>
+                    <span class="active">Semantics</span>
+                </div>
+                <a href="ls_rel_sem.htm" class="next">Next</a>
+            </nav>
+            <hr>
+            <section class="doc-content">
+                <h3>Attribute scope</h3>
+                <p class="aisparagraph">Attributes are always defined within a group, agent, conceptual-class, conceptual-object, class or object definition and cannot be defined outside any of these concepts or inside of any other concepts. Attributes can have different scopes within the specified concepts defined by one of the keywords private, protected or public.</p>
 
-<p class="aisparagraph">Attributes are always defined within a group,
-agent, conceptual-class, conceptual-object, class or object
-definition and cannot be defined outside any of these concepts or
-inside of any other concepts. Attributes can have different
-scopes within the specified concepts defined by one of the
-keywords private, protected or public.</p>
+                <h4>Private attributes:</h4>
+                <blockquote>
+                    <p class="aisparagraph">Private attributes are scoped down to only the concept for which it is defined. The private attribute is not inherited by sub groups or sub classes (agents /objects that are members/instances of the group/class will inherit the attribute) and the private attribute can only be referenced by initial beliefs, initial facts, workframes and thoughtframes for that specific concept.</p>
+                </blockquote>
 
-<p class="aisparagraph"><i>Private attributes</i>:</p>
+                <h4>Protected attributes:</h4>
+                <blockquote>
+                    <p class="aisparagraph">Protected attributes are inherited by sub groups and sub classes. Protected attributes can only be referenced by initial beliefs, initial facts, workframes and thoughtframes of the concept for which the attribute is specified or any of the sub groups/sub classes and of agents/objects that are members/instances of the sub group(s)/class(es).</p>
+                </blockquote>
 
-<blockquote>
-    <p class="aisparagraph">Private attributes are scoped down to only
-    the concept for which it is defined. The private attribute is
-    not inherited by sub groups or sub classes (agents /objects
-    that are members/instances of the group/class will inherit
-    the attribute) and the private attribute can only be
-    referenced by initial beliefs, initial facts, workframes and
-    thoughtframes for that specific concept.</p>
-</blockquote>
+                <h4>Public attributes:</h4>
+                <blockquote>
+                    <p class="aisparagraph">Public attributes are similar to protected attributes, the only difference is that they can be referenced by initial beliefs, initial facts, workframes and thoughtframes in any group, agent, class or object.</p>
+                </blockquote>
 
-<p class="aisparagraph"><i>Protected attributes</i>:</p>
+                <h3>Value assignment</h3>
+                <p class="aisparagraph">Value assignment of attributes differs from value assignments in third and fourth generation computer languages (which usually use an assignment operator like ‘=’ or ‘:=’. Assignment of a value for an attribute is done through beliefs and facts.</p>
 
-<blockquote>
-    <p class="aisparagraph">Protected attributes are inherited by sub
-    groups and sub classes. Protected attributes can only be
-    referenced by initial beliefs, initial facts, workframes and
-    thoughtframes of the concept for which the attribute is
-    specified or any of the sub groups/sub classes and of
-    agents/objects that are members/instances of the sub group(s)/class(es).</p>
-</blockquote>
+                <h3>Meta types</h3>
+                <p class="aisparagraph">The meta types allow for binding of concepts that are considered to be a subtype of the meta types. The following concepts can be bound to the specified meta types:</p>
+                <table class="data-table">
+                    <tr>
+                        <td>Group</td>
+                        <td>any group</td>
+                    </tr>
+                    <tr>
+                        <td>Agent</td>
+                        <td>any agent regardless of the group it is a member of</td>
+                    </tr>
+                    <tr>
+                        <td>Class</td>
+                        <td>any class</td>
+                    </tr>
+                    <tr>
+                        <td>Object</td>
+                        <td>any object regardless of the class it is an instance of</td>
+                    </tr>
+                    <tr>
+                        <td>ActiveClass</td>
+                        <td>any group and class</td>
+                    </tr>
+                    <tr>
+                        <td>ActiveInstance</td>
+                        <td>any agent and object</td>
+                    </tr>
+                    <tr>
+                        <td>ActiveConcept</td>
+                        <td>any active class and active instance</td>
+                    </tr>
+                    <tr>
+                        <td>ConceptualClass</td>
+                        <td>any conceptual class</td>
+                    </tr>
+                    <tr>
+                        <td>ConceptualObject</td>
+                        <td>any conceptual object</td>
+                    </tr>
+                    <tr>
+                        <td>ConceptualConcept</td>
+                        <td>any conceptual class and conceptual object</td>
+                    </tr>
+                    <tr>
+                        <td>AreaDef</td>
+                        <td>any area definition</td>
+                    </tr>
+                    <tr>
+                        <td>Area</td>
+                        <td>any area</td>
+                    </tr>
+                    <tr>
+                        <td>GeographyConcept</td>
+                        <td>any area definition and area</td>
+                    </tr>
+                    <tr>
+                        <td>Concept</td>
+                        <td>any active concept, conceptual concept and geograpy concept</td>
+                    </tr>
+                </table>
 
-<p class="aisparagraph"><i>Public attributes</i>:</p>
+                <h3>Collection Types</h3>
+                <p class="aisparagraph">The <a href="ls_collectiontypes.htm">collection types</a> allow for attributes to have multiple values assigned to them. The following collection types are currently supported:</p>
+                <table class="data-table">
+                    <tr>
+                        <td>map</td>
+                        <td>collection for which values are accessible via a unique index or key being either an integer or string</td>
+                    </tr>
+                </table>
 
-<blockquote>
-    <p class="aisparagraph">Public attributes are similar to protected
-    attributes, the only difference is that they can be
-    referenced by initial beliefs, initial facts, workframes and
-    thoughtframes in any group, agent, class or object.</p>
-</blockquote>
+                <h3>Relation types</h3>
+                <p class="aisparagraph">The relation type is a new way to declare <a href="ls_rel_dsc.htm">relations</a> in the language in the attributes section as an alternative to declaring the relations in the relations section. This is in preparation for eliminating all section headers and would still allow for the notion of relations since they require a different notation and different handling in conditions compared to regular attributes.</p>
+                
+                <h3>Java types</h3>
+                <p class="aisparagraph">Attributes, variables and parameters can now also be declared to be of any Java reference type allowing for the modeler to directly reference Java objects. Note that the Brahms language assumes at a minimum Java 5.0, the Brahms language supports the generics notations. For more information on Java reference types see the <a target="_blank" href="http://java.sun.com/docs/books/jls/third_edition/html/typesValues.html">Java Language Specification</a>.</p>
+                
+                <h3>Defaults</h3>
+                <p class="aisparagraph">The default scope of an attribute is ‘public’.</p>
+                <ul>
+                    <li>display = &lt;attribute-name&gt;</li>
+                </ul>
 
-<p class="aisparagraph"><b>Value assignment</b></p>
+                <h3>Constraints</h3>
+                <ol>
+                    <li>The name of an attribute must be unique within the definition of a group, agent, class or object. In case of a name conflict in multiple inheritance (two different concepts from which is inherited define an attribute with the same name) the following conflict resolution strategy is chosen. If both attributes are of the same type just one definition will remain with the same name and same type. If the types of the attributes differ an error will be generated.</li>
+                    <li>If the name of the attribute is location, its type must be the name of an area definition or the meta-type Area.</li>
+                    <li>If a Java type is used as the type of the attribute the Java type must reference a Java type that is either referenced by its simple name or by its fully qualified name(s). If the simple name is used the simple name must be resolvable to a fully qualified name using the Java import statements (<a href="ls_imp_stx.htm">jimport</a>). The compiler must be able to load the Java Class for the type, the compiler uses this method to ensure that the Java type is valid. The Java Classes for the types used in the Brahms language must therefore be in the Java classpath.</li>
+                </ol>
+            </section>
+        </main>
+    </div>
 
-<p class="aisparagraph">Value assignment of attributes differs from
-value assignments in third and fourth generation computer
-languages (which usually use an assignment operator like
-&#145;=&#146; or &#145;:=&#146;. Assignment of a value for an
-attribute is done through beliefs and facts.</p>
-
-<b>
-<p ALIGN="JUSTIFY" class="aisparagraph">Meta types</p>
-</b>
-<p ALIGN="JUSTIFY" class="aisparagraph">The meta types allow for binding of concepts
-that are considered to be a subtype of the meta types. The following concepts
-can be bound to the specified meta types:</p>
-<table border="1" width="100%">
-  <tr>
-    <td width="19%">
-      <p class="aisparagraph">Group</p>
-    </td>
-    <td width="81%">
-      <p class="aisparagraph">any group</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="19%">
-      <p class="aisparagraph">Agent</p>
-    </td>
-    <td width="81%">
-      <p class="aisparagraph">any agent regardless of the group it is a
-      member of</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="19%">
-      <p class="aisparagraph">Class</p>
-    </td>
-    <td width="81%">
-      <p class="aisparagraph">any class</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="19%">
-      <p class="aisparagraph">Object</p>
-    </td>
-    <td width="81%">
-      <p class="aisparagraph">any object regardless of the class it is an
-      instance of</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="19%">
-      <p class="aisparagraph">ActiveClass</p>
-    </td>
-    <td width="81%">
-      <p class="aisparagraph">any group and class</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="19%">
-      <p class="aisparagraph">ActiveInstance</p>
-    </td>
-    <td width="81%">
-      <p class="aisparagraph">any agent and object</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="19%">
-      <p class="aisparagraph">ActiveConcept</p>
-    </td>
-    <td width="81%">
-      <p class="aisparagraph">any active class and active instance</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="19%">
-      <p class="aisparagraph">ConceptualClass</p>
-    </td>
-    <td width="81%">
-      <p class="aisparagraph">any conceptual class</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="19%">
-      <p class="aisparagraph">ConceptualObject</p>
-    </td>
-    <td width="81%">
-      <p class="aisparagraph">any conceptual object</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="19%">
-      <p class="aisparagraph">ConceptualConcept</p>
-    </td>
-    <td width="81%">
-      <p class="aisparagraph">any conceptual class and conceptual object</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="19%">
-      <p class="aisparagraph">AreaDef</p>
-    </td>
-    <td width="81%">
-      <p class="aisparagraph">any area definition</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="19%">
-      <p class="aisparagraph">Area</p>
-    </td>
-    <td width="81%">
-      <p class="aisparagraph">any area</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="19%">
-      <p class="aisparagraph">GeographyConcept</p>
-    </td>
-    <td width="81%">
-      <p class="aisparagraph">any area definition and area</p>
-    </td>
-  </tr>
-  <tr>
-    <td width="19%">
-      <p class="aisparagraph">Concept</p>
-    </td>
-    <td width="81%">
-      <p class="aisparagraph">any active concept, conceptual concept and
-      geograpy concept</p>
-    </td>
-  </tr>
-</table>
-
-<p class="aisparagraph"><b>Collection Types</b></p>
-<p class="aisparagraph">The <a href="ls_collectiontypes.htm">collection types</a> allow for attributes to have 
-multiple values assigned to them. The following collection types are currently 
-supported:</p>
-<table border="1" width="100%" id="table1">
-  <tr>
-    <td width="19%">
-      <p class="aisparagraph">map</td>
-    <td width="81%">
-      <p class="aisparagraph">collection for which values are accessible via a 
-		unique index or key being either an integer or string</p>
-    </td>
-  </tr>
-  </table>
-
-<p class="aisparagraph"><b>Relation types</b></p>
-<p class="aisparagraph">The relation type is a new way to declare
-<a href="ls_rel_dsc.htm">relations</a> in the language in the attributes section 
-as an alternative to declaring the relations in the relations section. This is 
-in preparation for eliminating all section headers and would still allow for the 
-notion of relations since they require a different notation and different 
-handling in conditions compared to regular attributes. </p>
-<p class="aisparagraph"><b>Java types</b></p>
-<p class="aisparagraph">Attributes, variables and parameters can now also be 
-declared to be of any Java reference type allowing for the modeler to directly 
-reference Java objects. Note that the Brahms language assumes at a minimum Java 
-5.0, the Brahms language supports the generics notations. For more information 
-on Java reference types see the
-<a target="_blank" href="http://java.sun.com/docs/books/jls/third_edition/html/typesValues.html">
-Java Language Specification</a>.</p>
-<p class="aisparagraph"><b>Defaults</b></p>
-
-<p class="aisparagraph">The default scope of an attribute is
-&#145;public&#146;.</p>
-
-<ul>
-    <li>
-      <p class="aisparagraph">display = &lt;attribute-name&gt;</li>
-</ul>
-
-<p class="aisparagraph"><b>Constraints</b></p>
-
-<ol>
-    <li>
-      <p class="aisparagraph">The name of an attribute must be unique
-        within the definition of a group, agent, class or object.
-        In case of a name conflict in multiple inheritance (two
-        different concepts from which is inherited define an
-        attribute with the same name) the following conflict
-        resolution strategy is chosen. If both attributes are of
-        the same type just one definition will remain with the
-        same name and same type. If the types of the attributes
-        differ an error will be generated.</li>
-	<li>
-      <p class="aisparagraph">If the name of the attribute is location, its type 
-		must be the name of an area definition or the meta-type Area.</li>
-	<li>
-      <p class="aisparagraph">If a Java type is used as the type of the 
-		attribute the Java type must reference a Java type that is either 
-		referenced by its simple name or by its fully qualified name(s). If the 
-		simple name is used the simple name must be resolvable to a fully 
-		qualified name using the Java import statements (<a href="ls_imp_stx.htm">jimport</a>). 
-		The compiler must be able to load the Java Class for the type, the 
-		compiler uses this method to ensure that the Java type is valid. The 
-		Java Classes for the types used in the Brahms language must therefore be 
-		in the Java classpath.</li>
-</ol>
-
-<p class="aisparagraph">&nbsp;</p>
-
-      </td>
-    </tr>
-  </table>
-</div>
-
-<div align="left">
-  <table border="0" width="100%" cellpadding="0" cellspacing="0">
-    <tr>
-      <td width="100%">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" align="center"><font size="1" face="Arial">
-Questions or problems regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
-Copyright &#169; 2000-2006 NASA Ames Research Center. All rights reserved.<br>
-Last modified: 
-		<!--WEBBOT 
-   bot=TimeStamp
-   S-Type="EDITED"
-   S-Format="%A %B %d, %Y" startspan
- -->Monday April 30, 2007<!--webbot bot="TimeStamp" i-checksum="31391" endspan -->.</font></td>
-    </tr>
-  </table>
-</div>
+    <footer>
+        <hr>
+        <p>Copyright &#169; 2012-2025 Ejenta, Inc. All rights reserved.</p>
+        <p>Last modified: August 25, 2025.</p>
+    </footer>
 
 </body>
-
 </html>

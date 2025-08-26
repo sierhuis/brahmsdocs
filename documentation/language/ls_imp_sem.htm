@@ -1,197 +1,101 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
-<meta name="ProgId" content="FrontPage.Editor.Document">
-<title>Agent iSolutions - Language - Import Declaration (IMP) - Semantics</title>
-<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
-<script type="text/javascript" src="../doctree.jsc"></script>
-<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejenta - Language Specification - Import Declaration (IMP) - Semantics</title>
+    <link rel="stylesheet" type="text/css" href="../../style/modern_style.css">
+    <link rel="SHORTCUT ICON" href="../../logo.ico">
+    <script type="text/javascript" src="../doctree.jsc"></script>
+    <script type="text/javascript" src="../../scripts/treescript.jsc"></script>
 </head>
+<body onload="open_folder_to_page('OUT0t,OUT2t,DT12');">
 
-<body onload="openTree('OUT0t,OUT2t,DT12');">
-  <table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
-    <tr>
-      <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" width="168" height="78"></td>
-      <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
-    </tr>
-    <tr>
-      <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../home.htm">Home</a></td>
-      <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
-      <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a href="../index.htm">Documentation</a></td>
-      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
-      <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
-      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">&nbsp;</td>
-    </tr>
-  </table>
+    <header>
+        <img src="../../images/aislogo_600_small.jpg" alt="Ejenta Logo" class="logo">
+        <nav class="top-nav">
+            <ul>
+                <li><a href="../../index.htm">Home</a></li>
+                <li><a href="../../products/index.htm">Products</a></li>
+                <li><a href="../index.htm" class="active">Documentation</a></li>
+                <li><a href="../../download/index.htm">Download</a></li>
+                <li><a href="../../support/index.htm">Support</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div align="left">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-      <td height="10" width="100%">
-      </td>
-    </tr>
-  </table>
-</div>
-<div align="left">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
-    <tr>
-      <td width="164" valign="top" bgcolor="#6C69F7" height="1%">
-        <p class="TOCHeader">Documentation</td>
-      <td width="12" rowspan="9" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="900" hspace="3">
-      </td>
-      <td width="100%" valign="top" align="justify" height="1" colspan="5">
-        <p class="aisheader1">Language Specification - Import Declaration (IMP) -
-        Semantics</p>
-      </td>
-    </tr>
-    <tr>
-      <td width="167" rowspan="8" valign="top" height="200">
-      	 <script language="javascript">
-      	 <!--
-      	 	createDocumentTree("../");
-      	 -->
-      	 </script>
-      </td>
-      <td width="100%" valign="top" align="left" height="1" colspan="5">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="12%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_l"><a href="ls_pck_sem.htm">Prev</a>
-      </td>
-      <td width="25%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_c"><a href="ls_imp_dsc.htm">Description</a>
-      </td>
-      <td width="25%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_c"><a href="ls_imp_stx.htm">Syntax</a>
-      </td>
-      <td width="25%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_c"><font color="#808080">Semantics</font>
-      </td>
-      <td width="12%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_r" align="left"><a href="ls_mod_sem.htm">Next</a>
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" valign="top" align="justify" height="1" colspan="5">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" valign="top" align="justify" height="400" colspan="5">
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav class="side-nav">
+                <h2>Documentation</h2>
+                <div class="tree-container">
+                    <script language="javascript">
+                        <!--
+                        createDocumentTree("../");
+                        -->
+                    </script>
+                </div>
+            </nav>
+        </aside>
 
-<font FACE="Arial" SIZE="3">
+        <main class="content">
+            <div class="doc-header">
+                <h1>Language Specification - Import Declaration (IMP) - Semantics</h1>
+            </div>
+            <nav class="doc-nav">
+                <a href="ls_pck_sem.htm" class="prev">Prev</a>
+                <div class="doc-sub-nav">
+                    <a href="ls_imp_dsc.htm">Description</a>
+                    <a href="ls_imp_stx.htm">Syntax</a>
+                    <span class="active">Semantics</span>
+                </div>
+                <a href="ls_mod_sem.htm" class="next">Next</a>
+            </nav>
+            <hr>
+            <section class="doc-content">
+                <p>The Brahms import declaration allows for the import of specific concepts or for the import of a library of concepts defined in a package. The import of a specific concept is realized by referencing its name. The name of the concept must be the same as the name of the file in which it is stored. The extension of the file must always be '.b'.</p>
+                <p>To reference a specific concept in a library the package name can be used. The package name reflects the directory in which the concept is stored with a 'library-path' as it's base path. So for example if the library-path is</p>
+                <blockquote>
+                    <p><code>library-path = C:\brahms</code></p>
+                </blockquote>
+                <p>and I have an import statement like</p>
+                <blockquote>
+                    <p><code>import nasa.phonemodel.PhoneUsers;</code></p>
+                </blockquote>
+                <p>then the concept PhoneUsers is expected to be defined as</p>
+                <blockquote>
+                    <p>
+                        <code>package nasa.phonemodel;<br>
+                        group PhoneUsers { }</code>
+                    </p>
+                </blockquote>
+                <p>and is expected to be found in the file</p>
+                <blockquote>
+                    <p><code>C:\brahms\nasa\phonemodel\PhoneUsers.b</code></p>
+                </blockquote>
+                <p>It is also possible to reference all concepts in a specific library. The wildcard '*' can be used in place of a specific concept-name. The following import statement will import all concepts in the phonemodel library:</p>
+                <blockquote>
+                    <p><code>import nasa.phonemodel.*;</code></p>
+                </blockquote>
+                <p>This statement will import all concepts defined in the directory C:\brahms\nasa\phonemodel defined in the files with the extension '.b' assuming the library-path is set to 'C:\brahms'.</p>
+                <p>The import statement:</p>
+                <blockquote>
+                    <p><code>import *;</code></p>
+                </blockquote>
+                <p>will import all concepts defined in the files with extension '.b' that are in the same directory as the file in which the import statement is defined.</p>
+                <p>By default every model imports the 'brahms.base.*' library (referred to as the 'BaseModel') containing base constructs for groups and classes and containing standard available classes and relations. The import of this library does not have to be defined explicitly.</p>
+                <p>A java single type import declaration imports a single name type, by mentioning its canonical name.</p>
+                <p>A java type-import-on-demand declaration imports all the accessible types of a named type or package as needed. The import of java.lang.* is not required, the compiler always includes that package in its search path.</p>
+                <p>A java import declaration makes Java types available by their simple name only within the compilation unit that actually contains the import declaration.</p>
+            </section>
+        </main>
+    </div>
 
-<p ALIGN="JUSTIFY" class="aisparagraph"></font>The Brahms import declaration allows for the import of
-specific concepts or for the import of a library of concepts defined in a package. The
-import of a specific concept is realized by referencing its name. The name of the concept
-must be the same as the name of the file in which it is stored. The extension of the file
-must always be &#145;.b&#146;.</p>
-
-<p ALIGN="JUSTIFY" class="aisparagraph">To reference a specific concept in a library the package name can be
-used. The package name reflects the directory in which the concept is stored with a
-&#145;library-path&#146; as it&#146;s base path. So for example if the library-path is</p>
-
-<blockquote>
-  <p ALIGN="JUSTIFY" class="aisparagraph"><code>library-path = C:\brahms </code></p>
-</blockquote>
-
-<p ALIGN="JUSTIFY" class="aisparagraph">and I have an import statement like</p>
-
-<blockquote>
-  <p class="aisparagraph"><code>import nasa.phonemodel.PhoneUsers;</code></p>
-</blockquote>
-
-<p ALIGN="JUSTIFY" class="aisparagraph">then the concept PhoneUsers is expected to be defined as</p>
-
-<blockquote>
-  <p ALIGN="JUSTIFY" class="aisparagraph"><code>package nasa.phonemodel;<br>
-  group PhoneUsers { }</code></p>
-</blockquote>
-
-<p ALIGN="JUSTIFY" class="aisparagraph">and is expected to be found in the file</p>
-
-<blockquote>
-  <p ALIGN="JUSTIFY" class="aisparagraph"><code>C:\brahms\nasa\phonemodel\PhoneUsers.b</code></p>
-</blockquote>
-
-<p ALIGN="JUSTIFY" class="aisparagraph">It is also possible to reference all concepts in a specific library.
-The wildcard &#145;*&#146; can be used in place of a specific concept-name. The following
-import statement will import all concepts in the phonemodel library:</p>
-
-<blockquote>
-  <p ALIGN="JUSTIFY" class="aisparagraph"><code>import nasa.phonemodel.*;</code></p>
-</blockquote>
-
-<p ALIGN="JUSTIFY" class="aisparagraph">This statement will import all concepts defined in the directory
-C:\brahms\nasa\ phonemodel defined in the files with the extension &#145;.b&#146; assuming
-the library-path is set to &#145;C:\brahms&#146;.</p>
-
-<p ALIGN="JUSTIFY" class="aisparagraph">The import statement:</p>
-
-<blockquote>
-  <p ALIGN="JUSTIFY" class="aisparagraph"><code>import *;</code></p>
-</blockquote>
-
-<p ALIGN="JUSTIFY" class="aisparagraph">will import all concepts defined in the files with extension
-&#145;.b&#146; that are in the same directory as the file in which the import statement is
-defined.<font FACE="Arial" SIZE="3"></p>
-</font>
-
-<p class="aisparagraph">By default every model imports the &#145;brahms.base.*&#146; library (referred to as
-the &#145;BaseModel&#146;) containing base constructs for groups and classes and
-containing standard available classes and relations. The import of this library does not
-have to be defined explicitly.</p>
-<p class="aisparagraph">A java single type import declaration imports a single 
-name type, by mentioning its canonical name.</p>
-<p class="aisparagraph">A java type-import-on-demand declaration imports all the 
-accessible types of a named type or package as needed. The import of java.lang.* 
-is not required, the compiler always includes that package in its search path.</p>
-<p class="aisparagraph">A java import declaration makes Java types available by 
-their simple name only within the compilation unit that actually contains the 
-import declaration.</p>
-<p class="aisparagraph">&nbsp;</p>
-
-      </td>
-    </tr>
-  </table>
-</div>
-
-<div align="left">
-  <table border="0" width="100%" cellpadding="0" cellspacing="0">
-    <tr>
-      <td width="100%">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" align="center"><font size="1" face="Arial">
-Questions or problems regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
-Copyright &#169; 2000-2006 NASA Ames Research Center. All rights reserved.<br>
-Last modified: 
-		<!--WEBBOT 
-   bot=TimeStamp
-   S-Type="EDITED"
-   S-Format="%A %B %d, %Y" startspan
- -->Monday April 30, 2007<!--webbot bot="TimeStamp" i-checksum="31391" endspan -->.</font></td>
-    </tr>
-  </table>
-</div>
+    <footer>
+        <hr>
+        <p>Copyright &#169; 2012-2025 Ejenta, Inc. All rights reserved.</p>
+        <p>Last modified: August 25, 2025.</p>
+    </footer>
 
 </body>
-
 </html>

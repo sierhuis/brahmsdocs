@@ -41,5 +41,5 @@ A:link       {color: #0000FF;}
 A:visited    {color: #0000FF;}
 A:hover      {color: red;}
 A			 {text-decoration: none;}
-ul           { font-size: 9pt; font-family: Arial, helvetica, sans-serif }
-ol           { font-size: 9pt; font-family: Arial, helvetica, sans-serif }
+ul           { font-size: 18px; font-family: Arial, helvetica, sans-serif }
+ol           { font-size: 18px; font-family: Arial, helvetica, sans-serif }

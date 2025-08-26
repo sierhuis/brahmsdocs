@@ -1,247 +1,125 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
-<meta name="ProgId" content="FrontPage.Editor.Document">
-<title>Agent iSolutions - Language - Variable (VAR) - Semantics</title>
-<link rel="stylesheet" type="text/css" href="../../style/ais_style.css">
-<script type="text/javascript" src="../doctree.jsc"></script>
-<script type="text/javascript" src="../../scripts/treescript.jsc"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejenta - Language Specification - Variable (VAR) - Semantics</title>
+    <link rel="stylesheet" type="text/css" href="../../style/modern_style.css">
+    <link rel="SHORTCUT ICON" href="../../logo.ico">
+    <script type="text/javascript" src="../doctree.jsc"></script>
+    <script type="text/javascript" src="../../scripts/treescript.jsc"></script>
 </head>
+<body onload="open_folder_to_page('OUT0t,OUT2t,OUT4t,DT25');">
 
-<body onload="openTree('OUT0t,OUT2t,OUT4t,DT25');">
-  <table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
-    <tr>
-      <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../../images/aislogo_600_small.jpg" width="168" height="78"></td>
-      <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
-    </tr>
-    <tr>
-      <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="73" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../home.htm">Home</a></td>
-      <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="104" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../products/index.htm">Products</a></td>
-      <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="49" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a href="../index.htm">Documentation</a></td>
-      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../download/index.htm">Download</a></td>
-      <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="45" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../../support/index.htm">Support</a></td>
-      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="100%" height="1" align="left" valign="bottom" background="../../images/nb_background.jpg">&nbsp;</td>
-    </tr>
-  </table>
+    <header>
+        <img src="../../images/aislogo_600_small.jpg" alt="Ejenta Logo" class="logo">
+        <nav class="top-nav">
+            <ul>
+                <li><a href="../../index.htm">Home</a></li>
+                <li><a href="../../products/index.htm">Products</a></li>
+                <li><a href="../index.htm" class="active">Documentation</a></li>
+                <li><a href="../../download/index.htm">Download</a></li>
+                <li><a href="../../support/index.htm">Support</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div align="left">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%">
-    <tr>
-      <td height="10" width="100%">
-      </td>
-    </tr>
-  </table>
-</div>
-<div align="left">
-  <table border="0" cellpadding="0" cellspacing="0" width="100%" height="200">
-    <tr>
-      <td width="164" valign="top" bgcolor="#6C69F7" height="1%">
-        <p class="TOCHeader">Documentation</td>
-      <td width="12" rowspan="9" valign="top" height="200"><img border="0" src="../../images/vline.gif" width="6" height="1550" hspace="3">
-      </td>
-      <td width="100%" valign="top" align="justify" height="1" colspan="5">
-        <p class="aisheader1">Language Specification - Variable (VAR) -
-        Semantics</p>
-      </td>
-    </tr>
-    <tr>
-      <td width="167" rowspan="8" valign="top" height="200">
-      	 <script language="javascript">
-      	 <!--
-      	 	createDocumentTree("../");
-      	 -->
-      	 </script>
-      </td>
-      <td width="100%" valign="top" align="left" height="1" colspan="5">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="12%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_l"><a href="ls_rel_sem.htm">Prev</a>
-      </td>
-      <td width="25%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_c"><a href="ls_var_dsc.htm">Description</a>
-      </td>
-      <td width="25%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_c"><a href="ls_var_stx.htm">Syntax</a>
-      </td>
-      <td width="25%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_c"><font color="#808080">Semantics</font>
-      </td>
-      <td width="12%" valign="top" align="left" height="1">
-      <p class="ls_nav_text_r" align="left"><a href="ls_bel_sem.htm">Next</a>
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" valign="top" align="justify" height="1" colspan="5">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" valign="top" align="justify" height="500" colspan="5">
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav class="side-nav">
+                <h2>Documentation</h2>
+                <div class="tree-container">
+                    <script language="javascript">
+                        <!--
+                        createDocumentTree("../");
+                        -->
+                    </script>
+                </div>
+            </nav>
+        </aside>
 
-<p class="aisparagraph"><b>Quantification</b></p>
+        <main class="content">
+            <div class="doc-header">
+                <h1>Language Specification - Variable (VAR) - Semantics</h1>
+            </div>
+            <nav class="doc-nav">
+                <a href="ls_rel_sem.htm" class="prev">Prev</a>
+                <div class="doc-sub-nav">
+                    <a href="ls_var_dsc.htm">Description</a>
+                    <a href="ls_var_stx.htm">Syntax</a>
+                    <span class="active">Semantics</span>
+                </div>
+                <a href="ls_bel_sem.htm" class="next">Next</a>
+            </nav>
+            <hr>
+            <section class="doc-content">
+                <h3>Quantification</h3>
+                <p>Variables are of one of three quantification types: collect-all, for-each and for-one. The difference between the three quantification types is the way variables are bound to a specific context of a defined type (agent, object, or other value). The difference in binding is as follows:</p>
 
-<p class="aisparagraph">Variables are of one of three quantification
-types: collect-all, for-each and for-one. The difference between
-the three quantification types is the way variables are bound to
-a specific context of a defined type (agent, object, or other
-value). The difference in binding is as follows:</p>
+                <h4><i>for-each variable</i>:</h4>
+                <blockquote>
+                    <p>A for-each variable is bound to only one context. For each context that can be bound to the variable a separate instance is created for the workframe in which the variable is bound.</p>
+                    <p>For example in the following frame:</p>
+                    <pre><code>workframe DoSomething {
+  variables:
+    foreach(Order) order;
+  when (
+    (order is-assigned-to current) )
+  do {
+    workOnOrder();
+  }
+}</code></pre>
+                    <p>There are three Order instances in the model (order1, order2, and order3) satisfying the precondition. For this workframe three instances will be created in which the for-each variable is bound to one of the orders in each frame instantiation. This means that the agent for which the workframe is defined can only work on one order at a time and will work on them in consecutive order if no interruptions take place.</p>
+                </blockquote>
 
-<p class="aisparagraph"><i>for-each variable</i>:</p>
+                <h4><i>collect-all variable</i>:</h4>
+                <blockquote>
+                    <p>A collect-all variable can be bound to more then one context. The variable will be bound to all contexts satisfying the condition in which it is defined. Only one frame instantiation will be created as a result of the binding with the collect-all variable. If we consider the same example as for for-each variables changing the quantification of the variable to collect-all.</p>
+                    <pre><code>workframe DoSomething {
+  variables:
+    collectall(Order) order;
+  when (
+    (order is-assigned-to current) )
+  do {
+    workOnOrder();
+  }
+}</code></pre>
+                    <p>Also assume that again three orders match with the precondition based on the beliefs of the agent, then all three orders are bound to the variable and one frame instantiation will be created for the agent to work on. This means that the agent for which this workframe is defined will work on all orders at the same time.</p>
+                </blockquote>
 
-<blockquote>
-    <p class="aisparagraph">A for-each variable is bound to only one
-    context. For each context that can be bound to the variable a
-    separate instance is created for the workframe in which the
-    variable is bound.</p>
-    <p class="aisparagraph">For example in the following frame:</p>
-    <blockquote>
-        <blockquote>
-            <pre class="aisparagraph"><font face="Courier">workframe DoSomething {</font>
-  <font face="Courier">variables:</font>
-  <font face="Courier">  foreach(Order) order;</font>
-  <font face="Courier">when ( </font>
-  <font face="Courier">  (order is-assigned-to current) )</font>
-  <font face="Courier">do {</font>
-  <font face="Courier">  workOnOrder();</font>
-<font face="Courier">  }</font>
-<font face="Courier">}</font>  </pre>
-        </blockquote>
-    </blockquote>
-    <p class="aisparagraph">There are three Order instances in the
-    model (order1, order2, and order3) satisfying the
-    precondition. For this workframe three instances will be
-    created in which the for-each variable is bound to one of the
-    orders in each frame instantiation. This means that the agent
-    for which the workframe is defined can only work on one order
-    at a time and will work on them in consecutive order if no
-    interruptions take place.</p>
-</blockquote>
+                <h4><i>for-one variable</i>:</h4>
+                <blockquote>
+                    <p>A for-one variable can be bound to only one context. Only one frame-instantiation will be created as a result of the binding with the for-one variable. A for-one variable binds to the first context satisfying the condition in which it is defined. If we consider the same example as for for-each variables changing the quantification of the variable to for-one.</p>
+                    <pre><code>workframe DoSomething {
+  variables:
+    forone(Order) order;
+  when (
+    (order is-assigned-to current) )
+  do {
+    workOnOrder();
+  }
+}</code></pre>
+                    <p>Also assume that again three orders match with the precondition based on the beliefs of the agent, then one of the orders will be bound to the variable and one frame instantiation will be created for the agent to work on. This means that the agent only works on one order and it doesn't matter on which order. The other two orders will not be worked on.</p>
+                </blockquote>
 
-<p class="aisparagraph"><i>collect-all variable</i>:</p>
+                <h3>Defaults</h3>
+                <p>A variable is by default an assigned variable unless otherwise specified.</p>
+                <ul>
+                    <li>display = &lt;variable-name&gt;</li>
+                </ul>
 
-<blockquote>
-    <p class="aisparagraph">A collect-all variable can be bound to more
-    then one context. The variable will be bound to all contexts
-    satisfying the condition in which it is defined. Only one
-    frame instantiation will be created as a result of the
-    binding with the collect-all variable. If we consider the
-    same example as for for-each variables changing the
-    quantification of the variable to collect-all.</p>
-    <blockquote>
-        <blockquote>
-            <pre class="aisparagraph"><font face="Courier">workframe DoSomething {</font>
-  <font face="Courier">variables:</font>
-  <font face="Courier">  collectall(Order) order;</font>
-  <font face="Courier">when ( </font>
-  <font face="Courier">  (order is-assigned-to current) )</font>
-  <font face="Courier">do {</font>
-  <font face="Courier">  workOnOrder();</font>
-<font face="Courier">  }</font>
-<font face="Courier">}</font>  </pre>
-        </blockquote>
-    </blockquote>
-    <p class="aisparagraph">Also assume that again three orders match
-    with the precondition based on the beliefs of the agent, then
-    all three orders are bound to the variable and one frame
-    instantiation will be created for the agent to work on. This
-    means that the agent for which this workframe is defined will
-    work on all orders at the same time.</p>
-</blockquote>
+                <h3>Constraints</h3>
+                <ol>
+                    <li>The name of the variable must be unique within the definition of a workframe or thoughtframe.</li>
+                </ol>
+            </section>
+        </main>
+    </div>
 
-<p class="aisparagraph"><i>for-one variable</i>:</p>
-
-<blockquote>
-    <p class="aisparagraph">A for-one variable can be bound to only one
-    context. Only one frame-instantiation will be created as a
-    result of the binding with the for-one variable. A for-one
-    variable binds to the first context satisfying the condition
-    in which it is defined. If we consider the same example as
-    for for-each variables changing the quantification of the
-    variable to for-one.</p>
-    <blockquote>
-        <blockquote>
-            <pre class="aisparagraph"><font face="Courier">workframe DoSomething {</font>
-  <font face="Courier">variables:</font>
-  <font face="Courier">  forone(Order) order;</font>
-  <font face="Courier">when ( </font>
-  <font face="Courier">  (order is-assigned-to current) )</font>
-  <font face="Courier">do {</font>
-  <font face="Courier">  workOnOrder();</font>
-<font face="Courier">  }</font>
-<font face="Courier">}</font>  </pre>
-        </blockquote>
-    </blockquote>
-    <p class="aisparagraph">Also assume that again three orders match
-    with the precondition based on the beliefs of the agent, then
-    one of the orders will be bound to the variable and one frame
-    instantiation will be created for the agent to work on. This
-    means that the agent only works on one order and it
-    doesn&#146;t matter on which order. The other two orders will
-    not be worked on.</p>
-</blockquote>
-
-<p class="aisparagraph"><b>Defaults</b></p>
-
-<p class="aisparagraph">A variable is by default an assigned variable
-unless otherwise specified.</p>
-
-<ul>
-    <li>
-      <p class="aisparagraph">display = &lt;variable-name&gt;</li>
-</ul>
-
-<p class="aisparagraph"><b>Constraints</b></p>
-
-<ol>
-    <li>
-      <p class="aisparagraph">The name of the variable must be unique
-        within the definition of a workframe or thoughtframe.</li>
-</ol>
-
-<p class="aisparagraph">&nbsp;</p>
-
-      </td>
-    </tr>
-  </table>
-</div>
-
-<div align="left">
-  <table border="0" width="100%" cellpadding="0" cellspacing="0">
-    <tr>
-      <td width="100%">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" align="center"><font size="1" face="Arial">
-Questions or problems regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
-Copyright &#169; 2000-2002 NASA Ames Research Center. All rights reserved.<br>
-Last modified: 
-		<!--WEBBOT 
-   bot=TimeStamp
-   S-Type="EDITED"
-   S-Format="%A %B %d, %Y" startspan
- -->Monday April 30, 2007<!--webbot bot="TimeStamp" i-checksum="31391" endspan -->.</font></td>
-    </tr>
-  </table>
-</div>
-
+    <footer>
+        <hr>
+        <p>Copyright &#169; 2012-2025 Ejenta, Inc. All rights reserved.</p>
+        <p>Last modified: August 25, 2025.</p>
+    </footer>
 </body>
-
 </html>
