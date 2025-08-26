@@ -1,252 +1,142 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
-<meta name="ProgId" content="FrontPage.Editor.Document">
-<title>Agent iSolutions - Products - Brahms Agent Viewer</title>
-<link rel="stylesheet" type="text/css" href="../style/ais_style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejenta - Products - Brahms Agent Viewer</title>
+    <link rel="stylesheet" type="text/css" href="../style/modern_style.css">
+    <link rel="SHORTCUT ICON" href="../logo.ico">
 </head>
-
 <body>
 
-<div align="left">
-  <table border="0" width="100%" cellspacing="0" cellpadding="0" height="29">
-    <tr>
-      <td width="168" valign="bottom" rowspan="2" height="29"><img border="0" src="../images/aislogo_600_small.jpg" width="168" height="78"></td>
-      <td width="439" height="46" align="left" valign="bottom" colspan="12"></td>
-    </tr>
-    <tr>
-      <td width="11" height="1" align="left" valign="bottom"><img border="0" src="../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="73" height="1" align="left" valign="bottom" background="../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../home.htm">Home</a></td>
-      <td width="12" height="1" align="left" valign="bottom"><img border="0" src="../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="104" height="1" align="left" valign="bottom" background="../images/nb_background.jpg">
-        <p class="nb_text"><a href="index.htm">Products</a></td>
-      <td width="23" height="1" align="left" valign="bottom"><img border="0" src="../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="49" height="1" align="left" valign="bottom" background="../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../documentation/index.htm">Documentation</a></td>
-      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="45" height="1" align="left" valign="bottom" background="../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../download/index.htm">Download</a></td>
-      <td width="45" height="1" align="left" valign="bottom"><img border="0" src="../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="45" height="1" align="left" valign="bottom" background="../images/nb_background.jpg">
-        <p class="nb_text"><a style="text-decoration:none;" href="../support/index.htm">Support</a></td>
-      <td width="16" height="1" align="left" valign="bottom"><img border="0" src="../images/nb_sep.gif" width="11" height="34"></td>
-      <td width="100%" height="1" align="left" valign="bottom" background="../images/nb_background.jpg">&nbsp;</td>
-    </tr>
-  </table>
-</div>
+    <header>
+        <img src="../images/aislogo_600_small.jpg" alt="Ejenta Logo" class="logo">
+        <nav class="top-nav">
+            <ul>
+                <li><a href="../index.htm">Home</a></li>
+                <li><a href="index.htm" class="active">Products</a></li>
+                <li><a href="../documentation/index.htm">Documentation</a></li>
+                <li><a href="../download/index.htm">Download</a></li>
+                <li><a href="../support/index.htm">Support</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<div align="left">
-  <table border="0" cellpadding="0" cellspacing="0" width="640">
-    <tr>
-      <td height="10" width="1104">
-      </td>
-    </tr>
-  </table>
-</div>
-<div align="left">
-  <table border="0" cellpadding="0" cellspacing="0" width="640">
-    <tr>
-      <td width="165" valign="top" bgcolor="#6C69F7">
-        <p class="TOCHeader">Products</td>
-      <td width="1" rowspan="6" valign="top">
-      	<img src="../images/1-1.gif" width="1" height="1">
-      </td>
-      <td width="2" rowspan="6" valign="top" bgcolor="#6C69F7" >
-      	<img src="../images/2-1.gif" width="2" height="1">
-	  </td>
-      <td width="2" rowspan="6" valign="top">
-      	<img src="../images/2-1.gif" width="2" height="1">
-	  </td>
-      <td width="448" valign="top" align="justify">
-        <p class="aisheader1">Brahms Agent Viewer</p>
-      </td>
-    </tr>
-    <tr>
-      <td width="165" rowspan="5" valign="top" height="290">
-        <p class="TOC1"><a href="index.htm">Overview</a></p>
-        <p class="TOC1"><font color="#808080">Brahms</font></p>
-        <p class="TOC2"><a href="agentenvironment.htm">Agent Environment</a></p>
-        <p class="TOC2"><a href="compiler.htm">Compiler</a></p>
-        <p class="TOC2"><a href="vm.htm">Virtual Machine</a></p>
-        <p class="TOC2"><a href="composer.htm">Composer</a></p>
-        <p class="TOC2"><font color="#808080">Agent Viewer</font></p>
-        <p class="TOC2">&nbsp;</p>
-        <p>&nbsp;</td>
-      <td width="448" valign="top" align="justify" height="241"><font SIZE="2">
-        </font>
-        <p class="aisparagraph">
-      The Brahms Agent Viewer is an analysis tool that displays the behavior of
-      an agent over time and allows for the analysis of that behavior. The
-      agent viewer features a:
-        <ul>
-          <li>
-            <a href="#Runtime View">Runtime View</a> displaying the agents and objects
-            that were active in an agent environment.</li>
-          <li>
-            Graphical <a href="#Timeline"> Timeline View</a> with per selected
-            agent or object the frames and
-            activities performed by that agent with their duration.</li>
-          <li>
-            <a href="#Communication View">
-            Communication View </a> displaying the communication
-            between agents and objects.</li>
-          <li>
-            <a href="#Explanation Facility">
-            Explanation Facility&nbsp;</a>allowing for a more detailed analysis
-            of the state and behavior of the agents and objects.</li>
-        </ul>
-        <p class="aisparagraph">At runtime the Brahms virtual machine records
-        the behavior and state changes of the agents, objects and world state in
-        a history file. This history file is maintained by the virtual machine's
-        file agent viewer service and is only maintained if this service is
-        loaded (by default it is). The Agent Viewer has the ability to parse
-        this file and store all the information in a <a href="http://www.mysql.com" target="_blank">MySQL</a>
-        relational database. The Agent Viewer retrieves all the necessary
-        information for its views from this database.
-        <p class="aisheader2"><a name="Runtime View">Runtime View</a></p>
-        <p class="aisparagraph">The user opens the database with the information
-        that need to be displayed. When the database is opened the runtime view
-        is populated with all of the agents and
-        objects that were active at any point in time in the agent environment.
-        The runtime view furthermore displays the relationships between
-        conceptual objects and objects and displays the relationships between
-        locations and the agents and objects that were located in those
-        locations. From the Runtime View the user can select what agents and
-        objects need to be displayed in the Timeline View.<br>
-        <table border="0" width="100%">
-          <tr>
-            <td width="33%">
-              <p align="center"><a href="../images/av_newdatabase.jpg" target="_blank"><img border="0" src="../images/av_newdatabase_s.jpg" alt="Create New Database" width="100" height="64"></a></td>
-            <td width="33%">
-              <p align="center"><a href="../images/av_opendatabase.jpg" target="_blank"><img border="0" src="../images/av_opendatabase_s.jpg" alt="Open Database" width="59" height="82"></a></td>
-            <td width="34%">
-              <p align="center"><a href="../images/av_runtimeview.jpg" target="_blank"><img border="0" src="../images/av_runtimeview_s.jpg" alt="Runtime View" width="100" height="82"></a></td>
-          </tr>
-        </table>
-        <p class="aisheader2"><a name="Timeline View">Timeline View</a></p>
-        <p class="aisparagraph">Selecting or dragging an agent or object into the
-        Timeline View displays the agent's or object's timeline.&nbsp;The
-        timeline displays for each agent and object what workframes,
-        thoughtframes and
-        activities were performed when and for how long. The nesting of
-        workframes through composite activities is shown using multiple levels.
-        Above the timeline the location of each agent is displayed showing where
-        certain activities were performed. Red lines at the end of workframes or
-        activities indicate interrupts. The small yellow bars on primitive
-        activities indicate that objects were used as resources when performing the activity.
-        Hovering the mouse over the yellow area will display the 'touched' or
-        used objects. Clicking with a mouse on workframes or thoughtframes will
-        activate the <a href="#Explanation Facility">explanation facility</a>.<br>
-        <table border="0" width="100%">
-          <tr>
-            <td width="50%">
-              <p align="center"><a href="../images/av_timelineview.jpg" target="_blank"><img border="0" src="../images/av_timelineview_s.jpg" alt="Timeline View" width="100" height="82"></a></td>
-            <td width="50%">
-              <p align="center"><a href="../images/av_timelineview_zoomed.jpg" target="_blank"><img border="0" src="../images/av_timelineview_zoomed_s.jpg" alt="Zoomed Timeline View" width="100" height="82"></a></td>
-          </tr>
-        </table>
-        <p class="aisheader2"><a name="Communication View">Communication View</a></p>
-        <p class="aisparagraph">The Agent Viewer has two types of Communication
-        Views. The first view shows only the communication between agents and
-        objects displayed in the Timeline View. It shows when a
-        communication occurred and how many beliefs were communicated in what
-        direction. The second Communication View shows in addition to what view 1 displays all the agents and objects
-        an agent or object communicates with, even the ones that are not
-        displayed in the right hand side pane. Clicking on the icon of the agent
-        or object communicated with will add that agent or object to the
-        Timeline View. This allows the user to determine the activity
-        the other agent or object was working on. Double clicking on a
-        communication itself will display the beliefs that were communicated.<br>
-        <table border="0" width="100%">
-          <tr>
-            <td width="25%">
-              <p align="center"><a href="../images/av_interagentcommview2.jpg" target="_blank"><img border="0" src="../images/av_interagentcommview2_s.jpg" alt="Inter Agent Communication View" width="100" height="82"></a></td>
-            <td width="25%">
-              <p align="center"><a href="../images/av_interagentcommview.jpg" target="_blank"><img border="0" src="../images/av_interagentcommview_s.jpg" alt="Inter Agent Communication View 2" width="100" height="82"></a></td>
-            <td width="25%">
-              <p align="center"><a href="../images/av_communicationview.jpg" target="_blank"><img border="0" src="../images/av_communicationview_s.jpg" alt="Communication View" width="100" height="82"></a></td>
-            <td width="25%">
-              <p align="center"><a href="../images/av_communicatedbeliefs.jpg" target="_blank"><img border="0" src="../images/av_communicatedbeliefs_s.jpg" alt="Communicated Beliefs" width="100" height="82"></a></td>
-          </tr>
-        </table>
-        <p class="aisheader2"><a name="Explanation Facility">Explanation
-        Facility</a></p>
-        <p class="aisparagraph">The explanation facility allows the model
-        builder to analyze the behavior and state of agents and objects at a deeper level then the graphical
-        view. It allows the user to determine what caused the
-        activation of a workframe, what beliefs an agent had at time X, what
-        actions were performed in a workframe, and what caused the termination
-        of a workframe. The screenshots below show in order:
-        <ol>
-          <li>
-            <p class="aisparagraph">The facts in the world managed by the world
-            state with a filter applied for the location attribute.&nbsp;</li>
-          <li>
-            <p class="aisparagraph">The beliefs of an agent at a user specified
-            time, the filter is closed and all of the agents beliefs are shown.</li>
-          <li>
-            <p class="aisparagraph">The state information of a workframe with a
-            reconstruction of the source code for that workframe based on the
-            available data in the database. Frame available/start/end times are
-            relative to a 0 based start time.</li>
-          <li>
-            <p class="aisparagraph">The state information of a workframe with
-            the beliefs that matched the workframe's preconditions causing it to become available.
-            Frame available/start/end times are here displayed using absolute
-            time, displaying full date/time information.</li>
-          <li>
-            <p class="aisparagraph">The state information of a workframe with all the actions that were executed while the workframe
-        was active.&nbsp;</li>
-        </ol>
-        <table border="0" width="100%">
-          <tr>
-            <td width="50%">
-              <p align="center"><a href="../images/av_exf_factswithfilter.jpg" target="_blank"><img border="0" src="../images/av_exf_factswithfilter_s.jpg" alt="Explanation Facility - Filtered Facts In The World" width="100" height="82"></a></td>
-            <td width="50%">
-              <p align="center"><a href="../images/av_exf_beliefswithoutfilter.jpg" target="_blank"><img border="0" src="../images/av_exf_beliefswithoutfilter_s.jpg" alt="Explanation Facility - Beliefs Of An Agent" width="100" height="82"></a></td>
-          </tr>
-        </table>
-        <table border="0" width="100%">
-          <tr>
-            <td width="33%">
-              <p align="center"><a href="../images/av_exf_workframe.jpg" target="_blank"><img border="0" src="../images/av_exf_workframe_s.jpg" alt="Explanation Facility - Workframe State with Source" width="100" height="86"></a></td>
-            <td width="33%">
-              <p align="center"><a href="../images/av_exf_workframebindings.jpg" target="_blank"><img border="0" src="../images/av_exf_workframebindings_s.jpg" alt="Explanation Facility - Workframe State with Bindings" width="100" height="82"></a></td>
-            <td width="34%">
-              <p align="center"><a href="../images/av_exf_workframebindings.jpg" target="_blank"><img border="0" src="../images/av_exf_workframeactions_s.jpg" alt="Explanation Facility - Workframe State with Actions" width="100" height="82"></a></td>
-          </tr>
-        </table>
-        <p class="aisparagraph">The
-        explanation facility is only in its early stages of development and its
-        functionality will be expanded in the future.
-      </td>
-    </tr>
-  </table>
-</div>
-<div align="left">
-  <table border="0" width="100%" cellpadding="0" cellspacing="0">
-    <tr>
-      <td width="100%">
-        <hr COLOR="#C0C0C0" NOSHADE align="left" size="1">
-      </td>
-    </tr>
-    <tr>
-      <td width="100%" align="center"><font size="1" face="Arial">
-Questions or problems regarding this web site should be directed to the <a href="mailto:webmaster@agentisolutions.com">Webmaster</a>.<br>
-Copyright &#169; 2000-2002 NASA Ames Research Center. All rights reserved.<br>
-Last modified: 
-		<!--WEBBOT 
-   bot=TimeStamp
-   S-Type="EDITED"
-   S-Format="%A %B %d, %Y" startspan
- -->Wednesday May 02, 2007<!--webbot bot="TimeStamp" i-checksum="42602" endspan -->.</font></td>
-    </tr>
-  </table>
-</div>
+    <div class="main-container">
+        <aside class="sidebar">
+            <nav class="side-nav">
+                <h2>Products</h2>
+                <ul>
+                    <li><a href="index.htm">Overview</a></li>
+                    <li>
+                        Brahms
+                        <ul>
+                            <li><a href="agentenvironment.htm">Agent Environment</a></li>
+                            <li><a href="compiler.htm">Compiler</a></li>
+                            <li><a href="vm.htm">Virtual Machine</a></li>
+                            <li><a href="composer.htm">Composer</a></li>
+                            <li><a href="agentviewer.htm" class="active">Agent Viewer</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="doc-header">
+                <h1>Brahms Agent Viewer</h1>
+            </div>
+            <hr>
+            <section class="doc-content">
+                <p>The Brahms Agent Viewer is an analysis tool that displays the behavior of an agent over time and allows for the analysis of that behavior. The agent viewer features a:</p>
+                <ul>
+                    <li><a href="#RuntimeView">Runtime View</a> displaying the agents and objects that were active in an agent environment.</li>
+                    <li>Graphical <a href="#TimelineView">Timeline View</a> with per selected agent or object the frames and activities performed by that agent with their duration.</li>
+                    <li><a href="#CommunicationView">Communication View</a> displaying the communication between agents and objects.</li>
+                    <li><a href="#ExplanationFacility">Explanation Facility</a> allowing for a more detailed analysis of the state and behavior of the agents and objects.</li>
+                </ul>
+                <p>At runtime the Brahms virtual machine records the behavior and state changes of the agents, objects and world state in a history file. This history file is maintained by the virtual machine's file agent viewer service and is only maintained if this service is loaded (by default it is). The Agent Viewer has the ability to parse this file and store all the information in a <a href="http://www.mysql.com" target="_blank">MySQL</a> relational database. The Agent Viewer retrieves all the necessary information for its views from this database.</p>
+                
+                <h3 id="RuntimeView">Runtime View</h3>
+                <p>The user opens the database with the information that need to be displayed. When the database is opened the runtime view is populated with all of the agents and objects that were active at any point in time in the agent environment. The runtime view furthermore displays the relationships between conceptual objects and objects and displays the relationships between locations and the agents and objects that were located in those locations. From the Runtime View the user can select what agents and objects need to be displayed in the Timeline View.</p>
+                <div class="image-gallery">
+                    <figure>
+                        <a href="../images/av_newdatabase.jpg" target="_blank"><img src="../images/av_newdatabase_s.jpg" alt="Create New Database"></a>
+                    </figure>
+                    <figure>
+                        <a href="../images/av_opendatabase.jpg" target="_blank"><img src="../images/av_opendatabase_s.jpg" alt="Open Database"></a>
+                    </figure>
+                    <figure>
+                        <a href="../images/av_runtimeview.jpg" target="_blank"><img src="../images/av_runtimeview_s.jpg" alt="Runtime View"></a>
+                    </figure>
+                </div>
+
+                <h3 id="TimelineView">Timeline View</h3>
+                <p>Selecting or dragging an agent or object into the Timeline View displays the agent's or object's timeline. The timeline displays for each agent and object what workframes, thoughtframes and activities were performed when and for how long. The nesting of workframes through composite activities is shown using multiple levels. Above the timeline the location of each agent is displayed showing where certain activities were performed. Red lines at the end of workframes or activities indicate interrupts. The small yellow bars on primitive activities indicate that objects were used as resources when performing the activity. Hovering the mouse over the yellow area will display the 'touched' or used objects. Clicking with a mouse on workframes or thoughtframes will activate the <a href="#ExplanationFacility">explanation facility</a>.</p>
+                <div class="image-gallery">
+                    <figure>
+                        <a href="../images/av_timelineview.jpg" target="_blank"><img src="../images/av_timelineview_s.jpg" alt="Timeline View"></a>
+                    </figure>
+                    <figure>
+                        <a href="../images/av_timelineview_zoomed.jpg" target="_blank"><img src="../images/av_timelineview_zoomed_s.jpg" alt="Zoomed Timeline View"></a>
+                    </figure>
+                </div>
+
+                <h3 id="CommunicationView">Communication View</h3>
+                <p>The Agent Viewer has two types of Communication Views. The first view shows only the communication between agents and objects displayed in the Timeline View. It shows when a communication occurred and how many beliefs were communicated in what direction. The second Communication View shows in addition to what view 1 displays all the agents and objects an agent or object communicates with, even the ones that are not displayed in the right hand side pane. Clicking on the icon of the agent or object communicated with will add that agent or object to the Timeline View. This allows the user to determine the activity the other agent or object was working on. Double clicking on a communication itself will display the beliefs that were communicated.</p>
+                <div class="image-gallery">
+                    <figure>
+                        <a href="../images/av_interagentcommview2.jpg" target="_blank"><img src="../images/av_interagentcommview2_s.jpg" alt="Inter Agent Communication View"></a>
+                    </figure>
+                    <figure>
+                        <a href="../images/av_interagentcommview.jpg" target="_blank"><img src="../images/av_interagentcommview_s.jpg" alt="Inter Agent Communication View 2"></a>
+                    </figure>
+                    <figure>
+                        <a href="../images/av_communicationview.jpg" target="_blank"><img src="../images/av_communicationview_s.jpg" alt="Communication View"></a>
+                    </figure>
+                    <figure>
+                        <a href="../images/av_communicatedbeliefs.jpg" target="_blank"><img src="../images/av_communicatedbeliefs_s.jpg" alt="Communicated Beliefs"></a>
+                    </figure>
+                </div>
+
+                <h3 id="ExplanationFacility">Explanation Facility</h3>
+                <p>The explanation facility allows the model builder to analyze the behavior and state of agents and objects at a deeper level then the graphical view. It allows the user to determine what caused the activation of a workframe, what beliefs an agent had at time X, what actions were performed in a workframe, and what caused the termination of a workframe. The screenshots below show in order:</p>
+                <ol>
+                    <li>The facts in the world managed by the world state with a filter applied for the location attribute.</li>
+                    <li>The beliefs of an agent at a user specified time, the filter is closed and all of the agents beliefs are shown.</li>
+                    <li>The state information of a workframe with a reconstruction of the source code for that workframe based on the available data in the database. Frame available/start/end times are relative to a 0 based start time.</li>
+                    <li>The state information of a workframe with the beliefs that matched the workframe's preconditions causing it to become available. Frame available/start/end times are here displayed using absolute time, displaying full date/time information.</li>
+                    <li>The state information of a workframe with all the actions that were executed while the workframe was active.</li>
+                </ol>
+                <div class="image-gallery">
+                    <figure>
+                        <a href="../images/av_exf_factswithfilter.jpg" target="_blank"><img src="../images/av_exf_factswithfilter_s.jpg" alt="Explanation Facility - Filtered Facts In The World"></a>
+                    </figure>
+                    <figure>
+                        <a href="../images/av_exf_beliefswithoutfilter.jpg" target="_blank"><img src="../images/av_exf_beliefswithoutfilter_s.jpg" alt="Explanation Facility - Beliefs Of An Agent"></a>
+                    </figure>
+                </div>
+                <div class="image-gallery">
+                    <figure>
+                        <a href="../images/av_exf_workframe.jpg" target="_blank"><img src="../images/av_exf_workframe_s.jpg" alt="Explanation Facility - Workframe State with Source"></a>
+                    </figure>
+                    <figure>
+                        <a href="../images/av_exf_workframebindings.jpg" target="_blank"><img src="../images/av_exf_workframebindings_s.jpg" alt="Explanation Facility - Workframe State with Bindings"></a>
+                    </figure>
+                    <figure>
+                        <a href="../images/av_exf_workframeactions.jpg" target="_blank"><img src="../images/av_exf_workframeactions_s.jpg" alt="Explanation Facility - Workframe State with Actions"></a>
+                    </figure>
+                </div>
+                <p>The explanation facility is only in its early stages of development and its functionality will be expanded in the future.</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <hr>
+        <p>Copyright &#169; 2012-2025 Ejenta, Inc. All rights reserved.</p>
+        <p>Last modified: August 25, 2025.</p>
+    </footer>
 
 </body>
-
 </html>
